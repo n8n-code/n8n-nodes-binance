@@ -54,10 +54,13 @@ export class BinanceApi implements ICredentialType {
 	};
 
 	test: ICredentialTestRequest = {
-		request: {
-			baseURL: '={{$credentials.url}}',
-			url: '/',
-			method: 'GET',
-		},
-	};
+			"request": {
+				"baseURL": "={{ $credentials.baseUrl }}",
+				"url": "/api/v3/account",
+				"method": "GET",
+				"headers": {
+					"X-MBX-APIKEY": "={{ $credentials.apikeyauth }}"
+				}
+			}
+		};
 }
