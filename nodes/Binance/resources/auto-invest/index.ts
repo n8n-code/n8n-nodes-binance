@@ -392,6 +392,31 @@ export const autoInvestDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest Target Asset List"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/lending/auto-invest/target-asset/roi/list",
 			"name": "operation",
 			"type": "notice",
@@ -538,6 +563,31 @@ export const autoInvestDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest Target Asset Roi List"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/lending/auto-invest/all/asset",
 			"name": "operation",
 			"type": "notice",
@@ -620,6 +670,31 @@ export const autoInvestDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest All Asset"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -813,6 +888,31 @@ export const autoInvestDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest Source Asset List"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1306,6 +1406,31 @@ export const autoInvestDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"POST Sapi V 1 Lending Auto Invest Plan Add"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/lending/auto-invest/plan/edit",
 			"name": "operation",
 			"type": "notice",
@@ -1687,6 +1812,31 @@ export const autoInvestDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/lending/auto-invest/plan/edit-status",
 			"name": "operation",
 			"type": "notice",
@@ -1847,6 +1997,31 @@ export const autoInvestDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"POST Sapi V 1 Lending Auto Invest Plan Edit Status"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/lending/auto-invest/plan/list",
 			"name": "operation",
 			"type": "notice",
@@ -1954,6 +2129,31 @@ export const autoInvestDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest Plan List"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2098,6 +2298,31 @@ export const autoInvestDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest Plan Id"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2398,6 +2623,31 @@ export const autoInvestDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest History List"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/lending/auto-invest/index/info",
 			"name": "operation",
 			"type": "notice",
@@ -2519,6 +2769,31 @@ export const autoInvestDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest Index Info"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/lending/auto-invest/index/user-summary",
 			"name": "operation",
 			"type": "notice",
@@ -2626,6 +2901,31 @@ export const autoInvestDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest Index User Summary"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2931,6 +3231,31 @@ export const autoInvestDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"POST Sapi V 1 Lending Auto Invest One Off"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/lending/auto-invest/one-off/status",
 			"name": "operation",
 			"type": "notice",
@@ -3062,6 +3387,31 @@ export const autoInvestDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest One Off Status"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3235,6 +3585,31 @@ export const autoInvestDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"POST Sapi V 1 Lending Auto Invest Redeem"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3494,6 +3869,31 @@ export const autoInvestDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest Redeem History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/lending/auto-invest/rebalance/history",
 			"name": "operation",
 			"type": "notice",
@@ -3676,6 +4076,31 @@ export const autoInvestDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Auto Invest"
+					],
+					"operation": [
+						"GET Sapi V 1 Lending Auto Invest Rebalance History"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

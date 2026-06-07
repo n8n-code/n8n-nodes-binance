@@ -138,6 +138,31 @@ export const copyTradingDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Copy Trading"
+					],
+					"operation": [
+						"GET Sapi V 1 Copy Trading Futures User Status"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/copyTrading/futures/leadSymbol",
 			"name": "operation",
 			"type": "notice",
@@ -220,6 +245,31 @@ export const copyTradingDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Copy Trading"
+					],
+					"operation": [
+						"GET Sapi V 1 Copy Trading Futures Lead Symbol"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

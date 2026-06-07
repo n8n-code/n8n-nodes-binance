@@ -282,6 +282,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"GET Sapi V 1 Portfolio Account"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/portfolio/collateralRate",
 			"name": "operation",
 			"type": "notice",
@@ -289,6 +314,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 				"theme": "info"
 			},
 			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"GET Sapi V 1 Portfolio Collateral Rate"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -397,6 +447,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"GET Sapi V 2 Portfolio Collateral Rate"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/portfolio/pmLoan",
 			"name": "operation",
 			"type": "notice",
@@ -479,6 +554,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"GET Sapi V 1 Portfolio Pm Loan"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -599,6 +699,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"POST Sapi V 1 Portfolio Repay"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -809,6 +934,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"GET Sapi V 1 Portfolio Interest History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/portfolio/asset-index-price",
 			"name": "operation",
 			"type": "notice",
@@ -838,6 +988,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					"property": "asset",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"GET Sapi V 1 Portfolio Asset Index Price"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -934,6 +1109,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"POST Sapi V 1 Portfolio Auto Collection"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1104,6 +1304,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"POST Sapi V 1 Portfolio Bnb Transfer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/portfolio/repay-futures-switch",
 			"name": "operation",
 			"type": "notice",
@@ -1225,6 +1450,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"POST Sapi V 1 Portfolio Repay Futures Switch"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/portfolio/repay-futures-switch",
 			"name": "operation",
 			"type": "notice",
@@ -1321,6 +1571,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"GET Sapi V 1 Portfolio Repay Futures Switch"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/portfolio/repay-futures-negative-balance",
 			"name": "operation",
 			"type": "notice",
@@ -1403,6 +1678,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"POST Sapi V 1 Portfolio Repay Futures Negative Balance"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1543,6 +1843,31 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Portfolio Margin"
+					],
+					"operation": [
+						"POST Sapi V 1 Portfolio Asset Collection"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

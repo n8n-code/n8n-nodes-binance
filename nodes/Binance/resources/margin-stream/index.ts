@@ -73,6 +73,31 @@ export const marginStreamDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Margin Stream"
+					],
+					"operation": [
+						"POST Sapi V 1 User Data Stream"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "PUT /sapi/v1/userDataStream",
 			"name": "operation",
 			"type": "notice",
@@ -117,6 +142,31 @@ export const marginStreamDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Margin Stream"
+					],
+					"operation": [
+						"PUT Sapi V 1 User Data Stream"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /sapi/v1/userDataStream",
 			"name": "operation",
 			"type": "notice",
@@ -147,6 +197,31 @@ export const marginStreamDescription: INodeProperties[] = [
 					"property": "listenKey",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Margin Stream"
+					],
+					"operation": [
+						"DELETE Sapi V 1 User Data Stream"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

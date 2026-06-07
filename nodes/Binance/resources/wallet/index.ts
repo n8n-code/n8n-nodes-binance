@@ -541,6 +541,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Capital Config Getall"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/accountSnapshot",
 			"name": "operation",
 			"type": "notice",
@@ -750,6 +775,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Account Snapshot"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/account/disableFastWithdrawSwitch",
 			"name": "operation",
 			"type": "notice",
@@ -846,6 +896,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"POST Sapi V 1 Account Disable Fast Withdraw Switch"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/account/enableFastWithdrawSwitch",
 			"name": "operation",
 			"type": "notice",
@@ -928,6 +1003,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"POST Sapi V 1 Account Enable Fast Withdraw Switch"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1262,6 +1362,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"POST Sapi V 1 Capital Withdraw Apply"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/capital/deposit/hisrec",
 			"name": "operation",
 			"type": "notice",
@@ -1493,6 +1618,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Capital Deposit Hisrec"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1776,6 +1926,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Capital Withdraw History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/capital/deposit/address",
 			"name": "operation",
 			"type": "notice",
@@ -1922,6 +2097,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Capital Deposit Address"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/account/status",
 			"name": "operation",
 			"type": "notice",
@@ -2018,6 +2218,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Account Status"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/account/apiTradingStatus",
 			"name": "operation",
 			"type": "notice",
@@ -2100,6 +2325,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Account Api Trading Status"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2295,6 +2545,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Asset Dribblet"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/asset/dust-btc",
 			"name": "operation",
 			"type": "notice",
@@ -2412,6 +2687,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"POST Sapi V 1 Asset Dust Btc"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2569,6 +2869,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"POST Sapi V 1 Asset Dust"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2777,6 +3102,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Asset Asset Dividend"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/asset/assetDetail",
 			"name": "operation",
 			"type": "notice",
@@ -2883,6 +3233,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Asset Asset Detail"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3004,6 +3379,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Asset Trade Fee"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3404,6 +3804,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Asset Transfer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/asset/transfer",
 			"name": "operation",
 			"type": "notice",
@@ -3740,6 +4165,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"POST Sapi V 1 Asset Transfer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/asset/get-funding-asset",
 			"name": "operation",
 			"type": "notice",
@@ -3894,6 +4344,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"POST Sapi V 1 Asset Get Funding Asset"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v3/asset/getUserAsset",
 			"name": "operation",
 			"type": "notice",
@@ -4034,6 +4509,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"POST Sapi V 3 Asset Get User Asset"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -4232,6 +4732,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"POST Sapi V 1 Asset Convert Transfer"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -4529,6 +5054,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/asset/ledger-transfer/cloud-mining/queryByPage",
 			"name": "operation",
 			"type": "notice",
@@ -4802,6 +5352,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/account/apiRestrictions",
 			"name": "operation",
 			"type": "notice",
@@ -4898,6 +5473,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Account Api Restrictions"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/capital/contract/convertible-coins",
 			"name": "operation",
 			"type": "notice",
@@ -4905,6 +5505,31 @@ export const walletDescription: INodeProperties[] = [
 				"theme": "info"
 			},
 			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Capital Contract Convertible Coins"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -4974,6 +5599,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "enable",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"POST Sapi V 1 Capital Contract Convertible Coins"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -5182,6 +5832,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"POST Sapi V 1 Capital Deposit Credit Apply"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/asset/wallet/balance",
 			"name": "operation",
 			"type": "notice",
@@ -5264,6 +5939,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Asset Wallet Balance"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -5548,6 +6248,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Asset Custody Transfer History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/capital/deposit/address/list",
 			"name": "operation",
 			"type": "notice",
@@ -5693,6 +6418,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Capital Deposit Address List"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/spot/delist-schedule",
 			"name": "operation",
 			"type": "notice",
@@ -5789,6 +6539,31 @@ export const walletDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Spot Delist Schedule"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/capital/withdraw/address/list",
 			"name": "operation",
 			"type": "notice",
@@ -5796,6 +6571,31 @@ export const walletDescription: INodeProperties[] = [
 				"theme": "info"
 			},
 			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Capital Withdraw Address List"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -5890,6 +6690,31 @@ export const walletDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Wallet"
+					],
+					"operation": [
+						"GET Sapi V 1 Account Info"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

@@ -520,6 +520,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Income"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/loan/borrow",
 			"name": "operation",
 			"type": "notice",
@@ -729,6 +754,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"POST Sapi V 1 Loan Borrow"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1014,6 +1064,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Borrow History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/loan/ongoing/orders",
 			"name": "operation",
 			"type": "notice",
@@ -1235,6 +1310,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Ongoing Orders"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/loan/repay",
 			"name": "operation",
 			"type": "notice",
@@ -1419,6 +1519,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"POST Sapi V 1 Loan Repay"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1704,6 +1829,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Repay History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/loan/adjust/ltv",
 			"name": "operation",
 			"type": "notice",
@@ -1874,6 +2024,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"POST Sapi V 1 Loan Adjust Ltv"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2159,6 +2334,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Ltv Adjustment History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/loan/loanable/data",
 			"name": "operation",
 			"type": "notice",
@@ -2305,6 +2505,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Loanable Data"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/loan/collateral/data",
 			"name": "operation",
 			"type": "notice",
@@ -2437,6 +2662,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Collateral Data"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2625,6 +2875,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Repay Collateral Rate"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/loan/customize/margin_call",
 			"name": "operation",
 			"type": "notice",
@@ -2782,6 +3057,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"POST Sapi V 1 Loan Customize Margin Call"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2991,6 +3291,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"POST Sapi V 2 Loan Flexible Borrow"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v2/loan/flexible/ongoing/orders",
 			"name": "operation",
 			"type": "notice",
@@ -3173,6 +3498,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 2 Loan Flexible Ongoing Orders"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3433,6 +3783,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 2 Loan Flexible Borrow History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v2/loan/flexible/repay",
 			"name": "operation",
 			"type": "notice",
@@ -3641,6 +4016,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"POST Sapi V 2 Loan Flexible Repay"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3901,6 +4301,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 2 Loan Flexible Repay History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v2/loan/flexible/adjust/ltv",
 			"name": "operation",
 			"type": "notice",
@@ -4093,6 +4518,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"POST Sapi V 2 Loan Flexible Adjust Ltv"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -4353,6 +4803,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v2/loan/flexible/loanable/data",
 			"name": "operation",
 			"type": "notice",
@@ -4474,6 +4949,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 2 Loan Flexible Loanable Data"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v2/loan/flexible/collateral/data",
 			"name": "operation",
 			"type": "notice",
@@ -4581,6 +5081,31 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Crypto Loans"
+					],
+					"operation": [
+						"GET Sapi V 2 Loan Flexible Collateral Data"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

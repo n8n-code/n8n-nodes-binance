@@ -680,6 +680,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Sub Account Virtual Sub Account"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/sub-account/list",
 			"name": "operation",
 			"type": "notice",
@@ -871,6 +896,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account List"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1117,6 +1167,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Sub Transfer History"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1379,6 +1454,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/sub-account/futures/internalTransfer",
 			"name": "operation",
 			"type": "notice",
@@ -1603,6 +1703,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Sub Account Futures Internal Transfer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v3/sub-account/assets",
 			"name": "operation",
 			"type": "notice",
@@ -1711,6 +1836,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 3 Sub Account Assets"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1896,6 +2046,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Spot Summary"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/capital/deposit/subAddress",
 			"name": "operation",
 			"type": "notice",
@@ -2054,6 +2229,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Capital Deposit Sub Address"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2338,6 +2538,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/sub-account/status",
 			"name": "operation",
 			"type": "notice",
@@ -2445,6 +2670,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Status"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2581,6 +2831,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Sub Account Margin Enable"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/sub-account/margin/account",
 			"name": "operation",
 			"type": "notice",
@@ -2703,6 +2978,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Margin Account"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/sub-account/margin/accountSummary",
 			"name": "operation",
 			"type": "notice",
@@ -2785,6 +3085,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Margin Account Summary"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2921,6 +3246,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Sub Account Futures Enable"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/sub-account/futures/account",
 			"name": "operation",
 			"type": "notice",
@@ -3042,6 +3392,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Futures Account"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/sub-account/futures/accountSummary",
 			"name": "operation",
 			"type": "notice",
@@ -3124,6 +3499,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Futures Account Summary"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3246,6 +3646,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Futures Position Risk"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3458,6 +3883,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Sub Account Futures Transfer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/sub-account/margin/transfer",
 			"name": "operation",
 			"type": "notice",
@@ -3656,6 +4106,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Sub Account Margin Transfer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/sub-account/transfer/subToSub",
 			"name": "operation",
 			"type": "notice",
@@ -3828,6 +4303,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Sub Account Transfer Sub To Sub"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/sub-account/transfer/subToMaster",
 			"name": "operation",
 			"type": "notice",
@@ -3960,6 +4460,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Sub Account Transfer Sub To Master"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -4180,6 +4705,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Transfer Sub User History"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -4450,6 +5000,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Universal Transfer"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -4803,6 +5378,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Sub Account Universal Transfer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v2/sub-account/futures/account",
 			"name": "operation",
 			"type": "notice",
@@ -4937,6 +5537,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 2 Sub Account Futures Account"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -5123,6 +5748,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 2 Sub Account Futures Account Summary"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v2/sub-account/futures/positionRisk",
 			"name": "operation",
 			"type": "notice",
@@ -5271,6 +5921,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 2 Sub Account Futures Position Risk"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/sub-account/blvt/enable",
 			"name": "operation",
 			"type": "notice",
@@ -5405,6 +6080,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Sub Account Blvt Enable"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -5591,6 +6291,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Managed Subaccount Deposit"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/managed-subaccount/asset",
 			"name": "operation",
 			"type": "notice",
@@ -5699,6 +6424,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Managed Subaccount Asset"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -5896,6 +6646,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Managed Subaccount Withdraw"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -6404,6 +7179,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/managed-subaccount/queryTransLogForTradeParent",
 			"name": "operation",
 			"type": "notice",
@@ -6675,6 +7475,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/managed-subaccount/fetch-future-asset",
 			"name": "operation",
 			"type": "notice",
@@ -6796,6 +7621,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Managed Subaccount Fetch Future Asset"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/managed-subaccount/marginAsset",
 			"name": "operation",
 			"type": "notice",
@@ -6903,6 +7753,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Managed Subaccount Margin Asset"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -7088,6 +7963,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Managed Subaccount Info"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/managed-subaccount/deposit/address",
 			"name": "operation",
 			"type": "notice",
@@ -7245,6 +8145,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Managed Subaccount Deposit Address"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -7539,6 +8464,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/sub-account/subAccountApi/ipRestriction",
 			"name": "operation",
 			"type": "notice",
@@ -7672,6 +8622,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Sub Account Api Ip Restriction"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -7883,6 +8858,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/sub-account/transaction-statistics",
 			"name": "operation",
 			"type": "notice",
@@ -8004,6 +9004,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 1 Sub Account Transaction Statistics"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/sub-account/eoptions/enable",
 			"name": "operation",
 			"type": "notice",
@@ -8111,6 +9136,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 1 Sub Account Eoptions Enable"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -8323,6 +9373,31 @@ export const subAccountDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"POST Sapi V 2 Sub Account Sub Account Api Ip Restriction"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v4/sub-account/assets",
 			"name": "operation",
 			"type": "notice",
@@ -8430,6 +9505,31 @@ export const subAccountDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Sub Account"
+					],
+					"operation": [
+						"GET Sapi V 4 Sub Account Assets"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

@@ -284,6 +284,31 @@ export const stakingDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"POST Sapi V 2 Eth Staking Eth Stake"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/eth-staking/eth/redeem",
 			"name": "operation",
 			"type": "notice",
@@ -417,6 +442,31 @@ export const stakingDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"POST Sapi V 1 Eth Staking Eth Redeem"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -627,6 +677,31 @@ export const stakingDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"GET Sapi V 1 Eth Staking Eth History Staking History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/eth-staking/eth/history/redemptionHistory",
 			"name": "operation",
 			"type": "notice",
@@ -809,6 +884,31 @@ export const stakingDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"GET Sapi V 1 Eth Staking Eth History Redemption History"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1019,6 +1119,31 @@ export const stakingDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"GET Sapi V 1 Eth Staking Eth History Rewards History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/eth-staking/eth/quota",
 			"name": "operation",
 			"type": "notice",
@@ -1101,6 +1226,31 @@ export const stakingDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"GET Sapi V 1 Eth Staking Eth Quota"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1311,6 +1461,31 @@ export const stakingDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"GET Sapi V 1 Eth Staking Eth History Rate History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v2/eth-staking/account",
 			"name": "operation",
 			"type": "notice",
@@ -1393,6 +1568,31 @@ export const stakingDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"GET Sapi V 2 Eth Staking Account"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1515,6 +1715,31 @@ export const stakingDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"POST Sapi V 1 Eth Staking Wbeth Wrap"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1725,6 +1950,31 @@ export const stakingDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"GET Sapi V 1 Eth Staking Wbeth History Wrap History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/eth-staking/wbeth/history/unwrapHistory",
 			"name": "operation",
 			"type": "notice",
@@ -1921,6 +2171,31 @@ export const stakingDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"GET Sapi V 1 Eth Staking Wbeth History Unwrap History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/eth-staking/eth/history/wbethRewardsHistory",
 			"name": "operation",
 			"type": "notice",
@@ -2103,6 +2378,31 @@ export const stakingDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Staking"
+					],
+					"operation": [
+						"GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

@@ -73,6 +73,31 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Isolated Margin Stream"
+					],
+					"operation": [
+						"POST Sapi V 1 User Data Stream Isolated"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "PUT /sapi/v1/userDataStream/isolated",
 			"name": "operation",
 			"type": "notice",
@@ -117,6 +142,31 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Isolated Margin Stream"
+					],
+					"operation": [
+						"PUT Sapi V 1 User Data Stream Isolated"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /sapi/v1/userDataStream/isolated",
 			"name": "operation",
 			"type": "notice",
@@ -147,6 +197,31 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 					"property": "listenKey",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Isolated Margin Stream"
+					],
+					"operation": [
+						"DELETE Sapi V 1 User Data Stream Isolated"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

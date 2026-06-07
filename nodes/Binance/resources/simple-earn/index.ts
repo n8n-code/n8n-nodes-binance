@@ -476,6 +476,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Flexible List"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/simple-earn/locked/list",
 			"name": "operation",
 			"type": "notice",
@@ -632,6 +657,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Locked List"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -828,6 +878,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"POST Sapi V 1 Simple Earn Flexible Subscribe"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1073,6 +1148,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"POST Sapi V 1 Simple Earn Locked Subscribe"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/simple-earn/flexible/redeem",
 			"name": "operation",
 			"type": "notice",
@@ -1269,6 +1369,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"POST Sapi V 1 Simple Earn Flexible Redeem"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/simple-earn/locked/redeem",
 			"name": "operation",
 			"type": "notice",
@@ -1377,6 +1502,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"POST Sapi V 1 Simple Earn Locked Redeem"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1571,6 +1721,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Flexible Position"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1803,6 +1978,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Locked Position"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/simple-earn/account",
 			"name": "operation",
 			"type": "notice",
@@ -1885,6 +2085,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Account"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2167,6 +2392,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Flexible History Subscription Record"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/simple-earn/locked/history/subscriptionRecord",
 			"name": "operation",
 			"type": "notice",
@@ -2411,6 +2661,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Locked History Subscription Record"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/simple-earn/flexible/history/redemptionRecord",
 			"name": "operation",
 			"type": "notice",
@@ -2588,6 +2863,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "size",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Flexible History Redemption Record"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2870,6 +3170,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Locked History Redemption Record"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/simple-earn/flexible/history/rewardsRecord",
 			"name": "operation",
 			"type": "notice",
@@ -2999,6 +3324,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "type",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Flexible History Rewards Record"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3232,6 +3582,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Locked History Rewards Record"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/simple-earn/flexible/setAutoSubscribe",
 			"name": "operation",
 			"type": "notice",
@@ -3365,6 +3740,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"POST Sapi V 1 Simple Earn Flexible Set Auto Subscribe"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3526,6 +3926,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"POST Sapi V 1 Simple Earn Locked Set Auto Subscribe"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/simple-earn/flexible/personalLeftQuota",
 			"name": "operation",
 			"type": "notice",
@@ -3647,6 +4072,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Flexible Personal Left Quota"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/simple-earn/locked/personalLeftQuota",
 			"name": "operation",
 			"type": "notice",
@@ -3754,6 +4204,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Locked Personal Left Quota"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3900,6 +4375,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Flexible Subscription Preview"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -4085,6 +4585,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Locked Subscription Preview"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/simple-earn/locked/setRedeemOption",
 			"name": "operation",
 			"type": "notice",
@@ -4227,6 +4752,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Locked Set Redeem Option"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -4462,6 +5012,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Flexible History Rate History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/simple-earn/flexible/history/collateralRecord",
 			"name": "operation",
 			"type": "notice",
@@ -4668,6 +5243,31 @@ export const simpleEarnDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Simple Earn"
+					],
+					"operation": [
+						"GET Sapi V 1 Simple Earn Flexible History Collateral Record"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

@@ -427,6 +427,31 @@ export const futuresAlgoDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Futures Algo"
+					],
+					"operation": [
+						"POST Sapi V 1 Algo Futures New Order Vp"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/algo/futures/newOrderTwap",
 			"name": "operation",
 			"type": "notice",
@@ -750,6 +775,31 @@ export const futuresAlgoDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Futures Algo"
+					],
+					"operation": [
+						"POST Sapi V 1 Algo Futures New Order Twap"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /sapi/v1/algo/futures/order",
 			"name": "operation",
 			"type": "notice",
@@ -872,6 +922,31 @@ export const futuresAlgoDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Futures Algo"
+					],
+					"operation": [
+						"DELETE Sapi V 1 Algo Futures Order"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/algo/futures/openOrders",
 			"name": "operation",
 			"type": "notice",
@@ -954,6 +1029,31 @@ export const futuresAlgoDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Futures Algo"
+					],
+					"operation": [
+						"GET Sapi V 1 Algo Futures Open Orders"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1223,6 +1323,31 @@ export const futuresAlgoDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Futures Algo"
+					],
+					"operation": [
+						"GET Sapi V 1 Algo Futures Historical Orders"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/algo/futures/subOrders",
 			"name": "operation",
 			"type": "notice",
@@ -1380,6 +1505,31 @@ export const futuresAlgoDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Futures Algo"
+					],
+					"operation": [
+						"GET Sapi V 1 Algo Futures Sub Orders"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

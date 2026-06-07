@@ -73,6 +73,31 @@ export const streamDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Stream"
+					],
+					"operation": [
+						"POST Api V 3 User Data Stream"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "PUT /api/v3/userDataStream",
 			"name": "operation",
 			"type": "notice",
@@ -117,6 +142,31 @@ export const streamDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Stream"
+					],
+					"operation": [
+						"PUT Api V 3 User Data Stream"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /api/v3/userDataStream",
 			"name": "operation",
 			"type": "notice",
@@ -147,6 +197,31 @@ export const streamDescription: INodeProperties[] = [
 					"property": "listenKey",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Stream"
+					],
+					"operation": [
+						"DELETE Api V 3 User Data Stream"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

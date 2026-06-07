@@ -238,6 +238,31 @@ export const giftCardDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Gift Card"
+					],
+					"operation": [
+						"POST Sapi V 1 Giftcard Create Code"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/giftcard/redeemCode",
 			"name": "operation",
 			"type": "notice",
@@ -385,6 +410,31 @@ export const giftCardDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Gift Card"
+					],
+					"operation": [
+						"POST Sapi V 1 Giftcard Redeem Code"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/giftcard/verify",
 			"name": "operation",
 			"type": "notice",
@@ -507,6 +557,31 @@ export const giftCardDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Gift Card"
+					],
+					"operation": [
+						"GET Sapi V 1 Giftcard Verify"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/giftcard/cryptography/rsa-public-key",
 			"name": "operation",
 			"type": "notice",
@@ -589,6 +664,31 @@ export const giftCardDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Gift Card"
+					],
+					"operation": [
+						"GET Sapi V 1 Giftcard Cryptography Rsa Public Key"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -777,6 +877,31 @@ export const giftCardDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Gift Card"
+					],
+					"operation": [
+						"POST Sapi V 1 Giftcard Buy Code"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/giftcard/buyCode/token-limit",
 			"name": "operation",
 			"type": "notice",
@@ -885,6 +1010,31 @@ export const giftCardDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Gift Card"
+					],
+					"operation": [
+						"GET Sapi V 1 Giftcard Buy Code Token Limit"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

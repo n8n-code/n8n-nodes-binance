@@ -226,6 +226,31 @@ export const futuresDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Futures"
+					],
+					"operation": [
+						"POST Sapi V 1 Futures Transfer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/futures/transfer",
 			"name": "operation",
 			"type": "notice",
@@ -448,6 +473,31 @@ export const futuresDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Futures"
+					],
+					"operation": [
+						"GET Sapi V 1 Futures Transfer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/futures/histDataLink",
 			"name": "operation",
 			"type": "notice",
@@ -640,6 +690,31 @@ export const futuresDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Futures"
+					],
+					"operation": [
+						"GET Sapi V 1 Futures Hist Data Link"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

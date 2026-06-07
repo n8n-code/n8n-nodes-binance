@@ -260,4 +260,29 @@ export const c2CDescription: INodeProperties[] = [
 				}
 			}
 		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"C 2 C"
+					],
+					"operation": [
+						"GET Sapi V 1 C 2 C Order Match List User Order History"
+					]
+				}
+			}
+		},
 ];

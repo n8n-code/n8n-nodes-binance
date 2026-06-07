@@ -333,6 +333,31 @@ export const spotAlgoDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Spot Algo"
+					],
+					"operation": [
+						"POST Sapi V 1 Algo Spot New Order Twap"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /sapi/v1/algo/spot/order",
 			"name": "operation",
 			"type": "notice",
@@ -454,6 +479,31 @@ export const spotAlgoDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Spot Algo"
+					],
+					"operation": [
+						"DELETE Sapi V 1 Algo Spot Order"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/algo/spot/openOrders",
 			"name": "operation",
 			"type": "notice",
@@ -536,6 +586,31 @@ export const spotAlgoDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Spot Algo"
+					],
+					"operation": [
+						"GET Sapi V 1 Algo Spot Open Orders"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -807,6 +882,31 @@ export const spotAlgoDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Spot Algo"
+					],
+					"operation": [
+						"GET Sapi V 1 Algo Spot Historical Orders"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/algo/spot/subOrders",
 			"name": "operation",
 			"type": "notice",
@@ -964,6 +1064,31 @@ export const spotAlgoDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Spot Algo"
+					],
+					"operation": [
+						"GET Sapi V 1 Algo Spot Sub Orders"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {

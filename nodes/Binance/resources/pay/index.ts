@@ -200,4 +200,29 @@ export const payDescription: INodeProperties[] = [
 				}
 			}
 		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Pay"
+					],
+					"operation": [
+						"GET Sapi V 1 Pay Transactions"
+					]
+				}
+			}
+		},
 ];

@@ -383,6 +383,31 @@ export const vipLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"VIP Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Vip Ongoing Orders"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /sapi/v1/loan/vip/repay",
 			"name": "operation",
 			"type": "notice",
@@ -515,6 +540,31 @@ export const vipLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"VIP Loans"
+					],
+					"operation": [
+						"POST Sapi V 1 Loan Vip Repay"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -775,6 +825,31 @@ export const vipLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"VIP Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Vip Repay History"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/loan/vip/collateral/account",
 			"name": "operation",
 			"type": "notice",
@@ -906,6 +981,31 @@ export const vipLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"VIP Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Vip Collateral Account"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1200,6 +1300,31 @@ export const vipLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"VIP Loans"
+					],
+					"operation": [
+						"POST Sapi V 1 Loan Vip Borrow"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/loan/vip/loanable/data",
 			"name": "operation",
 			"type": "notice",
@@ -1346,6 +1471,31 @@ export const vipLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"VIP Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Vip Loanable Data"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/loan/vip/collateral/data",
 			"name": "operation",
 			"type": "notice",
@@ -1453,6 +1603,31 @@ export const vipLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"VIP Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Vip Collateral Data"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1613,6 +1788,31 @@ export const vipLoansDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"VIP Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Vip Request Data"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /sapi/v1/loan/vip/request/interestRate",
 			"name": "operation",
 			"type": "notice",
@@ -1720,6 +1920,31 @@ export const vipLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"VIP Loans"
+					],
+					"operation": [
+						"GET Sapi V 1 Loan Vip Request Interest Rate"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1865,6 +2090,31 @@ export const vipLoansDescription: INodeProperties[] = [
 					"property": "signature",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"VIP Loans"
+					],
+					"operation": [
+						"POST Sapi V 1 Loan Vip Renew"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X MBX APIKEY (Header)",
+			"name": "security_apikeyauth",
+			"type": "string",
+			"default": "",
+			"description": "Binance Public API Key",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-MBX-APIKEY": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
