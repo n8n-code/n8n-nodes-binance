@@ -1,0 +1,57 @@
+<svg width="1584" height="396" viewBox="0 0 1584 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1584" height="396" fill="#F5F5F5"/>
+<g id="Awesome banner" clip-path="url(#clip0_0_1)">
+<rect width="1584" height="396" fill="url(#paint0_linear_0_1)"/>
+<ellipse id="Ellipse 2" cx="323" cy="64" rx="285" ry="288" fill="url(#paint1_linear_0_1)" fill-opacity="0.1"/>
+<g id="copyright">
+<text fill="white" fill-opacity="0.9" style="white-space: pre" xml:space="preserve" font-family="JetBrains Mono" font-size="32" font-weight="100" letter-spacing="0em"><tspan x="127.562" y="334.52"> - COMMUNITY NODES</tspan></text>
+<text fill="white" fill-opacity="0.9" style="white-space: pre" xml:space="preserve" font-family="JetBrains Mono" font-size="32" font-weight="bold" letter-spacing="0em"><tspan x="70" y="334.52">N8N</tspan></text>
+</g>
+<text id="placeholder-description" fill="white" fill-opacity="0.7" style="white-space: pre" xml:space="preserve" font-family="JetBrains Mono" font-size="24" letter-spacing="0em"><tspan x="70" y="197.64">Binance global cryptocurrency exchange</tspan><tspan x="70" y="229.64">supporting spot futures and margin trading</tspan><tspan x="70" y="261.64">with deep liquidity and advanced order types</tspan></text>
+<text id="placeholder-name" fill="url(#paint2_linear_0_1)" style="white-space: pre" xml:space="preserve" font-family="JetBrains Mono" font-size="96" font-weight="500" letter-spacing="0em"><tspan x="62" y="136.06">BINANCE</tspan></text>
+<g id="Group 1">
+<rect id="Rectangle 1" x="26" y="168" width="12" height="184" rx="5" fill="url(#paint3_linear_0_1)" fill-opacity="0.9"/>
+</g>
+<g id="Group 1_2">
+<rect id="Rectangle 2" x="26" y="38" width="12" height="119" rx="5" fill="url(#paint4_linear_0_1)" fill-opacity="0.9"/>
+</g>
+<ellipse id="Ellipse 1" cx="148.5" cy="573" rx="215.5" ry="214" fill="url(#paint5_linear_0_1)" fill-opacity="0.4"/>
+<rect id="Rectangle 3" x="1229" y="48" width="300" height="300" rx="25" fill="#FFFBFB" fill-opacity="0.9"/>
+<g id="placeholder-logo"><g transform="translate(1229,48) translate(0.0,0.0) scale(2.3695)"><polygon fill="#F3BA2F" points="38.171,53.203 62.759,28.616 87.36,53.216 101.667,38.909 62.759,0 23.864,38.896 "/>
+<rect x="3.644" y="53.188" transform="matrix(0.7071 0.7071 -0.7071 0.7071 48.7933 8.8106)" fill="#F3BA2F" width="20.233" height="20.234"/>
+<polygon fill="#F3BA2F" points="38.171,73.408 62.759,97.995 87.359,73.396 101.674,87.695 101.667,87.703 62.759,126.611 
+	23.863,87.716 23.843,87.696 "/>
+<rect x="101.64" y="53.189" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 235.5457 29.0503)" fill="#F3BA2F" width="20.234" height="20.233"/>
+<polygon fill="#F3BA2F" points="77.271,63.298 77.277,63.298 62.759,48.78 52.03,59.509 52.029,59.509 50.797,60.742 48.254,63.285 
+	48.254,63.285 48.234,63.305 48.254,63.326 62.759,77.831 77.277,63.313 77.284,63.305 "/></g></g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_1" x1="0" y1="198" x2="1584" y2="198" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3D052C"/>
+<stop offset="1"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_1" x1="323" y1="-224" x2="323" y2="352" gradientUnits="userSpaceOnUse">
+<stop stop-color="#28F6F2" stop-opacity="0.4"/>
+<stop offset="1" stop-color="#17908E" stop-opacity="0.7"/>
+</linearGradient>
+<linearGradient id="paint2_linear_0_1" x1="148.5" y1="38" x2="148.5" y2="140" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#999999"/>
+</linearGradient>
+<linearGradient id="paint3_linear_0_1" x1="38" y1="260" x2="26" y2="260" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#737373"/>
+</linearGradient>
+<linearGradient id="paint4_linear_0_1" x1="38" y1="97.5" x2="26" y2="97.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#737373"/>
+</linearGradient>
+<linearGradient id="paint5_linear_0_1" x1="27.5" y1="434.5" x2="148.5" y2="787" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2E21BC"/>
+<stop offset="1" stop-color="#150F56"/>
+</linearGradient>
+<clipPath id="clip0_0_1">
+<rect width="1584" height="396" fill="white"/>
+</clipPath>
+</defs>
+</svg>
