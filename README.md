@@ -53,9 +53,519 @@ That's it. No configuration files. No code. It just works.
 
 ## Resources
 
-| Resource | Operations |
-|----------|------------|
-| Market | <details><summary><b>15 operations</b></summary><br/>• Get Test Connectivity<br/>• Get Check Server Time<br/>• Get Exchange Information<br/>• Get Order Book<br/>• Get Recent Trades List<br/>• Get Old Trade Lookup<br/>• Get Compressed Aggregate Trades List<br/>• Get Kline Candlestick Data<br/>• Get UIKlines<br/>• Get Current Average Price<br/>• Get 24hr Ticker Price Change Statistics<br/>• Get Trading Day Ticker<br/>• Get Symbol Price Ticker<br/>• Get Symbol Order Book Ticker<br/>• Get Rolling window price change statistics</details> |\n| Trade | <details><summary><b>23 operations</b></summary><br/>• Post Test New Order TRADE<br/>• Get Query Order USER DATA<br/>• Post New Order TRADE<br/>• Delete Cancel Order TRADE<br/>• Post Cancel an Existing Order and Send a New Order Trade<br/>• Get Current Open Orders USER DATA<br/>• Delete Cancel all Open Orders on a Symbol TRADE<br/>• Get All Orders USER DATA<br/>• Post New Order list OCO TRADE<br/>• Post New Order List OTO TRADE<br/>• Post New Order List OTOCO TRADE<br/>• Get Query OCO USER DATA<br/>• Delete Cancel OCO TRADE<br/>• Get Query all OCO USER DATA<br/>• Get Query Open OCO USER DATA<br/>• Post New order using SOR TRADE<br/>• Post Test new order using SOR TRADE<br/>• Get Account Information USER DATA<br/>• Get Account Trade List USER DATA<br/>• Get Query Current Order Count Usage TRADE<br/>• Get Query Prevented Matches<br/>• Get Query Allocations USER DATA<br/>• Get Query Commission Rates USER DATA</details> |\n| Margin | <details><summary><b>48 operations</b></summary><br/>• Post Margin account borrow repay MARGIN<br/>• Get Query borrow repay records in Margin account USER DATA<br/>• Get Cross Margin Transfer History USER DATA<br/>• Get All Margin Assets MARKET DATA<br/>• Get All Cross Margin Pairs MARKET DATA<br/>• Get Query Margin PriceIndex MARKET DATA<br/>• Get Query Margin Account s Order USER DATA<br/>• Post Margin Account New Order TRADE<br/>• Delete Margin Account Cancel Order TRADE<br/>• Get Interest History USER DATA<br/>• Get Force Liquidation Record USER DATA<br/>• Get Query Cross Margin Account Details USER DATA<br/>• Get Query Margin Account s Open Orders USER DATA<br/>• Delete Margin Account Cancel all Open Orders on a Symbol TRADE<br/>• Get Query Margin Account s All Orders USER DATA<br/>• Post Margin Account New OCO TRADE<br/>• Get Query Margin Account s OCO USER DATA<br/>• Delete Margin Account Cancel OCO TRADE<br/>• Get Query Margin Account s all OCO USER DATA<br/>• Get Query Margin Account s Open OCO USER DATA<br/>• Get Query Margin Account s Trade List USER DATA<br/>• Get Query Max Borrow USER DATA<br/>• Get Query Max Transfer Out Amount USER DATA<br/>• Get Summary of Margin account USER DATA<br/>• Get Query Isolated Margin Account Info USER DATA<br/>• Delete Disable Isolated Margin Account TRADE<br/>• Post Enable Isolated Margin Account TRADE<br/>• Get Query Enabled Isolated Margin Account Limit USER DATA<br/>• Get All Isolated Margin Symbol USER DATA<br/>• Post Toggle BNB Burn On Spot Trade And Margin Interest USER DATA<br/>• Get BNB Burn Status USER DATA<br/>• Get Margin Interest Rate History USER DATA<br/>• Get Query Cross Margin Fee Data USER DATA<br/>• Get Query Isolated Margin Fee Data USER DATA<br/>• Get Query Isolated Margin Tier Data USER DATA<br/>• Get Query Current Margin Order Count Usage TRADE<br/>• Get Cross margin collateral ratio MARKET DATA<br/>• Get Small Liability Exchange Coin List USER DATA<br/>• Get Small Liability Exchange History USER DATA<br/>• Get a future hourly interest rate USER DATA<br/>• Get cross or isolated margin capital flow USER DATA<br/>• Get tokens or symbols delist schedule for cross margin and isolated margin MARKET DATA<br/>• Get Query Margin Available Inventory USER DATA<br/>• Post Margin manual liquidation MARGIN<br/>• Post Margin Account New OTO TRADE<br/>• Post Margin Account New OTOCO TRADE<br/>• Post Adjust cross margin max leverage USER DATA<br/>• Get Query Liability Coin Leverage Bracket in Cross Margin Pro Mode MARKET DATA</details> |\n| Wallet | <details><summary><b>34 operations</b></summary><br/>• Get System Status System<br/>• Get All Coins Information USER DATA<br/>• Get Daily Account Snapshot USER DATA<br/>• Post Disable Fast Withdraw Switch USER DATA<br/>• Post Enable Fast Withdraw Switch USER DATA<br/>• Post Withdraw USER DATA<br/>• Get Deposit History supporting network USER DATA<br/>• Get Withdraw History supporting network USER DATA<br/>• Get Deposit Address supporting network USER DATA<br/>• Get Account Status USER DATA<br/>• Get Account API Trading Status USER DATA<br/>• Get DustLog USER DATA<br/>• Post Get Assets That Can Be Converted Into BNB USER DATA<br/>• Post Dust Transfer USER DATA<br/>• Get Asset Dividend Record USER DATA<br/>• Get Asset Detail USER DATA<br/>• Get Trade Fee USER DATA<br/>• Get Query User Universal Transfer History USER DATA<br/>• Post User Universal Transfer USER DATA<br/>• Post Funding Wallet USER DATA<br/>• Post User Asset USER DATA<br/>• Post Convert Transfer USER DATA<br/>• Get Query Convert Transfer USER DATA<br/>• Get Cloud Mining payment and refund history USER DATA<br/>• Get API Key Permission USER DATA<br/>• Get Query auto converting stable coins USER DATA<br/>• Post Switch on off BUSD and stable coins conversion USER DATA USER DATA<br/>• Post One click arrival deposit apply USER DATA<br/>• Get Query User Wallet Balance USER DATA<br/>• Get Query User Delegation History For Master Account USER DATA<br/>• Get Fetch deposit address list with network USER DATA<br/>• Get symbols delist schedule for spot MARKET DATA<br/>• Get Fetch withdraw address list USER DATA<br/>• Get Account info USER DATA</details> |\n| Sub Account | <details><summary><b>45 operations</b></summary><br/>• Post Create a Virtual Sub account For Master Account<br/>• Get Query Sub account List For Master Account<br/>• Get Sub account Spot Asset Transfer History For Master Account<br/>• Get Sub account Futures Asset Transfer History For Master Account<br/>• Post Sub account Futures Asset Transfer For Master Account<br/>• Get Sub account Assets For Master Account<br/>• Get Sub account Spot Assets Summary For Master Account<br/>• Get Sub account Spot Assets Summary For Master Account<br/>• Get Sub account Deposit History For Master Account<br/>• Get Sub account s Status on Margin Futures For Master Account<br/>• Post Enable Margin for Sub account For Master Account<br/>• Get Detail on Sub account s Margin Account For Master Account<br/>• Get Summary of Sub account s Margin Account For Master Account<br/>• Post Enable Futures for Sub account For Master Account<br/>• Get Detail on Sub account s Futures Account For Master Account<br/>• Get Summary of Sub account s Futures Account For Master Account<br/>• Get Futures Position Risk of Sub account For Master Account<br/>• Post Transfer for Sub account For Master Account<br/>• Post Margin Transfer for Sub account For Master Account<br/>• Post Transfer to Sub account of Same Master For Sub account<br/>• Post Transfer to Master For Sub account<br/>• Get Sub account Transfer History For Sub account<br/>• Get Universal Transfer History For Master Account<br/>• Post Universal Transfer For Master Account<br/>• Get Detail on Sub account s Futures Account V2 For Master Account<br/>• Get Summary of Sub account s Futures Account V2 For Master Account<br/>• Get Futures Position Risk of Sub account V2 For Master Account<br/>• Post Enable Leverage Token for Sub account For Master Account<br/>• Post Deposit assets into the managed sub account For Investor Master Account<br/>• Get Managed sub account asset details For Investor Master Account<br/>• Post Withdrawl assets from the managed sub account For Investor Master Account<br/>• Get Managed sub account snapshot For Investor Master Account<br/>• Get Query Managed Sub Account Transfer Log For Investor Master Account<br/>• Get Query Managed Sub Account Transfer Log For Trading Team Master Account<br/>• Get Query Managed Sub account Futures Asset Details For Investor Master Account<br/>• Get Query Managed Sub account Margin Asset Details For Investor Master Account<br/>• Get Query Managed Sub account List For Investor<br/>• Get Managed Sub account Deposit Address For Investor Master Account<br/>• Get Query Managed Sub Account Transfer Log For Trading Team Sub Account USER DATA<br/>• Get IP Restriction for a Sub account API Key For Master Account<br/>• Delete IP List for a Sub account API Key For Master Account<br/>• Get Query Sub account Transaction Statistics For Master Account<br/>• Post Enable Options for Sub account For Master Account USER DATA<br/>• Post Update IP Restriction for Sub Account API key For Master Account<br/>• Get Query Sub account Assets For Master Account</details> |\n| Stream | Post Create a ListenKey USER STREAM, Put Ping Keep alive a ListenKey USER STREAM, Delete Close a ListenKey USER STREAM |\n| Margin Stream | Post Create a ListenKey USER STREAM, Put Ping Keep alive a ListenKey USER STREAM, Delete Close a ListenKey USER STREAM |\n| Isolated Margin Stream | Post Generate a Listen Key USER STREAM, Put Ping Keep alive a Listen Key USER STREAM, Delete Close a ListenKey USER STREAM |\n| Savings | Get Fixed Activity Project List USER DATA, Post Purchase Fixed Activity Project USER DATA, Get Fixed Activity Project Position USER DATA, Post Change Fixed Activity Position to Daily Position USER DATA |\n| Mining | <details><summary><b>13 operations</b></summary><br/>• Get Acquiring Algorithm MARKET DATA<br/>• Get Acquiring CoinName MARKET DATA<br/>• Get Request for Detail Miner List USER DATA<br/>• Get Request for Miner List USER DATA<br/>• Get Earnings List USER DATA<br/>• Get Extra Bonus List USER DATA<br/>• Get Hashrate Resale List USER DATA<br/>• Get Hashrate Resale Details USER DATA<br/>• Post Hashrate Resale Request USER DATA<br/>• Post Cancel Hashrate Resale configuration USER DATA<br/>• Get Statistic List USER DATA<br/>• Get Account List USER DATA<br/>• Get Mining Account Earning USER DATA</details> |\n| Futures | Post New Future Account Transfer USER DATA, Get Future Account Transaction History List USER DATA, Get Future TickLevel Orderbook Historical Data Download Link USER DATA |\n| Futures Algo | <details><summary><b>6 operations</b></summary><br/>• Post Volume Participation VP New Order TRADE<br/>• Post Time Weighted Average Price Twap New Order TRADE<br/>• Delete Cancel Algo Order TRADE<br/>• Get Query Current Algo Open Orders USER DATA<br/>• Get Query Historical Algo Orders USER DATA<br/>• Get Query Sub Orders USER DATA</details> |\n| Spot Algo | Post Time Weighted Average Price Twap New Order, Delete Cancel Algo Order, Get Query Current Algo Open Orders, Get Query Historical Algo Orders, Get Query Sub Orders |\n| Portfolio Margin | <details><summary><b>14 operations</b></summary><br/>• Get Portfolio Margin Account USER DATA<br/>• Get Portfolio Margin Collateral Rate MARKET DATA<br/>• Get Portfolio Margin Pro Tiered Collateral Rate USER DATA<br/>• Get Portfolio Margin Bankruptcy Loan Amount USER DATA<br/>• Post Portfolio Margin Bankruptcy Loan Repay USER DATA<br/>• Get Query Classic Portfolio Margin Negative Balance Interest History USER DATA<br/>• Get Query Portfolio Margin Asset Index Price MARKET DATA<br/>• Post Fund Auto collection USER DATA<br/>• Post BNB Transfer USER DATA<br/>• Post Change Auto repay futures Status USER DATA<br/>• Get Auto repay futures Status USER DATA<br/>• Post Repay futures Negative Balance USER DATA<br/>• Get Portfolio Margin Asset Leverage USER DATA<br/>• Post Fund Collection by Asset USER DATA</details> |\n| BLVT | <details><summary><b>6 operations</b></summary><br/>• Get BLVT Info MARKET DATA<br/>• Post Subscribe BLVT USER DATA<br/>• Get Query Subscription Record USER DATA<br/>• Post Redeem BLVT USER DATA<br/>• Get Redemption Record USER DATA<br/>• Get BLVT User Limit Info USER DATA</details> |\n| Fiat | Get Fiat Deposit Withdraw History USER DATA, Get Fiat Payments History USER DATA |\n| C 2 C | Get C2C Trade History USER DATA |\n| VIP Loans | <details><summary><b>10 operations</b></summary><br/>• Get VIP Loan Ongoing Orders USER DATA<br/>• Post VIP Loan Repay TRADE<br/>• Get VIP Loan Repayment History USER DATA<br/>• Get Check Locked Value of VIP Collateral Account USER DATA<br/>• Post VIP Loan Borrow<br/>• Get Loanable Assets Data<br/>• Get Collateral Asset Data USER DATA<br/>• Get Query Application Status USER DATA<br/>• Get Borrow Interest Rate USER DATA<br/>• Post VIP Loan Renew</details> |\n| Crypto Loans | <details><summary><b>21 operations</b></summary><br/>• Get Crypto Loans Income History USER DATA<br/>• Post Crypto Loan Borrow TRADE<br/>• Get Crypto Loans Borrow History USER DATA<br/>• Get Loan Ongoing Orders USER DATA<br/>• Post Crypto Loan Repay TRADE<br/>• Get Loan Repayment History USER DATA<br/>• Post Crypto Loan Adjust LTV TRADE<br/>• Get Loan LTV Adjustment History USER DATA<br/>• Get Loanable Assets Data USER DATA<br/>• Get Collateral Assets Data USER DATA<br/>• Get Check Collateral Repay Rate USER DATA<br/>• Post Crypto Loan Customize Margin Call TRADE<br/>• Post Borrow Flexible Loan Borrow TRADE<br/>• Get Borrow Get Flexible Loan Ongoing Orders USER DATA<br/>• Get Borrow Get Flexible Loan Borrow History USER DATA<br/>• Post Repay Flexible Loan Repay TRADE<br/>• Get Repay Get Flexible Loan Repayment History USER DATA<br/>• Post Adjust LTV Flexible Loan Adjust LTV TRADE<br/>• Get Adjust LTV Get Flexible Loan LTV Adjustment History USER DATA<br/>• Get Flexible Loan Assets Data USER DATA<br/>• Get Flexible Loan Collateral Assets Data USER DATA</details> |\n| Pay | Get Pay Trade History USER DATA |\n| Convert | <details><summary><b>9 operations</b></summary><br/>• Get List All Convert Pairs<br/>• Get Query order quantity precision per asset USER DATA<br/>• Post Send quote request USER DATA<br/>• Post Accept Quote TRADE<br/>• Get Order status USER DATA<br/>• Post Place limit order USER DATA<br/>• Post Cancel limit order USER DATA<br/>• Get Query limit open orders USER DATA<br/>• Get Convert Trade History USER DATA</details> |\n| Rebate | Get Spot Rebate History Records USER DATA |\n| NFT | Get NFT Transaction History USER DATA, Get NFT Deposit History USER DATA, Get NFT Withdraw History USER DATA, Get NFT Asset USER DATA |\n| Gift Card | <details><summary><b>6 operations</b></summary><br/>• Post Create a Binance Code USER DATA<br/>• Post Redeem a Binance Code USER DATA<br/>• Get Verify a Binance Code USER DATA<br/>• Get Fetch RSA Public Key USER DATA<br/>• Post Buy a Binance Code TRADE<br/>• Get Fetch Token Limit USER DATA</details> |\n| Auto Invest | <details><summary><b>17 operations</b></summary><br/>• Get target asset list USER DATA<br/>• Get target asset ROI data USER DATA<br/>• Get Query all source asset and target asset USER DATA<br/>• Get Query source asset list USER DATA<br/>• Post Investment plan creation USER DATA<br/>• Post Investment plan adjustment<br/>• Post Change Plan Status<br/>• Get list of plans<br/>• Get Query holding details of the plan<br/>• Get Query subscription transaction history<br/>• Get Query Index Details USER DATA<br/>• Get Query Index Linked Plan Position Details USER DATA<br/>• Post One Time Transaction TRADE<br/>• Get Query One Time Transaction Status USER DATA<br/>• Post Index Linked Plan Redemption TRADE<br/>• Get Index Linked Plan Redemption History USER DATA<br/>• Get Index Linked Plan Rebalance Details USER DATA</details> |\n| Staking | <details><summary><b>12 operations</b></summary><br/>• Post Subscribe ETH Staking V2 TRADE<br/>• Post Redeem ETH TRADE<br/>• Get ETH staking history USER DATA<br/>• Get ETH redemption history USER DATA<br/>• Get BETH rewards distribution history USER DATA<br/>• Get current ETH staking quota USER DATA<br/>• Get WBETH Rate History USER DATA<br/>• Get ETH Staking account V2 USER DATA<br/>• Post Wrap BETH TRADE<br/>• Get WBETH wrap history USER DATA<br/>• Get WBETH unwrap history USER DATA<br/>• Get WBETH rewards history USER DATA</details> |\n| Copy Trading | Get Futures Lead Trader Status TRADE, Get Futures Lead Trading Symbol Whitelist USER DATA |\n| Simple Earn | <details><summary><b>24 operations</b></summary><br/>• Get Simple Earn Flexible Product List USER DATA<br/>• Get Simple Earn Locked Product List USER DATA<br/>• Post Subscribe Flexible Product TRADE<br/>• Post Subscribe Locked Product TRADE<br/>• Post Redeem Flexible Product TRADE<br/>• Post Redeem Locked Product TRADE<br/>• Get Flexible Product Position USER DATA<br/>• Get Locked Product Position USER DATA<br/>• Get Simple Account USER DATA<br/>• Get Flexible Subscription Record USER DATA<br/>• Get Locked Subscription Record USER DATA<br/>• Get Flexible Redemption Record USER DATA<br/>• Get Locked Redemption Record USER DATA<br/>• Get Flexible Rewards History USER DATA<br/>• Get Locked Rewards History USER DATA<br/>• Post Set Flexible Auto Subscribe USER DATA<br/>• Post Set Locked Auto Subscribe USER DATA<br/>• Get Flexible Personal Left Quota USER DATA<br/>• Get Locked Personal Left Quota USER DATA<br/>• Get Flexible Subscription Preview USER DATA<br/>• Get Locked Subscription Preview USER DATA<br/>• Get Set Locked Product Redeem Option USER DATA<br/>• Get Rate History USER DATA<br/>• Get Collateral Record USER DATA</details> |\n| Dual Investment | Get Dual Investment product list USER DATA, Post Subscribe Dual Investment products USER DATA, Get Dual Investment positions USER DATA, Get Check Dual Investment accounts USER DATA, Post Change Auto Compound status USER DATA |
+<details>
+<summary><b>Market</b> (15 operations)</summary>
+
+- Get Test Connectivity
+- Get Check Server Time
+- Get Exchange Information
+- Get Order Book
+- Get Recent Trades List
+- Get Old Trade Lookup
+- Get Compressed Aggregate Trades List
+- Get Kline Candlestick Data
+- Get UIKlines
+- Get Current Average Price
+- Get 24hr Ticker Price Change Statistics
+- Get Trading Day Ticker
+- Get Symbol Price Ticker
+- Get Symbol Order Book Ticker
+- Get Rolling window price change statistics
+
+</details>
+
+<details>
+<summary><b>Trade</b> (23 operations)</summary>
+
+- Post Test New Order TRADE
+- Get Query Order USER DATA
+- Post New Order TRADE
+- Delete Cancel Order TRADE
+- Post Cancel an Existing Order and Send a New Order Trade
+- Get Current Open Orders USER DATA
+- Delete Cancel all Open Orders on a Symbol TRADE
+- Get All Orders USER DATA
+- Post New Order list OCO TRADE
+- Post New Order List OTO TRADE
+- Post New Order List OTOCO TRADE
+- Get Query OCO USER DATA
+- Delete Cancel OCO TRADE
+- Get Query all OCO USER DATA
+- Get Query Open OCO USER DATA
+- Post New order using SOR TRADE
+- Post Test new order using SOR TRADE
+- Get Account Information USER DATA
+- Get Account Trade List USER DATA
+- Get Query Current Order Count Usage TRADE
+- Get Query Prevented Matches
+- Get Query Allocations USER DATA
+- Get Query Commission Rates USER DATA
+
+</details>
+
+<details>
+<summary><b>Margin</b> (48 operations)</summary>
+
+- Post Margin account borrow repay MARGIN
+- Get Query borrow repay records in Margin account USER DATA
+- Get Cross Margin Transfer History USER DATA
+- Get All Margin Assets MARKET DATA
+- Get All Cross Margin Pairs MARKET DATA
+- Get Query Margin PriceIndex MARKET DATA
+- Get Query Margin Account s Order USER DATA
+- Post Margin Account New Order TRADE
+- Delete Margin Account Cancel Order TRADE
+- Get Interest History USER DATA
+- Get Force Liquidation Record USER DATA
+- Get Query Cross Margin Account Details USER DATA
+- Get Query Margin Account s Open Orders USER DATA
+- Delete Margin Account Cancel all Open Orders on a Symbol TRADE
+- Get Query Margin Account s All Orders USER DATA
+- Post Margin Account New OCO TRADE
+- Get Query Margin Account s OCO USER DATA
+- Delete Margin Account Cancel OCO TRADE
+- Get Query Margin Account s all OCO USER DATA
+- Get Query Margin Account s Open OCO USER DATA
+- Get Query Margin Account s Trade List USER DATA
+- Get Query Max Borrow USER DATA
+- Get Query Max Transfer Out Amount USER DATA
+- Get Summary of Margin account USER DATA
+- Get Query Isolated Margin Account Info USER DATA
+- Delete Disable Isolated Margin Account TRADE
+- Post Enable Isolated Margin Account TRADE
+- Get Query Enabled Isolated Margin Account Limit USER DATA
+- Get All Isolated Margin Symbol USER DATA
+- Post Toggle BNB Burn On Spot Trade And Margin Interest USER DATA
+- Get BNB Burn Status USER DATA
+- Get Margin Interest Rate History USER DATA
+- Get Query Cross Margin Fee Data USER DATA
+- Get Query Isolated Margin Fee Data USER DATA
+- Get Query Isolated Margin Tier Data USER DATA
+- Get Query Current Margin Order Count Usage TRADE
+- Get Cross margin collateral ratio MARKET DATA
+- Get Small Liability Exchange Coin List USER DATA
+- Get Small Liability Exchange History USER DATA
+- Get a future hourly interest rate USER DATA
+- Get cross or isolated margin capital flow USER DATA
+- Get tokens or symbols delist schedule for cross margin and isolated margin MARKET DATA
+- Get Query Margin Available Inventory USER DATA
+- Post Margin manual liquidation MARGIN
+- Post Margin Account New OTO TRADE
+- Post Margin Account New OTOCO TRADE
+- Post Adjust cross margin max leverage USER DATA
+- Get Query Liability Coin Leverage Bracket in Cross Margin Pro Mode MARKET DATA
+
+</details>
+
+<details>
+<summary><b>Wallet</b> (34 operations)</summary>
+
+- Get System Status System
+- Get All Coins Information USER DATA
+- Get Daily Account Snapshot USER DATA
+- Post Disable Fast Withdraw Switch USER DATA
+- Post Enable Fast Withdraw Switch USER DATA
+- Post Withdraw USER DATA
+- Get Deposit History supporting network USER DATA
+- Get Withdraw History supporting network USER DATA
+- Get Deposit Address supporting network USER DATA
+- Get Account Status USER DATA
+- Get Account API Trading Status USER DATA
+- Get DustLog USER DATA
+- Post Get Assets That Can Be Converted Into BNB USER DATA
+- Post Dust Transfer USER DATA
+- Get Asset Dividend Record USER DATA
+- Get Asset Detail USER DATA
+- Get Trade Fee USER DATA
+- Get Query User Universal Transfer History USER DATA
+- Post User Universal Transfer USER DATA
+- Post Funding Wallet USER DATA
+- Post User Asset USER DATA
+- Post Convert Transfer USER DATA
+- Get Query Convert Transfer USER DATA
+- Get Cloud Mining payment and refund history USER DATA
+- Get API Key Permission USER DATA
+- Get Query auto converting stable coins USER DATA
+- Post Switch on off BUSD and stable coins conversion USER DATA USER DATA
+- Post One click arrival deposit apply USER DATA
+- Get Query User Wallet Balance USER DATA
+- Get Query User Delegation History For Master Account USER DATA
+- Get Fetch deposit address list with network USER DATA
+- Get symbols delist schedule for spot MARKET DATA
+- Get Fetch withdraw address list USER DATA
+- Get Account info USER DATA
+
+</details>
+
+<details>
+<summary><b>Sub Account</b> (45 operations)</summary>
+
+- Post Create a Virtual Sub account For Master Account
+- Get Query Sub account List For Master Account
+- Get Sub account Spot Asset Transfer History For Master Account
+- Get Sub account Futures Asset Transfer History For Master Account
+- Post Sub account Futures Asset Transfer For Master Account
+- Get Sub account Assets For Master Account
+- Get Sub account Spot Assets Summary For Master Account
+- Get Sub account Spot Assets Summary For Master Account
+- Get Sub account Deposit History For Master Account
+- Get Sub account s Status on Margin Futures For Master Account
+- Post Enable Margin for Sub account For Master Account
+- Get Detail on Sub account s Margin Account For Master Account
+- Get Summary of Sub account s Margin Account For Master Account
+- Post Enable Futures for Sub account For Master Account
+- Get Detail on Sub account s Futures Account For Master Account
+- Get Summary of Sub account s Futures Account For Master Account
+- Get Futures Position Risk of Sub account For Master Account
+- Post Transfer for Sub account For Master Account
+- Post Margin Transfer for Sub account For Master Account
+- Post Transfer to Sub account of Same Master For Sub account
+- Post Transfer to Master For Sub account
+- Get Sub account Transfer History For Sub account
+- Get Universal Transfer History For Master Account
+- Post Universal Transfer For Master Account
+- Get Detail on Sub account s Futures Account V2 For Master Account
+- Get Summary of Sub account s Futures Account V2 For Master Account
+- Get Futures Position Risk of Sub account V2 For Master Account
+- Post Enable Leverage Token for Sub account For Master Account
+- Post Deposit assets into the managed sub account For Investor Master Account
+- Get Managed sub account asset details For Investor Master Account
+- Post Withdrawl assets from the managed sub account For Investor Master Account
+- Get Managed sub account snapshot For Investor Master Account
+- Get Query Managed Sub Account Transfer Log For Investor Master Account
+- Get Query Managed Sub Account Transfer Log For Trading Team Master Account
+- Get Query Managed Sub account Futures Asset Details For Investor Master Account
+- Get Query Managed Sub account Margin Asset Details For Investor Master Account
+- Get Query Managed Sub account List For Investor
+- Get Managed Sub account Deposit Address For Investor Master Account
+- Get Query Managed Sub Account Transfer Log For Trading Team Sub Account USER DATA
+- Get IP Restriction for a Sub account API Key For Master Account
+- Delete IP List for a Sub account API Key For Master Account
+- Get Query Sub account Transaction Statistics For Master Account
+- Post Enable Options for Sub account For Master Account USER DATA
+- Post Update IP Restriction for Sub Account API key For Master Account
+- Get Query Sub account Assets For Master Account
+
+</details>
+
+<details>
+<summary><b>Stream</b> (3 operations)</summary>
+
+- Post Create a ListenKey USER STREAM
+- Put Ping Keep alive a ListenKey USER STREAM
+- Delete Close a ListenKey USER STREAM
+
+</details>
+
+<details>
+<summary><b>Margin Stream</b> (3 operations)</summary>
+
+- Post Create a ListenKey USER STREAM
+- Put Ping Keep alive a ListenKey USER STREAM
+- Delete Close a ListenKey USER STREAM
+
+</details>
+
+<details>
+<summary><b>Isolated Margin Stream</b> (3 operations)</summary>
+
+- Post Generate a Listen Key USER STREAM
+- Put Ping Keep alive a Listen Key USER STREAM
+- Delete Close a ListenKey USER STREAM
+
+</details>
+
+<details>
+<summary><b>Savings</b> (4 operations)</summary>
+
+- Get Fixed Activity Project List USER DATA
+- Post Purchase Fixed Activity Project USER DATA
+- Get Fixed Activity Project Position USER DATA
+- Post Change Fixed Activity Position to Daily Position USER DATA
+
+</details>
+
+<details>
+<summary><b>Mining</b> (13 operations)</summary>
+
+- Get Acquiring Algorithm MARKET DATA
+- Get Acquiring CoinName MARKET DATA
+- Get Request for Detail Miner List USER DATA
+- Get Request for Miner List USER DATA
+- Get Earnings List USER DATA
+- Get Extra Bonus List USER DATA
+- Get Hashrate Resale List USER DATA
+- Get Hashrate Resale Details USER DATA
+- Post Hashrate Resale Request USER DATA
+- Post Cancel Hashrate Resale configuration USER DATA
+- Get Statistic List USER DATA
+- Get Account List USER DATA
+- Get Mining Account Earning USER DATA
+
+</details>
+
+<details>
+<summary><b>Futures</b> (3 operations)</summary>
+
+- Post New Future Account Transfer USER DATA
+- Get Future Account Transaction History List USER DATA
+- Get Future TickLevel Orderbook Historical Data Download Link USER DATA
+
+</details>
+
+<details>
+<summary><b>Futures Algo</b> (6 operations)</summary>
+
+- Post Volume Participation VP New Order TRADE
+- Post Time Weighted Average Price Twap New Order TRADE
+- Delete Cancel Algo Order TRADE
+- Get Query Current Algo Open Orders USER DATA
+- Get Query Historical Algo Orders USER DATA
+- Get Query Sub Orders USER DATA
+
+</details>
+
+<details>
+<summary><b>Spot Algo</b> (5 operations)</summary>
+
+- Post Time Weighted Average Price Twap New Order
+- Delete Cancel Algo Order
+- Get Query Current Algo Open Orders
+- Get Query Historical Algo Orders
+- Get Query Sub Orders
+
+</details>
+
+<details>
+<summary><b>Portfolio Margin</b> (14 operations)</summary>
+
+- Get Portfolio Margin Account USER DATA
+- Get Portfolio Margin Collateral Rate MARKET DATA
+- Get Portfolio Margin Pro Tiered Collateral Rate USER DATA
+- Get Portfolio Margin Bankruptcy Loan Amount USER DATA
+- Post Portfolio Margin Bankruptcy Loan Repay USER DATA
+- Get Query Classic Portfolio Margin Negative Balance Interest History USER DATA
+- Get Query Portfolio Margin Asset Index Price MARKET DATA
+- Post Fund Auto collection USER DATA
+- Post BNB Transfer USER DATA
+- Post Change Auto repay futures Status USER DATA
+- Get Auto repay futures Status USER DATA
+- Post Repay futures Negative Balance USER DATA
+- Get Portfolio Margin Asset Leverage USER DATA
+- Post Fund Collection by Asset USER DATA
+
+</details>
+
+<details>
+<summary><b>BLVT</b> (6 operations)</summary>
+
+- Get BLVT Info MARKET DATA
+- Post Subscribe BLVT USER DATA
+- Get Query Subscription Record USER DATA
+- Post Redeem BLVT USER DATA
+- Get Redemption Record USER DATA
+- Get BLVT User Limit Info USER DATA
+
+</details>
+
+<details>
+<summary><b>Fiat</b> (2 operations)</summary>
+
+- Get Fiat Deposit Withdraw History USER DATA
+- Get Fiat Payments History USER DATA
+
+</details>
+
+<details>
+<summary><b>C 2 C</b> (1 operations)</summary>
+
+- Get C2C Trade History USER DATA
+
+</details>
+
+<details>
+<summary><b>VIP Loans</b> (10 operations)</summary>
+
+- Get VIP Loan Ongoing Orders USER DATA
+- Post VIP Loan Repay TRADE
+- Get VIP Loan Repayment History USER DATA
+- Get Check Locked Value of VIP Collateral Account USER DATA
+- Post VIP Loan Borrow
+- Get Loanable Assets Data
+- Get Collateral Asset Data USER DATA
+- Get Query Application Status USER DATA
+- Get Borrow Interest Rate USER DATA
+- Post VIP Loan Renew
+
+</details>
+
+<details>
+<summary><b>Crypto Loans</b> (21 operations)</summary>
+
+- Get Crypto Loans Income History USER DATA
+- Post Crypto Loan Borrow TRADE
+- Get Crypto Loans Borrow History USER DATA
+- Get Loan Ongoing Orders USER DATA
+- Post Crypto Loan Repay TRADE
+- Get Loan Repayment History USER DATA
+- Post Crypto Loan Adjust LTV TRADE
+- Get Loan LTV Adjustment History USER DATA
+- Get Loanable Assets Data USER DATA
+- Get Collateral Assets Data USER DATA
+- Get Check Collateral Repay Rate USER DATA
+- Post Crypto Loan Customize Margin Call TRADE
+- Post Borrow Flexible Loan Borrow TRADE
+- Get Borrow Get Flexible Loan Ongoing Orders USER DATA
+- Get Borrow Get Flexible Loan Borrow History USER DATA
+- Post Repay Flexible Loan Repay TRADE
+- Get Repay Get Flexible Loan Repayment History USER DATA
+- Post Adjust LTV Flexible Loan Adjust LTV TRADE
+- Get Adjust LTV Get Flexible Loan LTV Adjustment History USER DATA
+- Get Flexible Loan Assets Data USER DATA
+- Get Flexible Loan Collateral Assets Data USER DATA
+
+</details>
+
+<details>
+<summary><b>Pay</b> (1 operations)</summary>
+
+- Get Pay Trade History USER DATA
+
+</details>
+
+<details>
+<summary><b>Convert</b> (9 operations)</summary>
+
+- Get List All Convert Pairs
+- Get Query order quantity precision per asset USER DATA
+- Post Send quote request USER DATA
+- Post Accept Quote TRADE
+- Get Order status USER DATA
+- Post Place limit order USER DATA
+- Post Cancel limit order USER DATA
+- Get Query limit open orders USER DATA
+- Get Convert Trade History USER DATA
+
+</details>
+
+<details>
+<summary><b>Rebate</b> (1 operations)</summary>
+
+- Get Spot Rebate History Records USER DATA
+
+</details>
+
+<details>
+<summary><b>NFT</b> (4 operations)</summary>
+
+- Get NFT Transaction History USER DATA
+- Get NFT Deposit History USER DATA
+- Get NFT Withdraw History USER DATA
+- Get NFT Asset USER DATA
+
+</details>
+
+<details>
+<summary><b>Gift Card</b> (6 operations)</summary>
+
+- Post Create a Binance Code USER DATA
+- Post Redeem a Binance Code USER DATA
+- Get Verify a Binance Code USER DATA
+- Get Fetch RSA Public Key USER DATA
+- Post Buy a Binance Code TRADE
+- Get Fetch Token Limit USER DATA
+
+</details>
+
+<details>
+<summary><b>Auto Invest</b> (17 operations)</summary>
+
+- Get target asset list USER DATA
+- Get target asset ROI data USER DATA
+- Get Query all source asset and target asset USER DATA
+- Get Query source asset list USER DATA
+- Post Investment plan creation USER DATA
+- Post Investment plan adjustment
+- Post Change Plan Status
+- Get list of plans
+- Get Query holding details of the plan
+- Get Query subscription transaction history
+- Get Query Index Details USER DATA
+- Get Query Index Linked Plan Position Details USER DATA
+- Post One Time Transaction TRADE
+- Get Query One Time Transaction Status USER DATA
+- Post Index Linked Plan Redemption TRADE
+- Get Index Linked Plan Redemption History USER DATA
+- Get Index Linked Plan Rebalance Details USER DATA
+
+</details>
+
+<details>
+<summary><b>Staking</b> (12 operations)</summary>
+
+- Post Subscribe ETH Staking V2 TRADE
+- Post Redeem ETH TRADE
+- Get ETH staking history USER DATA
+- Get ETH redemption history USER DATA
+- Get BETH rewards distribution history USER DATA
+- Get current ETH staking quota USER DATA
+- Get WBETH Rate History USER DATA
+- Get ETH Staking account V2 USER DATA
+- Post Wrap BETH TRADE
+- Get WBETH wrap history USER DATA
+- Get WBETH unwrap history USER DATA
+- Get WBETH rewards history USER DATA
+
+</details>
+
+<details>
+<summary><b>Copy Trading</b> (2 operations)</summary>
+
+- Get Futures Lead Trader Status TRADE
+- Get Futures Lead Trading Symbol Whitelist USER DATA
+
+</details>
+
+<details>
+<summary><b>Simple Earn</b> (24 operations)</summary>
+
+- Get Simple Earn Flexible Product List USER DATA
+- Get Simple Earn Locked Product List USER DATA
+- Post Subscribe Flexible Product TRADE
+- Post Subscribe Locked Product TRADE
+- Post Redeem Flexible Product TRADE
+- Post Redeem Locked Product TRADE
+- Get Flexible Product Position USER DATA
+- Get Locked Product Position USER DATA
+- Get Simple Account USER DATA
+- Get Flexible Subscription Record USER DATA
+- Get Locked Subscription Record USER DATA
+- Get Flexible Redemption Record USER DATA
+- Get Locked Redemption Record USER DATA
+- Get Flexible Rewards History USER DATA
+- Get Locked Rewards History USER DATA
+- Post Set Flexible Auto Subscribe USER DATA
+- Post Set Locked Auto Subscribe USER DATA
+- Get Flexible Personal Left Quota USER DATA
+- Get Locked Personal Left Quota USER DATA
+- Get Flexible Subscription Preview USER DATA
+- Get Locked Subscription Preview USER DATA
+- Get Set Locked Product Redeem Option USER DATA
+- Get Rate History USER DATA
+- Get Collateral Record USER DATA
+
+</details>
+
+<details>
+<summary><b>Dual Investment</b> (5 operations)</summary>
+
+- Get Dual Investment product list USER DATA
+- Post Subscribe Dual Investment products USER DATA
+- Get Dual Investment positions USER DATA
+- Get Check Dual Investment accounts USER DATA
+- Post Change Auto Compound status USER DATA
+
+</details>
 
 ---
 
