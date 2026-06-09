@@ -37,7 +37,7 @@ export class Binance implements INodeType {
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'Binance global cryptocurrency exchange supporting spot futures and margin trading with deep liquidity and advanced order types',
+		description: 'Binance global exchange: spot, futures, margin trading; deep liquidity, advanced orders.',
 		defaults: { name: 'Binance' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
