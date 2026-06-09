@@ -15,8 +15,8 @@ export const convertDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Convert Exchange Info",
-					"value": "GET Sapi V 1 Convert Exchange Info",
+					"name": "GET Sapi v1 Convert Exchange Info",
+					"value": "GET Sapi v1 Convert Exchange Info",
 					"action": "List All Convert Pairs",
 					"description": "Query for all convertible token pairs and the tokens’ respective upper/lower limits\n\nWeight(IP): 3000",
 					"routing": {
@@ -27,8 +27,8 @@ export const convertDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Convert Asset Info",
-					"value": "GET Sapi V 1 Convert Asset Info",
+					"name": "GET Sapi v1 Convert Asset Info",
+					"value": "GET Sapi v1 Convert Asset Info",
 					"action": "Query order quantity precision per asset (USER_DATA)",
 					"description": "Query for supported asset precision information\n\nWeight(IP): 100",
 					"routing": {
@@ -39,8 +39,8 @@ export const convertDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Convert Get Quote",
-					"value": "POST Sapi V 1 Convert Get Quote",
+					"name": "POST Sapi v1 Convert Get Quote",
+					"value": "POST Sapi v1 Convert Get Quote",
 					"action": "Send quote request (USER_DATA)",
 					"description": "Request a quote for the requested token pairs\n\nWeight(UID): 200",
 					"routing": {
@@ -51,8 +51,8 @@ export const convertDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Convert Accept Quote",
-					"value": "POST Sapi V 1 Convert Accept Quote",
+					"name": "POST Sapi v1 Convert Accept Quote",
+					"value": "POST Sapi v1 Convert Accept Quote",
 					"action": "Accept Quote (TRADE)",
 					"description": "Accept the offered quote by quote ID.\n\nWeight(UID): 500",
 					"routing": {
@@ -63,8 +63,8 @@ export const convertDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Convert Order Status",
-					"value": "GET Sapi V 1 Convert Order Status",
+					"name": "GET Sapi v1 Convert Order Status",
+					"value": "GET Sapi v1 Convert Order Status",
 					"action": "Order status (USER_DATA)",
 					"description": "Query order status by order ID.\n\nWeight(UID): 100",
 					"routing": {
@@ -75,8 +75,8 @@ export const convertDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Convert Limit Place Order",
-					"value": "POST Sapi V 1 Convert Limit Place Order",
+					"name": "POST Sapi v1 Convert Limit Place Order",
+					"value": "POST Sapi v1 Convert Limit Place Order",
 					"action": "Place limit order (USER_DATA)",
 					"description": "Enable users to place a limit order\n\n- baseAsset or quoteAsset can be determined via exchangeInfo endpoint.\n- Limit price is defined from baseAsset to quoteAsset.\n- Either baseAmount or quoteAmount is used.\n\nWeight(UID): 500",
 					"routing": {
@@ -87,8 +87,8 @@ export const convertDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Convert Limit Cancel Order",
-					"value": "POST Sapi V 1 Convert Limit Cancel Order",
+					"name": "POST Sapi v1 Convert Limit Cancel Order",
+					"value": "POST Sapi v1 Convert Limit Cancel Order",
 					"action": "Cancel limit order (USER_DATA)",
 					"description": "Enable users to cancel a limit order\n\nWeight(UID): 200",
 					"routing": {
@@ -99,8 +99,8 @@ export const convertDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Convert Limit Query Open Orders",
-					"value": "GET Sapi V 1 Convert Limit Query Open Orders",
+					"name": "GET Sapi v1 Convert Limit Query Open Orders",
+					"value": "GET Sapi v1 Convert Limit Query Open Orders",
 					"action": "Query limit open orders (USER_DATA)",
 					"description": "Enable users to query for all existing limit orders\n\nWeight(UID): 3000",
 					"routing": {
@@ -111,8 +111,8 @@ export const convertDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Convert Trade Flow",
-					"value": "GET Sapi V 1 Convert Trade Flow",
+					"name": "GET Sapi v1 Convert Trade Flow",
+					"value": "GET Sapi v1 Convert Trade Flow",
 					"action": "Get Convert Trade History (USER_DATA)",
 					"description": "- The max interval between startTime and endTime is 30 days.\n\nWeight(UID): 3000",
 					"routing": {
@@ -139,7 +139,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Exchange Info"
+						"GET Sapi v1 Convert Exchange Info"
 					]
 				}
 			}
@@ -164,7 +164,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Exchange Info"
+						"GET Sapi v1 Convert Exchange Info"
 					]
 				}
 			}
@@ -189,7 +189,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Exchange Info"
+						"GET Sapi v1 Convert Exchange Info"
 					]
 				}
 			}
@@ -208,7 +208,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Asset Info"
+						"GET Sapi v1 Convert Asset Info"
 					]
 				}
 			}
@@ -233,7 +233,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Asset Info"
+						"GET Sapi v1 Convert Asset Info"
 					]
 				}
 			}
@@ -259,7 +259,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Asset Info"
+						"GET Sapi v1 Convert Asset Info"
 					]
 				}
 			}
@@ -285,7 +285,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Asset Info"
+						"GET Sapi v1 Convert Asset Info"
 					]
 				}
 			}
@@ -310,7 +310,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Asset Info"
+						"GET Sapi v1 Convert Asset Info"
 					]
 				}
 			}
@@ -329,7 +329,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Get Quote"
+						"POST Sapi v1 Convert Get Quote"
 					]
 				}
 			}
@@ -354,7 +354,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Get Quote"
+						"POST Sapi v1 Convert Get Quote"
 					]
 				}
 			}
@@ -379,7 +379,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Get Quote"
+						"POST Sapi v1 Convert Get Quote"
 					]
 				}
 			}
@@ -404,7 +404,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Get Quote"
+						"POST Sapi v1 Convert Get Quote"
 					]
 				}
 			}
@@ -429,7 +429,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Get Quote"
+						"POST Sapi v1 Convert Get Quote"
 					]
 				}
 			}
@@ -454,7 +454,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Get Quote"
+						"POST Sapi v1 Convert Get Quote"
 					]
 				}
 			}
@@ -479,7 +479,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Get Quote"
+						"POST Sapi v1 Convert Get Quote"
 					]
 				}
 			}
@@ -504,7 +504,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Get Quote"
+						"POST Sapi v1 Convert Get Quote"
 					]
 				}
 			}
@@ -530,7 +530,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Get Quote"
+						"POST Sapi v1 Convert Get Quote"
 					]
 				}
 			}
@@ -556,7 +556,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Get Quote"
+						"POST Sapi v1 Convert Get Quote"
 					]
 				}
 			}
@@ -581,7 +581,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Get Quote"
+						"POST Sapi v1 Convert Get Quote"
 					]
 				}
 			}
@@ -600,13 +600,13 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Accept Quote"
+						"POST Sapi v1 Convert Accept Quote"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Quote Id",
+			"displayName": "Quote ID",
 			"name": "quoteId",
 			"required": true,
 			"default": 1000,
@@ -625,7 +625,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Accept Quote"
+						"POST Sapi v1 Convert Accept Quote"
 					]
 				}
 			}
@@ -650,7 +650,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Accept Quote"
+						"POST Sapi v1 Convert Accept Quote"
 					]
 				}
 			}
@@ -676,7 +676,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Accept Quote"
+						"POST Sapi v1 Convert Accept Quote"
 					]
 				}
 			}
@@ -702,7 +702,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Accept Quote"
+						"POST Sapi v1 Convert Accept Quote"
 					]
 				}
 			}
@@ -727,7 +727,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Accept Quote"
+						"POST Sapi v1 Convert Accept Quote"
 					]
 				}
 			}
@@ -746,13 +746,13 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Order Status"
+						"GET Sapi v1 Convert Order Status"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"default": 1000,
 			"type": "string",
@@ -770,13 +770,13 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Order Status"
+						"GET Sapi v1 Convert Order Status"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Quote Id",
+			"displayName": "Quote ID",
 			"name": "quoteId",
 			"default": 1000,
 			"type": "string",
@@ -794,7 +794,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Order Status"
+						"GET Sapi v1 Convert Order Status"
 					]
 				}
 			}
@@ -819,7 +819,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Order Status"
+						"GET Sapi v1 Convert Order Status"
 					]
 				}
 			}
@@ -845,7 +845,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Order Status"
+						"GET Sapi v1 Convert Order Status"
 					]
 				}
 			}
@@ -871,7 +871,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Order Status"
+						"GET Sapi v1 Convert Order Status"
 					]
 				}
 			}
@@ -896,7 +896,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Order Status"
+						"GET Sapi v1 Convert Order Status"
 					]
 				}
 			}
@@ -915,7 +915,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -940,7 +940,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -965,7 +965,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -991,7 +991,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -1016,7 +1016,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -1041,7 +1041,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -1076,7 +1076,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -1115,7 +1115,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -1158,7 +1158,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -1183,7 +1183,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -1209,7 +1209,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -1235,7 +1235,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -1260,7 +1260,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Place Order"
+						"POST Sapi v1 Convert Limit Place Order"
 					]
 				}
 			}
@@ -1279,13 +1279,13 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Cancel Order"
+						"POST Sapi v1 Convert Limit Cancel Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"required": true,
 			"default": 1603680255057330400,
@@ -1304,7 +1304,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Cancel Order"
+						"POST Sapi v1 Convert Limit Cancel Order"
 					]
 				}
 			}
@@ -1329,7 +1329,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Cancel Order"
+						"POST Sapi v1 Convert Limit Cancel Order"
 					]
 				}
 			}
@@ -1355,7 +1355,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Cancel Order"
+						"POST Sapi v1 Convert Limit Cancel Order"
 					]
 				}
 			}
@@ -1381,7 +1381,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Cancel Order"
+						"POST Sapi v1 Convert Limit Cancel Order"
 					]
 				}
 			}
@@ -1406,7 +1406,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"POST Sapi V 1 Convert Limit Cancel Order"
+						"POST Sapi v1 Convert Limit Cancel Order"
 					]
 				}
 			}
@@ -1425,7 +1425,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Limit Query Open Orders"
+						"GET Sapi v1 Convert Limit Query Open Orders"
 					]
 				}
 			}
@@ -1450,7 +1450,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Limit Query Open Orders"
+						"GET Sapi v1 Convert Limit Query Open Orders"
 					]
 				}
 			}
@@ -1476,7 +1476,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Limit Query Open Orders"
+						"GET Sapi v1 Convert Limit Query Open Orders"
 					]
 				}
 			}
@@ -1502,7 +1502,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Limit Query Open Orders"
+						"GET Sapi v1 Convert Limit Query Open Orders"
 					]
 				}
 			}
@@ -1527,7 +1527,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Limit Query Open Orders"
+						"GET Sapi v1 Convert Limit Query Open Orders"
 					]
 				}
 			}
@@ -1546,7 +1546,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Trade Flow"
+						"GET Sapi v1 Convert Trade Flow"
 					]
 				}
 			}
@@ -1572,7 +1572,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Trade Flow"
+						"GET Sapi v1 Convert Trade Flow"
 					]
 				}
 			}
@@ -1598,7 +1598,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Trade Flow"
+						"GET Sapi v1 Convert Trade Flow"
 					]
 				}
 			}
@@ -1623,7 +1623,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Trade Flow"
+						"GET Sapi v1 Convert Trade Flow"
 					]
 				}
 			}
@@ -1648,7 +1648,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Trade Flow"
+						"GET Sapi v1 Convert Trade Flow"
 					]
 				}
 			}
@@ -1674,7 +1674,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Trade Flow"
+						"GET Sapi v1 Convert Trade Flow"
 					]
 				}
 			}
@@ -1700,7 +1700,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Trade Flow"
+						"GET Sapi v1 Convert Trade Flow"
 					]
 				}
 			}
@@ -1725,7 +1725,7 @@ export const convertDescription: INodeProperties[] = [
 						"Convert"
 					],
 					"operation": [
-						"GET Sapi V 1 Convert Trade Flow"
+						"GET Sapi v1 Convert Trade Flow"
 					]
 				}
 			}

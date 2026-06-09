@@ -15,8 +15,8 @@ export const stakingDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST Sapi V 2 Eth Staking Eth Stake",
-					"value": "POST Sapi V 2 Eth Staking Eth Stake",
+					"name": "POST Sapi v2 Eth Staking Eth Stake",
+					"value": "POST Sapi v2 Eth Staking Eth Stake",
 					"action": "Subscribe ETH Staking V2(TRADE)",
 					"description": "Stake ETH to get WBETH\n\n- You need to open Enable Spot & Margin Trading permission for the API Key which requests this endpoint.\n\nWeight(IP): 150",
 					"routing": {
@@ -27,8 +27,8 @@ export const stakingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Eth Staking Eth Redeem",
-					"value": "POST Sapi V 1 Eth Staking Eth Redeem",
+					"name": "POST Sapi v1 Eth Staking Eth Redeem",
+					"value": "POST Sapi v1 Eth Staking Eth Redeem",
 					"action": "Redeem ETH (TRADE)",
 					"description": "Redeem WBETH or BETH and get ETH\n\n- You need to open Enable Spot & Margin Trading permission for the API Key which requests this endpoint.\n\nWeight(IP): 150",
 					"routing": {
@@ -39,8 +39,8 @@ export const stakingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Eth Staking Eth History Staking History",
-					"value": "GET Sapi V 1 Eth Staking Eth History Staking History",
+					"name": "GET Sapi v1 Eth Staking Eth History Staking History",
+					"value": "GET Sapi v1 Eth Staking Eth History Staking History",
 					"action": "Get ETH staking history (USER_DATA)",
 					"description": "- The time between startTime and endTime cannot be longer than 3 months.\n- If startTime and endTime are both not sent, then the last 30 days' data will be returned.\n- If startTime is sent but endTime is not sent, the next 30 days' data beginning from startTime will be returned.\n- If endTime is sent but startTime is not sent, the 30 days' data before endTime will be returned.\n\nWeight(IP): 150",
 					"routing": {
@@ -51,8 +51,8 @@ export const stakingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Eth Staking Eth History Redemption History",
-					"value": "GET Sapi V 1 Eth Staking Eth History Redemption History",
+					"name": "GET Sapi v1 Eth Staking Eth History Redemption History",
+					"value": "GET Sapi v1 Eth Staking Eth History Redemption History",
 					"action": "Get ETH redemption history (USER_DATA)",
 					"description": "- The time between startTime and endTime cannot be longer than 3 months.\n- If startTime and endTime are both not sent, then the last 30 days' data will be returned.\n- If startTime is sent but endTime is not sent, the next 30 days' data beginning from startTime will be returned.\n- If endTime is sent but startTime is not sent, the 30 days' data before endTime will be returned.\n\nWeight(IP): 150",
 					"routing": {
@@ -63,8 +63,8 @@ export const stakingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Eth Staking Eth History Rewards History",
-					"value": "GET Sapi V 1 Eth Staking Eth History Rewards History",
+					"name": "GET Sapi v1 Eth Staking Eth History Rewards History",
+					"value": "GET Sapi v1 Eth Staking Eth History Rewards History",
 					"action": "Get BETH rewards distribution history(USER_DATA)",
 					"description": "- The time between startTime and endTime cannot be longer than 3 months.\n- If startTime and endTime are both not sent, then the last 30 days' data will be returned.\n- If startTime is sent but endTime is not sent, the next 30 days' data beginning from startTime will be returned.\n- If endTime is sent but startTime is not sent, the 30 days' data before endTime will be returned.\n\nWeight(IP): 150",
 					"routing": {
@@ -75,8 +75,8 @@ export const stakingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Eth Staking Eth Quota",
-					"value": "GET Sapi V 1 Eth Staking Eth Quota",
+					"name": "GET Sapi v1 Eth Staking Eth Quota",
+					"value": "GET Sapi v1 Eth Staking Eth Quota",
 					"action": "Get current ETH staking quota (USER_DATA)",
 					"description": "Weight(IP): 150",
 					"routing": {
@@ -87,8 +87,8 @@ export const stakingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Eth Staking Eth History Rate History",
-					"value": "GET Sapi V 1 Eth Staking Eth History Rate History",
+					"name": "GET Sapi v1 Eth Staking Eth History Rate History",
+					"value": "GET Sapi v1 Eth Staking Eth History Rate History",
 					"action": "Get WBETH Rate History (USER_DATA)",
 					"description": "- The time between startTime and endTime cannot be longer than 3 months.\n- If startTime and endTime are both not sent, then the last 30 days' data will be returned.\n- If startTime is sent but endTime is not sent, the next 30 days' data beginning from startTime will be returned.\n- If endTime is sent but startTime is not sent, the 30 days' data before endTime will be returned.\n\nWeight(IP): 150",
 					"routing": {
@@ -99,8 +99,8 @@ export const stakingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 2 Eth Staking Account",
-					"value": "GET Sapi V 2 Eth Staking Account",
+					"name": "GET Sapi v2 Eth Staking Account",
+					"value": "GET Sapi v2 Eth Staking Account",
 					"action": "ETH Staking account V2(USER_DATA)",
 					"description": "Weight(IP): 150",
 					"routing": {
@@ -111,8 +111,8 @@ export const stakingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Eth Staking Wbeth Wrap",
-					"value": "POST Sapi V 1 Eth Staking Wbeth Wrap",
+					"name": "POST Sapi v1 Eth Staking Wbeth Wrap",
+					"value": "POST Sapi v1 Eth Staking Wbeth Wrap",
 					"action": "Wrap BETH(TRADE)",
 					"description": "- You need to open Enable Spot & Margin Trading permission for the API Key which requests this endpoint.\n\nWeight(IP): 150",
 					"routing": {
@@ -123,8 +123,8 @@ export const stakingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Eth Staking Wbeth History Wrap History",
-					"value": "GET Sapi V 1 Eth Staking Wbeth History Wrap History",
+					"name": "GET Sapi v1 Eth Staking Wbeth History Wrap History",
+					"value": "GET Sapi v1 Eth Staking Wbeth History Wrap History",
 					"action": "Get WBETH wrap history (USER_DATA)",
 					"description": "- The time between startTime and endTime cannot be longer than 3 months.\n- If startTime and endTime are both not sent, then the last 30 days' data will be returned.\n- If startTime is sent but endTime is not sent, the next 30 days' data beginning from startTime will be returned.\n- If endTime is sent but startTime is not sent, the 30 days' data before endTime will be returned.\n\nWeight(IP): 150",
 					"routing": {
@@ -135,8 +135,8 @@ export const stakingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Eth Staking Wbeth History Unwrap History",
-					"value": "GET Sapi V 1 Eth Staking Wbeth History Unwrap History",
+					"name": "GET Sapi v1 Eth Staking Wbeth History Unwrap History",
+					"value": "GET Sapi v1 Eth Staking Wbeth History Unwrap History",
 					"action": "Get WBETH unwrap history (USER_DATA)",
 					"description": "- The time between startTime and endTime cannot be longer than 3 months.\n- If startTime and endTime are both not sent, then the last 30 days' data will be returned.\n- If startTime is sent but endTime is not sent, the next 30 days' data beginning from startTime will be returned.\n- If endTime is sent but startTime is not sent, the 30 days' data before endTime will be returned.\n\nWeight(IP): 150",
 					"routing": {
@@ -147,8 +147,8 @@ export const stakingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History",
-					"value": "GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History",
+					"name": "GET Sapi v1 Eth Staking Eth History Wbeth Rewards History",
+					"value": "GET Sapi v1 Eth Staking Eth History Wbeth Rewards History",
 					"action": "Get WBETH rewards history(USER_DATA)",
 					"description": "- The time between startTime and endTime cannot be longer than 3 months.\n- If startTime and endTime are both not sent, then the last 30 days' data will be returned.\n- If startTime is sent but endTime is not sent, the next 30 days' data beginning from startTime will be returned.\n- If endTime is sent but startTime is not sent, the 30 days' data before endTime will be returned.\n\nWeight(IP): 150",
 					"routing": {
@@ -175,7 +175,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 2 Eth Staking Eth Stake"
+						"POST Sapi v2 Eth Staking Eth Stake"
 					]
 				}
 			}
@@ -201,7 +201,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 2 Eth Staking Eth Stake"
+						"POST Sapi v2 Eth Staking Eth Stake"
 					]
 				}
 			}
@@ -226,7 +226,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 2 Eth Staking Eth Stake"
+						"POST Sapi v2 Eth Staking Eth Stake"
 					]
 				}
 			}
@@ -252,7 +252,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 2 Eth Staking Eth Stake"
+						"POST Sapi v2 Eth Staking Eth Stake"
 					]
 				}
 			}
@@ -278,7 +278,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 2 Eth Staking Eth Stake"
+						"POST Sapi v2 Eth Staking Eth Stake"
 					]
 				}
 			}
@@ -303,7 +303,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 2 Eth Staking Eth Stake"
+						"POST Sapi v2 Eth Staking Eth Stake"
 					]
 				}
 			}
@@ -322,7 +322,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Eth Redeem"
+						"POST Sapi v1 Eth Staking Eth Redeem"
 					]
 				}
 			}
@@ -347,7 +347,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Eth Redeem"
+						"POST Sapi v1 Eth Staking Eth Redeem"
 					]
 				}
 			}
@@ -373,7 +373,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Eth Redeem"
+						"POST Sapi v1 Eth Staking Eth Redeem"
 					]
 				}
 			}
@@ -398,7 +398,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Eth Redeem"
+						"POST Sapi v1 Eth Staking Eth Redeem"
 					]
 				}
 			}
@@ -424,7 +424,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Eth Redeem"
+						"POST Sapi v1 Eth Staking Eth Redeem"
 					]
 				}
 			}
@@ -450,7 +450,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Eth Redeem"
+						"POST Sapi v1 Eth Staking Eth Redeem"
 					]
 				}
 			}
@@ -475,7 +475,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Eth Redeem"
+						"POST Sapi v1 Eth Staking Eth Redeem"
 					]
 				}
 			}
@@ -494,7 +494,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Staking History"
+						"GET Sapi v1 Eth Staking Eth History Staking History"
 					]
 				}
 			}
@@ -519,7 +519,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Staking History"
+						"GET Sapi v1 Eth Staking Eth History Staking History"
 					]
 				}
 			}
@@ -544,7 +544,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Staking History"
+						"GET Sapi v1 Eth Staking Eth History Staking History"
 					]
 				}
 			}
@@ -569,7 +569,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Staking History"
+						"GET Sapi v1 Eth Staking Eth History Staking History"
 					]
 				}
 			}
@@ -594,7 +594,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Staking History"
+						"GET Sapi v1 Eth Staking Eth History Staking History"
 					]
 				}
 			}
@@ -619,7 +619,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Staking History"
+						"GET Sapi v1 Eth Staking Eth History Staking History"
 					]
 				}
 			}
@@ -645,7 +645,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Staking History"
+						"GET Sapi v1 Eth Staking Eth History Staking History"
 					]
 				}
 			}
@@ -671,7 +671,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Staking History"
+						"GET Sapi v1 Eth Staking Eth History Staking History"
 					]
 				}
 			}
@@ -696,7 +696,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Staking History"
+						"GET Sapi v1 Eth Staking Eth History Staking History"
 					]
 				}
 			}
@@ -715,7 +715,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Redemption History"
+						"GET Sapi v1 Eth Staking Eth History Redemption History"
 					]
 				}
 			}
@@ -740,7 +740,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Redemption History"
+						"GET Sapi v1 Eth Staking Eth History Redemption History"
 					]
 				}
 			}
@@ -765,7 +765,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Redemption History"
+						"GET Sapi v1 Eth Staking Eth History Redemption History"
 					]
 				}
 			}
@@ -790,7 +790,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Redemption History"
+						"GET Sapi v1 Eth Staking Eth History Redemption History"
 					]
 				}
 			}
@@ -815,7 +815,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Redemption History"
+						"GET Sapi v1 Eth Staking Eth History Redemption History"
 					]
 				}
 			}
@@ -840,7 +840,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Redemption History"
+						"GET Sapi v1 Eth Staking Eth History Redemption History"
 					]
 				}
 			}
@@ -866,7 +866,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Redemption History"
+						"GET Sapi v1 Eth Staking Eth History Redemption History"
 					]
 				}
 			}
@@ -892,7 +892,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Redemption History"
+						"GET Sapi v1 Eth Staking Eth History Redemption History"
 					]
 				}
 			}
@@ -917,7 +917,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Redemption History"
+						"GET Sapi v1 Eth Staking Eth History Redemption History"
 					]
 				}
 			}
@@ -936,7 +936,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Rewards History"
 					]
 				}
 			}
@@ -961,7 +961,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Rewards History"
 					]
 				}
 			}
@@ -986,7 +986,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Rewards History"
 					]
 				}
 			}
@@ -1011,7 +1011,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Rewards History"
 					]
 				}
 			}
@@ -1036,7 +1036,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Rewards History"
 					]
 				}
 			}
@@ -1061,7 +1061,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Rewards History"
 					]
 				}
 			}
@@ -1087,7 +1087,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Rewards History"
 					]
 				}
 			}
@@ -1113,7 +1113,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Rewards History"
 					]
 				}
 			}
@@ -1138,7 +1138,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Rewards History"
 					]
 				}
 			}
@@ -1157,7 +1157,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth Quota"
+						"GET Sapi v1 Eth Staking Eth Quota"
 					]
 				}
 			}
@@ -1182,7 +1182,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth Quota"
+						"GET Sapi v1 Eth Staking Eth Quota"
 					]
 				}
 			}
@@ -1208,7 +1208,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth Quota"
+						"GET Sapi v1 Eth Staking Eth Quota"
 					]
 				}
 			}
@@ -1234,7 +1234,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth Quota"
+						"GET Sapi v1 Eth Staking Eth Quota"
 					]
 				}
 			}
@@ -1259,7 +1259,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth Quota"
+						"GET Sapi v1 Eth Staking Eth Quota"
 					]
 				}
 			}
@@ -1278,7 +1278,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rate History"
+						"GET Sapi v1 Eth Staking Eth History Rate History"
 					]
 				}
 			}
@@ -1303,7 +1303,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rate History"
+						"GET Sapi v1 Eth Staking Eth History Rate History"
 					]
 				}
 			}
@@ -1328,7 +1328,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rate History"
+						"GET Sapi v1 Eth Staking Eth History Rate History"
 					]
 				}
 			}
@@ -1353,7 +1353,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rate History"
+						"GET Sapi v1 Eth Staking Eth History Rate History"
 					]
 				}
 			}
@@ -1378,7 +1378,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rate History"
+						"GET Sapi v1 Eth Staking Eth History Rate History"
 					]
 				}
 			}
@@ -1403,7 +1403,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rate History"
+						"GET Sapi v1 Eth Staking Eth History Rate History"
 					]
 				}
 			}
@@ -1429,7 +1429,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rate History"
+						"GET Sapi v1 Eth Staking Eth History Rate History"
 					]
 				}
 			}
@@ -1455,7 +1455,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rate History"
+						"GET Sapi v1 Eth Staking Eth History Rate History"
 					]
 				}
 			}
@@ -1480,7 +1480,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Rate History"
+						"GET Sapi v1 Eth Staking Eth History Rate History"
 					]
 				}
 			}
@@ -1499,7 +1499,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 2 Eth Staking Account"
+						"GET Sapi v2 Eth Staking Account"
 					]
 				}
 			}
@@ -1524,7 +1524,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 2 Eth Staking Account"
+						"GET Sapi v2 Eth Staking Account"
 					]
 				}
 			}
@@ -1550,7 +1550,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 2 Eth Staking Account"
+						"GET Sapi v2 Eth Staking Account"
 					]
 				}
 			}
@@ -1576,7 +1576,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 2 Eth Staking Account"
+						"GET Sapi v2 Eth Staking Account"
 					]
 				}
 			}
@@ -1601,7 +1601,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 2 Eth Staking Account"
+						"GET Sapi v2 Eth Staking Account"
 					]
 				}
 			}
@@ -1620,7 +1620,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Wbeth Wrap"
+						"POST Sapi v1 Eth Staking Wbeth Wrap"
 					]
 				}
 			}
@@ -1646,7 +1646,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Wbeth Wrap"
+						"POST Sapi v1 Eth Staking Wbeth Wrap"
 					]
 				}
 			}
@@ -1671,7 +1671,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Wbeth Wrap"
+						"POST Sapi v1 Eth Staking Wbeth Wrap"
 					]
 				}
 			}
@@ -1697,7 +1697,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Wbeth Wrap"
+						"POST Sapi v1 Eth Staking Wbeth Wrap"
 					]
 				}
 			}
@@ -1723,7 +1723,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Wbeth Wrap"
+						"POST Sapi v1 Eth Staking Wbeth Wrap"
 					]
 				}
 			}
@@ -1748,7 +1748,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"POST Sapi V 1 Eth Staking Wbeth Wrap"
+						"POST Sapi v1 Eth Staking Wbeth Wrap"
 					]
 				}
 			}
@@ -1767,7 +1767,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Wrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Wrap History"
 					]
 				}
 			}
@@ -1792,7 +1792,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Wrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Wrap History"
 					]
 				}
 			}
@@ -1817,7 +1817,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Wrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Wrap History"
 					]
 				}
 			}
@@ -1842,7 +1842,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Wrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Wrap History"
 					]
 				}
 			}
@@ -1867,7 +1867,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Wrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Wrap History"
 					]
 				}
 			}
@@ -1892,7 +1892,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Wrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Wrap History"
 					]
 				}
 			}
@@ -1918,7 +1918,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Wrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Wrap History"
 					]
 				}
 			}
@@ -1944,7 +1944,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Wrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Wrap History"
 					]
 				}
 			}
@@ -1969,7 +1969,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Wrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Wrap History"
 					]
 				}
 			}
@@ -1988,7 +1988,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Unwrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Unwrap History"
 					]
 				}
 			}
@@ -2013,7 +2013,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Unwrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Unwrap History"
 					]
 				}
 			}
@@ -2038,7 +2038,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Unwrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Unwrap History"
 					]
 				}
 			}
@@ -2063,7 +2063,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Unwrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Unwrap History"
 					]
 				}
 			}
@@ -2088,7 +2088,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Unwrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Unwrap History"
 					]
 				}
 			}
@@ -2113,7 +2113,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Unwrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Unwrap History"
 					]
 				}
 			}
@@ -2139,7 +2139,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Unwrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Unwrap History"
 					]
 				}
 			}
@@ -2165,7 +2165,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Unwrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Unwrap History"
 					]
 				}
 			}
@@ -2190,7 +2190,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Wbeth History Unwrap History"
+						"GET Sapi v1 Eth Staking Wbeth History Unwrap History"
 					]
 				}
 			}
@@ -2209,7 +2209,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Wbeth Rewards History"
 					]
 				}
 			}
@@ -2234,7 +2234,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Wbeth Rewards History"
 					]
 				}
 			}
@@ -2259,7 +2259,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Wbeth Rewards History"
 					]
 				}
 			}
@@ -2284,7 +2284,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Wbeth Rewards History"
 					]
 				}
 			}
@@ -2309,7 +2309,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Wbeth Rewards History"
 					]
 				}
 			}
@@ -2334,7 +2334,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Wbeth Rewards History"
 					]
 				}
 			}
@@ -2360,7 +2360,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Wbeth Rewards History"
 					]
 				}
 			}
@@ -2386,7 +2386,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Wbeth Rewards History"
 					]
 				}
 			}
@@ -2411,7 +2411,7 @@ export const stakingDescription: INodeProperties[] = [
 						"Staking"
 					],
 					"operation": [
-						"GET Sapi V 1 Eth Staking Eth History Wbeth Rewards History"
+						"GET Sapi v1 Eth Staking Eth History Wbeth Rewards History"
 					]
 				}
 			}

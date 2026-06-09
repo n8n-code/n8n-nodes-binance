@@ -15,8 +15,8 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST Sapi V 1 User Data Stream Isolated",
-					"value": "POST Sapi V 1 User Data Stream Isolated",
+					"name": "POST Sapi v1 User Data Stream Isolated",
+					"value": "POST Sapi v1 User Data Stream Isolated",
 					"action": "Generate a Listen Key (USER_STREAM)",
 					"description": "Start a new user data stream.\nThe stream will close after 60 minutes unless a keepalive is sent. If the account has an active `listenKey`, that `listenKey` will be returned and its validity will be extended for 60 minutes.\n\nWeight: 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "PUT Sapi V 1 User Data Stream Isolated",
-					"value": "PUT Sapi V 1 User Data Stream Isolated",
+					"name": "PUT Sapi v1 User Data Stream Isolated",
+					"value": "PUT Sapi v1 User Data Stream Isolated",
 					"action": "Ping/Keep-alive a Listen Key (USER_STREAM)",
 					"description": "Keepalive a user data stream to prevent a time out. User data streams will close after 60 minutes. It's recommended to send a ping about every 30 minutes.\n\nWeight: 1",
 					"routing": {
@@ -39,8 +39,8 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Sapi V 1 User Data Stream Isolated",
-					"value": "DELETE Sapi V 1 User Data Stream Isolated",
+					"name": "DELETE Sapi v1 User Data Stream Isolated",
+					"value": "DELETE Sapi v1 User Data Stream Isolated",
 					"action": "Close a ListenKey (USER_STREAM)",
 					"description": "Close out a user data stream.\n\nWeight: 1",
 					"routing": {
@@ -67,7 +67,7 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 						"Isolated Margin Stream"
 					],
 					"operation": [
-						"POST Sapi V 1 User Data Stream Isolated"
+						"POST Sapi v1 User Data Stream Isolated"
 					]
 				}
 			}
@@ -92,7 +92,7 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 						"Isolated Margin Stream"
 					],
 					"operation": [
-						"POST Sapi V 1 User Data Stream Isolated"
+						"POST Sapi v1 User Data Stream Isolated"
 					]
 				}
 			}
@@ -111,7 +111,7 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 						"Isolated Margin Stream"
 					],
 					"operation": [
-						"PUT Sapi V 1 User Data Stream Isolated"
+						"PUT Sapi v1 User Data Stream Isolated"
 					]
 				}
 			}
@@ -136,7 +136,7 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 						"Isolated Margin Stream"
 					],
 					"operation": [
-						"PUT Sapi V 1 User Data Stream Isolated"
+						"PUT Sapi v1 User Data Stream Isolated"
 					]
 				}
 			}
@@ -161,7 +161,7 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 						"Isolated Margin Stream"
 					],
 					"operation": [
-						"PUT Sapi V 1 User Data Stream Isolated"
+						"PUT Sapi v1 User Data Stream Isolated"
 					]
 				}
 			}
@@ -180,7 +180,7 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 						"Isolated Margin Stream"
 					],
 					"operation": [
-						"DELETE Sapi V 1 User Data Stream Isolated"
+						"DELETE Sapi v1 User Data Stream Isolated"
 					]
 				}
 			}
@@ -205,7 +205,7 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 						"Isolated Margin Stream"
 					],
 					"operation": [
-						"DELETE Sapi V 1 User Data Stream Isolated"
+						"DELETE Sapi v1 User Data Stream Isolated"
 					]
 				}
 			}
@@ -230,7 +230,7 @@ export const isolatedMarginStreamDescription: INodeProperties[] = [
 						"Isolated Margin Stream"
 					],
 					"operation": [
-						"DELETE Sapi V 1 User Data Stream Isolated"
+						"DELETE Sapi v1 User Data Stream Isolated"
 					]
 				}
 			}

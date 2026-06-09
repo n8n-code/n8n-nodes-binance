@@ -15,8 +15,8 @@ export const nftDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Nft History Transactions",
-					"value": "GET Sapi V 1 Nft History Transactions",
+					"name": "GET Sapi v1 Nft History Transactions",
+					"value": "GET Sapi v1 Nft History Transactions",
 					"action": "Get NFT Transaction History (USER_DATA)",
 					"description": "- The max interval between startTime and endTime is 90 days.\n- If startTime and endTime are not sent, the recent 7 days' data will be returned.\n\nWeight(UID): 3000",
 					"routing": {
@@ -27,8 +27,8 @@ export const nftDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Nft History Deposit",
-					"value": "GET Sapi V 1 Nft History Deposit",
+					"name": "GET Sapi v1 Nft History Deposit",
+					"value": "GET Sapi v1 Nft History Deposit",
 					"action": "Get NFT Deposit History(USER_DATA)",
 					"description": "- The max interval between startTime and endTime is 90 days.\n- If startTime and endTime are not sent, the recent 7 days' data will be returned.\n\nWeight(UID): 3000",
 					"routing": {
@@ -39,8 +39,8 @@ export const nftDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Nft History Withdraw",
-					"value": "GET Sapi V 1 Nft History Withdraw",
+					"name": "GET Sapi v1 Nft History Withdraw",
+					"value": "GET Sapi v1 Nft History Withdraw",
 					"action": "Get NFT Withdraw History (USER_DATA)",
 					"description": "- The max interval between startTime and endTime is 90 days.\n- If startTime and endTime are not sent, the recent 7 days' data will be returned.\n\nWeight(UID): 3000",
 					"routing": {
@@ -51,8 +51,8 @@ export const nftDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Nft User Get Asset",
-					"value": "GET Sapi V 1 Nft User Get Asset",
+					"name": "GET Sapi v1 Nft User Get Asset",
+					"value": "GET Sapi v1 Nft User Get Asset",
 					"action": "Get NFT Asset (USER_DATA)",
 					"description": "Weight(UID): 3000",
 					"routing": {
@@ -79,7 +79,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Transactions"
+						"GET Sapi v1 Nft History Transactions"
 					]
 				}
 			}
@@ -105,7 +105,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Transactions"
+						"GET Sapi v1 Nft History Transactions"
 					]
 				}
 			}
@@ -130,7 +130,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Transactions"
+						"GET Sapi v1 Nft History Transactions"
 					]
 				}
 			}
@@ -155,7 +155,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Transactions"
+						"GET Sapi v1 Nft History Transactions"
 					]
 				}
 			}
@@ -180,7 +180,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Transactions"
+						"GET Sapi v1 Nft History Transactions"
 					]
 				}
 			}
@@ -205,7 +205,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Transactions"
+						"GET Sapi v1 Nft History Transactions"
 					]
 				}
 			}
@@ -230,7 +230,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Transactions"
+						"GET Sapi v1 Nft History Transactions"
 					]
 				}
 			}
@@ -256,7 +256,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Transactions"
+						"GET Sapi v1 Nft History Transactions"
 					]
 				}
 			}
@@ -282,7 +282,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Transactions"
+						"GET Sapi v1 Nft History Transactions"
 					]
 				}
 			}
@@ -307,7 +307,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Transactions"
+						"GET Sapi v1 Nft History Transactions"
 					]
 				}
 			}
@@ -326,7 +326,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Deposit"
+						"GET Sapi v1 Nft History Deposit"
 					]
 				}
 			}
@@ -351,7 +351,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Deposit"
+						"GET Sapi v1 Nft History Deposit"
 					]
 				}
 			}
@@ -376,7 +376,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Deposit"
+						"GET Sapi v1 Nft History Deposit"
 					]
 				}
 			}
@@ -401,7 +401,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Deposit"
+						"GET Sapi v1 Nft History Deposit"
 					]
 				}
 			}
@@ -426,7 +426,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Deposit"
+						"GET Sapi v1 Nft History Deposit"
 					]
 				}
 			}
@@ -451,7 +451,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Deposit"
+						"GET Sapi v1 Nft History Deposit"
 					]
 				}
 			}
@@ -477,7 +477,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Deposit"
+						"GET Sapi v1 Nft History Deposit"
 					]
 				}
 			}
@@ -503,7 +503,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Deposit"
+						"GET Sapi v1 Nft History Deposit"
 					]
 				}
 			}
@@ -528,7 +528,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Deposit"
+						"GET Sapi v1 Nft History Deposit"
 					]
 				}
 			}
@@ -547,7 +547,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Withdraw"
+						"GET Sapi v1 Nft History Withdraw"
 					]
 				}
 			}
@@ -572,7 +572,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Withdraw"
+						"GET Sapi v1 Nft History Withdraw"
 					]
 				}
 			}
@@ -597,7 +597,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Withdraw"
+						"GET Sapi v1 Nft History Withdraw"
 					]
 				}
 			}
@@ -622,7 +622,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Withdraw"
+						"GET Sapi v1 Nft History Withdraw"
 					]
 				}
 			}
@@ -647,7 +647,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Withdraw"
+						"GET Sapi v1 Nft History Withdraw"
 					]
 				}
 			}
@@ -672,7 +672,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Withdraw"
+						"GET Sapi v1 Nft History Withdraw"
 					]
 				}
 			}
@@ -698,7 +698,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Withdraw"
+						"GET Sapi v1 Nft History Withdraw"
 					]
 				}
 			}
@@ -724,7 +724,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Withdraw"
+						"GET Sapi v1 Nft History Withdraw"
 					]
 				}
 			}
@@ -749,7 +749,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft History Withdraw"
+						"GET Sapi v1 Nft History Withdraw"
 					]
 				}
 			}
@@ -768,7 +768,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft User Get Asset"
+						"GET Sapi v1 Nft User Get Asset"
 					]
 				}
 			}
@@ -793,7 +793,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft User Get Asset"
+						"GET Sapi v1 Nft User Get Asset"
 					]
 				}
 			}
@@ -818,7 +818,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft User Get Asset"
+						"GET Sapi v1 Nft User Get Asset"
 					]
 				}
 			}
@@ -843,7 +843,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft User Get Asset"
+						"GET Sapi v1 Nft User Get Asset"
 					]
 				}
 			}
@@ -869,7 +869,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft User Get Asset"
+						"GET Sapi v1 Nft User Get Asset"
 					]
 				}
 			}
@@ -895,7 +895,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft User Get Asset"
+						"GET Sapi v1 Nft User Get Asset"
 					]
 				}
 			}
@@ -920,7 +920,7 @@ export const nftDescription: INodeProperties[] = [
 						"NFT"
 					],
 					"operation": [
-						"GET Sapi V 1 Nft User Get Asset"
+						"GET Sapi v1 Nft User Get Asset"
 					]
 				}
 			}

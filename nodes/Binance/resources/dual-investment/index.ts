@@ -15,8 +15,8 @@ export const dualInvestmentDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Dci Product List",
-					"value": "GET Sapi V 1 Dci Product List",
+					"name": "GET Sapi v1 Dci Product List",
+					"value": "GET Sapi v1 Dci Product List",
 					"action": "Get Dual Investment product list(USER_DATA)",
 					"description": "Get Dual Investment product list\n\nWeight(IP): 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const dualInvestmentDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Dci Product Subscribe",
-					"value": "POST Sapi V 1 Dci Product Subscribe",
+					"name": "POST Sapi v1 Dci Product Subscribe",
+					"value": "POST Sapi v1 Dci Product Subscribe",
 					"action": "Subscribe Dual Investment products(USER_DATA)",
 					"description": "Subscribe Dual Investment products\n\n- `Products are not available.` means that the APR changes to lower value, or the orders are not available.\n- `Failed` is a system or network errors.\n\nWeight(IP): 1",
 					"routing": {
@@ -39,8 +39,8 @@ export const dualInvestmentDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Dci Product Positions",
-					"value": "GET Sapi V 1 Dci Product Positions",
+					"name": "GET Sapi v1 Dci Product Positions",
+					"value": "GET Sapi v1 Dci Product Positions",
 					"action": "Get Dual Investment positions(USER_DATA)",
 					"description": "Get Dual Investment positions (batch)\n\nWeight(IP): 1",
 					"routing": {
@@ -51,8 +51,8 @@ export const dualInvestmentDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Dci Product Accounts",
-					"value": "GET Sapi V 1 Dci Product Accounts",
+					"name": "GET Sapi v1 Dci Product Accounts",
+					"value": "GET Sapi v1 Dci Product Accounts",
 					"action": "Check Dual Investment accounts(USER_DATA)",
 					"description": "Check Dual Investment accounts\n\nWeight(IP): 1",
 					"routing": {
@@ -63,8 +63,8 @@ export const dualInvestmentDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Dci Product Auto Compound Edit Status",
-					"value": "POST Sapi V 1 Dci Product Auto Compound Edit Status",
+					"name": "POST Sapi v1 Dci Product Auto Compound Edit Status",
+					"value": "POST Sapi v1 Dci Product Auto Compound Edit Status",
 					"action": "Change Auto-Compound status(USER_DATA)",
 					"description": "Change Auto-Compound status\n\n- 15:31 ~ 16:00 UTC+8 This function is disabled\n\nWeight(IP): 1\n\nRate Limit: Maximum 1 time/s per account",
 					"routing": {
@@ -91,7 +91,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product List"
+						"GET Sapi v1 Dci Product List"
 					]
 				}
 			}
@@ -127,7 +127,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product List"
+						"GET Sapi v1 Dci Product List"
 					]
 				}
 			}
@@ -153,7 +153,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product List"
+						"GET Sapi v1 Dci Product List"
 					]
 				}
 			}
@@ -179,7 +179,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product List"
+						"GET Sapi v1 Dci Product List"
 					]
 				}
 			}
@@ -204,7 +204,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product List"
+						"GET Sapi v1 Dci Product List"
 					]
 				}
 			}
@@ -229,7 +229,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product List"
+						"GET Sapi v1 Dci Product List"
 					]
 				}
 			}
@@ -254,7 +254,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product List"
+						"GET Sapi v1 Dci Product List"
 					]
 				}
 			}
@@ -280,7 +280,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product List"
+						"GET Sapi v1 Dci Product List"
 					]
 				}
 			}
@@ -306,7 +306,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product List"
+						"GET Sapi v1 Dci Product List"
 					]
 				}
 			}
@@ -331,7 +331,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product List"
+						"GET Sapi v1 Dci Product List"
 					]
 				}
 			}
@@ -350,13 +350,13 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Subscribe"
+						"POST Sapi v1 Dci Product Subscribe"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "get id from /sapi/v1/dci/product/list",
@@ -376,13 +376,13 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Subscribe"
+						"POST Sapi v1 Dci Product Subscribe"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"required": true,
 			"description": "get orderId from /sapi/v1/dci/product/list",
@@ -402,7 +402,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Subscribe"
+						"POST Sapi v1 Dci Product Subscribe"
 					]
 				}
 			}
@@ -427,7 +427,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Subscribe"
+						"POST Sapi v1 Dci Product Subscribe"
 					]
 				}
 			}
@@ -467,7 +467,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Subscribe"
+						"POST Sapi v1 Dci Product Subscribe"
 					]
 				}
 			}
@@ -492,7 +492,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Subscribe"
+						"POST Sapi v1 Dci Product Subscribe"
 					]
 				}
 			}
@@ -518,7 +518,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Subscribe"
+						"POST Sapi v1 Dci Product Subscribe"
 					]
 				}
 			}
@@ -544,7 +544,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Subscribe"
+						"POST Sapi v1 Dci Product Subscribe"
 					]
 				}
 			}
@@ -569,7 +569,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Subscribe"
+						"POST Sapi v1 Dci Product Subscribe"
 					]
 				}
 			}
@@ -588,7 +588,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Positions"
+						"GET Sapi v1 Dci Product Positions"
 					]
 				}
 			}
@@ -643,7 +643,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Positions"
+						"GET Sapi v1 Dci Product Positions"
 					]
 				}
 			}
@@ -668,7 +668,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Positions"
+						"GET Sapi v1 Dci Product Positions"
 					]
 				}
 			}
@@ -693,7 +693,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Positions"
+						"GET Sapi v1 Dci Product Positions"
 					]
 				}
 			}
@@ -718,7 +718,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Positions"
+						"GET Sapi v1 Dci Product Positions"
 					]
 				}
 			}
@@ -744,7 +744,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Positions"
+						"GET Sapi v1 Dci Product Positions"
 					]
 				}
 			}
@@ -770,7 +770,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Positions"
+						"GET Sapi v1 Dci Product Positions"
 					]
 				}
 			}
@@ -795,7 +795,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Positions"
+						"GET Sapi v1 Dci Product Positions"
 					]
 				}
 			}
@@ -814,7 +814,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Accounts"
+						"GET Sapi v1 Dci Product Accounts"
 					]
 				}
 			}
@@ -839,7 +839,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Accounts"
+						"GET Sapi v1 Dci Product Accounts"
 					]
 				}
 			}
@@ -865,7 +865,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Accounts"
+						"GET Sapi v1 Dci Product Accounts"
 					]
 				}
 			}
@@ -891,7 +891,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Accounts"
+						"GET Sapi v1 Dci Product Accounts"
 					]
 				}
 			}
@@ -916,7 +916,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"GET Sapi V 1 Dci Product Accounts"
+						"GET Sapi v1 Dci Product Accounts"
 					]
 				}
 			}
@@ -935,13 +935,13 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Auto Compound Edit Status"
+						"POST Sapi v1 Dci Product Auto Compound Edit Status"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Position Id",
+			"displayName": "Position ID",
 			"name": "positionId",
 			"required": true,
 			"description": "Get positionId from /sapi/v1/dci/product/positions",
@@ -961,7 +961,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Auto Compound Edit Status"
+						"POST Sapi v1 Dci Product Auto Compound Edit Status"
 					]
 				}
 			}
@@ -1001,7 +1001,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Auto Compound Edit Status"
+						"POST Sapi v1 Dci Product Auto Compound Edit Status"
 					]
 				}
 			}
@@ -1026,7 +1026,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Auto Compound Edit Status"
+						"POST Sapi v1 Dci Product Auto Compound Edit Status"
 					]
 				}
 			}
@@ -1052,7 +1052,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Auto Compound Edit Status"
+						"POST Sapi v1 Dci Product Auto Compound Edit Status"
 					]
 				}
 			}
@@ -1078,7 +1078,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Auto Compound Edit Status"
+						"POST Sapi v1 Dci Product Auto Compound Edit Status"
 					]
 				}
 			}
@@ -1103,7 +1103,7 @@ export const dualInvestmentDescription: INodeProperties[] = [
 						"Dual Investment"
 					],
 					"operation": [
-						"POST Sapi V 1 Dci Product Auto Compound Edit Status"
+						"POST Sapi v1 Dci Product Auto Compound Edit Status"
 					]
 				}
 			}

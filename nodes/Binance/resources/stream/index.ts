@@ -15,8 +15,8 @@ export const streamDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST Api V 3 User Data Stream",
-					"value": "POST Api V 3 User Data Stream",
+					"name": "POST API v3 User Data Stream",
+					"value": "POST API v3 User Data Stream",
 					"action": "Create a ListenKey (USER_STREAM)",
 					"description": "Start a new user data stream.\nThe stream will close after 60 minutes unless a keepalive is sent. If the account has an active `listenKey`, that `listenKey` will be returned and its validity will be extended for 60 minutes.\n\nWeight: 2",
 					"routing": {
@@ -27,8 +27,8 @@ export const streamDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "PUT Api V 3 User Data Stream",
-					"value": "PUT Api V 3 User Data Stream",
+					"name": "PUT API v3 User Data Stream",
+					"value": "PUT API v3 User Data Stream",
 					"action": "Ping/Keep-alive a ListenKey (USER_STREAM)",
 					"description": "Keepalive a user data stream to prevent a time out. User data streams will close after 60 minutes. It's recommended to send a ping about every 30 minutes.\n\nWeight: 2",
 					"routing": {
@@ -39,8 +39,8 @@ export const streamDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Api V 3 User Data Stream",
-					"value": "DELETE Api V 3 User Data Stream",
+					"name": "DELETE API v3 User Data Stream",
+					"value": "DELETE API v3 User Data Stream",
 					"action": "Close a ListenKey (USER_STREAM)",
 					"description": "Close out a user data stream.\n\nWeight: 2",
 					"routing": {
@@ -67,7 +67,7 @@ export const streamDescription: INodeProperties[] = [
 						"Stream"
 					],
 					"operation": [
-						"POST Api V 3 User Data Stream"
+						"POST API v3 User Data Stream"
 					]
 				}
 			}
@@ -92,7 +92,7 @@ export const streamDescription: INodeProperties[] = [
 						"Stream"
 					],
 					"operation": [
-						"POST Api V 3 User Data Stream"
+						"POST API v3 User Data Stream"
 					]
 				}
 			}
@@ -111,7 +111,7 @@ export const streamDescription: INodeProperties[] = [
 						"Stream"
 					],
 					"operation": [
-						"PUT Api V 3 User Data Stream"
+						"PUT API v3 User Data Stream"
 					]
 				}
 			}
@@ -136,7 +136,7 @@ export const streamDescription: INodeProperties[] = [
 						"Stream"
 					],
 					"operation": [
-						"PUT Api V 3 User Data Stream"
+						"PUT API v3 User Data Stream"
 					]
 				}
 			}
@@ -161,7 +161,7 @@ export const streamDescription: INodeProperties[] = [
 						"Stream"
 					],
 					"operation": [
-						"PUT Api V 3 User Data Stream"
+						"PUT API v3 User Data Stream"
 					]
 				}
 			}
@@ -180,7 +180,7 @@ export const streamDescription: INodeProperties[] = [
 						"Stream"
 					],
 					"operation": [
-						"DELETE Api V 3 User Data Stream"
+						"DELETE API v3 User Data Stream"
 					]
 				}
 			}
@@ -205,7 +205,7 @@ export const streamDescription: INodeProperties[] = [
 						"Stream"
 					],
 					"operation": [
-						"DELETE Api V 3 User Data Stream"
+						"DELETE API v3 User Data Stream"
 					]
 				}
 			}
@@ -230,7 +230,7 @@ export const streamDescription: INodeProperties[] = [
 						"Stream"
 					],
 					"operation": [
-						"DELETE Api V 3 User Data Stream"
+						"DELETE API v3 User Data Stream"
 					]
 				}
 			}

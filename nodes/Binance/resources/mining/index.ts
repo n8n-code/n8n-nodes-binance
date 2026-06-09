@@ -15,8 +15,8 @@ export const miningDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Mining Pub Algo List",
-					"value": "GET Sapi V 1 Mining Pub Algo List",
+					"name": "GET Sapi v1 Mining Pub Algo List",
+					"value": "GET Sapi v1 Mining Pub Algo List",
 					"action": "Acquiring Algorithm (MARKET_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Mining Pub Coin List",
-					"value": "GET Sapi V 1 Mining Pub Coin List",
+					"name": "GET Sapi v1 Mining Pub Coin List",
+					"value": "GET Sapi v1 Mining Pub Coin List",
 					"action": "Acquiring CoinName (MARKET_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -39,8 +39,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Mining Worker Detail",
-					"value": "GET Sapi V 1 Mining Worker Detail",
+					"name": "GET Sapi v1 Mining Worker Detail",
+					"value": "GET Sapi v1 Mining Worker Detail",
 					"action": "Request for Detail Miner List (USER_DATA)",
 					"description": "Weight(IP): 5",
 					"routing": {
@@ -51,8 +51,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Mining Worker List",
-					"value": "GET Sapi V 1 Mining Worker List",
+					"name": "GET Sapi v1 Mining Worker List",
+					"value": "GET Sapi v1 Mining Worker List",
 					"action": "Request for Miner List (USER_DATA)",
 					"description": "Weight(IP): 5",
 					"routing": {
@@ -63,8 +63,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Mining Payment List",
-					"value": "GET Sapi V 1 Mining Payment List",
+					"name": "GET Sapi v1 Mining Payment List",
+					"value": "GET Sapi v1 Mining Payment List",
 					"action": "Earnings List (USER_DATA)",
 					"description": "Weight(IP): 5",
 					"routing": {
@@ -75,8 +75,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Mining Payment Other",
-					"value": "GET Sapi V 1 Mining Payment Other",
+					"name": "GET Sapi v1 Mining Payment Other",
+					"value": "GET Sapi v1 Mining Payment Other",
 					"action": "Extra Bonus List (USER_DATA)",
 					"description": "Weight(IP): 5",
 					"routing": {
@@ -87,8 +87,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Mining Hash Transfer Config Details List",
-					"value": "GET Sapi V 1 Mining Hash Transfer Config Details List",
+					"name": "GET Sapi v1 Mining Hash Transfer Config Details List",
+					"value": "GET Sapi v1 Mining Hash Transfer Config Details List",
 					"action": "Hashrate Resale List (USER_DATA)",
 					"description": "Weight(IP): 5",
 					"routing": {
@@ -99,8 +99,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Mining Hash Transfer Profit Details",
-					"value": "GET Sapi V 1 Mining Hash Transfer Profit Details",
+					"name": "GET Sapi v1 Mining Hash Transfer Profit Details",
+					"value": "GET Sapi v1 Mining Hash Transfer Profit Details",
 					"action": "Hashrate Resale Details (USER_DATA)",
 					"description": "Weight(IP): 5",
 					"routing": {
@@ -111,8 +111,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Mining Hash Transfer Config",
-					"value": "POST Sapi V 1 Mining Hash Transfer Config",
+					"name": "POST Sapi v1 Mining Hash Transfer Config",
+					"value": "POST Sapi v1 Mining Hash Transfer Config",
 					"action": "Hashrate Resale Request (USER_DATA)",
 					"description": "Weight(IP): 5",
 					"routing": {
@@ -123,8 +123,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Mining Hash Transfer Config Cancel",
-					"value": "POST Sapi V 1 Mining Hash Transfer Config Cancel",
+					"name": "POST Sapi v1 Mining Hash Transfer Config Cancel",
+					"value": "POST Sapi v1 Mining Hash Transfer Config Cancel",
 					"action": "Cancel Hashrate Resale configuration (USER_DATA)",
 					"description": "Weight(IP): 5",
 					"routing": {
@@ -135,8 +135,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Mining Statistics User Status",
-					"value": "GET Sapi V 1 Mining Statistics User Status",
+					"name": "GET Sapi v1 Mining Statistics User Status",
+					"value": "GET Sapi v1 Mining Statistics User Status",
 					"action": "Statistic List (USER_DATA)",
 					"description": "Weight(IP): 5",
 					"routing": {
@@ -147,8 +147,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Mining Statistics User List",
-					"value": "GET Sapi V 1 Mining Statistics User List",
+					"name": "GET Sapi v1 Mining Statistics User List",
+					"value": "GET Sapi v1 Mining Statistics User List",
 					"action": "Account List (USER_DATA)",
 					"description": "Weight(IP): 5",
 					"routing": {
@@ -159,8 +159,8 @@ export const miningDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Mining Payment Uid",
-					"value": "GET Sapi V 1 Mining Payment Uid",
+					"name": "GET Sapi v1 Mining Payment Uid",
+					"value": "GET Sapi v1 Mining Payment Uid",
 					"action": "Mining Account Earning (USER_DATA)",
 					"description": "Weight(IP): 5",
 					"routing": {
@@ -187,7 +187,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Pub Algo List"
+						"GET Sapi v1 Mining Pub Algo List"
 					]
 				}
 			}
@@ -212,7 +212,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Pub Algo List"
+						"GET Sapi v1 Mining Pub Algo List"
 					]
 				}
 			}
@@ -231,7 +231,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Pub Coin List"
+						"GET Sapi v1 Mining Pub Coin List"
 					]
 				}
 			}
@@ -256,7 +256,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Pub Coin List"
+						"GET Sapi v1 Mining Pub Coin List"
 					]
 				}
 			}
@@ -275,7 +275,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker Detail"
+						"GET Sapi v1 Mining Worker Detail"
 					]
 				}
 			}
@@ -301,7 +301,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker Detail"
+						"GET Sapi v1 Mining Worker Detail"
 					]
 				}
 			}
@@ -327,7 +327,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker Detail"
+						"GET Sapi v1 Mining Worker Detail"
 					]
 				}
 			}
@@ -353,7 +353,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker Detail"
+						"GET Sapi v1 Mining Worker Detail"
 					]
 				}
 			}
@@ -378,7 +378,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker Detail"
+						"GET Sapi v1 Mining Worker Detail"
 					]
 				}
 			}
@@ -404,7 +404,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker Detail"
+						"GET Sapi v1 Mining Worker Detail"
 					]
 				}
 			}
@@ -430,7 +430,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker Detail"
+						"GET Sapi v1 Mining Worker Detail"
 					]
 				}
 			}
@@ -455,7 +455,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker Detail"
+						"GET Sapi v1 Mining Worker Detail"
 					]
 				}
 			}
@@ -474,7 +474,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker List"
+						"GET Sapi v1 Mining Worker List"
 					]
 				}
 			}
@@ -500,7 +500,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker List"
+						"GET Sapi v1 Mining Worker List"
 					]
 				}
 			}
@@ -526,7 +526,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker List"
+						"GET Sapi v1 Mining Worker List"
 					]
 				}
 			}
@@ -551,7 +551,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker List"
+						"GET Sapi v1 Mining Worker List"
 					]
 				}
 			}
@@ -576,7 +576,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker List"
+						"GET Sapi v1 Mining Worker List"
 					]
 				}
 			}
@@ -601,7 +601,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker List"
+						"GET Sapi v1 Mining Worker List"
 					]
 				}
 			}
@@ -626,7 +626,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker List"
+						"GET Sapi v1 Mining Worker List"
 					]
 				}
 			}
@@ -651,7 +651,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker List"
+						"GET Sapi v1 Mining Worker List"
 					]
 				}
 			}
@@ -677,7 +677,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker List"
+						"GET Sapi v1 Mining Worker List"
 					]
 				}
 			}
@@ -703,7 +703,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker List"
+						"GET Sapi v1 Mining Worker List"
 					]
 				}
 			}
@@ -728,7 +728,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Worker List"
+						"GET Sapi v1 Mining Worker List"
 					]
 				}
 			}
@@ -747,7 +747,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -773,7 +773,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -799,7 +799,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -824,7 +824,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -849,7 +849,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -874,7 +874,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -899,7 +899,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -924,7 +924,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -949,7 +949,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -975,7 +975,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -1001,7 +1001,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -1026,7 +1026,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment List"
+						"GET Sapi v1 Mining Payment List"
 					]
 				}
 			}
@@ -1045,7 +1045,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1071,7 +1071,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1097,7 +1097,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1122,7 +1122,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1147,7 +1147,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1172,7 +1172,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1197,7 +1197,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1222,7 +1222,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1247,7 +1247,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1273,7 +1273,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1299,7 +1299,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1324,7 +1324,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Other"
+						"GET Sapi v1 Mining Payment Other"
 					]
 				}
 			}
@@ -1343,7 +1343,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Config Details List"
+						"GET Sapi v1 Mining Hash Transfer Config Details List"
 					]
 				}
 			}
@@ -1368,7 +1368,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Config Details List"
+						"GET Sapi v1 Mining Hash Transfer Config Details List"
 					]
 				}
 			}
@@ -1393,7 +1393,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Config Details List"
+						"GET Sapi v1 Mining Hash Transfer Config Details List"
 					]
 				}
 			}
@@ -1418,7 +1418,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Config Details List"
+						"GET Sapi v1 Mining Hash Transfer Config Details List"
 					]
 				}
 			}
@@ -1444,7 +1444,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Config Details List"
+						"GET Sapi v1 Mining Hash Transfer Config Details List"
 					]
 				}
 			}
@@ -1470,7 +1470,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Config Details List"
+						"GET Sapi v1 Mining Hash Transfer Config Details List"
 					]
 				}
 			}
@@ -1495,7 +1495,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Config Details List"
+						"GET Sapi v1 Mining Hash Transfer Config Details List"
 					]
 				}
 			}
@@ -1514,13 +1514,13 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Profit Details"
+						"GET Sapi v1 Mining Hash Transfer Profit Details"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Config Id",
+			"displayName": "Config ID",
 			"name": "configId",
 			"required": true,
 			"description": "Mining ID",
@@ -1540,7 +1540,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Profit Details"
+						"GET Sapi v1 Mining Hash Transfer Profit Details"
 					]
 				}
 			}
@@ -1566,7 +1566,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Profit Details"
+						"GET Sapi v1 Mining Hash Transfer Profit Details"
 					]
 				}
 			}
@@ -1591,7 +1591,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Profit Details"
+						"GET Sapi v1 Mining Hash Transfer Profit Details"
 					]
 				}
 			}
@@ -1616,7 +1616,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Profit Details"
+						"GET Sapi v1 Mining Hash Transfer Profit Details"
 					]
 				}
 			}
@@ -1641,7 +1641,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Profit Details"
+						"GET Sapi v1 Mining Hash Transfer Profit Details"
 					]
 				}
 			}
@@ -1667,7 +1667,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Profit Details"
+						"GET Sapi v1 Mining Hash Transfer Profit Details"
 					]
 				}
 			}
@@ -1693,7 +1693,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Profit Details"
+						"GET Sapi v1 Mining Hash Transfer Profit Details"
 					]
 				}
 			}
@@ -1718,7 +1718,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Hash Transfer Profit Details"
+						"GET Sapi v1 Mining Hash Transfer Profit Details"
 					]
 				}
 			}
@@ -1737,7 +1737,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config"
+						"POST Sapi v1 Mining Hash Transfer Config"
 					]
 				}
 			}
@@ -1763,7 +1763,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config"
+						"POST Sapi v1 Mining Hash Transfer Config"
 					]
 				}
 			}
@@ -1789,7 +1789,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config"
+						"POST Sapi v1 Mining Hash Transfer Config"
 					]
 				}
 			}
@@ -1814,7 +1814,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config"
+						"POST Sapi v1 Mining Hash Transfer Config"
 					]
 				}
 			}
@@ -1839,7 +1839,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config"
+						"POST Sapi v1 Mining Hash Transfer Config"
 					]
 				}
 			}
@@ -1865,7 +1865,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config"
+						"POST Sapi v1 Mining Hash Transfer Config"
 					]
 				}
 			}
@@ -1891,7 +1891,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config"
+						"POST Sapi v1 Mining Hash Transfer Config"
 					]
 				}
 			}
@@ -1916,7 +1916,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config"
+						"POST Sapi v1 Mining Hash Transfer Config"
 					]
 				}
 			}
@@ -1942,7 +1942,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config"
+						"POST Sapi v1 Mining Hash Transfer Config"
 					]
 				}
 			}
@@ -1968,7 +1968,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config"
+						"POST Sapi v1 Mining Hash Transfer Config"
 					]
 				}
 			}
@@ -1993,7 +1993,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config"
+						"POST Sapi v1 Mining Hash Transfer Config"
 					]
 				}
 			}
@@ -2012,13 +2012,13 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config Cancel"
+						"POST Sapi v1 Mining Hash Transfer Config Cancel"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Config Id",
+			"displayName": "Config ID",
 			"name": "configId",
 			"required": true,
 			"description": "Mining ID",
@@ -2038,7 +2038,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config Cancel"
+						"POST Sapi v1 Mining Hash Transfer Config Cancel"
 					]
 				}
 			}
@@ -2064,7 +2064,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config Cancel"
+						"POST Sapi v1 Mining Hash Transfer Config Cancel"
 					]
 				}
 			}
@@ -2089,7 +2089,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config Cancel"
+						"POST Sapi v1 Mining Hash Transfer Config Cancel"
 					]
 				}
 			}
@@ -2115,7 +2115,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config Cancel"
+						"POST Sapi v1 Mining Hash Transfer Config Cancel"
 					]
 				}
 			}
@@ -2141,7 +2141,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config Cancel"
+						"POST Sapi v1 Mining Hash Transfer Config Cancel"
 					]
 				}
 			}
@@ -2166,7 +2166,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"POST Sapi V 1 Mining Hash Transfer Config Cancel"
+						"POST Sapi v1 Mining Hash Transfer Config Cancel"
 					]
 				}
 			}
@@ -2185,7 +2185,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User Status"
+						"GET Sapi v1 Mining Statistics User Status"
 					]
 				}
 			}
@@ -2211,7 +2211,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User Status"
+						"GET Sapi v1 Mining Statistics User Status"
 					]
 				}
 			}
@@ -2237,7 +2237,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User Status"
+						"GET Sapi v1 Mining Statistics User Status"
 					]
 				}
 			}
@@ -2262,7 +2262,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User Status"
+						"GET Sapi v1 Mining Statistics User Status"
 					]
 				}
 			}
@@ -2288,7 +2288,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User Status"
+						"GET Sapi v1 Mining Statistics User Status"
 					]
 				}
 			}
@@ -2314,7 +2314,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User Status"
+						"GET Sapi v1 Mining Statistics User Status"
 					]
 				}
 			}
@@ -2339,7 +2339,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User Status"
+						"GET Sapi v1 Mining Statistics User Status"
 					]
 				}
 			}
@@ -2358,7 +2358,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User List"
+						"GET Sapi v1 Mining Statistics User List"
 					]
 				}
 			}
@@ -2384,7 +2384,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User List"
+						"GET Sapi v1 Mining Statistics User List"
 					]
 				}
 			}
@@ -2410,7 +2410,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User List"
+						"GET Sapi v1 Mining Statistics User List"
 					]
 				}
 			}
@@ -2435,7 +2435,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User List"
+						"GET Sapi v1 Mining Statistics User List"
 					]
 				}
 			}
@@ -2461,7 +2461,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User List"
+						"GET Sapi v1 Mining Statistics User List"
 					]
 				}
 			}
@@ -2487,7 +2487,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User List"
+						"GET Sapi v1 Mining Statistics User List"
 					]
 				}
 			}
@@ -2512,7 +2512,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Statistics User List"
+						"GET Sapi v1 Mining Statistics User List"
 					]
 				}
 			}
@@ -2531,7 +2531,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Uid"
+						"GET Sapi v1 Mining Payment Uid"
 					]
 				}
 			}
@@ -2557,7 +2557,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Uid"
+						"GET Sapi v1 Mining Payment Uid"
 					]
 				}
 			}
@@ -2582,7 +2582,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Uid"
+						"GET Sapi v1 Mining Payment Uid"
 					]
 				}
 			}
@@ -2607,7 +2607,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Uid"
+						"GET Sapi v1 Mining Payment Uid"
 					]
 				}
 			}
@@ -2632,7 +2632,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Uid"
+						"GET Sapi v1 Mining Payment Uid"
 					]
 				}
 			}
@@ -2657,7 +2657,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Uid"
+						"GET Sapi v1 Mining Payment Uid"
 					]
 				}
 			}
@@ -2682,7 +2682,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Uid"
+						"GET Sapi v1 Mining Payment Uid"
 					]
 				}
 			}
@@ -2708,7 +2708,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Uid"
+						"GET Sapi v1 Mining Payment Uid"
 					]
 				}
 			}
@@ -2734,7 +2734,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Uid"
+						"GET Sapi v1 Mining Payment Uid"
 					]
 				}
 			}
@@ -2759,7 +2759,7 @@ export const miningDescription: INodeProperties[] = [
 						"Mining"
 					],
 					"operation": [
-						"GET Sapi V 1 Mining Payment Uid"
+						"GET Sapi v1 Mining Payment Uid"
 					]
 				}
 			}

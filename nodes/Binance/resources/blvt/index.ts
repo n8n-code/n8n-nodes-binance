@@ -15,8 +15,8 @@ export const blvtDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Blvt Token Info",
-					"value": "GET Sapi V 1 Blvt Token Info",
+					"name": "GET Sapi v1 Blvt Token Info",
+					"value": "GET Sapi v1 Blvt Token Info",
 					"action": "BLVT Info (MARKET_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const blvtDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Blvt Subscribe",
-					"value": "POST Sapi V 1 Blvt Subscribe",
+					"name": "POST Sapi v1 Blvt Subscribe",
+					"value": "POST Sapi v1 Blvt Subscribe",
 					"action": "Subscribe BLVT (USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -39,8 +39,8 @@ export const blvtDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Blvt Subscribe Record",
-					"value": "GET Sapi V 1 Blvt Subscribe Record",
+					"name": "GET Sapi v1 Blvt Subscribe Record",
+					"value": "GET Sapi v1 Blvt Subscribe Record",
 					"action": "Query Subscription Record (USER_DATA)",
 					"description": "- Only the data of the latest 90 days is available\n\nWeight(IP): 1",
 					"routing": {
@@ -51,8 +51,8 @@ export const blvtDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Blvt Redeem",
-					"value": "POST Sapi V 1 Blvt Redeem",
+					"name": "POST Sapi v1 Blvt Redeem",
+					"value": "POST Sapi v1 Blvt Redeem",
 					"action": "Redeem BLVT (USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -63,8 +63,8 @@ export const blvtDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Blvt Redeem Record",
-					"value": "GET Sapi V 1 Blvt Redeem Record",
+					"name": "GET Sapi v1 Blvt Redeem Record",
+					"value": "GET Sapi v1 Blvt Redeem Record",
 					"action": "Redemption Record (USER_DATA)",
 					"description": "- Only the data of the latest 90 days is available\n\nWeight(IP): 1",
 					"routing": {
@@ -75,8 +75,8 @@ export const blvtDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Blvt User Limit",
-					"value": "GET Sapi V 1 Blvt User Limit",
+					"name": "GET Sapi v1 Blvt User Limit",
+					"value": "GET Sapi v1 Blvt User Limit",
 					"action": "BLVT User Limit Info (USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -103,7 +103,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Token Info"
+						"GET Sapi v1 Blvt Token Info"
 					]
 				}
 			}
@@ -128,7 +128,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Token Info"
+						"GET Sapi v1 Blvt Token Info"
 					]
 				}
 			}
@@ -153,7 +153,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Token Info"
+						"GET Sapi v1 Blvt Token Info"
 					]
 				}
 			}
@@ -172,7 +172,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Subscribe"
+						"POST Sapi v1 Blvt Subscribe"
 					]
 				}
 			}
@@ -198,7 +198,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Subscribe"
+						"POST Sapi v1 Blvt Subscribe"
 					]
 				}
 			}
@@ -224,7 +224,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Subscribe"
+						"POST Sapi v1 Blvt Subscribe"
 					]
 				}
 			}
@@ -249,7 +249,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Subscribe"
+						"POST Sapi v1 Blvt Subscribe"
 					]
 				}
 			}
@@ -275,7 +275,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Subscribe"
+						"POST Sapi v1 Blvt Subscribe"
 					]
 				}
 			}
@@ -301,7 +301,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Subscribe"
+						"POST Sapi v1 Blvt Subscribe"
 					]
 				}
 			}
@@ -326,7 +326,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Subscribe"
+						"POST Sapi v1 Blvt Subscribe"
 					]
 				}
 			}
@@ -345,7 +345,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Subscribe Record"
+						"GET Sapi v1 Blvt Subscribe Record"
 					]
 				}
 			}
@@ -370,13 +370,13 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Subscribe Record"
+						"GET Sapi v1 Blvt Subscribe Record"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"default": 0,
 			"type": "number",
@@ -394,7 +394,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Subscribe Record"
+						"GET Sapi v1 Blvt Subscribe Record"
 					]
 				}
 			}
@@ -419,7 +419,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Subscribe Record"
+						"GET Sapi v1 Blvt Subscribe Record"
 					]
 				}
 			}
@@ -444,7 +444,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Subscribe Record"
+						"GET Sapi v1 Blvt Subscribe Record"
 					]
 				}
 			}
@@ -469,7 +469,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Subscribe Record"
+						"GET Sapi v1 Blvt Subscribe Record"
 					]
 				}
 			}
@@ -494,7 +494,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Subscribe Record"
+						"GET Sapi v1 Blvt Subscribe Record"
 					]
 				}
 			}
@@ -520,7 +520,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Subscribe Record"
+						"GET Sapi v1 Blvt Subscribe Record"
 					]
 				}
 			}
@@ -546,7 +546,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Subscribe Record"
+						"GET Sapi v1 Blvt Subscribe Record"
 					]
 				}
 			}
@@ -571,7 +571,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Subscribe Record"
+						"GET Sapi v1 Blvt Subscribe Record"
 					]
 				}
 			}
@@ -590,7 +590,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Redeem"
+						"POST Sapi v1 Blvt Redeem"
 					]
 				}
 			}
@@ -616,7 +616,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Redeem"
+						"POST Sapi v1 Blvt Redeem"
 					]
 				}
 			}
@@ -641,7 +641,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Redeem"
+						"POST Sapi v1 Blvt Redeem"
 					]
 				}
 			}
@@ -666,7 +666,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Redeem"
+						"POST Sapi v1 Blvt Redeem"
 					]
 				}
 			}
@@ -692,7 +692,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Redeem"
+						"POST Sapi v1 Blvt Redeem"
 					]
 				}
 			}
@@ -718,7 +718,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Redeem"
+						"POST Sapi v1 Blvt Redeem"
 					]
 				}
 			}
@@ -743,7 +743,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"POST Sapi V 1 Blvt Redeem"
+						"POST Sapi v1 Blvt Redeem"
 					]
 				}
 			}
@@ -762,7 +762,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Redeem Record"
+						"GET Sapi v1 Blvt Redeem Record"
 					]
 				}
 			}
@@ -787,13 +787,13 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Redeem Record"
+						"GET Sapi v1 Blvt Redeem Record"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"default": 0,
 			"type": "number",
@@ -811,7 +811,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Redeem Record"
+						"GET Sapi v1 Blvt Redeem Record"
 					]
 				}
 			}
@@ -836,7 +836,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Redeem Record"
+						"GET Sapi v1 Blvt Redeem Record"
 					]
 				}
 			}
@@ -861,7 +861,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Redeem Record"
+						"GET Sapi v1 Blvt Redeem Record"
 					]
 				}
 			}
@@ -886,7 +886,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Redeem Record"
+						"GET Sapi v1 Blvt Redeem Record"
 					]
 				}
 			}
@@ -911,7 +911,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Redeem Record"
+						"GET Sapi v1 Blvt Redeem Record"
 					]
 				}
 			}
@@ -937,7 +937,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Redeem Record"
+						"GET Sapi v1 Blvt Redeem Record"
 					]
 				}
 			}
@@ -963,7 +963,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Redeem Record"
+						"GET Sapi v1 Blvt Redeem Record"
 					]
 				}
 			}
@@ -988,7 +988,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt Redeem Record"
+						"GET Sapi v1 Blvt Redeem Record"
 					]
 				}
 			}
@@ -1007,7 +1007,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt User Limit"
+						"GET Sapi v1 Blvt User Limit"
 					]
 				}
 			}
@@ -1032,7 +1032,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt User Limit"
+						"GET Sapi v1 Blvt User Limit"
 					]
 				}
 			}
@@ -1057,7 +1057,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt User Limit"
+						"GET Sapi v1 Blvt User Limit"
 					]
 				}
 			}
@@ -1083,7 +1083,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt User Limit"
+						"GET Sapi v1 Blvt User Limit"
 					]
 				}
 			}
@@ -1109,7 +1109,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt User Limit"
+						"GET Sapi v1 Blvt User Limit"
 					]
 				}
 			}
@@ -1134,7 +1134,7 @@ export const blvtDescription: INodeProperties[] = [
 						"BLVT"
 					],
 					"operation": [
-						"GET Sapi V 1 Blvt User Limit"
+						"GET Sapi v1 Blvt User Limit"
 					]
 				}
 			}

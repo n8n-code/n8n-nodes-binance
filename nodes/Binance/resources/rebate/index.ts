@@ -15,8 +15,8 @@ export const rebateDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Rebate Tax Query",
-					"value": "GET Sapi V 1 Rebate Tax Query",
+					"name": "GET Sapi v1 Rebate Tax Query",
+					"value": "GET Sapi v1 Rebate Tax Query",
 					"action": "Get Spot Rebate History Records (USER_DATA)",
 					"description": "- The max interval between startTime and endTime is 90 days.\n- If startTime and endTime are not sent, the recent 7 days' data will be returned.\n- The earliest startTime is supported on June 10, 2020\n\nWeight(UID): 3000",
 					"routing": {
@@ -43,7 +43,7 @@ export const rebateDescription: INodeProperties[] = [
 						"Rebate"
 					],
 					"operation": [
-						"GET Sapi V 1 Rebate Tax Query"
+						"GET Sapi v1 Rebate Tax Query"
 					]
 				}
 			}
@@ -68,7 +68,7 @@ export const rebateDescription: INodeProperties[] = [
 						"Rebate"
 					],
 					"operation": [
-						"GET Sapi V 1 Rebate Tax Query"
+						"GET Sapi v1 Rebate Tax Query"
 					]
 				}
 			}
@@ -93,7 +93,7 @@ export const rebateDescription: INodeProperties[] = [
 						"Rebate"
 					],
 					"operation": [
-						"GET Sapi V 1 Rebate Tax Query"
+						"GET Sapi v1 Rebate Tax Query"
 					]
 				}
 			}
@@ -118,7 +118,7 @@ export const rebateDescription: INodeProperties[] = [
 						"Rebate"
 					],
 					"operation": [
-						"GET Sapi V 1 Rebate Tax Query"
+						"GET Sapi v1 Rebate Tax Query"
 					]
 				}
 			}
@@ -143,7 +143,7 @@ export const rebateDescription: INodeProperties[] = [
 						"Rebate"
 					],
 					"operation": [
-						"GET Sapi V 1 Rebate Tax Query"
+						"GET Sapi v1 Rebate Tax Query"
 					]
 				}
 			}
@@ -169,7 +169,7 @@ export const rebateDescription: INodeProperties[] = [
 						"Rebate"
 					],
 					"operation": [
-						"GET Sapi V 1 Rebate Tax Query"
+						"GET Sapi v1 Rebate Tax Query"
 					]
 				}
 			}
@@ -195,7 +195,7 @@ export const rebateDescription: INodeProperties[] = [
 						"Rebate"
 					],
 					"operation": [
-						"GET Sapi V 1 Rebate Tax Query"
+						"GET Sapi v1 Rebate Tax Query"
 					]
 				}
 			}
@@ -220,7 +220,7 @@ export const rebateDescription: INodeProperties[] = [
 						"Rebate"
 					],
 					"operation": [
-						"GET Sapi V 1 Rebate Tax Query"
+						"GET Sapi v1 Rebate Tax Query"
 					]
 				}
 			}

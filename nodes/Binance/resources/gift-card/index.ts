@@ -15,8 +15,8 @@ export const giftCardDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST Sapi V 1 Giftcard Create Code",
-					"value": "POST Sapi V 1 Giftcard Create Code",
+					"name": "POST Sapi v1 Giftcard Create Code",
+					"value": "POST Sapi v1 Giftcard Create Code",
 					"action": "Create a Binance Code (USER_DATA)",
 					"description": "This API is for creating a Binance Code. To get started with, please make sure:\n\n- You have a Binance account\n- You have passed kyc\n- You have a sufficient balance in your Binance funding wallet\n- You need Enable Withdrawals for the API Key which requests this endpoint.\n\nDaily creation volume: 2 BTC / 24H Daily creation times: 200 Codes / 24H\n\nWeight(IP): 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const giftCardDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Giftcard Redeem Code",
-					"value": "POST Sapi V 1 Giftcard Redeem Code",
+					"name": "POST Sapi v1 Giftcard Redeem Code",
+					"value": "POST Sapi v1 Giftcard Redeem Code",
 					"action": "Redeem a Binance Code (USER_DATA)",
 					"description": "This API is for redeeming the Binance Code. Once redeemed, the coins will be deposited in your funding wallet.\n\nPlease note that if you enter the wrong code 5 times within 24 hours, you will no longer be able to redeem any Binance Code that day.\n\nWeight(IP): 1",
 					"routing": {
@@ -39,8 +39,8 @@ export const giftCardDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Giftcard Verify",
-					"value": "GET Sapi V 1 Giftcard Verify",
+					"name": "GET Sapi v1 Giftcard Verify",
+					"value": "GET Sapi v1 Giftcard Verify",
 					"action": "Verify a Binance Code (USER_DATA)",
 					"description": "This API is for verifying whether the Binance Code is valid or not by entering Binance Code or reference number.\n\nPlease note that if you enter the wrong binance code 5 times within an hour, you will no longer be able to verify any binance code for that hour.\n\nWeight(IP): 1",
 					"routing": {
@@ -51,8 +51,8 @@ export const giftCardDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Giftcard Cryptography Rsa Public Key",
-					"value": "GET Sapi V 1 Giftcard Cryptography Rsa Public Key",
+					"name": "GET Sapi v1 Giftcard Cryptography Rsa Public Key",
+					"value": "GET Sapi v1 Giftcard Cryptography Rsa Public Key",
 					"action": "Fetch RSA Public Key (USER_DATA)",
 					"description": "This API is for fetching the RSA Public Key.\nThis RSA Public key will be used to encrypt the card code.\nPlease note that the RSA Public key fetched is valid only for the current day.\n\nWeight(IP): 1",
 					"routing": {
@@ -63,8 +63,8 @@ export const giftCardDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Giftcard Buy Code",
-					"value": "POST Sapi V 1 Giftcard Buy Code",
+					"name": "POST Sapi v1 Giftcard Buy Code",
+					"value": "POST Sapi v1 Giftcard Buy Code",
 					"action": "Buy a Binance Code (TRADE)",
 					"description": "This API is for buying a fixed-value Binance Code, which means your Binance Code will be redeemable to a token that is different to the token that you are paying in. If the token you’re paying and the redeemable token are the same, please use the Create Binance Code endpoint.\nYou can use supported crypto currency or fiat token as baseToken to buy Binance Code that is redeemable to your chosen faceToken.\nOnce successfully purchased, the amount of baseToken would be deducted from your funding wallet.\n\nTo get started with, please make sure:\n- You have a Binance account\n- You have passed kyc\n- You have a sufficient balance in your Binance funding wallet\n- You need Enable Withdrawals for the API Key which requests this endpoint.\n\nDaily creation volume: 2 BTC / 24H Daily creation times: 200 Codes / 24H\n\nWeight(IP): 1",
 					"routing": {
@@ -75,8 +75,8 @@ export const giftCardDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Giftcard Buy Code Token Limit",
-					"value": "GET Sapi V 1 Giftcard Buy Code Token Limit",
+					"name": "GET Sapi v1 Giftcard Buy Code Token Limit",
+					"value": "GET Sapi v1 Giftcard Buy Code Token Limit",
 					"action": "Fetch Token Limit (USER_DATA)",
 					"description": "This API is to help you verify which tokens are available for you to purchase fixed-value gift cards as mentioned in section 2 and it's limitation.\n\nWeight(IP): 1",
 					"routing": {
@@ -103,7 +103,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Create Code"
+						"POST Sapi v1 Giftcard Create Code"
 					]
 				}
 			}
@@ -129,7 +129,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Create Code"
+						"POST Sapi v1 Giftcard Create Code"
 					]
 				}
 			}
@@ -155,7 +155,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Create Code"
+						"POST Sapi v1 Giftcard Create Code"
 					]
 				}
 			}
@@ -180,7 +180,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Create Code"
+						"POST Sapi v1 Giftcard Create Code"
 					]
 				}
 			}
@@ -206,7 +206,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Create Code"
+						"POST Sapi v1 Giftcard Create Code"
 					]
 				}
 			}
@@ -232,7 +232,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Create Code"
+						"POST Sapi v1 Giftcard Create Code"
 					]
 				}
 			}
@@ -257,7 +257,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Create Code"
+						"POST Sapi v1 Giftcard Create Code"
 					]
 				}
 			}
@@ -276,7 +276,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Redeem Code"
+						"POST Sapi v1 Giftcard Redeem Code"
 					]
 				}
 			}
@@ -302,7 +302,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Redeem Code"
+						"POST Sapi v1 Giftcard Redeem Code"
 					]
 				}
 			}
@@ -327,7 +327,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Redeem Code"
+						"POST Sapi v1 Giftcard Redeem Code"
 					]
 				}
 			}
@@ -352,7 +352,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Redeem Code"
+						"POST Sapi v1 Giftcard Redeem Code"
 					]
 				}
 			}
@@ -378,7 +378,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Redeem Code"
+						"POST Sapi v1 Giftcard Redeem Code"
 					]
 				}
 			}
@@ -404,7 +404,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Redeem Code"
+						"POST Sapi v1 Giftcard Redeem Code"
 					]
 				}
 			}
@@ -429,7 +429,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Redeem Code"
+						"POST Sapi v1 Giftcard Redeem Code"
 					]
 				}
 			}
@@ -448,7 +448,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Verify"
+						"GET Sapi v1 Giftcard Verify"
 					]
 				}
 			}
@@ -474,7 +474,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Verify"
+						"GET Sapi v1 Giftcard Verify"
 					]
 				}
 			}
@@ -499,7 +499,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Verify"
+						"GET Sapi v1 Giftcard Verify"
 					]
 				}
 			}
@@ -525,7 +525,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Verify"
+						"GET Sapi v1 Giftcard Verify"
 					]
 				}
 			}
@@ -551,7 +551,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Verify"
+						"GET Sapi v1 Giftcard Verify"
 					]
 				}
 			}
@@ -576,7 +576,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Verify"
+						"GET Sapi v1 Giftcard Verify"
 					]
 				}
 			}
@@ -595,7 +595,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Cryptography Rsa Public Key"
+						"GET Sapi v1 Giftcard Cryptography Rsa Public Key"
 					]
 				}
 			}
@@ -620,7 +620,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Cryptography Rsa Public Key"
+						"GET Sapi v1 Giftcard Cryptography Rsa Public Key"
 					]
 				}
 			}
@@ -646,7 +646,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Cryptography Rsa Public Key"
+						"GET Sapi v1 Giftcard Cryptography Rsa Public Key"
 					]
 				}
 			}
@@ -672,7 +672,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Cryptography Rsa Public Key"
+						"GET Sapi v1 Giftcard Cryptography Rsa Public Key"
 					]
 				}
 			}
@@ -697,7 +697,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Cryptography Rsa Public Key"
+						"GET Sapi v1 Giftcard Cryptography Rsa Public Key"
 					]
 				}
 			}
@@ -716,7 +716,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Buy Code"
+						"POST Sapi v1 Giftcard Buy Code"
 					]
 				}
 			}
@@ -742,7 +742,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Buy Code"
+						"POST Sapi v1 Giftcard Buy Code"
 					]
 				}
 			}
@@ -768,7 +768,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Buy Code"
+						"POST Sapi v1 Giftcard Buy Code"
 					]
 				}
 			}
@@ -794,7 +794,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Buy Code"
+						"POST Sapi v1 Giftcard Buy Code"
 					]
 				}
 			}
@@ -819,7 +819,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Buy Code"
+						"POST Sapi v1 Giftcard Buy Code"
 					]
 				}
 			}
@@ -845,7 +845,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Buy Code"
+						"POST Sapi v1 Giftcard Buy Code"
 					]
 				}
 			}
@@ -871,7 +871,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Buy Code"
+						"POST Sapi v1 Giftcard Buy Code"
 					]
 				}
 			}
@@ -896,7 +896,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"POST Sapi V 1 Giftcard Buy Code"
+						"POST Sapi v1 Giftcard Buy Code"
 					]
 				}
 			}
@@ -915,7 +915,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Buy Code Token Limit"
+						"GET Sapi v1 Giftcard Buy Code Token Limit"
 					]
 				}
 			}
@@ -941,7 +941,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Buy Code Token Limit"
+						"GET Sapi v1 Giftcard Buy Code Token Limit"
 					]
 				}
 			}
@@ -966,7 +966,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Buy Code Token Limit"
+						"GET Sapi v1 Giftcard Buy Code Token Limit"
 					]
 				}
 			}
@@ -992,7 +992,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Buy Code Token Limit"
+						"GET Sapi v1 Giftcard Buy Code Token Limit"
 					]
 				}
 			}
@@ -1018,7 +1018,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Buy Code Token Limit"
+						"GET Sapi v1 Giftcard Buy Code Token Limit"
 					]
 				}
 			}
@@ -1043,7 +1043,7 @@ export const giftCardDescription: INodeProperties[] = [
 						"Gift Card"
 					],
 					"operation": [
-						"GET Sapi V 1 Giftcard Buy Code Token Limit"
+						"GET Sapi v1 Giftcard Buy Code Token Limit"
 					]
 				}
 			}

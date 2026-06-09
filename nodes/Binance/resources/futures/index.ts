@@ -15,8 +15,8 @@ export const futuresDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST Sapi V 1 Futures Transfer",
-					"value": "POST Sapi V 1 Futures Transfer",
+					"name": "POST Sapi v1 Futures Transfer",
+					"value": "POST Sapi v1 Futures Transfer",
 					"action": "New Future Account Transfer (USER_DATA)",
 					"description": "Execute transfer between spot account and futures account.\n\nWeight(IP): 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const futuresDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Futures Transfer",
-					"value": "GET Sapi V 1 Futures Transfer",
+					"name": "GET Sapi v1 Futures Transfer",
+					"value": "GET Sapi v1 Futures Transfer",
 					"action": "Get Future Account Transaction History List (USER_DATA)",
 					"description": "Weight(IP): 10",
 					"routing": {
@@ -39,8 +39,8 @@ export const futuresDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Futures Hist Data Link",
-					"value": "GET Sapi V 1 Futures Hist Data Link",
+					"name": "GET Sapi v1 Futures Hist Data Link",
+					"value": "GET Sapi v1 Futures Hist Data Link",
 					"action": "Get Future TickLevel Orderbook Historical Data Download Link (USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -67,7 +67,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"POST Sapi V 1 Futures Transfer"
+						"POST Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -92,7 +92,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"POST Sapi V 1 Futures Transfer"
+						"POST Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -117,7 +117,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"POST Sapi V 1 Futures Transfer"
+						"POST Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -143,7 +143,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"POST Sapi V 1 Futures Transfer"
+						"POST Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -168,7 +168,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"POST Sapi V 1 Futures Transfer"
+						"POST Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -194,7 +194,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"POST Sapi V 1 Futures Transfer"
+						"POST Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -220,7 +220,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"POST Sapi V 1 Futures Transfer"
+						"POST Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -245,7 +245,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"POST Sapi V 1 Futures Transfer"
+						"POST Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -264,7 +264,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Transfer"
+						"GET Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -289,7 +289,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Transfer"
+						"GET Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -315,7 +315,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Transfer"
+						"GET Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -340,7 +340,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Transfer"
+						"GET Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -365,7 +365,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Transfer"
+						"GET Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -390,7 +390,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Transfer"
+						"GET Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -415,7 +415,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Transfer"
+						"GET Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -441,7 +441,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Transfer"
+						"GET Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -467,7 +467,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Transfer"
+						"GET Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -492,7 +492,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Transfer"
+						"GET Sapi v1 Futures Transfer"
 					]
 				}
 			}
@@ -511,7 +511,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Hist Data Link"
+						"GET Sapi v1 Futures Hist Data Link"
 					]
 				}
 			}
@@ -536,7 +536,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Hist Data Link"
+						"GET Sapi v1 Futures Hist Data Link"
 					]
 				}
 			}
@@ -571,7 +571,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Hist Data Link"
+						"GET Sapi v1 Futures Hist Data Link"
 					]
 				}
 			}
@@ -596,7 +596,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Hist Data Link"
+						"GET Sapi v1 Futures Hist Data Link"
 					]
 				}
 			}
@@ -621,7 +621,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Hist Data Link"
+						"GET Sapi v1 Futures Hist Data Link"
 					]
 				}
 			}
@@ -646,7 +646,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Hist Data Link"
+						"GET Sapi v1 Futures Hist Data Link"
 					]
 				}
 			}
@@ -672,7 +672,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Hist Data Link"
+						"GET Sapi v1 Futures Hist Data Link"
 					]
 				}
 			}
@@ -698,7 +698,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Hist Data Link"
+						"GET Sapi v1 Futures Hist Data Link"
 					]
 				}
 			}
@@ -723,7 +723,7 @@ export const futuresDescription: INodeProperties[] = [
 						"Futures"
 					],
 					"operation": [
-						"GET Sapi V 1 Futures Hist Data Link"
+						"GET Sapi v1 Futures Hist Data Link"
 					]
 				}
 			}

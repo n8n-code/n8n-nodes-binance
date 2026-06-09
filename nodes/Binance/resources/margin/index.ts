@@ -15,8 +15,8 @@ export const marginDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST Sapi V 1 Margin Borrow Repay",
-					"value": "POST Sapi V 1 Margin Borrow Repay",
+					"name": "POST Sapi v1 Margin Borrow Repay",
+					"value": "POST Sapi v1 Margin Borrow Repay",
 					"action": "Margin account borrow/repay(MARGIN)",
 					"description": "Margin account borrow/repay(MARGIN)\n\nWeight(UID): 3000",
 					"routing": {
@@ -27,8 +27,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Borrow Repay",
-					"value": "GET Sapi V 1 Margin Borrow Repay",
+					"name": "GET Sapi v1 Margin Borrow Repay",
+					"value": "GET Sapi v1 Margin Borrow Repay",
 					"action": "Query borrow/repay records in Margin account(USER_DATA)",
 					"description": "Query borrow/repay records in Margin account\n\n- txId or startTime must be sent. txId takes precedence. Response in descending order\n- If an asset is sent, data within 30 days before endTime; If an asset is not sent, data within 7 days before endTime\n- If neither startTime nor endTime is sent, the recent 7-day data will be returned.\n- startTime set as endTime - 7 days by default, endTime set as current time by default\n\nWeight(IP): 10",
 					"routing": {
@@ -39,8 +39,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Transfer",
-					"value": "GET Sapi V 1 Margin Transfer",
+					"name": "GET Sapi v1 Margin Transfer",
+					"value": "GET Sapi v1 Margin Transfer",
 					"action": "Get Cross Margin Transfer History (USER_DATA)",
 					"description": "- Response in descending order\n- Returns data for last 7 days by default\n- Set `archived` to `true` to query data from 6 months ago\n\nWeight(IP): 1",
 					"routing": {
@@ -51,8 +51,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin All Assets",
-					"value": "GET Sapi V 1 Margin All Assets",
+					"name": "GET Sapi v1 Margin All Assets",
+					"value": "GET Sapi v1 Margin All Assets",
 					"action": "Get All Margin Assets (MARKET_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -63,8 +63,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin All Pairs",
-					"value": "GET Sapi V 1 Margin All Pairs",
+					"name": "GET Sapi v1 Margin All Pairs",
+					"value": "GET Sapi v1 Margin All Pairs",
 					"action": "Get All Cross Margin Pairs (MARKET_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -75,8 +75,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Price Index",
-					"value": "GET Sapi V 1 Margin Price Index",
+					"name": "GET Sapi v1 Margin Price Index",
+					"value": "GET Sapi v1 Margin Price Index",
 					"action": "Query Margin PriceIndex (MARKET_DATA)",
 					"description": "Weight(IP): 10",
 					"routing": {
@@ -87,8 +87,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Order",
-					"value": "GET Sapi V 1 Margin Order",
+					"name": "GET Sapi v1 Margin Order",
+					"value": "GET Sapi v1 Margin Order",
 					"action": "Query Margin Account's Order (USER_DATA)",
 					"description": "- Either `orderId` or `origClientOrderId` must be sent.\n- For some historical orders `cummulativeQuoteQty` will be < 0, meaning the data is not available at this time.\n\nWeight(IP): 10",
 					"routing": {
@@ -99,8 +99,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Margin Order",
-					"value": "POST Sapi V 1 Margin Order",
+					"name": "POST Sapi v1 Margin Order",
+					"value": "POST Sapi v1 Margin Order",
 					"action": "Margin Account New Order (TRADE)",
 					"description": "Post a new order for margin account.\n\nWeight(UID): 6",
 					"routing": {
@@ -111,8 +111,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Sapi V 1 Margin Order",
-					"value": "DELETE Sapi V 1 Margin Order",
+					"name": "DELETE Sapi v1 Margin Order",
+					"value": "DELETE Sapi v1 Margin Order",
 					"action": "Margin Account Cancel Order (TRADE)",
 					"description": "Cancel an active order for margin account.\n\nEither `orderId` or `origClientOrderId` must be sent.\n\nWeight(IP): 10",
 					"routing": {
@@ -123,8 +123,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Interest History",
-					"value": "GET Sapi V 1 Margin Interest History",
+					"name": "GET Sapi v1 Margin Interest History",
+					"value": "GET Sapi v1 Margin Interest History",
 					"action": "Get Interest History (USER_DATA)",
 					"description": "- Response in descending order\n- If `isolatedSymbol` is not sent, crossed margin data will be returned\n- Set `archived` to `true` to query data from 6 months ago\n- `type` in response has 4 enums:\n  - `PERIODIC` interest charged per hour\n  - `ON_BORROW` first interest charged on borrow\n  - `PERIODIC_CONVERTED` interest charged per hour converted into BNB\n  - `ON_BORROW_CONVERTED` first interest charged on borrow converted into BNB\n\nWeight(IP): 1",
 					"routing": {
@@ -135,8 +135,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Force Liquidation Rec",
-					"value": "GET Sapi V 1 Margin Force Liquidation Rec",
+					"name": "GET Sapi v1 Margin Force Liquidation Rec",
+					"value": "GET Sapi v1 Margin Force Liquidation Rec",
 					"action": "Get Force Liquidation Record (USER_DATA)",
 					"description": "- Response in descending order\n\nWeight(IP): 1",
 					"routing": {
@@ -147,8 +147,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Account",
-					"value": "GET Sapi V 1 Margin Account",
+					"name": "GET Sapi v1 Margin Account",
+					"value": "GET Sapi v1 Margin Account",
 					"action": "Query Cross Margin Account Details (USER_DATA)",
 					"description": "Weight(IP): 10",
 					"routing": {
@@ -159,8 +159,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Open Orders",
-					"value": "GET Sapi V 1 Margin Open Orders",
+					"name": "GET Sapi v1 Margin Open Orders",
+					"value": "GET Sapi v1 Margin Open Orders",
 					"action": "Query Margin Account's Open Orders (USER_DATA)",
 					"description": "- If the `symbol` is not sent, orders for all symbols will be returned in an array.\n- When all symbols are returned, the number of requests counted against the rate limiter is equal to the number of symbols currently trading on the exchange\n- If isIsolated =\"TRUE\", symbol must be sent.\n\nWeight(IP): 10",
 					"routing": {
@@ -171,8 +171,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Sapi V 1 Margin Open Orders",
-					"value": "DELETE Sapi V 1 Margin Open Orders",
+					"name": "DELETE Sapi v1 Margin Open Orders",
+					"value": "DELETE Sapi v1 Margin Open Orders",
 					"action": "Margin Account Cancel all Open Orders on a Symbol (TRADE)",
 					"description": "- Cancels all active orders on a symbol for margin account.\n- This includes OCO orders.\n\nWeight(IP): 1\n",
 					"routing": {
@@ -183,8 +183,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin All Orders",
-					"value": "GET Sapi V 1 Margin All Orders",
+					"name": "GET Sapi v1 Margin All Orders",
+					"value": "GET Sapi v1 Margin All Orders",
 					"action": "Query Margin Account's All Orders (USER_DATA)",
 					"description": "- If `orderId` is set, it will get orders >= that orderId. Otherwise most recent orders are returned.\n- For some historical orders `cummulativeQuoteQty` will be < 0, meaning the data is not available at this time.\n\nWeight(IP): 200\n\nRequest Limit: 60 times/min per IP",
 					"routing": {
@@ -195,8 +195,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Margin Order Oco",
-					"value": "POST Sapi V 1 Margin Order Oco",
+					"name": "POST Sapi v1 Margin Order Oco",
+					"value": "POST Sapi v1 Margin Order Oco",
 					"action": "Margin Account New OCO (TRADE)",
 					"description": "Send in a new OCO for a margin account\n\n- Price Restrictions:\n  - SELL: Limit Price > Last Price > Stop Price\n  - BUY: Limit Price < Last Price < Stop Price\n- Quantity Restrictions:\n  - Both legs must have the same quantity\n  - ICEBERG quantities however do not have to be the same.\n- Order Rate Limit\n  - OCO counts as 2 orders against the order rate limit.\n\nWeight(UID): 6",
 					"routing": {
@@ -207,8 +207,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Order List",
-					"value": "GET Sapi V 1 Margin Order List",
+					"name": "GET Sapi v1 Margin Order List",
+					"value": "GET Sapi v1 Margin Order List",
 					"action": "Query Margin Account's OCO (USER_DATA)",
 					"description": "Retrieves a specific OCO based on provided optional parameters\n\n- Either `orderListId` or `origClientOrderId` must be provided\n\nWeight(IP): 10",
 					"routing": {
@@ -219,8 +219,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Sapi V 1 Margin Order List",
-					"value": "DELETE Sapi V 1 Margin Order List",
+					"name": "DELETE Sapi v1 Margin Order List",
+					"value": "DELETE Sapi v1 Margin Order List",
 					"action": "Margin Account Cancel OCO (TRADE)",
 					"description": "Cancel an entire Order List for a margin account\n\n- Canceling an individual leg will cancel the entire OCO\n- Either `orderListId` or `listClientOrderId` must be provided\n\nWeight(UID): 1",
 					"routing": {
@@ -231,8 +231,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin All Order List",
-					"value": "GET Sapi V 1 Margin All Order List",
+					"name": "GET Sapi v1 Margin All Order List",
+					"value": "GET Sapi v1 Margin All Order List",
 					"action": "Query Margin Account's all OCO (USER_DATA)",
 					"description": "Retrieves all OCO for a specific margin account based on provided optional parameters\n\nWeight(IP): 200",
 					"routing": {
@@ -243,8 +243,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Open Order List",
-					"value": "GET Sapi V 1 Margin Open Order List",
+					"name": "GET Sapi v1 Margin Open Order List",
+					"value": "GET Sapi v1 Margin Open Order List",
 					"action": "Query Margin Account's Open OCO (USER_DATA)",
 					"description": "Weight(IP): 10",
 					"routing": {
@@ -255,8 +255,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin My Trades",
-					"value": "GET Sapi V 1 Margin My Trades",
+					"name": "GET Sapi v1 Margin My Trades",
+					"value": "GET Sapi v1 Margin My Trades",
 					"action": "Query Margin Account's Trade List (USER_DATA)",
 					"description": "- If `fromId` is set, it will get orders >= that `fromId`. Otherwise most recent trades are returned.\n\nWeight(IP): 10",
 					"routing": {
@@ -267,8 +267,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Max Borrowable",
-					"value": "GET Sapi V 1 Margin Max Borrowable",
+					"name": "GET Sapi v1 Margin Max Borrowable",
+					"value": "GET Sapi v1 Margin Max Borrowable",
 					"action": "Query Max Borrow (USER_DATA)",
 					"description": "- If `isolatedSymbol` is not sent, crossed margin data will be sent.\n- `borrowLimit` is also available from https://www.binance.com/en/margin-fee\n\nWeight(IP): 50",
 					"routing": {
@@ -279,8 +279,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Max Transferable",
-					"value": "GET Sapi V 1 Margin Max Transferable",
+					"name": "GET Sapi v1 Margin Max Transferable",
+					"value": "GET Sapi v1 Margin Max Transferable",
 					"action": "Query Max Transfer-Out Amount (USER_DATA)",
 					"description": "- If `isolatedSymbol` is not sent, crossed margin data will be sent.\n\nWeight(IP): 50",
 					"routing": {
@@ -291,8 +291,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Trade Coeff",
-					"value": "GET Sapi V 1 Margin Trade Coeff",
+					"name": "GET Sapi v1 Margin Trade Coeff",
+					"value": "GET Sapi v1 Margin Trade Coeff",
 					"action": "Get Summary of Margin account (USER_DATA)",
 					"description": "Get personal margin level information\n\nWeight(IP): 10",
 					"routing": {
@@ -303,8 +303,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Isolated Account",
-					"value": "GET Sapi V 1 Margin Isolated Account",
+					"name": "GET Sapi v1 Margin Isolated Account",
+					"value": "GET Sapi v1 Margin Isolated Account",
 					"action": "Query Isolated Margin Account Info (USER_DATA)",
 					"description": "- If \"symbols\" is not sent, all isolated assets will be returned.\n- If \"symbols\" is sent, only the isolated assets of the sent symbols will be returned.\n\nWeight(IP): 10",
 					"routing": {
@@ -315,8 +315,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Sapi V 1 Margin Isolated Account",
-					"value": "DELETE Sapi V 1 Margin Isolated Account",
+					"name": "DELETE Sapi v1 Margin Isolated Account",
+					"value": "DELETE Sapi v1 Margin Isolated Account",
 					"action": "Disable Isolated Margin Account (TRADE)",
 					"description": "Disable isolated margin account for a specific symbol. Each trading pair can only be deactivated once every 24 hours .\n\nWeight(UID): 300",
 					"routing": {
@@ -327,8 +327,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Margin Isolated Account",
-					"value": "POST Sapi V 1 Margin Isolated Account",
+					"name": "POST Sapi v1 Margin Isolated Account",
+					"value": "POST Sapi v1 Margin Isolated Account",
 					"action": "Enable Isolated Margin Account (TRADE)",
 					"description": "Enable isolated margin account for a specific symbol.\n\nWeight(UID): 300",
 					"routing": {
@@ -339,8 +339,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Isolated Account Limit",
-					"value": "GET Sapi V 1 Margin Isolated Account Limit",
+					"name": "GET Sapi v1 Margin Isolated Account Limit",
+					"value": "GET Sapi v1 Margin Isolated Account Limit",
 					"action": "Query Enabled Isolated Margin Account Limit (USER_DATA)",
 					"description": "Query enabled isolated margin account limit.\n\nWeight(IP): 1",
 					"routing": {
@@ -351,8 +351,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Isolated All Pairs",
-					"value": "GET Sapi V 1 Margin Isolated All Pairs",
+					"name": "GET Sapi v1 Margin Isolated All Pairs",
+					"value": "GET Sapi v1 Margin Isolated All Pairs",
 					"action": "Get All Isolated Margin Symbol(USER_DATA)",
 					"description": "Weight(IP): 10",
 					"routing": {
@@ -363,8 +363,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Bnb Burn",
-					"value": "POST Sapi V 1 Bnb Burn",
+					"name": "POST Sapi v1 Bnb Burn",
+					"value": "POST Sapi v1 Bnb Burn",
 					"action": "Toggle BNB Burn On Spot Trade And Margin Interest (USER_DATA)",
 					"description": "- \"spotBNBBurn\" and \"interestBNBBurn\" should be sent at least one.\n\nWeight(IP): 1",
 					"routing": {
@@ -375,8 +375,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Bnb Burn",
-					"value": "GET Sapi V 1 Bnb Burn",
+					"name": "GET Sapi v1 Bnb Burn",
+					"value": "GET Sapi v1 Bnb Burn",
 					"action": "Get BNB Burn Status(USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -387,8 +387,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Interest Rate History",
-					"value": "GET Sapi V 1 Margin Interest Rate History",
+					"name": "GET Sapi v1 Margin Interest Rate History",
+					"value": "GET Sapi v1 Margin Interest Rate History",
 					"action": "Margin Interest Rate History (USER_DATA)",
 					"description": "The max interval between startTime and endTime is 30 days.\n\nWeight(IP): 1",
 					"routing": {
@@ -399,8 +399,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Cross Margin Data",
-					"value": "GET Sapi V 1 Margin Cross Margin Data",
+					"name": "GET Sapi v1 Margin Cross Margin Data",
+					"value": "GET Sapi v1 Margin Cross Margin Data",
 					"action": "Query Cross Margin Fee Data (USER_DATA)",
 					"description": "Get cross margin fee data collection with any vip level or user's current specific data as https://www.binance.com/en/margin-fee\n\nWeight(IP): 1 when coin is specified; 5 when the coin parameter is omitted",
 					"routing": {
@@ -411,8 +411,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Isolated Margin Data",
-					"value": "GET Sapi V 1 Margin Isolated Margin Data",
+					"name": "GET Sapi v1 Margin Isolated Margin Data",
+					"value": "GET Sapi v1 Margin Isolated Margin Data",
 					"action": "Query Isolated Margin Fee Data (USER_DATA)",
 					"description": "Get isolated margin fee data collection with any vip level or user's current specific data as https://www.binance.com/en/margin-fee\n\nWeight(IP): 1 when a single is specified; 10 when the symbol parameter is omitted",
 					"routing": {
@@ -423,8 +423,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Isolated Margin Tier",
-					"value": "GET Sapi V 1 Margin Isolated Margin Tier",
+					"name": "GET Sapi v1 Margin Isolated Margin Tier",
+					"value": "GET Sapi v1 Margin Isolated Margin Tier",
 					"action": "Query Isolated Margin Tier Data (USER_DATA)",
 					"description": "Get isolated margin tier data collection with any tier as https://www.binance.com/en/margin-data\n\nWeight(IP): 1",
 					"routing": {
@@ -435,8 +435,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Rate Limit Order",
-					"value": "GET Sapi V 1 Margin Rate Limit Order",
+					"name": "GET Sapi v1 Margin Rate Limit Order",
+					"value": "GET Sapi v1 Margin Rate Limit Order",
 					"action": "Query Current Margin Order Count Usage (TRADE)",
 					"description": "Displays the user's current margin order count usage for all intervals.\n\nWeight(IP): 20",
 					"routing": {
@@ -447,8 +447,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Cross Margin Collateral Ratio",
-					"value": "GET Sapi V 1 Margin Cross Margin Collateral Ratio",
+					"name": "GET Sapi v1 Margin Cross Margin Collateral Ratio",
+					"value": "GET Sapi v1 Margin Cross Margin Collateral Ratio",
 					"action": "Cross margin collateral ratio (MARKET_DATA)",
 					"description": "\nWeight(IP): 100",
 					"routing": {
@@ -459,8 +459,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Exchange Small Liability",
-					"value": "GET Sapi V 1 Margin Exchange Small Liability",
+					"name": "GET Sapi v1 Margin Exchange Small Liability",
+					"value": "GET Sapi v1 Margin Exchange Small Liability",
 					"action": "Get Small Liability Exchange Coin List (USER_DATA)",
 					"description": "Query the coins which can be small liability exchange\n\nWeight(UID): 100",
 					"routing": {
@@ -471,8 +471,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Exchange Small Liability History",
-					"value": "GET Sapi V 1 Margin Exchange Small Liability History",
+					"name": "GET Sapi v1 Margin Exchange Small Liability History",
+					"value": "GET Sapi v1 Margin Exchange Small Liability History",
 					"action": "Get Small Liability Exchange History (USER_DATA)",
 					"description": "Get Small liability Exchange History\n\nWeight(UID): 100",
 					"routing": {
@@ -483,8 +483,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Next Hourly Interest Rate",
-					"value": "GET Sapi V 1 Margin Next Hourly Interest Rate",
+					"name": "GET Sapi v1 Margin Next Hourly Interest Rate",
+					"value": "GET Sapi v1 Margin Next Hourly Interest Rate",
 					"action": "Get a future hourly interest rate (USER_DATA)",
 					"description": "Get user the next hourly estimate interest\n\nWeight(UID): 100",
 					"routing": {
@@ -495,8 +495,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Capital Flow",
-					"value": "GET Sapi V 1 Margin Capital Flow",
+					"name": "GET Sapi v1 Margin Capital Flow",
+					"value": "GET Sapi v1 Margin Capital Flow",
 					"action": "Get cross or isolated margin capital flow(USER_DATA)",
 					"description": "Get cross or isolated margin capital flow\n\nWeight(IP): 100",
 					"routing": {
@@ -507,8 +507,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Delist Schedule",
-					"value": "GET Sapi V 1 Margin Delist Schedule",
+					"name": "GET Sapi v1 Margin Delist Schedule",
+					"value": "GET Sapi v1 Margin Delist Schedule",
 					"action": "Get tokens or symbols delist schedule for cross margin and isolated margin (MARKET_DATA)",
 					"description": "Get tokens or symbols delist schedule for cross margin and isolated margin\n\nWeight(IP): 100",
 					"routing": {
@@ -519,8 +519,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Available Inventory",
-					"value": "GET Sapi V 1 Margin Available Inventory",
+					"name": "GET Sapi v1 Margin Available Inventory",
+					"value": "GET Sapi v1 Margin Available Inventory",
 					"action": "Query Margin Available Inventory (USER_DATA)",
 					"description": "Margin available Inventory query\n\nWeight(UID): 50",
 					"routing": {
@@ -531,8 +531,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Margin Manual Liquidation",
-					"value": "POST Sapi V 1 Margin Manual Liquidation",
+					"name": "POST Sapi v1 Margin Manual Liquidation",
+					"value": "POST Sapi v1 Margin Manual Liquidation",
 					"action": "Margin manual liquidation(MARGIN)",
 					"description": "Margin manual liquidation\n\nWeight(UID): 3000",
 					"routing": {
@@ -543,8 +543,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Margin Order Oto",
-					"value": "POST Sapi V 1 Margin Order Oto",
+					"name": "POST Sapi v1 Margin Order Oto",
+					"value": "POST Sapi v1 Margin Order Oto",
 					"action": "Margin Account New OTO (TRADE)",
 					"description": "Post a new `OTO` order for margin account:\n- An `OTO` (One-Triggers-the-Other) is an order list comprised of 2 orders\n- The first order is called the working order and must be `LIMIT` or `LIMIT_MAKER`. Initially, only the working order goes on the order book.\n- The second order is called the pending order. It can be any order type except for `MARKET` orders using parameter `quoteOrderQty`. The pending order is only placed on the order book when the working order gets fully filled.\n- If either the working order or the pending order is cancelled individually, the other order in the order list will also be canceled or expired.\n- When the order list is placed, if the working order gets immediately fully filled, the placement response will show the working order as `FILLED` but the pending order will still appear as `PENDING_NEW`. You need to query the status of the pending order again to see its updated status.\n- OTOs add 2 orders to the unfilled order count, `EXCHANGE_MAX_NUM_ORDERS` filter and `MAX_NUM_ORDERS` filter.\n\nWeight(UID): 6",
 					"routing": {
@@ -555,8 +555,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Margin Order Otoco",
-					"value": "POST Sapi V 1 Margin Order Otoco",
+					"name": "POST Sapi v1 Margin Order Otoco",
+					"value": "POST Sapi v1 Margin Order Otoco",
 					"action": "Margin Account New OTOCO (TRADE)",
 					"description": "Post a new `OTOCO` order for margin account:\n- An `OTOCO` (One-Triggers-the-Other-Cancel-the-Other) is an order list comprised of 3 orders\n- The first order is called the working order and must be `LIMIT` or `LIMIT_MAKER`. Initially, only the working order goes on the order book.\n  - The behavior of the working order is the same as the `OTO`.\n- `OTOCO` has 2 pending orders (pending above and pending below), forming an `OCO` pair. The pending orders are only placed on the order book when the working order gets fully filled.\n  - The rules of the pending above and pending below follow the same rules as the Order List `OCO`.\n- OTOCOs add 3 orders to the unfilled order count, `EXCHANGE_MAX_NUM_ORDERS` filter and `MAX_NUM_ORDERS` filter.\n\nWeight(UID): 6",
 					"routing": {
@@ -567,8 +567,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Margin Max Leverage",
-					"value": "POST Sapi V 1 Margin Max Leverage",
+					"name": "POST Sapi v1 Margin Max Leverage",
+					"value": "POST Sapi v1 Margin Max Leverage",
 					"action": "Adjust cross margin max leverage (USER_DATA)",
 					"description": "Adjust cross margin max leverage\n\nWeight(UID): 3000",
 					"routing": {
@@ -579,8 +579,8 @@ export const marginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Margin Leverage Bracket",
-					"value": "GET Sapi V 1 Margin Leverage Bracket",
+					"name": "GET Sapi v1 Margin Leverage Bracket",
+					"value": "GET Sapi v1 Margin Leverage Bracket",
 					"action": "Query Liability Coin Leverage Bracket in Cross Margin Pro Mode (MARKET_DATA)",
 					"description": "Liability Coin Leverage Bracket in Cross Margin Pro Mode\n\nWeight(IP): 1",
 					"routing": {
@@ -607,7 +607,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Borrow Repay"
+						"POST Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -632,7 +632,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Borrow Repay"
+						"POST Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -658,7 +658,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Borrow Repay"
+						"POST Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -684,7 +684,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Borrow Repay"
+						"POST Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -709,7 +709,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Borrow Repay"
+						"POST Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -735,7 +735,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Borrow Repay"
+						"POST Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -760,7 +760,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Borrow Repay"
+						"POST Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -786,7 +786,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Borrow Repay"
+						"POST Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -812,7 +812,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Borrow Repay"
+						"POST Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -837,7 +837,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Borrow Repay"
+						"POST Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -856,7 +856,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -881,7 +881,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -906,13 +906,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Tx Id",
+			"displayName": "Tx ID",
 			"name": "txId",
 			"description": "tranId in POST /sapi/v1/margin/loan",
 			"default": 0,
@@ -931,7 +931,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -956,7 +956,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -981,7 +981,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -1006,7 +1006,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -1031,7 +1031,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -1057,7 +1057,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -1082,7 +1082,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -1108,7 +1108,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -1134,7 +1134,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -1159,7 +1159,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Borrow Repay"
+						"GET Sapi v1 Margin Borrow Repay"
 					]
 				}
 			}
@@ -1178,7 +1178,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1202,7 +1202,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1236,7 +1236,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1261,7 +1261,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1286,7 +1286,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1311,7 +1311,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1336,7 +1336,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1361,7 +1361,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1386,7 +1386,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1412,7 +1412,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1438,7 +1438,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1463,7 +1463,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Transfer"
+						"GET Sapi v1 Margin Transfer"
 					]
 				}
 			}
@@ -1482,7 +1482,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Assets"
+						"GET Sapi v1 Margin All Assets"
 					]
 				}
 			}
@@ -1507,7 +1507,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Assets"
+						"GET Sapi v1 Margin All Assets"
 					]
 				}
 			}
@@ -1532,7 +1532,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Assets"
+						"GET Sapi v1 Margin All Assets"
 					]
 				}
 			}
@@ -1551,7 +1551,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Pairs"
+						"GET Sapi v1 Margin All Pairs"
 					]
 				}
 			}
@@ -1577,7 +1577,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Pairs"
+						"GET Sapi v1 Margin All Pairs"
 					]
 				}
 			}
@@ -1602,7 +1602,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Pairs"
+						"GET Sapi v1 Margin All Pairs"
 					]
 				}
 			}
@@ -1621,7 +1621,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Price Index"
+						"GET Sapi v1 Margin Price Index"
 					]
 				}
 			}
@@ -1647,7 +1647,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Price Index"
+						"GET Sapi v1 Margin Price Index"
 					]
 				}
 			}
@@ -1672,7 +1672,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Price Index"
+						"GET Sapi v1 Margin Price Index"
 					]
 				}
 			}
@@ -1691,7 +1691,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order"
+						"GET Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -1717,7 +1717,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order"
+						"GET Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -1752,13 +1752,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order"
+						"GET Sapi v1 Margin Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -1777,13 +1777,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order"
+						"GET Sapi v1 Margin Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Orig Client Order Id",
+			"displayName": "Orig Client Order ID",
 			"name": "origClientOrderId",
 			"description": "Order id from client",
 			"default": "",
@@ -1802,7 +1802,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order"
+						"GET Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -1827,7 +1827,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order"
+						"GET Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -1853,7 +1853,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order"
+						"GET Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -1879,7 +1879,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order"
+						"GET Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -1904,7 +1904,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order"
+						"GET Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -1923,7 +1923,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -1949,7 +1949,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -1984,7 +1984,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2019,7 +2019,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2075,7 +2075,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2100,7 +2100,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2125,7 +2125,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2150,7 +2150,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2175,13 +2175,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "New Client Order Id",
+			"displayName": "New Client Order ID",
 			"name": "newClientOrderId",
 			"description": "Used to uniquely identify this cancel. Automatically generated by default",
 			"default": "",
@@ -2200,7 +2200,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2225,7 +2225,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2264,7 +2264,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2303,7 +2303,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2342,7 +2342,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2367,7 +2367,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2410,7 +2410,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2435,7 +2435,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2461,7 +2461,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2487,7 +2487,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2512,7 +2512,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order"
+						"POST Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2531,7 +2531,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order"
+						"DELETE Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2557,7 +2557,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order"
+						"DELETE Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2592,13 +2592,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order"
+						"DELETE Sapi v1 Margin Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -2617,13 +2617,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order"
+						"DELETE Sapi v1 Margin Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Orig Client Order Id",
+			"displayName": "Orig Client Order ID",
 			"name": "origClientOrderId",
 			"description": "Order id from client",
 			"default": "",
@@ -2642,13 +2642,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order"
+						"DELETE Sapi v1 Margin Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "New Client Order Id",
+			"displayName": "New Client Order ID",
 			"name": "newClientOrderId",
 			"description": "Used to uniquely identify this cancel. Automatically generated by default",
 			"default": "",
@@ -2667,7 +2667,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order"
+						"DELETE Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2692,7 +2692,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order"
+						"DELETE Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2718,7 +2718,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order"
+						"DELETE Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2744,7 +2744,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order"
+						"DELETE Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2769,7 +2769,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order"
+						"DELETE Sapi v1 Margin Order"
 					]
 				}
 			}
@@ -2788,7 +2788,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -2812,7 +2812,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -2837,7 +2837,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -2862,7 +2862,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -2887,7 +2887,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -2912,7 +2912,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -2937,7 +2937,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -2962,7 +2962,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -2987,7 +2987,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -3013,7 +3013,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -3039,7 +3039,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -3064,7 +3064,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest History"
+						"GET Sapi v1 Margin Interest History"
 					]
 				}
 			}
@@ -3083,7 +3083,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Force Liquidation Rec"
+						"GET Sapi v1 Margin Force Liquidation Rec"
 					]
 				}
 			}
@@ -3108,7 +3108,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Force Liquidation Rec"
+						"GET Sapi v1 Margin Force Liquidation Rec"
 					]
 				}
 			}
@@ -3133,7 +3133,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Force Liquidation Rec"
+						"GET Sapi v1 Margin Force Liquidation Rec"
 					]
 				}
 			}
@@ -3158,7 +3158,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Force Liquidation Rec"
+						"GET Sapi v1 Margin Force Liquidation Rec"
 					]
 				}
 			}
@@ -3183,7 +3183,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Force Liquidation Rec"
+						"GET Sapi v1 Margin Force Liquidation Rec"
 					]
 				}
 			}
@@ -3208,7 +3208,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Force Liquidation Rec"
+						"GET Sapi v1 Margin Force Liquidation Rec"
 					]
 				}
 			}
@@ -3233,7 +3233,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Force Liquidation Rec"
+						"GET Sapi v1 Margin Force Liquidation Rec"
 					]
 				}
 			}
@@ -3259,7 +3259,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Force Liquidation Rec"
+						"GET Sapi v1 Margin Force Liquidation Rec"
 					]
 				}
 			}
@@ -3285,7 +3285,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Force Liquidation Rec"
+						"GET Sapi v1 Margin Force Liquidation Rec"
 					]
 				}
 			}
@@ -3310,7 +3310,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Force Liquidation Rec"
+						"GET Sapi v1 Margin Force Liquidation Rec"
 					]
 				}
 			}
@@ -3329,7 +3329,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Account"
+						"GET Sapi v1 Margin Account"
 					]
 				}
 			}
@@ -3354,7 +3354,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Account"
+						"GET Sapi v1 Margin Account"
 					]
 				}
 			}
@@ -3380,7 +3380,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Account"
+						"GET Sapi v1 Margin Account"
 					]
 				}
 			}
@@ -3406,7 +3406,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Account"
+						"GET Sapi v1 Margin Account"
 					]
 				}
 			}
@@ -3431,7 +3431,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Account"
+						"GET Sapi v1 Margin Account"
 					]
 				}
 			}
@@ -3450,7 +3450,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Orders"
+						"GET Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3475,7 +3475,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Orders"
+						"GET Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3510,7 +3510,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Orders"
+						"GET Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3535,7 +3535,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Orders"
+						"GET Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3561,7 +3561,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Orders"
+						"GET Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3587,7 +3587,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Orders"
+						"GET Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3612,7 +3612,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Orders"
+						"GET Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3631,7 +3631,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Open Orders"
+						"DELETE Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3657,7 +3657,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Open Orders"
+						"DELETE Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3692,7 +3692,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Open Orders"
+						"DELETE Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3717,7 +3717,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Open Orders"
+						"DELETE Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3743,7 +3743,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Open Orders"
+						"DELETE Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3769,7 +3769,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Open Orders"
+						"DELETE Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3794,7 +3794,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Open Orders"
+						"DELETE Sapi v1 Margin Open Orders"
 					]
 				}
 			}
@@ -3813,7 +3813,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Orders"
+						"GET Sapi v1 Margin All Orders"
 					]
 				}
 			}
@@ -3839,7 +3839,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Orders"
+						"GET Sapi v1 Margin All Orders"
 					]
 				}
 			}
@@ -3874,13 +3874,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Orders"
+						"GET Sapi v1 Margin All Orders"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -3899,7 +3899,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Orders"
+						"GET Sapi v1 Margin All Orders"
 					]
 				}
 			}
@@ -3924,7 +3924,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Orders"
+						"GET Sapi v1 Margin All Orders"
 					]
 				}
 			}
@@ -3949,7 +3949,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Orders"
+						"GET Sapi v1 Margin All Orders"
 					]
 				}
 			}
@@ -3974,7 +3974,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Orders"
+						"GET Sapi v1 Margin All Orders"
 					]
 				}
 			}
@@ -3999,7 +3999,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Orders"
+						"GET Sapi v1 Margin All Orders"
 					]
 				}
 			}
@@ -4025,7 +4025,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Orders"
+						"GET Sapi v1 Margin All Orders"
 					]
 				}
 			}
@@ -4051,7 +4051,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Orders"
+						"GET Sapi v1 Margin All Orders"
 					]
 				}
 			}
@@ -4076,7 +4076,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Orders"
+						"GET Sapi v1 Margin All Orders"
 					]
 				}
 			}
@@ -4095,7 +4095,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4121,7 +4121,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4156,13 +4156,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "List Client Order Id",
+			"displayName": "List Client Order ID",
 			"name": "listClientOrderId",
 			"description": "A unique Id for the entire orderList",
 			"default": "",
@@ -4181,7 +4181,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4216,7 +4216,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4241,13 +4241,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Limit Client Order Id",
+			"displayName": "Limit Client Order ID",
 			"name": "limitClientOrderId",
 			"description": "A unique Id for the limit order",
 			"default": "",
@@ -4266,7 +4266,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4292,7 +4292,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4316,13 +4316,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Stop Client Order Id",
+			"displayName": "Stop Client Order ID",
 			"name": "stopClientOrderId",
 			"description": "A unique Id for the stop loss/stop loss limit leg",
 			"default": "",
@@ -4341,7 +4341,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4366,7 +4366,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4391,7 +4391,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4415,7 +4415,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4453,7 +4453,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4492,7 +4492,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4531,7 +4531,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4574,7 +4574,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4599,7 +4599,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4625,7 +4625,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4651,7 +4651,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4676,7 +4676,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oco"
+						"POST Sapi v1 Margin Order Oco"
 					]
 				}
 			}
@@ -4695,7 +4695,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order List"
+						"GET Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -4730,7 +4730,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order List"
+						"GET Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -4755,13 +4755,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order List"
+						"GET Sapi v1 Margin Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order List Id",
+			"displayName": "Order List ID",
 			"name": "orderListId",
 			"description": "Order list id",
 			"default": 0,
@@ -4780,13 +4780,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order List"
+						"GET Sapi v1 Margin Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Orig Client Order Id",
+			"displayName": "Orig Client Order ID",
 			"name": "origClientOrderId",
 			"description": "Order id from client",
 			"default": "",
@@ -4805,7 +4805,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order List"
+						"GET Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -4830,7 +4830,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order List"
+						"GET Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -4856,7 +4856,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order List"
+						"GET Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -4882,7 +4882,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order List"
+						"GET Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -4907,7 +4907,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Order List"
+						"GET Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -4926,7 +4926,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order List"
+						"DELETE Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -4952,7 +4952,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order List"
+						"DELETE Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -4987,13 +4987,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order List"
+						"DELETE Sapi v1 Margin Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order List Id",
+			"displayName": "Order List ID",
 			"name": "orderListId",
 			"description": "Order list id",
 			"default": 0,
@@ -5012,13 +5012,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order List"
+						"DELETE Sapi v1 Margin Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "List Client Order Id",
+			"displayName": "List Client Order ID",
 			"name": "listClientOrderId",
 			"description": "A unique Id for the entire orderList",
 			"default": "",
@@ -5037,13 +5037,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order List"
+						"DELETE Sapi v1 Margin Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "New Client Order Id",
+			"displayName": "New Client Order ID",
 			"name": "newClientOrderId",
 			"description": "Used to uniquely identify this cancel. Automatically generated by default",
 			"default": "",
@@ -5062,7 +5062,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order List"
+						"DELETE Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -5087,7 +5087,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order List"
+						"DELETE Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -5113,7 +5113,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order List"
+						"DELETE Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -5139,7 +5139,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order List"
+						"DELETE Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -5164,7 +5164,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Order List"
+						"DELETE Sapi v1 Margin Order List"
 					]
 				}
 			}
@@ -5183,7 +5183,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Order List"
+						"GET Sapi v1 Margin All Order List"
 					]
 				}
 			}
@@ -5218,7 +5218,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Order List"
+						"GET Sapi v1 Margin All Order List"
 					]
 				}
 			}
@@ -5243,13 +5243,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Order List"
+						"GET Sapi v1 Margin All Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "From Id",
+			"displayName": "From ID",
 			"name": "fromId",
 			"description": "If supplied, neither `startTime` or `endTime` can be provided",
 			"default": "",
@@ -5268,7 +5268,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Order List"
+						"GET Sapi v1 Margin All Order List"
 					]
 				}
 			}
@@ -5293,7 +5293,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Order List"
+						"GET Sapi v1 Margin All Order List"
 					]
 				}
 			}
@@ -5318,7 +5318,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Order List"
+						"GET Sapi v1 Margin All Order List"
 					]
 				}
 			}
@@ -5343,7 +5343,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Order List"
+						"GET Sapi v1 Margin All Order List"
 					]
 				}
 			}
@@ -5368,7 +5368,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Order List"
+						"GET Sapi v1 Margin All Order List"
 					]
 				}
 			}
@@ -5394,7 +5394,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Order List"
+						"GET Sapi v1 Margin All Order List"
 					]
 				}
 			}
@@ -5420,7 +5420,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Order List"
+						"GET Sapi v1 Margin All Order List"
 					]
 				}
 			}
@@ -5445,7 +5445,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin All Order List"
+						"GET Sapi v1 Margin All Order List"
 					]
 				}
 			}
@@ -5464,7 +5464,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Order List"
+						"GET Sapi v1 Margin Open Order List"
 					]
 				}
 			}
@@ -5499,7 +5499,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Order List"
+						"GET Sapi v1 Margin Open Order List"
 					]
 				}
 			}
@@ -5524,7 +5524,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Order List"
+						"GET Sapi v1 Margin Open Order List"
 					]
 				}
 			}
@@ -5549,7 +5549,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Order List"
+						"GET Sapi v1 Margin Open Order List"
 					]
 				}
 			}
@@ -5575,7 +5575,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Order List"
+						"GET Sapi v1 Margin Open Order List"
 					]
 				}
 			}
@@ -5601,7 +5601,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Order List"
+						"GET Sapi v1 Margin Open Order List"
 					]
 				}
 			}
@@ -5626,7 +5626,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Open Order List"
+						"GET Sapi v1 Margin Open Order List"
 					]
 				}
 			}
@@ -5645,7 +5645,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin My Trades"
+						"GET Sapi v1 Margin My Trades"
 					]
 				}
 			}
@@ -5671,7 +5671,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin My Trades"
+						"GET Sapi v1 Margin My Trades"
 					]
 				}
 			}
@@ -5706,7 +5706,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin My Trades"
+						"GET Sapi v1 Margin My Trades"
 					]
 				}
 			}
@@ -5731,7 +5731,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin My Trades"
+						"GET Sapi v1 Margin My Trades"
 					]
 				}
 			}
@@ -5756,13 +5756,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin My Trades"
+						"GET Sapi v1 Margin My Trades"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "From Id",
+			"displayName": "From ID",
 			"name": "fromId",
 			"description": "Trade id to fetch from. Default gets most recent trades.",
 			"default": 0,
@@ -5781,7 +5781,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin My Trades"
+						"GET Sapi v1 Margin My Trades"
 					]
 				}
 			}
@@ -5806,7 +5806,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin My Trades"
+						"GET Sapi v1 Margin My Trades"
 					]
 				}
 			}
@@ -5831,7 +5831,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin My Trades"
+						"GET Sapi v1 Margin My Trades"
 					]
 				}
 			}
@@ -5857,7 +5857,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin My Trades"
+						"GET Sapi v1 Margin My Trades"
 					]
 				}
 			}
@@ -5883,7 +5883,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin My Trades"
+						"GET Sapi v1 Margin My Trades"
 					]
 				}
 			}
@@ -5908,7 +5908,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin My Trades"
+						"GET Sapi v1 Margin My Trades"
 					]
 				}
 			}
@@ -5927,7 +5927,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Borrowable"
+						"GET Sapi v1 Margin Max Borrowable"
 					]
 				}
 			}
@@ -5952,7 +5952,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Borrowable"
+						"GET Sapi v1 Margin Max Borrowable"
 					]
 				}
 			}
@@ -5977,7 +5977,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Borrowable"
+						"GET Sapi v1 Margin Max Borrowable"
 					]
 				}
 			}
@@ -6002,7 +6002,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Borrowable"
+						"GET Sapi v1 Margin Max Borrowable"
 					]
 				}
 			}
@@ -6028,7 +6028,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Borrowable"
+						"GET Sapi v1 Margin Max Borrowable"
 					]
 				}
 			}
@@ -6054,7 +6054,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Borrowable"
+						"GET Sapi v1 Margin Max Borrowable"
 					]
 				}
 			}
@@ -6079,7 +6079,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Borrowable"
+						"GET Sapi v1 Margin Max Borrowable"
 					]
 				}
 			}
@@ -6098,7 +6098,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Transferable"
+						"GET Sapi v1 Margin Max Transferable"
 					]
 				}
 			}
@@ -6123,7 +6123,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Transferable"
+						"GET Sapi v1 Margin Max Transferable"
 					]
 				}
 			}
@@ -6148,7 +6148,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Transferable"
+						"GET Sapi v1 Margin Max Transferable"
 					]
 				}
 			}
@@ -6173,7 +6173,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Transferable"
+						"GET Sapi v1 Margin Max Transferable"
 					]
 				}
 			}
@@ -6199,7 +6199,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Transferable"
+						"GET Sapi v1 Margin Max Transferable"
 					]
 				}
 			}
@@ -6225,7 +6225,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Transferable"
+						"GET Sapi v1 Margin Max Transferable"
 					]
 				}
 			}
@@ -6250,7 +6250,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Max Transferable"
+						"GET Sapi v1 Margin Max Transferable"
 					]
 				}
 			}
@@ -6269,7 +6269,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Trade Coeff"
+						"GET Sapi v1 Margin Trade Coeff"
 					]
 				}
 			}
@@ -6295,7 +6295,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Trade Coeff"
+						"GET Sapi v1 Margin Trade Coeff"
 					]
 				}
 			}
@@ -6320,7 +6320,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Trade Coeff"
+						"GET Sapi v1 Margin Trade Coeff"
 					]
 				}
 			}
@@ -6346,7 +6346,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Trade Coeff"
+						"GET Sapi v1 Margin Trade Coeff"
 					]
 				}
 			}
@@ -6372,7 +6372,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Trade Coeff"
+						"GET Sapi v1 Margin Trade Coeff"
 					]
 				}
 			}
@@ -6397,7 +6397,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Trade Coeff"
+						"GET Sapi v1 Margin Trade Coeff"
 					]
 				}
 			}
@@ -6416,7 +6416,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Account"
+						"GET Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6441,7 +6441,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Account"
+						"GET Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6466,7 +6466,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Account"
+						"GET Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6492,7 +6492,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Account"
+						"GET Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6518,7 +6518,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Account"
+						"GET Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6543,7 +6543,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Account"
+						"GET Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6562,7 +6562,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Isolated Account"
+						"DELETE Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6588,7 +6588,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Isolated Account"
+						"DELETE Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6613,7 +6613,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Isolated Account"
+						"DELETE Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6639,7 +6639,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Isolated Account"
+						"DELETE Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6665,7 +6665,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Isolated Account"
+						"DELETE Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6690,7 +6690,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Margin Isolated Account"
+						"DELETE Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6709,7 +6709,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Isolated Account"
+						"POST Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6735,7 +6735,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Isolated Account"
+						"POST Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6760,7 +6760,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Isolated Account"
+						"POST Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6786,7 +6786,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Isolated Account"
+						"POST Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6812,7 +6812,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Isolated Account"
+						"POST Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6837,7 +6837,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Isolated Account"
+						"POST Sapi v1 Margin Isolated Account"
 					]
 				}
 			}
@@ -6856,7 +6856,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Account Limit"
+						"GET Sapi v1 Margin Isolated Account Limit"
 					]
 				}
 			}
@@ -6881,7 +6881,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Account Limit"
+						"GET Sapi v1 Margin Isolated Account Limit"
 					]
 				}
 			}
@@ -6907,7 +6907,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Account Limit"
+						"GET Sapi v1 Margin Isolated Account Limit"
 					]
 				}
 			}
@@ -6933,7 +6933,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Account Limit"
+						"GET Sapi v1 Margin Isolated Account Limit"
 					]
 				}
 			}
@@ -6958,7 +6958,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Account Limit"
+						"GET Sapi v1 Margin Isolated Account Limit"
 					]
 				}
 			}
@@ -6977,7 +6977,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated All Pairs"
+						"GET Sapi v1 Margin Isolated All Pairs"
 					]
 				}
 			}
@@ -7003,7 +7003,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated All Pairs"
+						"GET Sapi v1 Margin Isolated All Pairs"
 					]
 				}
 			}
@@ -7028,7 +7028,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated All Pairs"
+						"GET Sapi v1 Margin Isolated All Pairs"
 					]
 				}
 			}
@@ -7054,7 +7054,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated All Pairs"
+						"GET Sapi v1 Margin Isolated All Pairs"
 					]
 				}
 			}
@@ -7080,7 +7080,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated All Pairs"
+						"GET Sapi v1 Margin Isolated All Pairs"
 					]
 				}
 			}
@@ -7105,7 +7105,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated All Pairs"
+						"GET Sapi v1 Margin Isolated All Pairs"
 					]
 				}
 			}
@@ -7124,7 +7124,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Bnb Burn"
+						"POST Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7159,7 +7159,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Bnb Burn"
+						"POST Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7194,7 +7194,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Bnb Burn"
+						"POST Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7219,7 +7219,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Bnb Burn"
+						"POST Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7245,7 +7245,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Bnb Burn"
+						"POST Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7271,7 +7271,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Bnb Burn"
+						"POST Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7296,7 +7296,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Bnb Burn"
+						"POST Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7315,7 +7315,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Bnb Burn"
+						"GET Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7340,7 +7340,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Bnb Burn"
+						"GET Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7366,7 +7366,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Bnb Burn"
+						"GET Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7392,7 +7392,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Bnb Burn"
+						"GET Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7417,7 +7417,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Bnb Burn"
+						"GET Sapi v1 Bnb Burn"
 					]
 				}
 			}
@@ -7436,7 +7436,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest Rate History"
+						"GET Sapi v1 Margin Interest Rate History"
 					]
 				}
 			}
@@ -7461,7 +7461,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest Rate History"
+						"GET Sapi v1 Margin Interest Rate History"
 					]
 				}
 			}
@@ -7486,7 +7486,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest Rate History"
+						"GET Sapi v1 Margin Interest Rate History"
 					]
 				}
 			}
@@ -7511,7 +7511,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest Rate History"
+						"GET Sapi v1 Margin Interest Rate History"
 					]
 				}
 			}
@@ -7536,7 +7536,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest Rate History"
+						"GET Sapi v1 Margin Interest Rate History"
 					]
 				}
 			}
@@ -7561,7 +7561,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest Rate History"
+						"GET Sapi v1 Margin Interest Rate History"
 					]
 				}
 			}
@@ -7587,7 +7587,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest Rate History"
+						"GET Sapi v1 Margin Interest Rate History"
 					]
 				}
 			}
@@ -7613,7 +7613,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest Rate History"
+						"GET Sapi v1 Margin Interest Rate History"
 					]
 				}
 			}
@@ -7638,7 +7638,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Interest Rate History"
+						"GET Sapi v1 Margin Interest Rate History"
 					]
 				}
 			}
@@ -7657,7 +7657,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Cross Margin Data"
+						"GET Sapi v1 Margin Cross Margin Data"
 					]
 				}
 			}
@@ -7682,7 +7682,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Cross Margin Data"
+						"GET Sapi v1 Margin Cross Margin Data"
 					]
 				}
 			}
@@ -7707,7 +7707,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Cross Margin Data"
+						"GET Sapi v1 Margin Cross Margin Data"
 					]
 				}
 			}
@@ -7732,7 +7732,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Cross Margin Data"
+						"GET Sapi v1 Margin Cross Margin Data"
 					]
 				}
 			}
@@ -7758,7 +7758,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Cross Margin Data"
+						"GET Sapi v1 Margin Cross Margin Data"
 					]
 				}
 			}
@@ -7784,7 +7784,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Cross Margin Data"
+						"GET Sapi v1 Margin Cross Margin Data"
 					]
 				}
 			}
@@ -7809,7 +7809,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Cross Margin Data"
+						"GET Sapi v1 Margin Cross Margin Data"
 					]
 				}
 			}
@@ -7828,7 +7828,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Data"
+						"GET Sapi v1 Margin Isolated Margin Data"
 					]
 				}
 			}
@@ -7853,7 +7853,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Data"
+						"GET Sapi v1 Margin Isolated Margin Data"
 					]
 				}
 			}
@@ -7878,7 +7878,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Data"
+						"GET Sapi v1 Margin Isolated Margin Data"
 					]
 				}
 			}
@@ -7903,7 +7903,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Data"
+						"GET Sapi v1 Margin Isolated Margin Data"
 					]
 				}
 			}
@@ -7929,7 +7929,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Data"
+						"GET Sapi v1 Margin Isolated Margin Data"
 					]
 				}
 			}
@@ -7955,7 +7955,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Data"
+						"GET Sapi v1 Margin Isolated Margin Data"
 					]
 				}
 			}
@@ -7980,7 +7980,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Data"
+						"GET Sapi v1 Margin Isolated Margin Data"
 					]
 				}
 			}
@@ -7999,7 +7999,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Tier"
+						"GET Sapi v1 Margin Isolated Margin Tier"
 					]
 				}
 			}
@@ -8025,7 +8025,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Tier"
+						"GET Sapi v1 Margin Isolated Margin Tier"
 					]
 				}
 			}
@@ -8050,7 +8050,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Tier"
+						"GET Sapi v1 Margin Isolated Margin Tier"
 					]
 				}
 			}
@@ -8075,7 +8075,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Tier"
+						"GET Sapi v1 Margin Isolated Margin Tier"
 					]
 				}
 			}
@@ -8101,7 +8101,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Tier"
+						"GET Sapi v1 Margin Isolated Margin Tier"
 					]
 				}
 			}
@@ -8127,7 +8127,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Tier"
+						"GET Sapi v1 Margin Isolated Margin Tier"
 					]
 				}
 			}
@@ -8152,7 +8152,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Isolated Margin Tier"
+						"GET Sapi v1 Margin Isolated Margin Tier"
 					]
 				}
 			}
@@ -8171,7 +8171,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Rate Limit Order"
+						"GET Sapi v1 Margin Rate Limit Order"
 					]
 				}
 			}
@@ -8196,7 +8196,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Rate Limit Order"
+						"GET Sapi v1 Margin Rate Limit Order"
 					]
 				}
 			}
@@ -8221,7 +8221,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Rate Limit Order"
+						"GET Sapi v1 Margin Rate Limit Order"
 					]
 				}
 			}
@@ -8246,7 +8246,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Rate Limit Order"
+						"GET Sapi v1 Margin Rate Limit Order"
 					]
 				}
 			}
@@ -8272,7 +8272,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Rate Limit Order"
+						"GET Sapi v1 Margin Rate Limit Order"
 					]
 				}
 			}
@@ -8298,7 +8298,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Rate Limit Order"
+						"GET Sapi v1 Margin Rate Limit Order"
 					]
 				}
 			}
@@ -8323,7 +8323,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Rate Limit Order"
+						"GET Sapi v1 Margin Rate Limit Order"
 					]
 				}
 			}
@@ -8342,7 +8342,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Cross Margin Collateral Ratio"
+						"GET Sapi v1 Margin Cross Margin Collateral Ratio"
 					]
 				}
 			}
@@ -8367,7 +8367,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Cross Margin Collateral Ratio"
+						"GET Sapi v1 Margin Cross Margin Collateral Ratio"
 					]
 				}
 			}
@@ -8386,7 +8386,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability"
+						"GET Sapi v1 Margin Exchange Small Liability"
 					]
 				}
 			}
@@ -8411,7 +8411,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability"
+						"GET Sapi v1 Margin Exchange Small Liability"
 					]
 				}
 			}
@@ -8437,7 +8437,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability"
+						"GET Sapi v1 Margin Exchange Small Liability"
 					]
 				}
 			}
@@ -8463,7 +8463,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability"
+						"GET Sapi v1 Margin Exchange Small Liability"
 					]
 				}
 			}
@@ -8488,7 +8488,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability"
+						"GET Sapi v1 Margin Exchange Small Liability"
 					]
 				}
 			}
@@ -8507,7 +8507,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability History"
+						"GET Sapi v1 Margin Exchange Small Liability History"
 					]
 				}
 			}
@@ -8532,7 +8532,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability History"
+						"GET Sapi v1 Margin Exchange Small Liability History"
 					]
 				}
 			}
@@ -8557,7 +8557,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability History"
+						"GET Sapi v1 Margin Exchange Small Liability History"
 					]
 				}
 			}
@@ -8582,7 +8582,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability History"
+						"GET Sapi v1 Margin Exchange Small Liability History"
 					]
 				}
 			}
@@ -8607,7 +8607,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability History"
+						"GET Sapi v1 Margin Exchange Small Liability History"
 					]
 				}
 			}
@@ -8632,7 +8632,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability History"
+						"GET Sapi v1 Margin Exchange Small Liability History"
 					]
 				}
 			}
@@ -8658,7 +8658,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability History"
+						"GET Sapi v1 Margin Exchange Small Liability History"
 					]
 				}
 			}
@@ -8684,7 +8684,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability History"
+						"GET Sapi v1 Margin Exchange Small Liability History"
 					]
 				}
 			}
@@ -8709,7 +8709,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Exchange Small Liability History"
+						"GET Sapi v1 Margin Exchange Small Liability History"
 					]
 				}
 			}
@@ -8728,7 +8728,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Next Hourly Interest Rate"
+						"GET Sapi v1 Margin Next Hourly Interest Rate"
 					]
 				}
 			}
@@ -8753,7 +8753,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Next Hourly Interest Rate"
+						"GET Sapi v1 Margin Next Hourly Interest Rate"
 					]
 				}
 			}
@@ -8788,7 +8788,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Next Hourly Interest Rate"
+						"GET Sapi v1 Margin Next Hourly Interest Rate"
 					]
 				}
 			}
@@ -8813,7 +8813,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Next Hourly Interest Rate"
+						"GET Sapi v1 Margin Next Hourly Interest Rate"
 					]
 				}
 			}
@@ -8839,7 +8839,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Next Hourly Interest Rate"
+						"GET Sapi v1 Margin Next Hourly Interest Rate"
 					]
 				}
 			}
@@ -8865,7 +8865,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Next Hourly Interest Rate"
+						"GET Sapi v1 Margin Next Hourly Interest Rate"
 					]
 				}
 			}
@@ -8890,7 +8890,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Next Hourly Interest Rate"
+						"GET Sapi v1 Margin Next Hourly Interest Rate"
 					]
 				}
 			}
@@ -8909,7 +8909,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
@@ -8933,7 +8933,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
@@ -8958,7 +8958,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
@@ -9048,7 +9048,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
@@ -9073,7 +9073,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
@@ -9098,13 +9098,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "From Id",
+			"displayName": "From ID",
 			"name": "fromId",
 			"description": "If fromId is set, the data with id > fromId will be returned. Otherwise the latest data will be returned",
 			"default": 0,
@@ -9123,7 +9123,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
@@ -9148,7 +9148,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
@@ -9173,7 +9173,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
@@ -9199,7 +9199,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
@@ -9225,7 +9225,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
@@ -9250,7 +9250,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Capital Flow"
+						"GET Sapi v1 Margin Capital Flow"
 					]
 				}
 			}
@@ -9269,7 +9269,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Delist Schedule"
+						"GET Sapi v1 Margin Delist Schedule"
 					]
 				}
 			}
@@ -9294,7 +9294,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Delist Schedule"
+						"GET Sapi v1 Margin Delist Schedule"
 					]
 				}
 			}
@@ -9320,7 +9320,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Delist Schedule"
+						"GET Sapi v1 Margin Delist Schedule"
 					]
 				}
 			}
@@ -9346,7 +9346,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Delist Schedule"
+						"GET Sapi v1 Margin Delist Schedule"
 					]
 				}
 			}
@@ -9371,7 +9371,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Delist Schedule"
+						"GET Sapi v1 Margin Delist Schedule"
 					]
 				}
 			}
@@ -9390,7 +9390,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Available Inventory"
+						"GET Sapi v1 Margin Available Inventory"
 					]
 				}
 			}
@@ -9425,7 +9425,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Available Inventory"
+						"GET Sapi v1 Margin Available Inventory"
 					]
 				}
 			}
@@ -9451,7 +9451,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Available Inventory"
+						"GET Sapi v1 Margin Available Inventory"
 					]
 				}
 			}
@@ -9477,7 +9477,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Available Inventory"
+						"GET Sapi v1 Margin Available Inventory"
 					]
 				}
 			}
@@ -9502,7 +9502,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Available Inventory"
+						"GET Sapi v1 Margin Available Inventory"
 					]
 				}
 			}
@@ -9521,7 +9521,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Manual Liquidation"
+						"POST Sapi v1 Margin Manual Liquidation"
 					]
 				}
 			}
@@ -9556,7 +9556,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Manual Liquidation"
+						"POST Sapi v1 Margin Manual Liquidation"
 					]
 				}
 			}
@@ -9580,7 +9580,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Manual Liquidation"
+						"POST Sapi v1 Margin Manual Liquidation"
 					]
 				}
 			}
@@ -9606,7 +9606,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Manual Liquidation"
+						"POST Sapi v1 Margin Manual Liquidation"
 					]
 				}
 			}
@@ -9632,7 +9632,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Manual Liquidation"
+						"POST Sapi v1 Margin Manual Liquidation"
 					]
 				}
 			}
@@ -9657,7 +9657,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Manual Liquidation"
+						"POST Sapi v1 Margin Manual Liquidation"
 					]
 				}
 			}
@@ -9676,7 +9676,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -9702,7 +9702,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -9737,13 +9737,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "List Client Order Id",
+			"displayName": "List Client Order ID",
 			"name": "listClientOrderId",
 			"description": "Arbitrary unique ID among open order lists. Automatically generated if not sent.\nA new order list with the same `listClientOrderId` is accepted only when the previous one is filled or completely expired.\n`listClientOrderId` is distinct from the `workingClientOrderId` and the `pendingClientOrderId`.",
 			"default": "",
@@ -9762,7 +9762,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -9801,7 +9801,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -9836,7 +9836,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -9879,7 +9879,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -9904,7 +9904,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -9940,7 +9940,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -9976,13 +9976,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Working Client Order Id",
+			"displayName": "Working Client Order ID",
 			"name": "workingClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the working order. Automatically generated if not sent.",
 			"default": "",
@@ -10001,7 +10001,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10026,7 +10026,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10052,7 +10052,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10078,7 +10078,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10117,7 +10117,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10173,7 +10173,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10209,13 +10209,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Pending Client Order Id",
+			"displayName": "Pending Client Order ID",
 			"name": "pendingClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the pending order. Automatically generated if not sent.",
 			"default": "",
@@ -10234,7 +10234,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10258,7 +10258,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10282,7 +10282,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10306,7 +10306,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10332,7 +10332,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10357,7 +10357,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10396,7 +10396,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10422,7 +10422,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10448,7 +10448,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10473,7 +10473,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Oto"
+						"POST Sapi v1 Margin Order Oto"
 					]
 				}
 			}
@@ -10492,7 +10492,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10518,7 +10518,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10553,7 +10553,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10588,7 +10588,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10613,13 +10613,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "List Client Order Id",
+			"displayName": "List Client Order ID",
 			"name": "listClientOrderId",
 			"description": "Arbitrary unique ID among open order lists. Automatically generated if not sent.\nA new order list with the same `listClientOrderId` is accepted only when the previous one is filled or completely expired.\n`listClientOrderId` is distinct from the `workingClientOrderId` and the `pendingClientOrderId`.",
 			"default": "",
@@ -10638,7 +10638,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10677,7 +10677,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10720,7 +10720,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10756,7 +10756,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10792,13 +10792,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Working Client Order Id",
+			"displayName": "Working Client Order ID",
 			"name": "workingClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the working order. Automatically generated if not sent.",
 			"default": "",
@@ -10817,7 +10817,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10842,7 +10842,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10868,7 +10868,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10894,7 +10894,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10933,7 +10933,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10969,7 +10969,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -10995,7 +10995,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11035,13 +11035,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Pending Above Client Order Id",
+			"displayName": "Pending Above Client Order ID",
 			"name": "pendingAboveClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the pending above order. Automatically generated if not sent.",
 			"default": "",
@@ -11060,7 +11060,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11084,7 +11084,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11108,7 +11108,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11132,7 +11132,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11157,7 +11157,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11195,7 +11195,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11234,13 +11234,13 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Pending Below Client Order Id",
+			"displayName": "Pending Below Client Order ID",
 			"name": "pendingBelowClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the pending below order. Automatically generated if not sent.",
 			"default": "",
@@ -11259,7 +11259,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11283,7 +11283,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11307,7 +11307,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11331,7 +11331,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11356,7 +11356,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11394,7 +11394,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11420,7 +11420,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11446,7 +11446,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11471,7 +11471,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Order Otoco"
+						"POST Sapi v1 Margin Order Otoco"
 					]
 				}
 			}
@@ -11490,7 +11490,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Max Leverage"
+						"POST Sapi v1 Margin Max Leverage"
 					]
 				}
 			}
@@ -11516,7 +11516,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Max Leverage"
+						"POST Sapi v1 Margin Max Leverage"
 					]
 				}
 			}
@@ -11541,7 +11541,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Max Leverage"
+						"POST Sapi v1 Margin Max Leverage"
 					]
 				}
 			}
@@ -11567,7 +11567,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Max Leverage"
+						"POST Sapi v1 Margin Max Leverage"
 					]
 				}
 			}
@@ -11593,7 +11593,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Max Leverage"
+						"POST Sapi v1 Margin Max Leverage"
 					]
 				}
 			}
@@ -11618,7 +11618,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Margin Max Leverage"
+						"POST Sapi v1 Margin Max Leverage"
 					]
 				}
 			}
@@ -11637,7 +11637,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Leverage Bracket"
+						"GET Sapi v1 Margin Leverage Bracket"
 					]
 				}
 			}
@@ -11662,7 +11662,7 @@ export const marginDescription: INodeProperties[] = [
 						"Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Margin Leverage Bracket"
+						"GET Sapi v1 Margin Leverage Bracket"
 					]
 				}
 			}

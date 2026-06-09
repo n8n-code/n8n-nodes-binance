@@ -15,8 +15,8 @@ export const marginStreamDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST Sapi V 1 User Data Stream",
-					"value": "POST Sapi V 1 User Data Stream",
+					"name": "POST Sapi v1 User Data Stream",
+					"value": "POST Sapi v1 User Data Stream",
 					"action": "Create a ListenKey (USER_STREAM)",
 					"description": "Start a new user data stream.\nThe stream will close after 60 minutes unless a keepalive is sent. If the account has an active `listenKey`, that `listenKey` will be returned and its validity will be extended for 60 minutes.\n\nWeight: 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const marginStreamDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "PUT Sapi V 1 User Data Stream",
-					"value": "PUT Sapi V 1 User Data Stream",
+					"name": "PUT Sapi v1 User Data Stream",
+					"value": "PUT Sapi v1 User Data Stream",
 					"action": "Ping/Keep-alive a ListenKey (USER_STREAM)",
 					"description": "Keepalive a user data stream to prevent a time out. User data streams will close after 60 minutes. It's recommended to send a ping about every 30 minutes.\n\nWeight: 1",
 					"routing": {
@@ -39,8 +39,8 @@ export const marginStreamDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Sapi V 1 User Data Stream",
-					"value": "DELETE Sapi V 1 User Data Stream",
+					"name": "DELETE Sapi v1 User Data Stream",
+					"value": "DELETE Sapi v1 User Data Stream",
 					"action": "Close a ListenKey (USER_STREAM)",
 					"description": "Close out a user data stream.\n\nWeight: 1",
 					"routing": {
@@ -67,7 +67,7 @@ export const marginStreamDescription: INodeProperties[] = [
 						"Margin Stream"
 					],
 					"operation": [
-						"POST Sapi V 1 User Data Stream"
+						"POST Sapi v1 User Data Stream"
 					]
 				}
 			}
@@ -92,7 +92,7 @@ export const marginStreamDescription: INodeProperties[] = [
 						"Margin Stream"
 					],
 					"operation": [
-						"POST Sapi V 1 User Data Stream"
+						"POST Sapi v1 User Data Stream"
 					]
 				}
 			}
@@ -111,7 +111,7 @@ export const marginStreamDescription: INodeProperties[] = [
 						"Margin Stream"
 					],
 					"operation": [
-						"PUT Sapi V 1 User Data Stream"
+						"PUT Sapi v1 User Data Stream"
 					]
 				}
 			}
@@ -136,7 +136,7 @@ export const marginStreamDescription: INodeProperties[] = [
 						"Margin Stream"
 					],
 					"operation": [
-						"PUT Sapi V 1 User Data Stream"
+						"PUT Sapi v1 User Data Stream"
 					]
 				}
 			}
@@ -161,7 +161,7 @@ export const marginStreamDescription: INodeProperties[] = [
 						"Margin Stream"
 					],
 					"operation": [
-						"PUT Sapi V 1 User Data Stream"
+						"PUT Sapi v1 User Data Stream"
 					]
 				}
 			}
@@ -180,7 +180,7 @@ export const marginStreamDescription: INodeProperties[] = [
 						"Margin Stream"
 					],
 					"operation": [
-						"DELETE Sapi V 1 User Data Stream"
+						"DELETE Sapi v1 User Data Stream"
 					]
 				}
 			}
@@ -205,7 +205,7 @@ export const marginStreamDescription: INodeProperties[] = [
 						"Margin Stream"
 					],
 					"operation": [
-						"DELETE Sapi V 1 User Data Stream"
+						"DELETE Sapi v1 User Data Stream"
 					]
 				}
 			}
@@ -230,7 +230,7 @@ export const marginStreamDescription: INodeProperties[] = [
 						"Margin Stream"
 					],
 					"operation": [
-						"DELETE Sapi V 1 User Data Stream"
+						"DELETE Sapi v1 User Data Stream"
 					]
 				}
 			}

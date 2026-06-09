@@ -15,8 +15,8 @@ export const walletDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 System Status",
-					"value": "GET Sapi V 1 System Status",
+					"name": "GET Sapi v1 System Status",
+					"value": "GET Sapi v1 System Status",
 					"action": "System Status (System)",
 					"description": "Fetch system status.\n\nWeight(IP): 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Capital Config Getall",
-					"value": "GET Sapi V 1 Capital Config Getall",
+					"name": "GET Sapi v1 Capital Config Getall",
+					"value": "GET Sapi v1 Capital Config Getall",
 					"action": "All Coins' Information (USER_DATA)",
 					"description": "Get information of coins (available for deposit and withdraw) for user.\n\nWeight(IP): 10",
 					"routing": {
@@ -39,8 +39,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Account Snapshot",
-					"value": "GET Sapi V 1 Account Snapshot",
+					"name": "GET Sapi v1 Account Snapshot",
+					"value": "GET Sapi v1 Account Snapshot",
 					"action": "Daily Account Snapshot (USER_DATA)",
 					"description": "- The query time period must be less than 30 days\n- Support query within the last one month only\n- If startTimeand endTime not sent, return records of the last 7 days by default\n\nWeight(IP): 2400",
 					"routing": {
@@ -51,8 +51,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Account Disable Fast Withdraw Switch",
-					"value": "POST Sapi V 1 Account Disable Fast Withdraw Switch",
+					"name": "POST Sapi v1 Account Disable Fast Withdraw Switch",
+					"value": "POST Sapi v1 Account Disable Fast Withdraw Switch",
 					"action": "Disable Fast Withdraw Switch (USER_DATA)",
 					"description": "- This request will disable fastwithdraw switch under your account.\n- You need to enable \"trade\" option for the api key which requests this endpoint.\n\nWeight(IP): 1",
 					"routing": {
@@ -63,8 +63,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Account Enable Fast Withdraw Switch",
-					"value": "POST Sapi V 1 Account Enable Fast Withdraw Switch",
+					"name": "POST Sapi v1 Account Enable Fast Withdraw Switch",
+					"value": "POST Sapi v1 Account Enable Fast Withdraw Switch",
 					"action": "Enable Fast Withdraw Switch (USER_DATA)",
 					"description": "- This request will enable fastwithdraw switch under your account. You need to enable \"trade\" option for the api key which requests this endpoint.\n- When Fast Withdraw Switch is on, transferring funds to a Binance account will be done instantly. There is no on-chain transaction, no transaction ID and no withdrawal fee.\n\nWeight(IP): 1",
 					"routing": {
@@ -75,8 +75,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Capital Withdraw Apply",
-					"value": "POST Sapi V 1 Capital Withdraw Apply",
+					"name": "POST Sapi v1 Capital Withdraw Apply",
+					"value": "POST Sapi v1 Capital Withdraw Apply",
 					"action": "Withdraw (USER_DATA)",
 					"description": "Submit a withdraw request.\n\n- If `network` not send, return with default network of the coin.\n- You can get `network` and `isDefault` in `networkList` of a coin in the response of `Get /sapi/v1/capital/config/getall (HMAC SHA256)`.\n\nWeight(IP): 1",
 					"routing": {
@@ -87,8 +87,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Capital Deposit Hisrec",
-					"value": "GET Sapi V 1 Capital Deposit Hisrec",
+					"name": "GET Sapi v1 Capital Deposit Hisrec",
+					"value": "GET Sapi v1 Capital Deposit Hisrec",
 					"action": "Deposit History(supporting network) (USER_DATA)",
 					"description": "Fetch deposit history.\n\n- Please notice the default `startTime` and `endTime` to make sure that time interval is within 0-90 days.\n- If both `startTime` and `endTime` are sent, time between `startTime` and `endTime` must be less than 90 days.\n\nWeight(IP): 1",
 					"routing": {
@@ -99,8 +99,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Capital Withdraw History",
-					"value": "GET Sapi V 1 Capital Withdraw History",
+					"name": "GET Sapi v1 Capital Withdraw History",
+					"value": "GET Sapi v1 Capital Withdraw History",
 					"action": "Withdraw History (supporting network) (USER_DATA)",
 					"description": "Fetch withdraw history.\n\nThis endpoint specifically uses per second UID rate limit, user's total second level IP rate limit is 180000/second. Response from the endpoint contains header key X-SAPI-USED-UID-WEIGHT-1S, which defines weight used by the current IP.\n\n- `network` may not be in the response for old withdraw.\n- Please notice the default `startTime` and `endTime` to make sure that time interval is within 0-90 days.\n- If both `startTime` and `endTime` are sent, time between `startTime` and `endTime` must be less than 90 days\n- If withdrawOrderId is sent, time between startTime and endTime must be less than 7 days.\n- If withdrawOrderId is sent, startTime and endTime are not sent, will return last 7 days records by default.\n\nWeight(UID): 18000\nRequest Limit: 10 requests per second",
 					"routing": {
@@ -111,8 +111,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Capital Deposit Address",
-					"value": "GET Sapi V 1 Capital Deposit Address",
+					"name": "GET Sapi v1 Capital Deposit Address",
+					"value": "GET Sapi v1 Capital Deposit Address",
 					"action": "Deposit Address (supporting network) (USER_DATA)",
 					"description": "Fetch deposit address with network.\n\n- If network is not send, return with default network of the coin.\n- You can get network and isDefault in networkList in the response of Get /sapi/v1/capital/config/getall (HMAC SHA256).\n\nWeight(IP): 10",
 					"routing": {
@@ -123,8 +123,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Account Status",
-					"value": "GET Sapi V 1 Account Status",
+					"name": "GET Sapi v1 Account Status",
+					"value": "GET Sapi v1 Account Status",
 					"action": "Account Status (USER_DATA)",
 					"description": "Fetch account status detail.\n\nWeight(IP): 1",
 					"routing": {
@@ -135,8 +135,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Account Api Trading Status",
-					"value": "GET Sapi V 1 Account Api Trading Status",
+					"name": "GET Sapi v1 Account API Trading Status",
+					"value": "GET Sapi v1 Account API Trading Status",
 					"action": "Account API Trading Status (USER_DATA)",
 					"description": "Fetch account API trading status with details.\n\nWeight(IP): 1",
 					"routing": {
@@ -147,8 +147,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Asset Dribblet",
-					"value": "GET Sapi V 1 Asset Dribblet",
+					"name": "GET Sapi v1 Asset Dribblet",
+					"value": "GET Sapi v1 Asset Dribblet",
 					"action": "DustLog(USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -159,8 +159,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Asset Dust Btc",
-					"value": "POST Sapi V 1 Asset Dust Btc",
+					"name": "POST Sapi v1 Asset Dust Btc",
+					"value": "POST Sapi v1 Asset Dust Btc",
 					"action": "Get Assets That Can Be Converted Into BNB (USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -171,8 +171,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Asset Dust",
-					"value": "POST Sapi V 1 Asset Dust",
+					"name": "POST Sapi v1 Asset Dust",
+					"value": "POST Sapi v1 Asset Dust",
 					"action": "Dust Transfer (USER_DATA)",
 					"description": "Convert dust assets to BNB.\n\nWeight(UID): 10",
 					"routing": {
@@ -183,8 +183,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Asset Asset Dividend",
-					"value": "GET Sapi V 1 Asset Asset Dividend",
+					"name": "GET Sapi v1 Asset Asset Dividend",
+					"value": "GET Sapi v1 Asset Asset Dividend",
 					"action": "Asset Dividend Record (USER_DATA)",
 					"description": "Query asset Dividend Record\n\nWeight(IP): 10",
 					"routing": {
@@ -195,8 +195,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Asset Asset Detail",
-					"value": "GET Sapi V 1 Asset Asset Detail",
+					"name": "GET Sapi v1 Asset Asset Detail",
+					"value": "GET Sapi v1 Asset Asset Detail",
 					"action": "Asset Detail (USER_DATA)",
 					"description": "Fetch details of assets supported on Binance.\n\n- Please get network and other deposit or withdraw details from `GET /sapi/v1/capital/config/getall`.\n\nWeight(IP): 1",
 					"routing": {
@@ -207,8 +207,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Asset Trade Fee",
-					"value": "GET Sapi V 1 Asset Trade Fee",
+					"name": "GET Sapi v1 Asset Trade Fee",
+					"value": "GET Sapi v1 Asset Trade Fee",
 					"action": "Trade Fee (USER_DATA)",
 					"description": "Fetch trade fee\n\nWeight(IP): 1",
 					"routing": {
@@ -219,8 +219,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Asset Transfer",
-					"value": "GET Sapi V 1 Asset Transfer",
+					"name": "GET Sapi v1 Asset Transfer",
+					"value": "GET Sapi v1 Asset Transfer",
 					"action": "Query User Universal Transfer History (USER_DATA)",
 					"description": "- `fromSymbol` must be sent when type are ISOLATEDMARGIN_MARGIN and ISOLATEDMARGIN_ISOLATEDMARGIN\n- `toSymbol` must be sent when type are MARGIN_ISOLATEDMARGIN and ISOLATEDMARGIN_ISOLATEDMARGIN\n- Support query within the last 6 months only\n- If `startTime` and `endTime` not sent, return records of the last 7 days by default\n\nWeight(IP): 1",
 					"routing": {
@@ -231,8 +231,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Asset Transfer",
-					"value": "POST Sapi V 1 Asset Transfer",
+					"name": "POST Sapi v1 Asset Transfer",
+					"value": "POST Sapi v1 Asset Transfer",
 					"action": "User Universal Transfer (USER_DATA)",
 					"description": "You need to enable `Permits Universal Transfer` option for the api key which requests this endpoint.\n\n- `fromSymbol` must be sent when type are ISOLATEDMARGIN_MARGIN and ISOLATEDMARGIN_ISOLATEDMARGIN\n- `toSymbol` must be sent when type are MARGIN_ISOLATEDMARGIN and ISOLATEDMARGIN_ISOLATEDMARGIN\n\nENUM of transfer types:\n  - MAIN_UMFUTURE Spot account transfer to USDⓈ-M Futures account\n  - MAIN_CMFUTURE Spot account transfer to COIN-M Futures account\n  - MAIN_MARGIN Spot account transfer to Margin(cross)account\n  - UMFUTURE_MAIN USDⓈ-M Futures account transfer to Spot account\n  - UMFUTURE_MARGIN USDⓈ-M Futures account transfer to Margin(cross)account\n  - CMFUTURE_MAIN COIN-M Futures account transfer to Spot account\n  - CMFUTURE_MARGIN COIN-M Futures account transfer to Margin(cross) account\n  - MARGIN_MAIN Margin(cross)account transfer to Spot account\n  - MARGIN_UMFUTURE Margin(cross)account transfer to USDⓈ-M Futures\n  - MARGIN_CMFUTURE Margin(cross)account transfer to COIN-M Futures\n  - ISOLATEDMARGIN_MARGIN Isolated margin account transfer to Margin(cross) account\n  - MARGIN_ISOLATEDMARGIN Margin(cross) account transfer to Isolated margin account\n  - ISOLATEDMARGIN_ISOLATEDMARGIN Isolated margin account transfer to Isolated margin account\n  - MAIN_FUNDING Spot account transfer to Funding account\n  - FUNDING_MAIN Funding account transfer to Spot account\n  - FUNDING_UMFUTURE Funding account transfer to UMFUTURE account\n  - UMFUTURE_FUNDING UMFUTURE account transfer to Funding account\n  - MARGIN_FUNDING MARGIN account transfer to Funding account\n  - FUNDING_MARGIN Funding account transfer to Margin account\n  - FUNDING_CMFUTURE Funding account transfer to CMFUTURE account\n  - CMFUTURE_FUNDING CMFUTURE account transfer to Funding account\n  - MAIN_OPTION Spot account transfer to Options account\n  - OPTION_MAIN Options account transfer to Spot account\n  - UMFUTURE_OPTION USDⓈ-M Futures account transfer to Options account\n  - OPTION_UMFUTURE Options account transfer to USDⓈ-M Futures account\n  - MARGIN_OPTION Margin(cross)account transfer to Options account\n  - OPTION_MARGIN Options account transfer to Margin(cross)account\n  - FUNDING_OPTION Funding account transfer to Options account\n  - OPTION_FUNDING Options account transfer to Funding account\n  - MAIN_PORTFOLIO_MARGIN Spot account transfer to Portfolio Margin account\n  - PORTFOLIO_MARGIN_MAIN Portfolio Margin account transfer to Spot account\n  - MAIN_ISOLATED_MARGIN Spot account transfer to Isolated margin account\n  - ISOLATED_MARGIN_MAIN Isolated margin account transfer to Spot account\n\nWeight(IP): 1",
 					"routing": {
@@ -243,8 +243,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Asset Get Funding Asset",
-					"value": "POST Sapi V 1 Asset Get Funding Asset",
+					"name": "POST Sapi v1 Asset Get Funding Asset",
+					"value": "POST Sapi v1 Asset Get Funding Asset",
 					"action": "Funding Wallet (USER_DATA)",
 					"description": "- Currently supports querying the following business assets：Binance Pay, Binance Card, Binance Gift Card, Stock Token\n\nWeight(IP): 1",
 					"routing": {
@@ -255,8 +255,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 3 Asset Get User Asset",
-					"value": "POST Sapi V 3 Asset Get User Asset",
+					"name": "POST Sapi v3 Asset Get User Asset",
+					"value": "POST Sapi v3 Asset Get User Asset",
 					"action": "User Asset (USER_DATA)",
 					"description": "Get user assets, just for positive data.\n\nWeight(IP): 5",
 					"routing": {
@@ -267,8 +267,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Asset Convert Transfer",
-					"value": "POST Sapi V 1 Asset Convert Transfer",
+					"name": "POST Sapi v1 Asset Convert Transfer",
+					"value": "POST Sapi v1 Asset Convert Transfer",
 					"action": "Convert Transfer (USER_DATA)",
 					"description": "Convert transfer, convert between BUSD and stablecoins.\nIf the clientId has been used before, will not do the convert transfer, the original transfer will be returned.\n\nWeight(UID): 5",
 					"routing": {
@@ -279,8 +279,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Asset Convert Transfer Query By Page",
-					"value": "GET Sapi V 1 Asset Convert Transfer Query By Page",
+					"name": "GET Sapi v1 Asset Convert Transfer Query By Page",
+					"value": "GET Sapi v1 Asset Convert Transfer Query By Page",
 					"action": "Query Convert Transfer (USER_DATA)",
 					"description": "Weight(UID): 5",
 					"routing": {
@@ -291,8 +291,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page",
-					"value": "GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page",
+					"name": "GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page",
+					"value": "GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page",
 					"action": "Get Cloud-Mining payment and refund history (USER_DATA)",
 					"description": "The query of Cloud-Mining payment and refund history\n\nWeight(UID): 600",
 					"routing": {
@@ -303,8 +303,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Account Api Restrictions",
-					"value": "GET Sapi V 1 Account Api Restrictions",
+					"name": "GET Sapi v1 Account API Restrictions",
+					"value": "GET Sapi v1 Account API Restrictions",
 					"action": "Get API Key Permission (USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -315,8 +315,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Capital Contract Convertible Coins",
-					"value": "GET Sapi V 1 Capital Contract Convertible Coins",
+					"name": "GET Sapi v1 Capital Contract Convertible Coins",
+					"value": "GET Sapi v1 Capital Contract Convertible Coins",
 					"action": "Query auto-converting stable coins (USER_DATA)",
 					"description": "Get a user's auto-conversion settings in deposit/withdrawal\n\nWeight(UID): 600'",
 					"routing": {
@@ -327,8 +327,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Capital Contract Convertible Coins",
-					"value": "POST Sapi V 1 Capital Contract Convertible Coins",
+					"name": "POST Sapi v1 Capital Contract Convertible Coins",
+					"value": "POST Sapi v1 Capital Contract Convertible Coins",
 					"action": "Switch on/off BUSD and stable coins conversion (USER_DATA) (USER_DATA)",
 					"description": "User can use it to turn on or turn off the BUSD auto-conversion from/to a specific stable coin.\n\nWeight(UID): 600'",
 					"routing": {
@@ -339,8 +339,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Capital Deposit Credit Apply",
-					"value": "POST Sapi V 1 Capital Deposit Credit Apply",
+					"name": "POST Sapi v1 Capital Deposit Credit Apply",
+					"value": "POST Sapi v1 Capital Deposit Credit Apply",
 					"action": "One click arrival deposit apply (USER_DATA)",
 					"description": "Apply deposit credit for expired address (One click arrival)\n\nWeight(IP): 1",
 					"routing": {
@@ -351,8 +351,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Asset Wallet Balance",
-					"value": "GET Sapi V 1 Asset Wallet Balance",
+					"name": "GET Sapi v1 Asset Wallet Balance",
+					"value": "GET Sapi v1 Asset Wallet Balance",
 					"action": "Query User Wallet Balance (USER_DATA)",
 					"description": "Query User Wallet Balance\n\nWeight(IP): 60",
 					"routing": {
@@ -363,8 +363,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Asset Custody Transfer History",
-					"value": "GET Sapi V 1 Asset Custody Transfer History",
+					"name": "GET Sapi v1 Asset Custody Transfer History",
+					"value": "GET Sapi v1 Asset Custody Transfer History",
 					"action": "Query User Delegation History(For Master Account) (USER_DATA)",
 					"description": "Query User Delegation History\n\nWeight(IP): 60",
 					"routing": {
@@ -375,8 +375,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Capital Deposit Address List",
-					"value": "GET Sapi V 1 Capital Deposit Address List",
+					"name": "GET Sapi v1 Capital Deposit Address List",
+					"value": "GET Sapi v1 Capital Deposit Address List",
 					"action": "Fetch deposit address list with network (USER_DATA)",
 					"description": "Fetch deposit address list with network.\n\nWeight(IP): 10",
 					"routing": {
@@ -387,8 +387,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Spot Delist Schedule",
-					"value": "GET Sapi V 1 Spot Delist Schedule",
+					"name": "GET Sapi v1 Spot Delist Schedule",
+					"value": "GET Sapi v1 Spot Delist Schedule",
 					"action": "Get symbols delist schedule for spot (MARKET_DATA)",
 					"description": "Get symbols delist schedule for spot\n\nWeight(IP): 100",
 					"routing": {
@@ -399,8 +399,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Capital Withdraw Address List",
-					"value": "GET Sapi V 1 Capital Withdraw Address List",
+					"name": "GET Sapi v1 Capital Withdraw Address List",
+					"value": "GET Sapi v1 Capital Withdraw Address List",
 					"action": "Fetch withdraw address list (USER_DATA)",
 					"description": "Fetch withdraw address list\n\nWeight(IP): 10",
 					"routing": {
@@ -411,8 +411,8 @@ export const walletDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Account Info",
-					"value": "GET Sapi V 1 Account Info",
+					"name": "GET Sapi v1 Account Info",
+					"value": "GET Sapi v1 Account Info",
 					"action": "Account info (USER_DATA)",
 					"description": "Fetch account info detail.\n\nWeight(IP): 1",
 					"routing": {
@@ -439,7 +439,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 System Status"
+						"GET Sapi v1 System Status"
 					]
 				}
 			}
@@ -458,7 +458,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Config Getall"
+						"GET Sapi v1 Capital Config Getall"
 					]
 				}
 			}
@@ -483,7 +483,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Config Getall"
+						"GET Sapi v1 Capital Config Getall"
 					]
 				}
 			}
@@ -509,7 +509,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Config Getall"
+						"GET Sapi v1 Capital Config Getall"
 					]
 				}
 			}
@@ -535,7 +535,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Config Getall"
+						"GET Sapi v1 Capital Config Getall"
 					]
 				}
 			}
@@ -560,7 +560,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Config Getall"
+						"GET Sapi v1 Capital Config Getall"
 					]
 				}
 			}
@@ -579,7 +579,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Snapshot"
+						"GET Sapi v1 Account Snapshot"
 					]
 				}
 			}
@@ -618,7 +618,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Snapshot"
+						"GET Sapi v1 Account Snapshot"
 					]
 				}
 			}
@@ -643,7 +643,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Snapshot"
+						"GET Sapi v1 Account Snapshot"
 					]
 				}
 			}
@@ -668,7 +668,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Snapshot"
+						"GET Sapi v1 Account Snapshot"
 					]
 				}
 			}
@@ -692,7 +692,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Snapshot"
+						"GET Sapi v1 Account Snapshot"
 					]
 				}
 			}
@@ -717,7 +717,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Snapshot"
+						"GET Sapi v1 Account Snapshot"
 					]
 				}
 			}
@@ -743,7 +743,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Snapshot"
+						"GET Sapi v1 Account Snapshot"
 					]
 				}
 			}
@@ -769,7 +769,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Snapshot"
+						"GET Sapi v1 Account Snapshot"
 					]
 				}
 			}
@@ -794,7 +794,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Snapshot"
+						"GET Sapi v1 Account Snapshot"
 					]
 				}
 			}
@@ -813,7 +813,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Account Disable Fast Withdraw Switch"
+						"POST Sapi v1 Account Disable Fast Withdraw Switch"
 					]
 				}
 			}
@@ -838,7 +838,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Account Disable Fast Withdraw Switch"
+						"POST Sapi v1 Account Disable Fast Withdraw Switch"
 					]
 				}
 			}
@@ -864,7 +864,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Account Disable Fast Withdraw Switch"
+						"POST Sapi v1 Account Disable Fast Withdraw Switch"
 					]
 				}
 			}
@@ -890,7 +890,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Account Disable Fast Withdraw Switch"
+						"POST Sapi v1 Account Disable Fast Withdraw Switch"
 					]
 				}
 			}
@@ -915,7 +915,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Account Disable Fast Withdraw Switch"
+						"POST Sapi v1 Account Disable Fast Withdraw Switch"
 					]
 				}
 			}
@@ -934,7 +934,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Account Enable Fast Withdraw Switch"
+						"POST Sapi v1 Account Enable Fast Withdraw Switch"
 					]
 				}
 			}
@@ -959,7 +959,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Account Enable Fast Withdraw Switch"
+						"POST Sapi v1 Account Enable Fast Withdraw Switch"
 					]
 				}
 			}
@@ -985,7 +985,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Account Enable Fast Withdraw Switch"
+						"POST Sapi v1 Account Enable Fast Withdraw Switch"
 					]
 				}
 			}
@@ -1011,7 +1011,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Account Enable Fast Withdraw Switch"
+						"POST Sapi v1 Account Enable Fast Withdraw Switch"
 					]
 				}
 			}
@@ -1036,7 +1036,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Account Enable Fast Withdraw Switch"
+						"POST Sapi v1 Account Enable Fast Withdraw Switch"
 					]
 				}
 			}
@@ -1055,7 +1055,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1081,13 +1081,13 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Withdraw Order Id",
+			"displayName": "Withdraw Order ID",
 			"name": "withdrawOrderId",
 			"description": "Client id for withdraw",
 			"default": "",
@@ -1106,7 +1106,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1130,7 +1130,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1155,7 +1155,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1180,7 +1180,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1205,7 +1205,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1230,7 +1230,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1254,7 +1254,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1279,7 +1279,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1304,7 +1304,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1330,7 +1330,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1356,7 +1356,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1381,7 +1381,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Withdraw Apply"
+						"POST Sapi v1 Capital Withdraw Apply"
 					]
 				}
 			}
@@ -1400,7 +1400,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Hisrec"
+						"GET Sapi v1 Capital Deposit Hisrec"
 					]
 				}
 			}
@@ -1425,7 +1425,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Hisrec"
+						"GET Sapi v1 Capital Deposit Hisrec"
 					]
 				}
 			}
@@ -1450,7 +1450,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Hisrec"
+						"GET Sapi v1 Capital Deposit Hisrec"
 					]
 				}
 			}
@@ -1475,7 +1475,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Hisrec"
+						"GET Sapi v1 Capital Deposit Hisrec"
 					]
 				}
 			}
@@ -1500,7 +1500,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Hisrec"
+						"GET Sapi v1 Capital Deposit Hisrec"
 					]
 				}
 			}
@@ -1524,7 +1524,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Hisrec"
+						"GET Sapi v1 Capital Deposit Hisrec"
 					]
 				}
 			}
@@ -1549,7 +1549,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Hisrec"
+						"GET Sapi v1 Capital Deposit Hisrec"
 					]
 				}
 			}
@@ -1574,7 +1574,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Hisrec"
+						"GET Sapi v1 Capital Deposit Hisrec"
 					]
 				}
 			}
@@ -1600,7 +1600,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Hisrec"
+						"GET Sapi v1 Capital Deposit Hisrec"
 					]
 				}
 			}
@@ -1626,7 +1626,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Hisrec"
+						"GET Sapi v1 Capital Deposit Hisrec"
 					]
 				}
 			}
@@ -1651,7 +1651,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Hisrec"
+						"GET Sapi v1 Capital Deposit Hisrec"
 					]
 				}
 			}
@@ -1670,7 +1670,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
@@ -1695,13 +1695,13 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Withdraw Order Id",
+			"displayName": "Withdraw Order ID",
 			"name": "withdrawOrderId",
 			"default": "",
 			"type": "string",
@@ -1719,7 +1719,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
@@ -1744,7 +1744,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
@@ -1769,7 +1769,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
@@ -1794,7 +1794,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
@@ -1818,7 +1818,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
@@ -1843,7 +1843,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
@@ -1868,7 +1868,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
@@ -1894,7 +1894,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
@@ -1920,7 +1920,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
@@ -1945,7 +1945,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw History"
+						"GET Sapi v1 Capital Withdraw History"
 					]
 				}
 			}
@@ -1964,7 +1964,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address"
+						"GET Sapi v1 Capital Deposit Address"
 					]
 				}
 			}
@@ -1990,7 +1990,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address"
+						"GET Sapi v1 Capital Deposit Address"
 					]
 				}
 			}
@@ -2014,7 +2014,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address"
+						"GET Sapi v1 Capital Deposit Address"
 					]
 				}
 			}
@@ -2039,7 +2039,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address"
+						"GET Sapi v1 Capital Deposit Address"
 					]
 				}
 			}
@@ -2065,7 +2065,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address"
+						"GET Sapi v1 Capital Deposit Address"
 					]
 				}
 			}
@@ -2091,7 +2091,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address"
+						"GET Sapi v1 Capital Deposit Address"
 					]
 				}
 			}
@@ -2116,7 +2116,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address"
+						"GET Sapi v1 Capital Deposit Address"
 					]
 				}
 			}
@@ -2135,7 +2135,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Status"
+						"GET Sapi v1 Account Status"
 					]
 				}
 			}
@@ -2160,7 +2160,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Status"
+						"GET Sapi v1 Account Status"
 					]
 				}
 			}
@@ -2186,7 +2186,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Status"
+						"GET Sapi v1 Account Status"
 					]
 				}
 			}
@@ -2212,7 +2212,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Status"
+						"GET Sapi v1 Account Status"
 					]
 				}
 			}
@@ -2237,7 +2237,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Status"
+						"GET Sapi v1 Account Status"
 					]
 				}
 			}
@@ -2256,7 +2256,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Api Trading Status"
+						"GET Sapi v1 Account API Trading Status"
 					]
 				}
 			}
@@ -2281,7 +2281,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Api Trading Status"
+						"GET Sapi v1 Account API Trading Status"
 					]
 				}
 			}
@@ -2307,7 +2307,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Api Trading Status"
+						"GET Sapi v1 Account API Trading Status"
 					]
 				}
 			}
@@ -2333,7 +2333,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Api Trading Status"
+						"GET Sapi v1 Account API Trading Status"
 					]
 				}
 			}
@@ -2358,7 +2358,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Api Trading Status"
+						"GET Sapi v1 Account API Trading Status"
 					]
 				}
 			}
@@ -2377,7 +2377,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Dribblet"
+						"GET Sapi v1 Asset Dribblet"
 					]
 				}
 			}
@@ -2412,7 +2412,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Dribblet"
+						"GET Sapi v1 Asset Dribblet"
 					]
 				}
 			}
@@ -2437,7 +2437,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Dribblet"
+						"GET Sapi v1 Asset Dribblet"
 					]
 				}
 			}
@@ -2462,7 +2462,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Dribblet"
+						"GET Sapi v1 Asset Dribblet"
 					]
 				}
 			}
@@ -2487,7 +2487,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Dribblet"
+						"GET Sapi v1 Asset Dribblet"
 					]
 				}
 			}
@@ -2513,7 +2513,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Dribblet"
+						"GET Sapi v1 Asset Dribblet"
 					]
 				}
 			}
@@ -2539,7 +2539,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Dribblet"
+						"GET Sapi v1 Asset Dribblet"
 					]
 				}
 			}
@@ -2564,7 +2564,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Dribblet"
+						"GET Sapi v1 Asset Dribblet"
 					]
 				}
 			}
@@ -2583,7 +2583,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust Btc"
+						"POST Sapi v1 Asset Dust Btc"
 					]
 				}
 			}
@@ -2618,7 +2618,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust Btc"
+						"POST Sapi v1 Asset Dust Btc"
 					]
 				}
 			}
@@ -2643,7 +2643,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust Btc"
+						"POST Sapi v1 Asset Dust Btc"
 					]
 				}
 			}
@@ -2669,7 +2669,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust Btc"
+						"POST Sapi v1 Asset Dust Btc"
 					]
 				}
 			}
@@ -2695,7 +2695,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust Btc"
+						"POST Sapi v1 Asset Dust Btc"
 					]
 				}
 			}
@@ -2720,7 +2720,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust Btc"
+						"POST Sapi v1 Asset Dust Btc"
 					]
 				}
 			}
@@ -2739,7 +2739,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust"
+						"POST Sapi v1 Asset Dust"
 					]
 				}
 			}
@@ -2765,7 +2765,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust"
+						"POST Sapi v1 Asset Dust"
 					]
 				}
 			}
@@ -2800,7 +2800,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust"
+						"POST Sapi v1 Asset Dust"
 					]
 				}
 			}
@@ -2825,7 +2825,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust"
+						"POST Sapi v1 Asset Dust"
 					]
 				}
 			}
@@ -2851,7 +2851,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust"
+						"POST Sapi v1 Asset Dust"
 					]
 				}
 			}
@@ -2877,7 +2877,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust"
+						"POST Sapi v1 Asset Dust"
 					]
 				}
 			}
@@ -2902,7 +2902,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Dust"
+						"POST Sapi v1 Asset Dust"
 					]
 				}
 			}
@@ -2921,7 +2921,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Dividend"
+						"GET Sapi v1 Asset Asset Dividend"
 					]
 				}
 			}
@@ -2945,7 +2945,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Dividend"
+						"GET Sapi v1 Asset Asset Dividend"
 					]
 				}
 			}
@@ -2970,7 +2970,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Dividend"
+						"GET Sapi v1 Asset Asset Dividend"
 					]
 				}
 			}
@@ -2995,7 +2995,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Dividend"
+						"GET Sapi v1 Asset Asset Dividend"
 					]
 				}
 			}
@@ -3019,7 +3019,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Dividend"
+						"GET Sapi v1 Asset Asset Dividend"
 					]
 				}
 			}
@@ -3044,7 +3044,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Dividend"
+						"GET Sapi v1 Asset Asset Dividend"
 					]
 				}
 			}
@@ -3070,7 +3070,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Dividend"
+						"GET Sapi v1 Asset Asset Dividend"
 					]
 				}
 			}
@@ -3096,7 +3096,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Dividend"
+						"GET Sapi v1 Asset Asset Dividend"
 					]
 				}
 			}
@@ -3121,7 +3121,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Dividend"
+						"GET Sapi v1 Asset Asset Dividend"
 					]
 				}
 			}
@@ -3140,7 +3140,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Detail"
+						"GET Sapi v1 Asset Asset Detail"
 					]
 				}
 			}
@@ -3164,7 +3164,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Detail"
+						"GET Sapi v1 Asset Asset Detail"
 					]
 				}
 			}
@@ -3189,7 +3189,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Detail"
+						"GET Sapi v1 Asset Asset Detail"
 					]
 				}
 			}
@@ -3215,7 +3215,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Detail"
+						"GET Sapi v1 Asset Asset Detail"
 					]
 				}
 			}
@@ -3241,7 +3241,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Detail"
+						"GET Sapi v1 Asset Asset Detail"
 					]
 				}
 			}
@@ -3266,7 +3266,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Asset Detail"
+						"GET Sapi v1 Asset Asset Detail"
 					]
 				}
 			}
@@ -3285,7 +3285,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Trade Fee"
+						"GET Sapi v1 Asset Trade Fee"
 					]
 				}
 			}
@@ -3310,7 +3310,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Trade Fee"
+						"GET Sapi v1 Asset Trade Fee"
 					]
 				}
 			}
@@ -3335,7 +3335,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Trade Fee"
+						"GET Sapi v1 Asset Trade Fee"
 					]
 				}
 			}
@@ -3361,7 +3361,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Trade Fee"
+						"GET Sapi v1 Asset Trade Fee"
 					]
 				}
 			}
@@ -3387,7 +3387,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Trade Fee"
+						"GET Sapi v1 Asset Trade Fee"
 					]
 				}
 			}
@@ -3412,7 +3412,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Trade Fee"
+						"GET Sapi v1 Asset Trade Fee"
 					]
 				}
 			}
@@ -3431,7 +3431,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3571,7 +3571,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3596,7 +3596,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3621,7 +3621,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3646,7 +3646,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3671,7 +3671,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3696,7 +3696,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3721,7 +3721,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3746,7 +3746,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3772,7 +3772,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3798,7 +3798,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3823,7 +3823,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Transfer"
+						"GET Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3842,7 +3842,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Transfer"
+						"POST Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -3982,7 +3982,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Transfer"
+						"POST Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -4007,7 +4007,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Transfer"
+						"POST Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -4032,7 +4032,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Transfer"
+						"POST Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -4057,7 +4057,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Transfer"
+						"POST Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -4082,7 +4082,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Transfer"
+						"POST Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -4107,7 +4107,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Transfer"
+						"POST Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -4133,7 +4133,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Transfer"
+						"POST Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -4159,7 +4159,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Transfer"
+						"POST Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -4184,7 +4184,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Transfer"
+						"POST Sapi v1 Asset Transfer"
 					]
 				}
 			}
@@ -4203,7 +4203,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Get Funding Asset"
+						"POST Sapi v1 Asset Get Funding Asset"
 					]
 				}
 			}
@@ -4227,7 +4227,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Get Funding Asset"
+						"POST Sapi v1 Asset Get Funding Asset"
 					]
 				}
 			}
@@ -4261,7 +4261,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Get Funding Asset"
+						"POST Sapi v1 Asset Get Funding Asset"
 					]
 				}
 			}
@@ -4286,7 +4286,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Get Funding Asset"
+						"POST Sapi v1 Asset Get Funding Asset"
 					]
 				}
 			}
@@ -4312,7 +4312,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Get Funding Asset"
+						"POST Sapi v1 Asset Get Funding Asset"
 					]
 				}
 			}
@@ -4338,7 +4338,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Get Funding Asset"
+						"POST Sapi v1 Asset Get Funding Asset"
 					]
 				}
 			}
@@ -4363,7 +4363,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Get Funding Asset"
+						"POST Sapi v1 Asset Get Funding Asset"
 					]
 				}
 			}
@@ -4382,7 +4382,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 3 Asset Get User Asset"
+						"POST Sapi v3 Asset Get User Asset"
 					]
 				}
 			}
@@ -4406,7 +4406,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 3 Asset Get User Asset"
+						"POST Sapi v3 Asset Get User Asset"
 					]
 				}
 			}
@@ -4440,7 +4440,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 3 Asset Get User Asset"
+						"POST Sapi v3 Asset Get User Asset"
 					]
 				}
 			}
@@ -4465,7 +4465,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 3 Asset Get User Asset"
+						"POST Sapi v3 Asset Get User Asset"
 					]
 				}
 			}
@@ -4491,7 +4491,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 3 Asset Get User Asset"
+						"POST Sapi v3 Asset Get User Asset"
 					]
 				}
 			}
@@ -4517,7 +4517,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 3 Asset Get User Asset"
+						"POST Sapi v3 Asset Get User Asset"
 					]
 				}
 			}
@@ -4542,7 +4542,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 3 Asset Get User Asset"
+						"POST Sapi v3 Asset Get User Asset"
 					]
 				}
 			}
@@ -4561,13 +4561,13 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Convert Transfer"
+						"POST Sapi v1 Asset Convert Transfer"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Client Tran Id",
+			"displayName": "Client Tran ID",
 			"name": "clientTranId",
 			"required": true,
 			"description": "The unique flag, the min length is 20",
@@ -4587,7 +4587,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Convert Transfer"
+						"POST Sapi v1 Asset Convert Transfer"
 					]
 				}
 			}
@@ -4612,7 +4612,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Convert Transfer"
+						"POST Sapi v1 Asset Convert Transfer"
 					]
 				}
 			}
@@ -4637,7 +4637,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Convert Transfer"
+						"POST Sapi v1 Asset Convert Transfer"
 					]
 				}
 			}
@@ -4663,7 +4663,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Convert Transfer"
+						"POST Sapi v1 Asset Convert Transfer"
 					]
 				}
 			}
@@ -4688,7 +4688,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Convert Transfer"
+						"POST Sapi v1 Asset Convert Transfer"
 					]
 				}
 			}
@@ -4714,7 +4714,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Convert Transfer"
+						"POST Sapi v1 Asset Convert Transfer"
 					]
 				}
 			}
@@ -4740,7 +4740,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Convert Transfer"
+						"POST Sapi v1 Asset Convert Transfer"
 					]
 				}
 			}
@@ -4765,7 +4765,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Asset Convert Transfer"
+						"POST Sapi v1 Asset Convert Transfer"
 					]
 				}
 			}
@@ -4784,13 +4784,13 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Tran Id",
+			"displayName": "Tran ID",
 			"name": "tranId",
 			"description": "The transaction id",
 			"default": 118263615991,
@@ -4809,7 +4809,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
@@ -4834,7 +4834,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
@@ -4860,7 +4860,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
@@ -4886,7 +4886,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
@@ -4921,7 +4921,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
@@ -4946,7 +4946,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
@@ -4971,7 +4971,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
@@ -4996,7 +4996,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
@@ -5022,7 +5022,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
@@ -5048,7 +5048,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
@@ -5073,7 +5073,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Convert Transfer Query By Page"
+						"GET Sapi v1 Asset Convert Transfer Query By Page"
 					]
 				}
 			}
@@ -5092,13 +5092,13 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Tran Id",
+			"displayName": "Tran ID",
 			"name": "tranId",
 			"description": "The transaction id",
 			"default": 118263615991,
@@ -5117,13 +5117,13 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Client Tran Id",
+			"displayName": "Client Tran ID",
 			"name": "clientTranId",
 			"description": "The unique flag",
 			"default": "",
@@ -5142,7 +5142,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
@@ -5167,7 +5167,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
@@ -5193,7 +5193,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
@@ -5219,7 +5219,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
@@ -5244,7 +5244,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
@@ -5269,7 +5269,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
@@ -5294,7 +5294,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
@@ -5320,7 +5320,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
@@ -5346,7 +5346,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
@@ -5371,7 +5371,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Ledger Transfer Cloud Mining Query By Page"
+						"GET Sapi v1 Asset Ledger Transfer Cloud Mining Query By Page"
 					]
 				}
 			}
@@ -5390,7 +5390,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Api Restrictions"
+						"GET Sapi v1 Account API Restrictions"
 					]
 				}
 			}
@@ -5415,7 +5415,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Api Restrictions"
+						"GET Sapi v1 Account API Restrictions"
 					]
 				}
 			}
@@ -5441,7 +5441,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Api Restrictions"
+						"GET Sapi v1 Account API Restrictions"
 					]
 				}
 			}
@@ -5467,7 +5467,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Api Restrictions"
+						"GET Sapi v1 Account API Restrictions"
 					]
 				}
 			}
@@ -5492,7 +5492,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Api Restrictions"
+						"GET Sapi v1 Account API Restrictions"
 					]
 				}
 			}
@@ -5511,7 +5511,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Contract Convertible Coins"
+						"GET Sapi v1 Capital Contract Convertible Coins"
 					]
 				}
 			}
@@ -5536,7 +5536,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Contract Convertible Coins"
+						"GET Sapi v1 Capital Contract Convertible Coins"
 					]
 				}
 			}
@@ -5555,7 +5555,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Contract Convertible Coins"
+						"POST Sapi v1 Capital Contract Convertible Coins"
 					]
 				}
 			}
@@ -5581,7 +5581,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Contract Convertible Coins"
+						"POST Sapi v1 Capital Contract Convertible Coins"
 					]
 				}
 			}
@@ -5607,7 +5607,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Contract Convertible Coins"
+						"POST Sapi v1 Capital Contract Convertible Coins"
 					]
 				}
 			}
@@ -5632,7 +5632,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Contract Convertible Coins"
+						"POST Sapi v1 Capital Contract Convertible Coins"
 					]
 				}
 			}
@@ -5651,13 +5651,13 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Deposit Credit Apply"
+						"POST Sapi v1 Capital Deposit Credit Apply"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Deposit Id",
+			"displayName": "Deposit ID",
 			"name": "depositId",
 			"description": "Deposit record Id, priority use",
 			"default": 0,
@@ -5676,13 +5676,13 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Deposit Credit Apply"
+						"POST Sapi v1 Capital Deposit Credit Apply"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Tx Id",
+			"displayName": "Tx ID",
 			"name": "txId",
 			"description": "Deposit txId, used when depositId is not specified",
 			"default": "",
@@ -5701,13 +5701,13 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Deposit Credit Apply"
+						"POST Sapi v1 Capital Deposit Credit Apply"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Sub Account Id",
+			"displayName": "Sub Account ID",
 			"name": "subAccountId",
 			"default": 0,
 			"type": "number",
@@ -5725,13 +5725,13 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Deposit Credit Apply"
+						"POST Sapi v1 Capital Deposit Credit Apply"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Sub User Id",
+			"displayName": "Sub User ID",
 			"name": "subUserId",
 			"default": 0,
 			"type": "number",
@@ -5749,7 +5749,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Deposit Credit Apply"
+						"POST Sapi v1 Capital Deposit Credit Apply"
 					]
 				}
 			}
@@ -5774,7 +5774,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Deposit Credit Apply"
+						"POST Sapi v1 Capital Deposit Credit Apply"
 					]
 				}
 			}
@@ -5800,7 +5800,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Deposit Credit Apply"
+						"POST Sapi v1 Capital Deposit Credit Apply"
 					]
 				}
 			}
@@ -5826,7 +5826,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Deposit Credit Apply"
+						"POST Sapi v1 Capital Deposit Credit Apply"
 					]
 				}
 			}
@@ -5851,7 +5851,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"POST Sapi V 1 Capital Deposit Credit Apply"
+						"POST Sapi v1 Capital Deposit Credit Apply"
 					]
 				}
 			}
@@ -5870,7 +5870,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Wallet Balance"
+						"GET Sapi v1 Asset Wallet Balance"
 					]
 				}
 			}
@@ -5895,7 +5895,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Wallet Balance"
+						"GET Sapi v1 Asset Wallet Balance"
 					]
 				}
 			}
@@ -5921,7 +5921,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Wallet Balance"
+						"GET Sapi v1 Asset Wallet Balance"
 					]
 				}
 			}
@@ -5947,7 +5947,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Wallet Balance"
+						"GET Sapi v1 Asset Wallet Balance"
 					]
 				}
 			}
@@ -5972,7 +5972,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Wallet Balance"
+						"GET Sapi v1 Asset Wallet Balance"
 					]
 				}
 			}
@@ -5991,7 +5991,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6016,7 +6016,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6041,7 +6041,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6066,7 +6066,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6090,7 +6090,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6115,7 +6115,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6140,7 +6140,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6165,7 +6165,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6190,7 +6190,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6216,7 +6216,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6242,7 +6242,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6267,7 +6267,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Asset Custody Transfer History"
+						"GET Sapi v1 Asset Custody Transfer History"
 					]
 				}
 			}
@@ -6286,7 +6286,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address List"
+						"GET Sapi v1 Capital Deposit Address List"
 					]
 				}
 			}
@@ -6311,7 +6311,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address List"
+						"GET Sapi v1 Capital Deposit Address List"
 					]
 				}
 			}
@@ -6335,7 +6335,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address List"
+						"GET Sapi v1 Capital Deposit Address List"
 					]
 				}
 			}
@@ -6360,7 +6360,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address List"
+						"GET Sapi v1 Capital Deposit Address List"
 					]
 				}
 			}
@@ -6386,7 +6386,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address List"
+						"GET Sapi v1 Capital Deposit Address List"
 					]
 				}
 			}
@@ -6412,7 +6412,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address List"
+						"GET Sapi v1 Capital Deposit Address List"
 					]
 				}
 			}
@@ -6437,7 +6437,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Address List"
+						"GET Sapi v1 Capital Deposit Address List"
 					]
 				}
 			}
@@ -6456,7 +6456,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Spot Delist Schedule"
+						"GET Sapi v1 Spot Delist Schedule"
 					]
 				}
 			}
@@ -6481,7 +6481,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Spot Delist Schedule"
+						"GET Sapi v1 Spot Delist Schedule"
 					]
 				}
 			}
@@ -6507,7 +6507,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Spot Delist Schedule"
+						"GET Sapi v1 Spot Delist Schedule"
 					]
 				}
 			}
@@ -6533,7 +6533,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Spot Delist Schedule"
+						"GET Sapi v1 Spot Delist Schedule"
 					]
 				}
 			}
@@ -6558,7 +6558,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Spot Delist Schedule"
+						"GET Sapi v1 Spot Delist Schedule"
 					]
 				}
 			}
@@ -6577,7 +6577,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw Address List"
+						"GET Sapi v1 Capital Withdraw Address List"
 					]
 				}
 			}
@@ -6602,7 +6602,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Withdraw Address List"
+						"GET Sapi v1 Capital Withdraw Address List"
 					]
 				}
 			}
@@ -6621,7 +6621,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Info"
+						"GET Sapi v1 Account Info"
 					]
 				}
 			}
@@ -6646,7 +6646,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Info"
+						"GET Sapi v1 Account Info"
 					]
 				}
 			}
@@ -6672,7 +6672,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Info"
+						"GET Sapi v1 Account Info"
 					]
 				}
 			}
@@ -6698,7 +6698,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Info"
+						"GET Sapi v1 Account Info"
 					]
 				}
 			}
@@ -6723,7 +6723,7 @@ export const walletDescription: INodeProperties[] = [
 						"Wallet"
 					],
 					"operation": [
-						"GET Sapi V 1 Account Info"
+						"GET Sapi v1 Account Info"
 					]
 				}
 			}

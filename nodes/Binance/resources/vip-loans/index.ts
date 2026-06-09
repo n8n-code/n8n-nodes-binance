@@ -15,8 +15,8 @@ export const vipLoansDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Loan Vip Ongoing Orders",
-					"value": "GET Sapi V 1 Loan Vip Ongoing Orders",
+					"name": "GET Sapi v1 Loan Vip Ongoing Orders",
+					"value": "GET Sapi v1 Loan Vip Ongoing Orders",
 					"action": "Get VIP Loan Ongoing Orders (USER_DATA)",
 					"description": "VIP loan is available for VIP users only.\n\nWeight(IP): 400",
 					"routing": {
@@ -27,8 +27,8 @@ export const vipLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Loan Vip Repay",
-					"value": "POST Sapi V 1 Loan Vip Repay",
+					"name": "POST Sapi v1 Loan Vip Repay",
+					"value": "POST Sapi v1 Loan Vip Repay",
 					"action": "VIP Loan Repay (TRADE)",
 					"description": "VIP loan is available for VIP users only.\n\nWeight(UID): 6000",
 					"routing": {
@@ -39,8 +39,8 @@ export const vipLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Vip Repay History",
-					"value": "GET Sapi V 1 Loan Vip Repay History",
+					"name": "GET Sapi v1 Loan Vip Repay History",
+					"value": "GET Sapi v1 Loan Vip Repay History",
 					"action": "Get VIP Loan Repayment History (USER_DATA)",
 					"description": "VIP loan is available for VIP users only.\n\nWeight(IP): 400",
 					"routing": {
@@ -51,8 +51,8 @@ export const vipLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Vip Collateral Account",
-					"value": "GET Sapi V 1 Loan Vip Collateral Account",
+					"name": "GET Sapi v1 Loan Vip Collateral Account",
+					"value": "GET Sapi v1 Loan Vip Collateral Account",
 					"action": "Check Locked Value of VIP Collateral Account (USER_DATA)",
 					"description": "VIP loan is available for VIP users only.\n\nWeight(IP): 6000",
 					"routing": {
@@ -63,8 +63,8 @@ export const vipLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Loan Vip Borrow",
-					"value": "POST Sapi V 1 Loan Vip Borrow",
+					"name": "POST Sapi v1 Loan Vip Borrow",
+					"value": "POST Sapi v1 Loan Vip Borrow",
 					"action": "VIP Loan Borrow",
 					"description": "VIP loan is available for VIP users only.\n\nWeight(UID): 6000",
 					"routing": {
@@ -75,8 +75,8 @@ export const vipLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Vip Loanable Data",
-					"value": "GET Sapi V 1 Loan Vip Loanable Data",
+					"name": "GET Sapi v1 Loan Vip Loanable Data",
+					"value": "GET Sapi v1 Loan Vip Loanable Data",
 					"action": "Get Loanable Assets Data",
 					"description": "Get interest rate and borrow limit of loanable assets. The borrow limit is shown in USD value.\n\nWeight(IP): 400",
 					"routing": {
@@ -87,8 +87,8 @@ export const vipLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Vip Collateral Data",
-					"value": "GET Sapi V 1 Loan Vip Collateral Data",
+					"name": "GET Sapi v1 Loan Vip Collateral Data",
+					"value": "GET Sapi v1 Loan Vip Collateral Data",
 					"action": "Get Collateral Asset Data (USER_DATA)",
 					"description": "Get collateral asset data.\n\nWeight(IP): 400",
 					"routing": {
@@ -99,8 +99,8 @@ export const vipLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Vip Request Data",
-					"value": "GET Sapi V 1 Loan Vip Request Data",
+					"name": "GET Sapi v1 Loan Vip Request Data",
+					"value": "GET Sapi v1 Loan Vip Request Data",
 					"action": "Query Application Status (USER_DATA)",
 					"description": "Get Application Status\n\nWeight(UID): 400",
 					"routing": {
@@ -111,8 +111,8 @@ export const vipLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Vip Request Interest Rate",
-					"value": "GET Sapi V 1 Loan Vip Request Interest Rate",
+					"name": "GET Sapi v1 Loan Vip Request Interest Rate",
+					"value": "GET Sapi v1 Loan Vip Request Interest Rate",
 					"action": "Get Borrow Interest Rate (USER_DATA)",
 					"description": "Get borrow interest rate.\n\nWeight(UID): 400",
 					"routing": {
@@ -123,8 +123,8 @@ export const vipLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Loan Vip Renew",
-					"value": "POST Sapi V 1 Loan Vip Renew",
+					"name": "POST Sapi v1 Loan Vip Renew",
+					"value": "POST Sapi v1 Loan Vip Renew",
 					"action": "VIP Loan Renew",
 					"description": "VIP loan is available for VIP users only.\n\nWeight(UID): 6000",
 					"routing": {
@@ -151,13 +151,13 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Ongoing Orders"
+						"GET Sapi v1 Loan Vip Ongoing Orders"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -176,13 +176,13 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Ongoing Orders"
+						"GET Sapi v1 Loan Vip Ongoing Orders"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Collateral Account Id",
+			"displayName": "Collateral Account ID",
 			"name": "collateralAccountId",
 			"default": 0,
 			"type": "number",
@@ -200,7 +200,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Ongoing Orders"
+						"GET Sapi v1 Loan Vip Ongoing Orders"
 					]
 				}
 			}
@@ -225,7 +225,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Ongoing Orders"
+						"GET Sapi v1 Loan Vip Ongoing Orders"
 					]
 				}
 			}
@@ -250,7 +250,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Ongoing Orders"
+						"GET Sapi v1 Loan Vip Ongoing Orders"
 					]
 				}
 			}
@@ -275,7 +275,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Ongoing Orders"
+						"GET Sapi v1 Loan Vip Ongoing Orders"
 					]
 				}
 			}
@@ -300,7 +300,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Ongoing Orders"
+						"GET Sapi v1 Loan Vip Ongoing Orders"
 					]
 				}
 			}
@@ -325,7 +325,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Ongoing Orders"
+						"GET Sapi v1 Loan Vip Ongoing Orders"
 					]
 				}
 			}
@@ -351,7 +351,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Ongoing Orders"
+						"GET Sapi v1 Loan Vip Ongoing Orders"
 					]
 				}
 			}
@@ -377,7 +377,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Ongoing Orders"
+						"GET Sapi v1 Loan Vip Ongoing Orders"
 					]
 				}
 			}
@@ -402,7 +402,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Ongoing Orders"
+						"GET Sapi v1 Loan Vip Ongoing Orders"
 					]
 				}
 			}
@@ -421,13 +421,13 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Repay"
+						"POST Sapi v1 Loan Vip Repay"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -446,7 +446,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Repay"
+						"POST Sapi v1 Loan Vip Repay"
 					]
 				}
 			}
@@ -471,7 +471,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Repay"
+						"POST Sapi v1 Loan Vip Repay"
 					]
 				}
 			}
@@ -496,7 +496,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Repay"
+						"POST Sapi v1 Loan Vip Repay"
 					]
 				}
 			}
@@ -522,7 +522,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Repay"
+						"POST Sapi v1 Loan Vip Repay"
 					]
 				}
 			}
@@ -548,7 +548,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Repay"
+						"POST Sapi v1 Loan Vip Repay"
 					]
 				}
 			}
@@ -573,7 +573,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Repay"
+						"POST Sapi v1 Loan Vip Repay"
 					]
 				}
 			}
@@ -592,13 +592,13 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Repay History"
+						"GET Sapi v1 Loan Vip Repay History"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -617,7 +617,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Repay History"
+						"GET Sapi v1 Loan Vip Repay History"
 					]
 				}
 			}
@@ -642,7 +642,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Repay History"
+						"GET Sapi v1 Loan Vip Repay History"
 					]
 				}
 			}
@@ -667,7 +667,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Repay History"
+						"GET Sapi v1 Loan Vip Repay History"
 					]
 				}
 			}
@@ -692,7 +692,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Repay History"
+						"GET Sapi v1 Loan Vip Repay History"
 					]
 				}
 			}
@@ -717,7 +717,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Repay History"
+						"GET Sapi v1 Loan Vip Repay History"
 					]
 				}
 			}
@@ -742,7 +742,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Repay History"
+						"GET Sapi v1 Loan Vip Repay History"
 					]
 				}
 			}
@@ -767,7 +767,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Repay History"
+						"GET Sapi v1 Loan Vip Repay History"
 					]
 				}
 			}
@@ -793,7 +793,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Repay History"
+						"GET Sapi v1 Loan Vip Repay History"
 					]
 				}
 			}
@@ -819,7 +819,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Repay History"
+						"GET Sapi v1 Loan Vip Repay History"
 					]
 				}
 			}
@@ -844,7 +844,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Repay History"
+						"GET Sapi v1 Loan Vip Repay History"
 					]
 				}
 			}
@@ -863,13 +863,13 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Account"
+						"GET Sapi v1 Loan Vip Collateral Account"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -888,13 +888,13 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Account"
+						"GET Sapi v1 Loan Vip Collateral Account"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Collateral Account Id",
+			"displayName": "Collateral Account ID",
 			"name": "collateralAccountId",
 			"default": 0,
 			"type": "number",
@@ -912,7 +912,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Account"
+						"GET Sapi v1 Loan Vip Collateral Account"
 					]
 				}
 			}
@@ -937,7 +937,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Account"
+						"GET Sapi v1 Loan Vip Collateral Account"
 					]
 				}
 			}
@@ -963,7 +963,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Account"
+						"GET Sapi v1 Loan Vip Collateral Account"
 					]
 				}
 			}
@@ -989,7 +989,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Account"
+						"GET Sapi v1 Loan Vip Collateral Account"
 					]
 				}
 			}
@@ -1014,7 +1014,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Account"
+						"GET Sapi v1 Loan Vip Collateral Account"
 					]
 				}
 			}
@@ -1033,13 +1033,13 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Loan Account Id",
+			"displayName": "Loan Account ID",
 			"name": "loanAccountId",
 			"required": true,
 			"default": 0,
@@ -1058,7 +1058,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
@@ -1083,7 +1083,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
@@ -1108,13 +1108,13 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Collateral Account Id",
+			"displayName": "Collateral Account ID",
 			"name": "collateralAccountId",
 			"required": true,
 			"default": "",
@@ -1133,7 +1133,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
@@ -1158,7 +1158,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
@@ -1193,7 +1193,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
@@ -1217,7 +1217,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
@@ -1242,7 +1242,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
@@ -1268,7 +1268,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
@@ -1294,7 +1294,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
@@ -1319,7 +1319,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Borrow"
+						"POST Sapi v1 Loan Vip Borrow"
 					]
 				}
 			}
@@ -1338,7 +1338,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Loanable Data"
+						"GET Sapi v1 Loan Vip Loanable Data"
 					]
 				}
 			}
@@ -1363,7 +1363,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Loanable Data"
+						"GET Sapi v1 Loan Vip Loanable Data"
 					]
 				}
 			}
@@ -1388,7 +1388,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Loanable Data"
+						"GET Sapi v1 Loan Vip Loanable Data"
 					]
 				}
 			}
@@ -1413,7 +1413,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Loanable Data"
+						"GET Sapi v1 Loan Vip Loanable Data"
 					]
 				}
 			}
@@ -1439,7 +1439,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Loanable Data"
+						"GET Sapi v1 Loan Vip Loanable Data"
 					]
 				}
 			}
@@ -1465,7 +1465,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Loanable Data"
+						"GET Sapi v1 Loan Vip Loanable Data"
 					]
 				}
 			}
@@ -1490,7 +1490,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Loanable Data"
+						"GET Sapi v1 Loan Vip Loanable Data"
 					]
 				}
 			}
@@ -1509,7 +1509,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Data"
+						"GET Sapi v1 Loan Vip Collateral Data"
 					]
 				}
 			}
@@ -1534,7 +1534,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Data"
+						"GET Sapi v1 Loan Vip Collateral Data"
 					]
 				}
 			}
@@ -1559,7 +1559,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Data"
+						"GET Sapi v1 Loan Vip Collateral Data"
 					]
 				}
 			}
@@ -1585,7 +1585,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Data"
+						"GET Sapi v1 Loan Vip Collateral Data"
 					]
 				}
 			}
@@ -1611,7 +1611,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Data"
+						"GET Sapi v1 Loan Vip Collateral Data"
 					]
 				}
 			}
@@ -1636,7 +1636,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Collateral Data"
+						"GET Sapi v1 Loan Vip Collateral Data"
 					]
 				}
 			}
@@ -1655,7 +1655,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Data"
+						"GET Sapi v1 Loan Vip Request Data"
 					]
 				}
 			}
@@ -1680,7 +1680,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Data"
+						"GET Sapi v1 Loan Vip Request Data"
 					]
 				}
 			}
@@ -1705,7 +1705,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Data"
+						"GET Sapi v1 Loan Vip Request Data"
 					]
 				}
 			}
@@ -1730,7 +1730,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Data"
+						"GET Sapi v1 Loan Vip Request Data"
 					]
 				}
 			}
@@ -1756,7 +1756,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Data"
+						"GET Sapi v1 Loan Vip Request Data"
 					]
 				}
 			}
@@ -1782,7 +1782,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Data"
+						"GET Sapi v1 Loan Vip Request Data"
 					]
 				}
 			}
@@ -1807,7 +1807,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Data"
+						"GET Sapi v1 Loan Vip Request Data"
 					]
 				}
 			}
@@ -1826,7 +1826,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Interest Rate"
+						"GET Sapi v1 Loan Vip Request Interest Rate"
 					]
 				}
 			}
@@ -1851,7 +1851,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Interest Rate"
+						"GET Sapi v1 Loan Vip Request Interest Rate"
 					]
 				}
 			}
@@ -1876,7 +1876,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Interest Rate"
+						"GET Sapi v1 Loan Vip Request Interest Rate"
 					]
 				}
 			}
@@ -1902,7 +1902,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Interest Rate"
+						"GET Sapi v1 Loan Vip Request Interest Rate"
 					]
 				}
 			}
@@ -1928,7 +1928,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Interest Rate"
+						"GET Sapi v1 Loan Vip Request Interest Rate"
 					]
 				}
 			}
@@ -1953,7 +1953,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Vip Request Interest Rate"
+						"GET Sapi v1 Loan Vip Request Interest Rate"
 					]
 				}
 			}
@@ -1972,13 +1972,13 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Renew"
+						"POST Sapi v1 Loan Vip Renew"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -1997,7 +1997,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Renew"
+						"POST Sapi v1 Loan Vip Renew"
 					]
 				}
 			}
@@ -2021,7 +2021,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Renew"
+						"POST Sapi v1 Loan Vip Renew"
 					]
 				}
 			}
@@ -2046,7 +2046,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Renew"
+						"POST Sapi v1 Loan Vip Renew"
 					]
 				}
 			}
@@ -2072,7 +2072,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Renew"
+						"POST Sapi v1 Loan Vip Renew"
 					]
 				}
 			}
@@ -2098,7 +2098,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Renew"
+						"POST Sapi v1 Loan Vip Renew"
 					]
 				}
 			}
@@ -2123,7 +2123,7 @@ export const vipLoansDescription: INodeProperties[] = [
 						"VIP Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Vip Renew"
+						"POST Sapi v1 Loan Vip Renew"
 					]
 				}
 			}

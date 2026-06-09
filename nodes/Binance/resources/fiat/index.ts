@@ -15,8 +15,8 @@ export const fiatDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Fiat Orders",
-					"value": "GET Sapi V 1 Fiat Orders",
+					"name": "GET Sapi v1 Fiat Orders",
+					"value": "GET Sapi v1 Fiat Orders",
 					"action": "Fiat Deposit/Withdraw History (USER_DATA)",
 					"description": "- If beginTime and endTime are not sent, the recent 30-day data will be returned.\n\nWeight(UID): 90000",
 					"routing": {
@@ -27,8 +27,8 @@ export const fiatDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Fiat Payments",
-					"value": "GET Sapi V 1 Fiat Payments",
+					"name": "GET Sapi v1 Fiat Payments",
+					"value": "GET Sapi v1 Fiat Payments",
 					"action": "Fiat Payments History (USER_DATA)",
 					"description": "- If beginTime and endTime are not sent, the recent 30-day data will be returned.\n\nWeight(IP): 1",
 					"routing": {
@@ -55,7 +55,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Orders"
+						"GET Sapi v1 Fiat Orders"
 					]
 				}
 			}
@@ -81,7 +81,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Orders"
+						"GET Sapi v1 Fiat Orders"
 					]
 				}
 			}
@@ -105,7 +105,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Orders"
+						"GET Sapi v1 Fiat Orders"
 					]
 				}
 			}
@@ -130,7 +130,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Orders"
+						"GET Sapi v1 Fiat Orders"
 					]
 				}
 			}
@@ -155,7 +155,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Orders"
+						"GET Sapi v1 Fiat Orders"
 					]
 				}
 			}
@@ -180,7 +180,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Orders"
+						"GET Sapi v1 Fiat Orders"
 					]
 				}
 			}
@@ -205,7 +205,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Orders"
+						"GET Sapi v1 Fiat Orders"
 					]
 				}
 			}
@@ -231,7 +231,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Orders"
+						"GET Sapi v1 Fiat Orders"
 					]
 				}
 			}
@@ -257,7 +257,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Orders"
+						"GET Sapi v1 Fiat Orders"
 					]
 				}
 			}
@@ -282,7 +282,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Orders"
+						"GET Sapi v1 Fiat Orders"
 					]
 				}
 			}
@@ -301,7 +301,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Payments"
+						"GET Sapi v1 Fiat Payments"
 					]
 				}
 			}
@@ -327,7 +327,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Payments"
+						"GET Sapi v1 Fiat Payments"
 					]
 				}
 			}
@@ -351,7 +351,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Payments"
+						"GET Sapi v1 Fiat Payments"
 					]
 				}
 			}
@@ -376,7 +376,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Payments"
+						"GET Sapi v1 Fiat Payments"
 					]
 				}
 			}
@@ -401,7 +401,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Payments"
+						"GET Sapi v1 Fiat Payments"
 					]
 				}
 			}
@@ -426,7 +426,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Payments"
+						"GET Sapi v1 Fiat Payments"
 					]
 				}
 			}
@@ -451,7 +451,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Payments"
+						"GET Sapi v1 Fiat Payments"
 					]
 				}
 			}
@@ -477,7 +477,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Payments"
+						"GET Sapi v1 Fiat Payments"
 					]
 				}
 			}
@@ -503,7 +503,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Payments"
+						"GET Sapi v1 Fiat Payments"
 					]
 				}
 			}
@@ -528,7 +528,7 @@ export const fiatDescription: INodeProperties[] = [
 						"Fiat"
 					],
 					"operation": [
-						"GET Sapi V 1 Fiat Payments"
+						"GET Sapi v1 Fiat Payments"
 					]
 				}
 			}

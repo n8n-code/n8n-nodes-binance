@@ -15,8 +15,8 @@ export const subAccountDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST Sapi V 1 Sub Account Virtual Sub Account",
-					"value": "POST Sapi V 1 Sub Account Virtual Sub Account",
+					"name": "POST Sapi v1 Sub Account Virtual Sub Account",
+					"value": "POST Sapi v1 Sub Account Virtual Sub Account",
 					"action": "Create a Virtual Sub-account(For Master Account)",
 					"description": "- This request will generate a virtual sub account under your master account.\n- You need to enable \"trade\" option for the api key which requests this endpoint.\n\nWeight(IP): 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account List",
-					"value": "GET Sapi V 1 Sub Account List",
+					"name": "GET Sapi v1 Sub Account List",
+					"value": "GET Sapi v1 Sub Account List",
 					"action": "Query Sub-account List (For Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -39,8 +39,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Sub Transfer History",
-					"value": "GET Sapi V 1 Sub Account Sub Transfer History",
+					"name": "GET Sapi v1 Sub Account Sub Transfer History",
+					"value": "GET Sapi v1 Sub Account Sub Transfer History",
 					"action": "Sub-account Spot Asset Transfer History (For Master Account)",
 					"description": "- fromEmail and toEmail cannot be sent at the same time.\n- Return fromEmail equal master account email by default.\n\nWeight(IP): 1",
 					"routing": {
@@ -51,8 +51,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Futures Internal Transfer",
-					"value": "GET Sapi V 1 Sub Account Futures Internal Transfer",
+					"name": "GET Sapi v1 Sub Account Futures Internal Transfer",
+					"value": "GET Sapi v1 Sub Account Futures Internal Transfer",
 					"action": "Sub-account Futures Asset Transfer History (For Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -63,8 +63,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Sub Account Futures Internal Transfer",
-					"value": "POST Sapi V 1 Sub Account Futures Internal Transfer",
+					"name": "POST Sapi v1 Sub Account Futures Internal Transfer",
+					"value": "POST Sapi v1 Sub Account Futures Internal Transfer",
 					"action": "Sub-account Futures Asset Transfer (For Master Account)",
 					"description": "- Master account can transfer max 2000 times a minute\n\nWeight(IP): 1",
 					"routing": {
@@ -75,8 +75,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 3 Sub Account Assets",
-					"value": "GET Sapi V 3 Sub Account Assets",
+					"name": "GET Sapi v3 Sub Account Assets",
+					"value": "GET Sapi v3 Sub Account Assets",
 					"action": "Sub-account Assets (For Master Account)",
 					"description": "Fetch sub-account assets\n\nWeight(IP): 1",
 					"routing": {
@@ -87,8 +87,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Spot Summary",
-					"value": "GET Sapi V 1 Sub Account Spot Summary",
+					"name": "GET Sapi v1 Sub Account Spot Summary",
+					"value": "GET Sapi v1 Sub Account Spot Summary",
 					"action": "Sub-account Spot Assets Summary (For Master Account)",
 					"description": "Get BTC valued asset summary of subaccounts.\n\nWeight(IP): 1",
 					"routing": {
@@ -99,8 +99,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Capital Deposit Sub Address",
-					"value": "GET Sapi V 1 Capital Deposit Sub Address",
+					"name": "GET Sapi v1 Capital Deposit Sub Address",
+					"value": "GET Sapi v1 Capital Deposit Sub Address",
 					"action": "Sub-account Spot Assets Summary (For Master Account)",
 					"description": "Fetch sub-account deposit address\n\nWeight(IP): 1",
 					"routing": {
@@ -111,8 +111,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Capital Deposit Sub Hisrec",
-					"value": "GET Sapi V 1 Capital Deposit Sub Hisrec",
+					"name": "GET Sapi v1 Capital Deposit Sub Hisrec",
+					"value": "GET Sapi v1 Capital Deposit Sub Hisrec",
 					"action": "Sub-account Deposit History (For Master Account)",
 					"description": "Fetch sub-account deposit history\n\nWeight(IP): 1",
 					"routing": {
@@ -123,8 +123,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Status",
-					"value": "GET Sapi V 1 Sub Account Status",
+					"name": "GET Sapi v1 Sub Account Status",
+					"value": "GET Sapi v1 Sub Account Status",
 					"action": "Sub-account's Status on Margin/Futures (For Master Account)",
 					"description": "- If no `email` sent, all sub-accounts' information will be returned.\n\nWeight(IP): 10",
 					"routing": {
@@ -135,8 +135,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Sub Account Margin Enable",
-					"value": "POST Sapi V 1 Sub Account Margin Enable",
+					"name": "POST Sapi v1 Sub Account Margin Enable",
+					"value": "POST Sapi v1 Sub Account Margin Enable",
 					"action": "Enable Margin for Sub-account (For Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -147,8 +147,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Margin Account",
-					"value": "GET Sapi V 1 Sub Account Margin Account",
+					"name": "GET Sapi v1 Sub Account Margin Account",
+					"value": "GET Sapi v1 Sub Account Margin Account",
 					"action": "Detail on Sub-account's Margin Account (For Master Account)",
 					"description": "Weight(IP): 10",
 					"routing": {
@@ -159,8 +159,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Margin Account Summary",
-					"value": "GET Sapi V 1 Sub Account Margin Account Summary",
+					"name": "GET Sapi v1 Sub Account Margin Account Summary",
+					"value": "GET Sapi v1 Sub Account Margin Account Summary",
 					"action": "Summary of Sub-account's Margin Account (For Master Account)",
 					"description": "Weight(IP): 10",
 					"routing": {
@@ -171,8 +171,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Sub Account Futures Enable",
-					"value": "POST Sapi V 1 Sub Account Futures Enable",
+					"name": "POST Sapi v1 Sub Account Futures Enable",
+					"value": "POST Sapi v1 Sub Account Futures Enable",
 					"action": "Enable Futures for Sub-account (For Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -183,8 +183,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Futures Account",
-					"value": "GET Sapi V 1 Sub Account Futures Account",
+					"name": "GET Sapi v1 Sub Account Futures Account",
+					"value": "GET Sapi v1 Sub Account Futures Account",
 					"action": "Detail on Sub-account's Futures Account (For Master Account)",
 					"description": "Weight(IP): 10",
 					"routing": {
@@ -195,8 +195,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Futures Account Summary",
-					"value": "GET Sapi V 1 Sub Account Futures Account Summary",
+					"name": "GET Sapi v1 Sub Account Futures Account Summary",
+					"value": "GET Sapi v1 Sub Account Futures Account Summary",
 					"action": "Summary of Sub-account's Futures Account (For Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -207,8 +207,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Futures Position Risk",
-					"value": "GET Sapi V 1 Sub Account Futures Position Risk",
+					"name": "GET Sapi v1 Sub Account Futures Position Risk",
+					"value": "GET Sapi v1 Sub Account Futures Position Risk",
 					"action": "Futures Position-Risk of Sub-account (For Master Account)",
 					"description": "Weight(IP): 10",
 					"routing": {
@@ -219,8 +219,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Sub Account Futures Transfer",
-					"value": "POST Sapi V 1 Sub Account Futures Transfer",
+					"name": "POST Sapi v1 Sub Account Futures Transfer",
+					"value": "POST Sapi v1 Sub Account Futures Transfer",
 					"action": "Transfer for Sub-account (For Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -231,8 +231,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Sub Account Margin Transfer",
-					"value": "POST Sapi V 1 Sub Account Margin Transfer",
+					"name": "POST Sapi v1 Sub Account Margin Transfer",
+					"value": "POST Sapi v1 Sub Account Margin Transfer",
 					"action": "Margin Transfer for Sub-account (For Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -243,8 +243,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Sub Account Transfer Sub To Sub",
-					"value": "POST Sapi V 1 Sub Account Transfer Sub To Sub",
+					"name": "POST Sapi v1 Sub Account Transfer Sub To Sub",
+					"value": "POST Sapi v1 Sub Account Transfer Sub To Sub",
 					"action": "Transfer to Sub-account of Same Master (For Sub-account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -255,8 +255,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Sub Account Transfer Sub To Master",
-					"value": "POST Sapi V 1 Sub Account Transfer Sub To Master",
+					"name": "POST Sapi v1 Sub Account Transfer Sub To Master",
+					"value": "POST Sapi v1 Sub Account Transfer Sub To Master",
 					"action": "Transfer to Master (For Sub-account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -267,8 +267,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Transfer Sub User History",
-					"value": "GET Sapi V 1 Sub Account Transfer Sub User History",
+					"name": "GET Sapi v1 Sub Account Transfer Sub User History",
+					"value": "GET Sapi v1 Sub Account Transfer Sub User History",
 					"action": "Sub-account Transfer History (For Sub-account)",
 					"description": "- If `type` is not sent, the records of type 2: transfer out will be returned by default.\n- If `startTime` and `endTime` are not sent, the recent 30-day data will be returned.\n\nWeight(IP): 1",
 					"routing": {
@@ -279,8 +279,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Universal Transfer",
-					"value": "GET Sapi V 1 Sub Account Universal Transfer",
+					"name": "GET Sapi v1 Sub Account Universal Transfer",
+					"value": "GET Sapi v1 Sub Account Universal Transfer",
 					"action": "Universal Transfer History (For Master Account)",
 					"description": "- `fromEmail` and `toEmail` cannot be sent at the same time.\n- Return `fromEmail` equal master account email by default.\n- The query time period must be less then 30 days.\n- If startTime and endTime not sent, return records of the last 30 days by default.\n\nWeight(IP): 1",
 					"routing": {
@@ -291,8 +291,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Sub Account Universal Transfer",
-					"value": "POST Sapi V 1 Sub Account Universal Transfer",
+					"name": "POST Sapi v1 Sub Account Universal Transfer",
+					"value": "POST Sapi v1 Sub Account Universal Transfer",
 					"action": "Universal Transfer (For Master Account)",
 					"description": "- You need to enable \"internal transfer\" option for the api key which requests this endpoint.\n- Transfer from master account by default if fromEmail is not sent.\n- Transfer to master account by default if toEmail is not sent.\n- Supported transfer scenarios:\n  - Master account SPOT transfer to sub-account SPOT,USDT_FUTURE,COIN_FUTURE,MARGIN(Cross),ISOLATED_MARGIN\n  - Sub-account SPOT,USDT_FUTURE,COIN_FUTURE,MARGIN(Cross),ISOLATED_MARGIN transfer to master account SPOT\n  - Transfer between two sub-account SPOT accounts\n\nWeight(IP): 1",
 					"routing": {
@@ -303,8 +303,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 2 Sub Account Futures Account",
-					"value": "GET Sapi V 2 Sub Account Futures Account",
+					"name": "GET Sapi v2 Sub Account Futures Account",
+					"value": "GET Sapi v2 Sub Account Futures Account",
 					"action": "Detail on Sub-account's Futures Account V2 (For Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -315,8 +315,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 2 Sub Account Futures Account Summary",
-					"value": "GET Sapi V 2 Sub Account Futures Account Summary",
+					"name": "GET Sapi v2 Sub Account Futures Account Summary",
+					"value": "GET Sapi v2 Sub Account Futures Account Summary",
 					"action": "Summary of Sub-account's Futures Account V2 (For Master Account)",
 					"description": "Weight(IP): 10",
 					"routing": {
@@ -327,8 +327,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 2 Sub Account Futures Position Risk",
-					"value": "GET Sapi V 2 Sub Account Futures Position Risk",
+					"name": "GET Sapi v2 Sub Account Futures Position Risk",
+					"value": "GET Sapi v2 Sub Account Futures Position Risk",
 					"action": "Futures Position-Risk of Sub-account V2 (For Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -339,8 +339,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Sub Account Blvt Enable",
-					"value": "POST Sapi V 1 Sub Account Blvt Enable",
+					"name": "POST Sapi v1 Sub Account Blvt Enable",
+					"value": "POST Sapi v1 Sub Account Blvt Enable",
 					"action": "Enable Leverage Token for Sub-account (For Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -351,8 +351,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Managed Subaccount Deposit",
-					"value": "POST Sapi V 1 Managed Subaccount Deposit",
+					"name": "POST Sapi v1 Managed Subaccount Deposit",
+					"value": "POST Sapi v1 Managed Subaccount Deposit",
 					"action": "Deposit assets into the managed sub-account(For Investor Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -363,8 +363,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Managed Subaccount Asset",
-					"value": "GET Sapi V 1 Managed Subaccount Asset",
+					"name": "GET Sapi v1 Managed Subaccount Asset",
+					"value": "GET Sapi v1 Managed Subaccount Asset",
 					"action": "Managed sub-account asset details(For Investor Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -375,8 +375,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Managed Subaccount Withdraw",
-					"value": "POST Sapi V 1 Managed Subaccount Withdraw",
+					"name": "POST Sapi v1 Managed Subaccount Withdraw",
+					"value": "POST Sapi v1 Managed Subaccount Withdraw",
 					"action": "Withdrawl assets from the managed sub-account(For Investor Master Account)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -387,8 +387,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Managed Subaccount Account Snapshot",
-					"value": "GET Sapi V 1 Managed Subaccount Account Snapshot",
+					"name": "GET Sapi v1 Managed Subaccount Account Snapshot",
+					"value": "GET Sapi v1 Managed Subaccount Account Snapshot",
 					"action": "Managed sub-account snapshot (For Investor Master Account)",
 					"description": "- The query time period must be less then 30 days\n- Support query within the last one month only\n- If `startTime` and `endTime` not sent, return records of the last 7 days by default\n\nWeight(IP): 2400",
 					"routing": {
@@ -399,8 +399,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Managed Subaccount Query Trans Log For Investor",
-					"value": "GET Sapi V 1 Managed Subaccount Query Trans Log For Investor",
+					"name": "GET Sapi v1 Managed Subaccount Query Trans Log For Investor",
+					"value": "GET Sapi v1 Managed Subaccount Query Trans Log For Investor",
 					"action": "Query Managed Sub Account Transfer Log (For Investor Master Account)",
 					"description": "Investor can use this api to query managed sub account transfer log. This endpoint is available for investor of Managed Sub-Account. A Managed Sub-Account is an account type for investors who value flexibility in asset allocation and account application, while delegating trades to a professional trading team.\n\nWeight(IP): 1",
 					"routing": {
@@ -411,8 +411,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent",
-					"value": "GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent",
+					"name": "GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent",
+					"value": "GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent",
 					"action": "Query Managed Sub Account Transfer Log (For Trading Team Master Account)",
 					"description": "Trading team can use this api to query managed sub account transfer log. This endpoint is available for trading team of Managed Sub-Account. A Managed Sub-Account is an account type for investors who value flexibility in asset allocation and account application, while delegating trades to a professional trading team\n\nWeight(IP): 60",
 					"routing": {
@@ -423,8 +423,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Managed Subaccount Fetch Future Asset",
-					"value": "GET Sapi V 1 Managed Subaccount Fetch Future Asset",
+					"name": "GET Sapi v1 Managed Subaccount Fetch Future Asset",
+					"value": "GET Sapi v1 Managed Subaccount Fetch Future Asset",
 					"action": "Query Managed Sub-account Futures Asset Details (For Investor Master Account)",
 					"description": "Investor can use this api to query managed sub account futures asset details",
 					"routing": {
@@ -435,8 +435,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Managed Subaccount Margin Asset",
-					"value": "GET Sapi V 1 Managed Subaccount Margin Asset",
+					"name": "GET Sapi v1 Managed Subaccount Margin Asset",
+					"value": "GET Sapi v1 Managed Subaccount Margin Asset",
 					"action": "Query Managed Sub-account Margin Asset Details (For Investor Master Account)",
 					"description": "Investor can use this api to query managed sub account margin asset details",
 					"routing": {
@@ -447,8 +447,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Managed Subaccount Info",
-					"value": "GET Sapi V 1 Managed Subaccount Info",
+					"name": "GET Sapi v1 Managed Subaccount Info",
+					"value": "GET Sapi v1 Managed Subaccount Info",
 					"action": "Query Managed Sub-account List (For Investor)",
 					"description": "Get investor's managed sub-account list.\n\nWeight(UID): 60",
 					"routing": {
@@ -459,8 +459,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Managed Subaccount Deposit Address",
-					"value": "GET Sapi V 1 Managed Subaccount Deposit Address",
+					"name": "GET Sapi v1 Managed Subaccount Deposit Address",
+					"value": "GET Sapi v1 Managed Subaccount Deposit Address",
 					"action": "Get Managed Sub-account Deposit Address (For Investor Master Account)",
 					"description": "Get investor's managed sub-account deposit address\n\nWeight(UID): 1",
 					"routing": {
@@ -471,8 +471,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Managed Subaccount Query Trans Log",
-					"value": "GET Sapi V 1 Managed Subaccount Query Trans Log",
+					"name": "GET Sapi v1 Managed Subaccount Query Trans Log",
+					"value": "GET Sapi v1 Managed Subaccount Query Trans Log",
 					"action": "Query Managed Sub Account Transfer Log (For Trading Team Sub Account)(USER_DATA)",
 					"description": "Query Managed Sub Account Transfer Log (For Trading Team Sub Account)\n\nWeight(UID): 60",
 					"routing": {
@@ -483,8 +483,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Sub Account Api Ip Restriction",
-					"value": "GET Sapi V 1 Sub Account Sub Account Api Ip Restriction",
+					"name": "GET Sapi v1 Sub Account Sub Account API Ip Restriction",
+					"value": "GET Sapi v1 Sub Account Sub Account API Ip Restriction",
 					"action": "Get IP Restriction for a Sub-account API Key (For Master Account)",
 					"description": "Weight(UID): 3000",
 					"routing": {
@@ -495,8 +495,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List",
-					"value": "DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List",
+					"name": "DELETE Sapi v1 Sub Account Sub Account API Ip Restriction Ip List",
+					"value": "DELETE Sapi v1 Sub Account Sub Account API Ip Restriction Ip List",
 					"action": "Delete IP List for a Sub-account API Key (For Master Account)",
 					"description": "Weight(UID): 3000",
 					"routing": {
@@ -507,8 +507,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Sub Account Transaction Statistics",
-					"value": "GET Sapi V 1 Sub Account Transaction Statistics",
+					"name": "GET Sapi v1 Sub Account Transaction Statistics",
+					"value": "GET Sapi v1 Sub Account Transaction Statistics",
 					"action": "Query Sub-account Transaction Statistics (For Master Account)",
 					"description": "Query Sub-account Transaction statistics (For Master Account).\n\nWeight(UID): 60",
 					"routing": {
@@ -519,8 +519,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Sub Account Eoptions Enable",
-					"value": "POST Sapi V 1 Sub Account Eoptions Enable",
+					"name": "POST Sapi v1 Sub Account Eoptions Enable",
+					"value": "POST Sapi v1 Sub Account Eoptions Enable",
 					"action": "Enable Options for Sub-account (For Master Account)(USER_DATA)",
 					"description": "Enable Options for Sub-account (For Master Account).\n\nWeight(IP): 1",
 					"routing": {
@@ -531,8 +531,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 2 Sub Account Sub Account Api Ip Restriction",
-					"value": "POST Sapi V 2 Sub Account Sub Account Api Ip Restriction",
+					"name": "POST Sapi v2 Sub Account Sub Account API Ip Restriction",
+					"value": "POST Sapi v2 Sub Account Sub Account API Ip Restriction",
 					"action": "Update IP Restriction for Sub-Account API key (For Master Account)",
 					"description": "Update IP Restriction for Sub-Account API key\n\nWeight(UID): 3000",
 					"routing": {
@@ -543,8 +543,8 @@ export const subAccountDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 4 Sub Account Assets",
-					"value": "GET Sapi V 4 Sub Account Assets",
+					"name": "GET Sapi v4 Sub Account Assets",
+					"value": "GET Sapi v4 Sub Account Assets",
 					"action": "Query Sub-account Assets (For Master Account)",
 					"description": "Fetch sub-account assets\n\nWeight(UID): 60",
 					"routing": {
@@ -571,7 +571,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Virtual Sub Account"
+						"POST Sapi v1 Sub Account Virtual Sub Account"
 					]
 				}
 			}
@@ -597,7 +597,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Virtual Sub Account"
+						"POST Sapi v1 Sub Account Virtual Sub Account"
 					]
 				}
 			}
@@ -622,7 +622,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Virtual Sub Account"
+						"POST Sapi v1 Sub Account Virtual Sub Account"
 					]
 				}
 			}
@@ -648,7 +648,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Virtual Sub Account"
+						"POST Sapi v1 Sub Account Virtual Sub Account"
 					]
 				}
 			}
@@ -674,7 +674,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Virtual Sub Account"
+						"POST Sapi v1 Sub Account Virtual Sub Account"
 					]
 				}
 			}
@@ -699,7 +699,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Virtual Sub Account"
+						"POST Sapi v1 Sub Account Virtual Sub Account"
 					]
 				}
 			}
@@ -718,7 +718,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account List"
+						"GET Sapi v1 Sub Account List"
 					]
 				}
 			}
@@ -743,7 +743,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account List"
+						"GET Sapi v1 Sub Account List"
 					]
 				}
 			}
@@ -777,7 +777,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account List"
+						"GET Sapi v1 Sub Account List"
 					]
 				}
 			}
@@ -802,7 +802,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account List"
+						"GET Sapi v1 Sub Account List"
 					]
 				}
 			}
@@ -827,7 +827,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account List"
+						"GET Sapi v1 Sub Account List"
 					]
 				}
 			}
@@ -852,7 +852,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account List"
+						"GET Sapi v1 Sub Account List"
 					]
 				}
 			}
@@ -878,7 +878,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account List"
+						"GET Sapi v1 Sub Account List"
 					]
 				}
 			}
@@ -904,7 +904,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account List"
+						"GET Sapi v1 Sub Account List"
 					]
 				}
 			}
@@ -929,7 +929,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account List"
+						"GET Sapi v1 Sub Account List"
 					]
 				}
 			}
@@ -948,7 +948,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Transfer History"
+						"GET Sapi v1 Sub Account Sub Transfer History"
 					]
 				}
 			}
@@ -973,7 +973,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Transfer History"
+						"GET Sapi v1 Sub Account Sub Transfer History"
 					]
 				}
 			}
@@ -998,7 +998,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Transfer History"
+						"GET Sapi v1 Sub Account Sub Transfer History"
 					]
 				}
 			}
@@ -1023,7 +1023,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Transfer History"
+						"GET Sapi v1 Sub Account Sub Transfer History"
 					]
 				}
 			}
@@ -1048,7 +1048,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Transfer History"
+						"GET Sapi v1 Sub Account Sub Transfer History"
 					]
 				}
 			}
@@ -1073,7 +1073,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Transfer History"
+						"GET Sapi v1 Sub Account Sub Transfer History"
 					]
 				}
 			}
@@ -1098,7 +1098,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Transfer History"
+						"GET Sapi v1 Sub Account Sub Transfer History"
 					]
 				}
 			}
@@ -1123,7 +1123,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Transfer History"
+						"GET Sapi v1 Sub Account Sub Transfer History"
 					]
 				}
 			}
@@ -1149,7 +1149,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Transfer History"
+						"GET Sapi v1 Sub Account Sub Transfer History"
 					]
 				}
 			}
@@ -1175,7 +1175,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Transfer History"
+						"GET Sapi v1 Sub Account Sub Transfer History"
 					]
 				}
 			}
@@ -1200,7 +1200,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Transfer History"
+						"GET Sapi v1 Sub Account Sub Transfer History"
 					]
 				}
 			}
@@ -1219,7 +1219,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+						"GET Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1245,7 +1245,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+						"GET Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1271,7 +1271,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+						"GET Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1296,7 +1296,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+						"GET Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1321,7 +1321,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+						"GET Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1346,7 +1346,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+						"GET Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1371,7 +1371,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+						"GET Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1396,7 +1396,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+						"GET Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1422,7 +1422,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+						"GET Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1448,7 +1448,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+						"GET Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1473,7 +1473,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Internal Transfer"
+						"GET Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1492,7 +1492,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Internal Transfer"
+						"POST Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1518,7 +1518,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Internal Transfer"
+						"POST Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1544,7 +1544,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Internal Transfer"
+						"POST Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1570,7 +1570,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Internal Transfer"
+						"POST Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1595,7 +1595,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Internal Transfer"
+						"POST Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1620,7 +1620,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Internal Transfer"
+						"POST Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1645,7 +1645,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Internal Transfer"
+						"POST Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1671,7 +1671,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Internal Transfer"
+						"POST Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1697,7 +1697,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Internal Transfer"
+						"POST Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1722,7 +1722,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Internal Transfer"
+						"POST Sapi v1 Sub Account Futures Internal Transfer"
 					]
 				}
 			}
@@ -1741,7 +1741,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 3 Sub Account Assets"
+						"GET Sapi v3 Sub Account Assets"
 					]
 				}
 			}
@@ -1767,7 +1767,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 3 Sub Account Assets"
+						"GET Sapi v3 Sub Account Assets"
 					]
 				}
 			}
@@ -1792,7 +1792,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 3 Sub Account Assets"
+						"GET Sapi v3 Sub Account Assets"
 					]
 				}
 			}
@@ -1818,7 +1818,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 3 Sub Account Assets"
+						"GET Sapi v3 Sub Account Assets"
 					]
 				}
 			}
@@ -1844,7 +1844,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 3 Sub Account Assets"
+						"GET Sapi v3 Sub Account Assets"
 					]
 				}
 			}
@@ -1869,7 +1869,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 3 Sub Account Assets"
+						"GET Sapi v3 Sub Account Assets"
 					]
 				}
 			}
@@ -1888,7 +1888,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Spot Summary"
+						"GET Sapi v1 Sub Account Spot Summary"
 					]
 				}
 			}
@@ -1913,7 +1913,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Spot Summary"
+						"GET Sapi v1 Sub Account Spot Summary"
 					]
 				}
 			}
@@ -1938,7 +1938,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Spot Summary"
+						"GET Sapi v1 Sub Account Spot Summary"
 					]
 				}
 			}
@@ -1963,7 +1963,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Spot Summary"
+						"GET Sapi v1 Sub Account Spot Summary"
 					]
 				}
 			}
@@ -1988,7 +1988,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Spot Summary"
+						"GET Sapi v1 Sub Account Spot Summary"
 					]
 				}
 			}
@@ -2014,7 +2014,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Spot Summary"
+						"GET Sapi v1 Sub Account Spot Summary"
 					]
 				}
 			}
@@ -2040,7 +2040,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Spot Summary"
+						"GET Sapi v1 Sub Account Spot Summary"
 					]
 				}
 			}
@@ -2065,7 +2065,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Spot Summary"
+						"GET Sapi v1 Sub Account Spot Summary"
 					]
 				}
 			}
@@ -2084,7 +2084,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Address"
+						"GET Sapi v1 Capital Deposit Sub Address"
 					]
 				}
 			}
@@ -2110,7 +2110,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Address"
+						"GET Sapi v1 Capital Deposit Sub Address"
 					]
 				}
 			}
@@ -2136,7 +2136,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Address"
+						"GET Sapi v1 Capital Deposit Sub Address"
 					]
 				}
 			}
@@ -2160,7 +2160,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Address"
+						"GET Sapi v1 Capital Deposit Sub Address"
 					]
 				}
 			}
@@ -2185,7 +2185,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Address"
+						"GET Sapi v1 Capital Deposit Sub Address"
 					]
 				}
 			}
@@ -2211,7 +2211,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Address"
+						"GET Sapi v1 Capital Deposit Sub Address"
 					]
 				}
 			}
@@ -2237,7 +2237,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Address"
+						"GET Sapi v1 Capital Deposit Sub Address"
 					]
 				}
 			}
@@ -2262,7 +2262,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Address"
+						"GET Sapi v1 Capital Deposit Sub Address"
 					]
 				}
 			}
@@ -2281,7 +2281,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2307,7 +2307,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2332,7 +2332,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2357,7 +2357,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2382,7 +2382,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2407,7 +2407,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2431,7 +2431,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2455,7 +2455,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2480,7 +2480,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2506,7 +2506,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2532,7 +2532,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2557,7 +2557,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Capital Deposit Sub Hisrec"
+						"GET Sapi v1 Capital Deposit Sub Hisrec"
 					]
 				}
 			}
@@ -2576,7 +2576,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Status"
+						"GET Sapi v1 Sub Account Status"
 					]
 				}
 			}
@@ -2601,7 +2601,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Status"
+						"GET Sapi v1 Sub Account Status"
 					]
 				}
 			}
@@ -2626,7 +2626,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Status"
+						"GET Sapi v1 Sub Account Status"
 					]
 				}
 			}
@@ -2652,7 +2652,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Status"
+						"GET Sapi v1 Sub Account Status"
 					]
 				}
 			}
@@ -2678,7 +2678,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Status"
+						"GET Sapi v1 Sub Account Status"
 					]
 				}
 			}
@@ -2703,7 +2703,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Status"
+						"GET Sapi v1 Sub Account Status"
 					]
 				}
 			}
@@ -2722,7 +2722,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Enable"
+						"POST Sapi v1 Sub Account Margin Enable"
 					]
 				}
 			}
@@ -2748,7 +2748,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Enable"
+						"POST Sapi v1 Sub Account Margin Enable"
 					]
 				}
 			}
@@ -2773,7 +2773,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Enable"
+						"POST Sapi v1 Sub Account Margin Enable"
 					]
 				}
 			}
@@ -2799,7 +2799,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Enable"
+						"POST Sapi v1 Sub Account Margin Enable"
 					]
 				}
 			}
@@ -2825,7 +2825,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Enable"
+						"POST Sapi v1 Sub Account Margin Enable"
 					]
 				}
 			}
@@ -2850,7 +2850,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Enable"
+						"POST Sapi v1 Sub Account Margin Enable"
 					]
 				}
 			}
@@ -2869,7 +2869,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Margin Account"
+						"GET Sapi v1 Sub Account Margin Account"
 					]
 				}
 			}
@@ -2895,7 +2895,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Margin Account"
+						"GET Sapi v1 Sub Account Margin Account"
 					]
 				}
 			}
@@ -2920,7 +2920,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Margin Account"
+						"GET Sapi v1 Sub Account Margin Account"
 					]
 				}
 			}
@@ -2946,7 +2946,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Margin Account"
+						"GET Sapi v1 Sub Account Margin Account"
 					]
 				}
 			}
@@ -2972,7 +2972,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Margin Account"
+						"GET Sapi v1 Sub Account Margin Account"
 					]
 				}
 			}
@@ -2997,7 +2997,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Margin Account"
+						"GET Sapi v1 Sub Account Margin Account"
 					]
 				}
 			}
@@ -3016,7 +3016,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Margin Account Summary"
+						"GET Sapi v1 Sub Account Margin Account Summary"
 					]
 				}
 			}
@@ -3041,7 +3041,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Margin Account Summary"
+						"GET Sapi v1 Sub Account Margin Account Summary"
 					]
 				}
 			}
@@ -3067,7 +3067,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Margin Account Summary"
+						"GET Sapi v1 Sub Account Margin Account Summary"
 					]
 				}
 			}
@@ -3093,7 +3093,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Margin Account Summary"
+						"GET Sapi v1 Sub Account Margin Account Summary"
 					]
 				}
 			}
@@ -3118,7 +3118,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Margin Account Summary"
+						"GET Sapi v1 Sub Account Margin Account Summary"
 					]
 				}
 			}
@@ -3137,7 +3137,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Enable"
+						"POST Sapi v1 Sub Account Futures Enable"
 					]
 				}
 			}
@@ -3163,7 +3163,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Enable"
+						"POST Sapi v1 Sub Account Futures Enable"
 					]
 				}
 			}
@@ -3188,7 +3188,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Enable"
+						"POST Sapi v1 Sub Account Futures Enable"
 					]
 				}
 			}
@@ -3214,7 +3214,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Enable"
+						"POST Sapi v1 Sub Account Futures Enable"
 					]
 				}
 			}
@@ -3240,7 +3240,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Enable"
+						"POST Sapi v1 Sub Account Futures Enable"
 					]
 				}
 			}
@@ -3265,7 +3265,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Enable"
+						"POST Sapi v1 Sub Account Futures Enable"
 					]
 				}
 			}
@@ -3284,7 +3284,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Account"
+						"GET Sapi v1 Sub Account Futures Account"
 					]
 				}
 			}
@@ -3309,7 +3309,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Account"
+						"GET Sapi v1 Sub Account Futures Account"
 					]
 				}
 			}
@@ -3334,7 +3334,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Account"
+						"GET Sapi v1 Sub Account Futures Account"
 					]
 				}
 			}
@@ -3360,7 +3360,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Account"
+						"GET Sapi v1 Sub Account Futures Account"
 					]
 				}
 			}
@@ -3386,7 +3386,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Account"
+						"GET Sapi v1 Sub Account Futures Account"
 					]
 				}
 			}
@@ -3411,7 +3411,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Account"
+						"GET Sapi v1 Sub Account Futures Account"
 					]
 				}
 			}
@@ -3430,7 +3430,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Account Summary"
+						"GET Sapi v1 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -3455,7 +3455,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Account Summary"
+						"GET Sapi v1 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -3481,7 +3481,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Account Summary"
+						"GET Sapi v1 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -3507,7 +3507,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Account Summary"
+						"GET Sapi v1 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -3532,7 +3532,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Account Summary"
+						"GET Sapi v1 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -3551,7 +3551,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Position Risk"
+						"GET Sapi v1 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -3577,7 +3577,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Position Risk"
+						"GET Sapi v1 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -3602,7 +3602,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Position Risk"
+						"GET Sapi v1 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -3628,7 +3628,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Position Risk"
+						"GET Sapi v1 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -3654,7 +3654,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Position Risk"
+						"GET Sapi v1 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -3679,7 +3679,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Futures Position Risk"
+						"GET Sapi v1 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -3698,7 +3698,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Transfer"
+						"POST Sapi v1 Sub Account Futures Transfer"
 					]
 				}
 			}
@@ -3724,7 +3724,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Transfer"
+						"POST Sapi v1 Sub Account Futures Transfer"
 					]
 				}
 			}
@@ -3749,7 +3749,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Transfer"
+						"POST Sapi v1 Sub Account Futures Transfer"
 					]
 				}
 			}
@@ -3774,7 +3774,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Transfer"
+						"POST Sapi v1 Sub Account Futures Transfer"
 					]
 				}
 			}
@@ -3800,7 +3800,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Transfer"
+						"POST Sapi v1 Sub Account Futures Transfer"
 					]
 				}
 			}
@@ -3825,7 +3825,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Transfer"
+						"POST Sapi v1 Sub Account Futures Transfer"
 					]
 				}
 			}
@@ -3851,7 +3851,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Transfer"
+						"POST Sapi v1 Sub Account Futures Transfer"
 					]
 				}
 			}
@@ -3877,7 +3877,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Transfer"
+						"POST Sapi v1 Sub Account Futures Transfer"
 					]
 				}
 			}
@@ -3902,7 +3902,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Futures Transfer"
+						"POST Sapi v1 Sub Account Futures Transfer"
 					]
 				}
 			}
@@ -3921,7 +3921,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Transfer"
+						"POST Sapi v1 Sub Account Margin Transfer"
 					]
 				}
 			}
@@ -3947,7 +3947,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Transfer"
+						"POST Sapi v1 Sub Account Margin Transfer"
 					]
 				}
 			}
@@ -3972,7 +3972,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Transfer"
+						"POST Sapi v1 Sub Account Margin Transfer"
 					]
 				}
 			}
@@ -3997,7 +3997,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Transfer"
+						"POST Sapi v1 Sub Account Margin Transfer"
 					]
 				}
 			}
@@ -4023,7 +4023,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Transfer"
+						"POST Sapi v1 Sub Account Margin Transfer"
 					]
 				}
 			}
@@ -4048,7 +4048,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Transfer"
+						"POST Sapi v1 Sub Account Margin Transfer"
 					]
 				}
 			}
@@ -4074,7 +4074,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Transfer"
+						"POST Sapi v1 Sub Account Margin Transfer"
 					]
 				}
 			}
@@ -4100,7 +4100,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Transfer"
+						"POST Sapi v1 Sub Account Margin Transfer"
 					]
 				}
 			}
@@ -4125,7 +4125,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Margin Transfer"
+						"POST Sapi v1 Sub Account Margin Transfer"
 					]
 				}
 			}
@@ -4144,7 +4144,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Sub"
+						"POST Sapi v1 Sub Account Transfer Sub To Sub"
 					]
 				}
 			}
@@ -4170,7 +4170,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Sub"
+						"POST Sapi v1 Sub Account Transfer Sub To Sub"
 					]
 				}
 			}
@@ -4195,7 +4195,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Sub"
+						"POST Sapi v1 Sub Account Transfer Sub To Sub"
 					]
 				}
 			}
@@ -4220,7 +4220,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Sub"
+						"POST Sapi v1 Sub Account Transfer Sub To Sub"
 					]
 				}
 			}
@@ -4245,7 +4245,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Sub"
+						"POST Sapi v1 Sub Account Transfer Sub To Sub"
 					]
 				}
 			}
@@ -4271,7 +4271,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Sub"
+						"POST Sapi v1 Sub Account Transfer Sub To Sub"
 					]
 				}
 			}
@@ -4297,7 +4297,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Sub"
+						"POST Sapi v1 Sub Account Transfer Sub To Sub"
 					]
 				}
 			}
@@ -4322,7 +4322,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Sub"
+						"POST Sapi v1 Sub Account Transfer Sub To Sub"
 					]
 				}
 			}
@@ -4341,7 +4341,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Master"
+						"POST Sapi v1 Sub Account Transfer Sub To Master"
 					]
 				}
 			}
@@ -4366,7 +4366,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Master"
+						"POST Sapi v1 Sub Account Transfer Sub To Master"
 					]
 				}
 			}
@@ -4391,7 +4391,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Master"
+						"POST Sapi v1 Sub Account Transfer Sub To Master"
 					]
 				}
 			}
@@ -4416,7 +4416,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Master"
+						"POST Sapi v1 Sub Account Transfer Sub To Master"
 					]
 				}
 			}
@@ -4442,7 +4442,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Master"
+						"POST Sapi v1 Sub Account Transfer Sub To Master"
 					]
 				}
 			}
@@ -4468,7 +4468,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Master"
+						"POST Sapi v1 Sub Account Transfer Sub To Master"
 					]
 				}
 			}
@@ -4493,7 +4493,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Transfer Sub To Master"
+						"POST Sapi v1 Sub Account Transfer Sub To Master"
 					]
 				}
 			}
@@ -4512,7 +4512,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transfer Sub User History"
+						"GET Sapi v1 Sub Account Transfer Sub User History"
 					]
 				}
 			}
@@ -4536,7 +4536,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transfer Sub User History"
+						"GET Sapi v1 Sub Account Transfer Sub User History"
 					]
 				}
 			}
@@ -4561,7 +4561,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transfer Sub User History"
+						"GET Sapi v1 Sub Account Transfer Sub User History"
 					]
 				}
 			}
@@ -4586,7 +4586,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transfer Sub User History"
+						"GET Sapi v1 Sub Account Transfer Sub User History"
 					]
 				}
 			}
@@ -4611,7 +4611,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transfer Sub User History"
+						"GET Sapi v1 Sub Account Transfer Sub User History"
 					]
 				}
 			}
@@ -4636,7 +4636,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transfer Sub User History"
+						"GET Sapi v1 Sub Account Transfer Sub User History"
 					]
 				}
 			}
@@ -4661,7 +4661,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transfer Sub User History"
+						"GET Sapi v1 Sub Account Transfer Sub User History"
 					]
 				}
 			}
@@ -4687,7 +4687,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transfer Sub User History"
+						"GET Sapi v1 Sub Account Transfer Sub User History"
 					]
 				}
 			}
@@ -4713,7 +4713,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transfer Sub User History"
+						"GET Sapi v1 Sub Account Transfer Sub User History"
 					]
 				}
 			}
@@ -4738,7 +4738,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transfer Sub User History"
+						"GET Sapi v1 Sub Account Transfer Sub User History"
 					]
 				}
 			}
@@ -4757,7 +4757,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -4782,7 +4782,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -4807,13 +4807,13 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Client Tran Id",
+			"displayName": "Client Tran ID",
 			"name": "clientTranId",
 			"default": "",
 			"type": "string",
@@ -4831,7 +4831,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -4856,7 +4856,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -4881,7 +4881,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -4906,7 +4906,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -4931,7 +4931,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -4956,7 +4956,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -4982,7 +4982,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5008,7 +5008,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5033,7 +5033,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Universal Transfer"
+						"GET Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5052,7 +5052,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5077,7 +5077,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5102,7 +5102,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5149,7 +5149,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5196,13 +5196,13 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Client Tran Id",
+			"displayName": "Client Tran ID",
 			"name": "clientTranId",
 			"default": "",
 			"type": "string",
@@ -5220,7 +5220,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5245,7 +5245,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5270,7 +5270,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5295,7 +5295,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5320,7 +5320,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5346,7 +5346,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5372,7 +5372,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5397,7 +5397,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Universal Transfer"
+						"POST Sapi v1 Sub Account Universal Transfer"
 					]
 				}
 			}
@@ -5416,7 +5416,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account"
+						"GET Sapi v2 Sub Account Futures Account"
 					]
 				}
 			}
@@ -5442,7 +5442,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account"
+						"GET Sapi v2 Sub Account Futures Account"
 					]
 				}
 			}
@@ -5468,7 +5468,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account"
+						"GET Sapi v2 Sub Account Futures Account"
 					]
 				}
 			}
@@ -5493,7 +5493,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account"
+						"GET Sapi v2 Sub Account Futures Account"
 					]
 				}
 			}
@@ -5519,7 +5519,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account"
+						"GET Sapi v2 Sub Account Futures Account"
 					]
 				}
 			}
@@ -5545,7 +5545,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account"
+						"GET Sapi v2 Sub Account Futures Account"
 					]
 				}
 			}
@@ -5570,7 +5570,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account"
+						"GET Sapi v2 Sub Account Futures Account"
 					]
 				}
 			}
@@ -5589,7 +5589,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account Summary"
+						"GET Sapi v2 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -5615,7 +5615,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account Summary"
+						"GET Sapi v2 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -5640,7 +5640,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account Summary"
+						"GET Sapi v2 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -5665,7 +5665,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account Summary"
+						"GET Sapi v2 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -5690,7 +5690,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account Summary"
+						"GET Sapi v2 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -5716,7 +5716,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account Summary"
+						"GET Sapi v2 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -5742,7 +5742,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account Summary"
+						"GET Sapi v2 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -5767,7 +5767,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Account Summary"
+						"GET Sapi v2 Sub Account Futures Account Summary"
 					]
 				}
 			}
@@ -5786,7 +5786,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Position Risk"
+						"GET Sapi v2 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -5812,7 +5812,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Position Risk"
+						"GET Sapi v2 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -5838,7 +5838,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Position Risk"
+						"GET Sapi v2 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -5863,7 +5863,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Position Risk"
+						"GET Sapi v2 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -5889,7 +5889,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Position Risk"
+						"GET Sapi v2 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -5915,7 +5915,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Position Risk"
+						"GET Sapi v2 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -5940,7 +5940,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 2 Sub Account Futures Position Risk"
+						"GET Sapi v2 Sub Account Futures Position Risk"
 					]
 				}
 			}
@@ -5959,7 +5959,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Blvt Enable"
+						"POST Sapi v1 Sub Account Blvt Enable"
 					]
 				}
 			}
@@ -5985,7 +5985,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Blvt Enable"
+						"POST Sapi v1 Sub Account Blvt Enable"
 					]
 				}
 			}
@@ -6011,7 +6011,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Blvt Enable"
+						"POST Sapi v1 Sub Account Blvt Enable"
 					]
 				}
 			}
@@ -6036,7 +6036,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Blvt Enable"
+						"POST Sapi v1 Sub Account Blvt Enable"
 					]
 				}
 			}
@@ -6062,7 +6062,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Blvt Enable"
+						"POST Sapi v1 Sub Account Blvt Enable"
 					]
 				}
 			}
@@ -6088,7 +6088,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Blvt Enable"
+						"POST Sapi v1 Sub Account Blvt Enable"
 					]
 				}
 			}
@@ -6113,7 +6113,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Blvt Enable"
+						"POST Sapi v1 Sub Account Blvt Enable"
 					]
 				}
 			}
@@ -6132,7 +6132,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Deposit"
+						"POST Sapi v1 Managed Subaccount Deposit"
 					]
 				}
 			}
@@ -6158,7 +6158,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Deposit"
+						"POST Sapi v1 Managed Subaccount Deposit"
 					]
 				}
 			}
@@ -6183,7 +6183,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Deposit"
+						"POST Sapi v1 Managed Subaccount Deposit"
 					]
 				}
 			}
@@ -6208,7 +6208,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Deposit"
+						"POST Sapi v1 Managed Subaccount Deposit"
 					]
 				}
 			}
@@ -6233,7 +6233,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Deposit"
+						"POST Sapi v1 Managed Subaccount Deposit"
 					]
 				}
 			}
@@ -6259,7 +6259,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Deposit"
+						"POST Sapi v1 Managed Subaccount Deposit"
 					]
 				}
 			}
@@ -6285,7 +6285,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Deposit"
+						"POST Sapi v1 Managed Subaccount Deposit"
 					]
 				}
 			}
@@ -6310,7 +6310,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Deposit"
+						"POST Sapi v1 Managed Subaccount Deposit"
 					]
 				}
 			}
@@ -6329,7 +6329,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Asset"
+						"GET Sapi v1 Managed Subaccount Asset"
 					]
 				}
 			}
@@ -6355,7 +6355,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Asset"
+						"GET Sapi v1 Managed Subaccount Asset"
 					]
 				}
 			}
@@ -6380,7 +6380,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Asset"
+						"GET Sapi v1 Managed Subaccount Asset"
 					]
 				}
 			}
@@ -6406,7 +6406,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Asset"
+						"GET Sapi v1 Managed Subaccount Asset"
 					]
 				}
 			}
@@ -6432,7 +6432,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Asset"
+						"GET Sapi v1 Managed Subaccount Asset"
 					]
 				}
 			}
@@ -6457,7 +6457,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Asset"
+						"GET Sapi v1 Managed Subaccount Asset"
 					]
 				}
 			}
@@ -6476,7 +6476,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Withdraw"
+						"POST Sapi v1 Managed Subaccount Withdraw"
 					]
 				}
 			}
@@ -6502,7 +6502,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Withdraw"
+						"POST Sapi v1 Managed Subaccount Withdraw"
 					]
 				}
 			}
@@ -6527,7 +6527,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Withdraw"
+						"POST Sapi v1 Managed Subaccount Withdraw"
 					]
 				}
 			}
@@ -6552,7 +6552,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Withdraw"
+						"POST Sapi v1 Managed Subaccount Withdraw"
 					]
 				}
 			}
@@ -6577,7 +6577,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Withdraw"
+						"POST Sapi v1 Managed Subaccount Withdraw"
 					]
 				}
 			}
@@ -6602,7 +6602,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Withdraw"
+						"POST Sapi v1 Managed Subaccount Withdraw"
 					]
 				}
 			}
@@ -6628,7 +6628,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Withdraw"
+						"POST Sapi v1 Managed Subaccount Withdraw"
 					]
 				}
 			}
@@ -6654,7 +6654,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Withdraw"
+						"POST Sapi v1 Managed Subaccount Withdraw"
 					]
 				}
 			}
@@ -6679,7 +6679,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Managed Subaccount Withdraw"
+						"POST Sapi v1 Managed Subaccount Withdraw"
 					]
 				}
 			}
@@ -6698,7 +6698,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Account Snapshot"
+						"GET Sapi v1 Managed Subaccount Account Snapshot"
 					]
 				}
 			}
@@ -6724,7 +6724,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Account Snapshot"
+						"GET Sapi v1 Managed Subaccount Account Snapshot"
 					]
 				}
 			}
@@ -6750,7 +6750,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Account Snapshot"
+						"GET Sapi v1 Managed Subaccount Account Snapshot"
 					]
 				}
 			}
@@ -6775,7 +6775,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Account Snapshot"
+						"GET Sapi v1 Managed Subaccount Account Snapshot"
 					]
 				}
 			}
@@ -6800,7 +6800,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Account Snapshot"
+						"GET Sapi v1 Managed Subaccount Account Snapshot"
 					]
 				}
 			}
@@ -6825,7 +6825,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Account Snapshot"
+						"GET Sapi v1 Managed Subaccount Account Snapshot"
 					]
 				}
 			}
@@ -6850,7 +6850,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Account Snapshot"
+						"GET Sapi v1 Managed Subaccount Account Snapshot"
 					]
 				}
 			}
@@ -6876,7 +6876,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Account Snapshot"
+						"GET Sapi v1 Managed Subaccount Account Snapshot"
 					]
 				}
 			}
@@ -6902,7 +6902,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Account Snapshot"
+						"GET Sapi v1 Managed Subaccount Account Snapshot"
 					]
 				}
 			}
@@ -6921,7 +6921,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -6946,7 +6946,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -6971,7 +6971,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -6996,7 +6996,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -7021,7 +7021,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -7046,7 +7046,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -7071,7 +7071,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -7096,7 +7096,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -7121,7 +7121,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -7147,7 +7147,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -7173,7 +7173,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -7198,7 +7198,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Investor"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Investor"
 					]
 				}
 			}
@@ -7217,7 +7217,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7242,7 +7242,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7267,7 +7267,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7292,7 +7292,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7317,7 +7317,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7342,7 +7342,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7367,7 +7367,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7392,7 +7392,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7417,7 +7417,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7443,7 +7443,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7469,7 +7469,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7494,7 +7494,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log For Trade Parent"
+						"GET Sapi v1 Managed Subaccount Query Trans Log For Trade Parent"
 					]
 				}
 			}
@@ -7513,7 +7513,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Fetch Future Asset"
+						"GET Sapi v1 Managed Subaccount Fetch Future Asset"
 					]
 				}
 			}
@@ -7538,7 +7538,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Fetch Future Asset"
+						"GET Sapi v1 Managed Subaccount Fetch Future Asset"
 					]
 				}
 			}
@@ -7563,7 +7563,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Fetch Future Asset"
+						"GET Sapi v1 Managed Subaccount Fetch Future Asset"
 					]
 				}
 			}
@@ -7589,7 +7589,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Fetch Future Asset"
+						"GET Sapi v1 Managed Subaccount Fetch Future Asset"
 					]
 				}
 			}
@@ -7615,7 +7615,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Fetch Future Asset"
+						"GET Sapi v1 Managed Subaccount Fetch Future Asset"
 					]
 				}
 			}
@@ -7640,7 +7640,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Fetch Future Asset"
+						"GET Sapi v1 Managed Subaccount Fetch Future Asset"
 					]
 				}
 			}
@@ -7659,7 +7659,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Margin Asset"
+						"GET Sapi v1 Managed Subaccount Margin Asset"
 					]
 				}
 			}
@@ -7684,7 +7684,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Margin Asset"
+						"GET Sapi v1 Managed Subaccount Margin Asset"
 					]
 				}
 			}
@@ -7709,7 +7709,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Margin Asset"
+						"GET Sapi v1 Managed Subaccount Margin Asset"
 					]
 				}
 			}
@@ -7735,7 +7735,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Margin Asset"
+						"GET Sapi v1 Managed Subaccount Margin Asset"
 					]
 				}
 			}
@@ -7761,7 +7761,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Margin Asset"
+						"GET Sapi v1 Managed Subaccount Margin Asset"
 					]
 				}
 			}
@@ -7786,7 +7786,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Margin Asset"
+						"GET Sapi v1 Managed Subaccount Margin Asset"
 					]
 				}
 			}
@@ -7805,7 +7805,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Info"
+						"GET Sapi v1 Managed Subaccount Info"
 					]
 				}
 			}
@@ -7830,7 +7830,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Info"
+						"GET Sapi v1 Managed Subaccount Info"
 					]
 				}
 			}
@@ -7855,7 +7855,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Info"
+						"GET Sapi v1 Managed Subaccount Info"
 					]
 				}
 			}
@@ -7880,7 +7880,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Info"
+						"GET Sapi v1 Managed Subaccount Info"
 					]
 				}
 			}
@@ -7905,7 +7905,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Info"
+						"GET Sapi v1 Managed Subaccount Info"
 					]
 				}
 			}
@@ -7931,7 +7931,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Info"
+						"GET Sapi v1 Managed Subaccount Info"
 					]
 				}
 			}
@@ -7957,7 +7957,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Info"
+						"GET Sapi v1 Managed Subaccount Info"
 					]
 				}
 			}
@@ -7982,7 +7982,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Info"
+						"GET Sapi v1 Managed Subaccount Info"
 					]
 				}
 			}
@@ -8001,7 +8001,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Deposit Address"
+						"GET Sapi v1 Managed Subaccount Deposit Address"
 					]
 				}
 			}
@@ -8026,7 +8026,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Deposit Address"
+						"GET Sapi v1 Managed Subaccount Deposit Address"
 					]
 				}
 			}
@@ -8052,7 +8052,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Deposit Address"
+						"GET Sapi v1 Managed Subaccount Deposit Address"
 					]
 				}
 			}
@@ -8076,7 +8076,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Deposit Address"
+						"GET Sapi v1 Managed Subaccount Deposit Address"
 					]
 				}
 			}
@@ -8101,7 +8101,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Deposit Address"
+						"GET Sapi v1 Managed Subaccount Deposit Address"
 					]
 				}
 			}
@@ -8127,7 +8127,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Deposit Address"
+						"GET Sapi v1 Managed Subaccount Deposit Address"
 					]
 				}
 			}
@@ -8153,7 +8153,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Deposit Address"
+						"GET Sapi v1 Managed Subaccount Deposit Address"
 					]
 				}
 			}
@@ -8178,7 +8178,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Deposit Address"
+						"GET Sapi v1 Managed Subaccount Deposit Address"
 					]
 				}
 			}
@@ -8197,7 +8197,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+						"GET Sapi v1 Managed Subaccount Query Trans Log"
 					]
 				}
 			}
@@ -8222,7 +8222,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+						"GET Sapi v1 Managed Subaccount Query Trans Log"
 					]
 				}
 			}
@@ -8247,7 +8247,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+						"GET Sapi v1 Managed Subaccount Query Trans Log"
 					]
 				}
 			}
@@ -8272,7 +8272,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+						"GET Sapi v1 Managed Subaccount Query Trans Log"
 					]
 				}
 			}
@@ -8297,7 +8297,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+						"GET Sapi v1 Managed Subaccount Query Trans Log"
 					]
 				}
 			}
@@ -8333,7 +8333,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+						"GET Sapi v1 Managed Subaccount Query Trans Log"
 					]
 				}
 			}
@@ -8381,7 +8381,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+						"GET Sapi v1 Managed Subaccount Query Trans Log"
 					]
 				}
 			}
@@ -8406,7 +8406,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+						"GET Sapi v1 Managed Subaccount Query Trans Log"
 					]
 				}
 			}
@@ -8432,7 +8432,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+						"GET Sapi v1 Managed Subaccount Query Trans Log"
 					]
 				}
 			}
@@ -8458,7 +8458,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+						"GET Sapi v1 Managed Subaccount Query Trans Log"
 					]
 				}
 			}
@@ -8483,7 +8483,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Managed Subaccount Query Trans Log"
+						"GET Sapi v1 Managed Subaccount Query Trans Log"
 					]
 				}
 			}
@@ -8502,7 +8502,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Account Api Ip Restriction"
+						"GET Sapi v1 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -8528,13 +8528,13 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Account Api Ip Restriction"
+						"GET Sapi v1 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Sub Account Api Key",
+			"displayName": "Sub Account API Key",
 			"name": "subAccountApiKey",
 			"required": true,
 			"default": "",
@@ -8553,7 +8553,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Account Api Ip Restriction"
+						"GET Sapi v1 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -8578,7 +8578,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Account Api Ip Restriction"
+						"GET Sapi v1 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -8604,7 +8604,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Account Api Ip Restriction"
+						"GET Sapi v1 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -8630,7 +8630,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Account Api Ip Restriction"
+						"GET Sapi v1 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -8655,7 +8655,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Sub Account Api Ip Restriction"
+						"GET Sapi v1 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -8674,7 +8674,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List"
+						"DELETE Sapi v1 Sub Account Sub Account API Ip Restriction Ip List"
 					]
 				}
 			}
@@ -8700,13 +8700,13 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List"
+						"DELETE Sapi v1 Sub Account Sub Account API Ip Restriction Ip List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Sub Account Api Key",
+			"displayName": "Sub Account API Key",
 			"name": "subAccountApiKey",
 			"required": true,
 			"default": "",
@@ -8725,7 +8725,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List"
+						"DELETE Sapi v1 Sub Account Sub Account API Ip Restriction Ip List"
 					]
 				}
 			}
@@ -8750,7 +8750,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List"
+						"DELETE Sapi v1 Sub Account Sub Account API Ip Restriction Ip List"
 					]
 				}
 			}
@@ -8775,7 +8775,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List"
+						"DELETE Sapi v1 Sub Account Sub Account API Ip Restriction Ip List"
 					]
 				}
 			}
@@ -8800,7 +8800,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List"
+						"DELETE Sapi v1 Sub Account Sub Account API Ip Restriction Ip List"
 					]
 				}
 			}
@@ -8826,7 +8826,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List"
+						"DELETE Sapi v1 Sub Account Sub Account API Ip Restriction Ip List"
 					]
 				}
 			}
@@ -8852,7 +8852,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List"
+						"DELETE Sapi v1 Sub Account Sub Account API Ip Restriction Ip List"
 					]
 				}
 			}
@@ -8877,7 +8877,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Sub Account Sub Account Api Ip Restriction Ip List"
+						"DELETE Sapi v1 Sub Account Sub Account API Ip Restriction Ip List"
 					]
 				}
 			}
@@ -8896,7 +8896,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transaction Statistics"
+						"GET Sapi v1 Sub Account Transaction Statistics"
 					]
 				}
 			}
@@ -8921,7 +8921,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transaction Statistics"
+						"GET Sapi v1 Sub Account Transaction Statistics"
 					]
 				}
 			}
@@ -8946,7 +8946,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transaction Statistics"
+						"GET Sapi v1 Sub Account Transaction Statistics"
 					]
 				}
 			}
@@ -8972,7 +8972,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transaction Statistics"
+						"GET Sapi v1 Sub Account Transaction Statistics"
 					]
 				}
 			}
@@ -8998,7 +8998,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transaction Statistics"
+						"GET Sapi v1 Sub Account Transaction Statistics"
 					]
 				}
 			}
@@ -9023,7 +9023,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 1 Sub Account Transaction Statistics"
+						"GET Sapi v1 Sub Account Transaction Statistics"
 					]
 				}
 			}
@@ -9042,7 +9042,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Eoptions Enable"
+						"POST Sapi v1 Sub Account Eoptions Enable"
 					]
 				}
 			}
@@ -9067,7 +9067,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Eoptions Enable"
+						"POST Sapi v1 Sub Account Eoptions Enable"
 					]
 				}
 			}
@@ -9092,7 +9092,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Eoptions Enable"
+						"POST Sapi v1 Sub Account Eoptions Enable"
 					]
 				}
 			}
@@ -9118,7 +9118,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Eoptions Enable"
+						"POST Sapi v1 Sub Account Eoptions Enable"
 					]
 				}
 			}
@@ -9144,7 +9144,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Eoptions Enable"
+						"POST Sapi v1 Sub Account Eoptions Enable"
 					]
 				}
 			}
@@ -9169,7 +9169,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 1 Sub Account Eoptions Enable"
+						"POST Sapi v1 Sub Account Eoptions Enable"
 					]
 				}
 			}
@@ -9188,7 +9188,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 2 Sub Account Sub Account Api Ip Restriction"
+						"POST Sapi v2 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -9214,13 +9214,13 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 2 Sub Account Sub Account Api Ip Restriction"
+						"POST Sapi v2 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Sub Account Api Key",
+			"displayName": "Sub Account API Key",
 			"name": "subAccountApiKey",
 			"required": true,
 			"default": "",
@@ -9239,7 +9239,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 2 Sub Account Sub Account Api Ip Restriction"
+						"POST Sapi v2 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -9265,7 +9265,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 2 Sub Account Sub Account Api Ip Restriction"
+						"POST Sapi v2 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -9290,7 +9290,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 2 Sub Account Sub Account Api Ip Restriction"
+						"POST Sapi v2 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -9315,7 +9315,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 2 Sub Account Sub Account Api Ip Restriction"
+						"POST Sapi v2 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -9341,7 +9341,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 2 Sub Account Sub Account Api Ip Restriction"
+						"POST Sapi v2 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -9367,7 +9367,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 2 Sub Account Sub Account Api Ip Restriction"
+						"POST Sapi v2 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -9392,7 +9392,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"POST Sapi V 2 Sub Account Sub Account Api Ip Restriction"
+						"POST Sapi v2 Sub Account Sub Account API Ip Restriction"
 					]
 				}
 			}
@@ -9411,7 +9411,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 4 Sub Account Assets"
+						"GET Sapi v4 Sub Account Assets"
 					]
 				}
 			}
@@ -9436,7 +9436,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 4 Sub Account Assets"
+						"GET Sapi v4 Sub Account Assets"
 					]
 				}
 			}
@@ -9461,7 +9461,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 4 Sub Account Assets"
+						"GET Sapi v4 Sub Account Assets"
 					]
 				}
 			}
@@ -9487,7 +9487,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 4 Sub Account Assets"
+						"GET Sapi v4 Sub Account Assets"
 					]
 				}
 			}
@@ -9513,7 +9513,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 4 Sub Account Assets"
+						"GET Sapi v4 Sub Account Assets"
 					]
 				}
 			}
@@ -9538,7 +9538,7 @@ export const subAccountDescription: INodeProperties[] = [
 						"Sub Account"
 					],
 					"operation": [
-						"GET Sapi V 4 Sub Account Assets"
+						"GET Sapi v4 Sub Account Assets"
 					]
 				}
 			}

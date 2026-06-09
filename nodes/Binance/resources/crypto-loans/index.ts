@@ -15,8 +15,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Loan Income",
-					"value": "GET Sapi V 1 Loan Income",
+					"name": "GET Sapi v1 Loan Income",
+					"value": "GET Sapi v1 Loan Income",
 					"action": "Get Crypto Loans Income History (USER_DATA)",
 					"description": "- If startTime and endTime are not sent, the recent 7-day data will be returned.\n- The max interval between startTime and endTime is 30 days.\n\nWeight(UID): 6000",
 					"routing": {
@@ -27,8 +27,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Loan Borrow",
-					"value": "POST Sapi V 1 Loan Borrow",
+					"name": "POST Sapi v1 Loan Borrow",
+					"value": "POST Sapi v1 Loan Borrow",
 					"action": "Crypto Loan Borrow (TRADE)",
 					"description": "Weight(UID): 6000",
 					"routing": {
@@ -39,8 +39,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Borrow History",
-					"value": "GET Sapi V 1 Loan Borrow History",
+					"name": "GET Sapi v1 Loan Borrow History",
+					"value": "GET Sapi v1 Loan Borrow History",
 					"action": "Get Crypto Loans Borrow History (USER_DATA)",
 					"description": "- If startTime and endTime are not sent, the recent 90-day data will be returned.\n- The max interval between startTime and endTime is 180 days.\n\nWeight(IP): 400",
 					"routing": {
@@ -51,8 +51,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Ongoing Orders",
-					"value": "GET Sapi V 1 Loan Ongoing Orders",
+					"name": "GET Sapi v1 Loan Ongoing Orders",
+					"value": "GET Sapi v1 Loan Ongoing Orders",
 					"action": "Get Loan Ongoing Orders (USER_DATA)",
 					"description": "Weight(IP): 300",
 					"routing": {
@@ -63,8 +63,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Loan Repay",
-					"value": "POST Sapi V 1 Loan Repay",
+					"name": "POST Sapi v1 Loan Repay",
+					"value": "POST Sapi v1 Loan Repay",
 					"action": "Crypto Loan Repay (TRADE)",
 					"description": "Weight(UID): 6000",
 					"routing": {
@@ -75,8 +75,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Repay History",
-					"value": "GET Sapi V 1 Loan Repay History",
+					"name": "GET Sapi v1 Loan Repay History",
+					"value": "GET Sapi v1 Loan Repay History",
 					"action": "Get Loan Repayment History (USER_DATA)",
 					"description": "If startTime and endTime are not sent, the recent 90-day data will be returned.\nThe max interval between startTime and endTime is 180 days.\n\nWeight(IP): 400",
 					"routing": {
@@ -87,8 +87,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Loan Adjust Ltv",
-					"value": "POST Sapi V 1 Loan Adjust Ltv",
+					"name": "POST Sapi v1 Loan Adjust Ltv",
+					"value": "POST Sapi v1 Loan Adjust Ltv",
 					"action": "Crypto Loan Adjust LTV (TRADE)",
 					"description": "Weight(UID): 6000",
 					"routing": {
@@ -99,8 +99,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Ltv Adjustment History",
-					"value": "GET Sapi V 1 Loan Ltv Adjustment History",
+					"name": "GET Sapi v1 Loan Ltv Adjustment History",
+					"value": "GET Sapi v1 Loan Ltv Adjustment History",
 					"action": "Get Loan LTV Adjustment History (USER_DATA)",
 					"description": "If startTime and endTime are not sent, the recent 90-day data will be returned.\nThe max interval between startTime and endTime is 180 days.\n\nWeight(IP): 400",
 					"routing": {
@@ -111,8 +111,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Loanable Data",
-					"value": "GET Sapi V 1 Loan Loanable Data",
+					"name": "GET Sapi v1 Loan Loanable Data",
+					"value": "GET Sapi v1 Loan Loanable Data",
 					"action": "Get Loanable Assets Data (USER_DATA)",
 					"description": "Get interest rate and borrow limit of loanable assets. The borrow limit is shown in USD value.\n\nWeight(IP): 400",
 					"routing": {
@@ -123,8 +123,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Collateral Data",
-					"value": "GET Sapi V 1 Loan Collateral Data",
+					"name": "GET Sapi v1 Loan Collateral Data",
+					"value": "GET Sapi v1 Loan Collateral Data",
 					"action": "Get Collateral Assets Data (USER_DATA)",
 					"description": "Get LTV information and collateral limit of collateral assets. The collateral limit is shown in USD value.\n\nWeight(IP): 400",
 					"routing": {
@@ -135,8 +135,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Loan Repay Collateral Rate",
-					"value": "GET Sapi V 1 Loan Repay Collateral Rate",
+					"name": "GET Sapi v1 Loan Repay Collateral Rate",
+					"value": "GET Sapi v1 Loan Repay Collateral Rate",
 					"action": "Check Collateral Repay Rate (USER_DATA)",
 					"description": "Get the the rate of collateral coin / loan coin when using collateral repay, the rate will be valid within 8 second.\n\nWeight(IP): 6000",
 					"routing": {
@@ -147,8 +147,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Loan Customize Margin Call",
-					"value": "POST Sapi V 1 Loan Customize Margin Call",
+					"name": "POST Sapi v1 Loan Customize Margin Call",
+					"value": "POST Sapi v1 Loan Customize Margin Call",
 					"action": "Crypto Loan Customize Margin Call (TRADE)",
 					"description": "Customize margin call for ongoing orders only.\n\nWeight(UID): 6000",
 					"routing": {
@@ -159,8 +159,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 2 Loan Flexible Borrow",
-					"value": "POST Sapi V 2 Loan Flexible Borrow",
+					"name": "POST Sapi v2 Loan Flexible Borrow",
+					"value": "POST Sapi v2 Loan Flexible Borrow",
 					"action": "Borrow - Flexible Loan Borrow (TRADE)",
 					"description": "- Only available for master account\n\nWeight(UID): 6000",
 					"routing": {
@@ -171,8 +171,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 2 Loan Flexible Ongoing Orders",
-					"value": "GET Sapi V 2 Loan Flexible Ongoing Orders",
+					"name": "GET Sapi v2 Loan Flexible Ongoing Orders",
+					"value": "GET Sapi v2 Loan Flexible Ongoing Orders",
 					"action": "Borrow - Get Flexible Loan Ongoing Orders (USER_DATA)",
 					"description": "\nWeight(IP): 300",
 					"routing": {
@@ -183,8 +183,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 2 Loan Flexible Borrow History",
-					"value": "GET Sapi V 2 Loan Flexible Borrow History",
+					"name": "GET Sapi v2 Loan Flexible Borrow History",
+					"value": "GET Sapi v2 Loan Flexible Borrow History",
 					"action": "Borrow - Get Flexible Loan Borrow History (USER_DATA)",
 					"description": "- If startTime and endTime are not sent, the recent 90-day data will be returned.\n- The max interval between startTime and endTime is 180 days.\n\nWeight(IP): 400",
 					"routing": {
@@ -195,8 +195,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 2 Loan Flexible Repay",
-					"value": "POST Sapi V 2 Loan Flexible Repay",
+					"name": "POST Sapi v2 Loan Flexible Repay",
+					"value": "POST Sapi v2 Loan Flexible Repay",
 					"action": "Repay - Flexible Loan Repay (TRADE)",
 					"description": "- repayAmount is mandatory even fullRepayment = FALSE\n\nWeight(IP): 6000",
 					"routing": {
@@ -207,8 +207,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 2 Loan Flexible Repay History",
-					"value": "GET Sapi V 2 Loan Flexible Repay History",
+					"name": "GET Sapi v2 Loan Flexible Repay History",
+					"value": "GET Sapi v2 Loan Flexible Repay History",
 					"action": "Repay - Get Flexible Loan Repayment History (USER_DATA)",
 					"description": "- If startTime and endTime are not sent, the recent 90-day data will be returned.\n- The max interval between startTime and endTime is 180 days.\n\nWeight(IP): 400",
 					"routing": {
@@ -219,8 +219,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 2 Loan Flexible Adjust Ltv",
-					"value": "POST Sapi V 2 Loan Flexible Adjust Ltv",
+					"name": "POST Sapi v2 Loan Flexible Adjust Ltv",
+					"value": "POST Sapi v2 Loan Flexible Adjust Ltv",
 					"action": "Adjust LTV - Flexible Loan Adjust LTV (TRADE)",
 					"description": "- API Key needs Spot & Margin Trading permission for this endpoint\n\nWeight(UID): 6000",
 					"routing": {
@@ -231,8 +231,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 2 Loan Flexible Ltv Adjustment History",
-					"value": "GET Sapi V 2 Loan Flexible Ltv Adjustment History",
+					"name": "GET Sapi v2 Loan Flexible Ltv Adjustment History",
+					"value": "GET Sapi v2 Loan Flexible Ltv Adjustment History",
 					"action": "Adjust LTV - Get Flexible Loan LTV Adjustment History (USER_DATA)",
 					"description": "- If startTime and endTime are not sent, the recent 90-day data will be returned.\n- The max interval between startTime and endTime is 180 days.\n\nWeight(IP): 400",
 					"routing": {
@@ -243,8 +243,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 2 Loan Flexible Loanable Data",
-					"value": "GET Sapi V 2 Loan Flexible Loanable Data",
+					"name": "GET Sapi v2 Loan Flexible Loanable Data",
+					"value": "GET Sapi v2 Loan Flexible Loanable Data",
 					"action": "Get Flexible Loan Assets Data (USER_DATA)",
 					"description": "Get interest rate and borrow limit of flexible loanable assets. The borrow limit is shown in USD value.\n\nWeight(IP): 400",
 					"routing": {
@@ -255,8 +255,8 @@ export const cryptoLoansDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 2 Loan Flexible Collateral Data",
-					"value": "GET Sapi V 2 Loan Flexible Collateral Data",
+					"name": "GET Sapi v2 Loan Flexible Collateral Data",
+					"value": "GET Sapi v2 Loan Flexible Collateral Data",
 					"action": "Get Flexible Loan Collateral Assets Data (USER_DATA)",
 					"description": "Get LTV information and collateral limit of flexible loan's collateral assets. The collateral limit is shown in USD value.\n\nWeight(IP): 400",
 					"routing": {
@@ -283,7 +283,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Income"
+						"GET Sapi v1 Loan Income"
 					]
 				}
 			}
@@ -307,7 +307,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Income"
+						"GET Sapi v1 Loan Income"
 					]
 				}
 			}
@@ -362,7 +362,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Income"
+						"GET Sapi v1 Loan Income"
 					]
 				}
 			}
@@ -387,7 +387,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Income"
+						"GET Sapi v1 Loan Income"
 					]
 				}
 			}
@@ -412,7 +412,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Income"
+						"GET Sapi v1 Loan Income"
 					]
 				}
 			}
@@ -437,7 +437,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Income"
+						"GET Sapi v1 Loan Income"
 					]
 				}
 			}
@@ -462,7 +462,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Income"
+						"GET Sapi v1 Loan Income"
 					]
 				}
 			}
@@ -488,7 +488,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Income"
+						"GET Sapi v1 Loan Income"
 					]
 				}
 			}
@@ -514,7 +514,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Income"
+						"GET Sapi v1 Loan Income"
 					]
 				}
 			}
@@ -539,7 +539,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Income"
+						"GET Sapi v1 Loan Income"
 					]
 				}
 			}
@@ -558,7 +558,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Borrow"
+						"POST Sapi v1 Loan Borrow"
 					]
 				}
 			}
@@ -584,7 +584,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Borrow"
+						"POST Sapi v1 Loan Borrow"
 					]
 				}
 			}
@@ -609,7 +609,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Borrow"
+						"POST Sapi v1 Loan Borrow"
 					]
 				}
 			}
@@ -635,7 +635,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Borrow"
+						"POST Sapi v1 Loan Borrow"
 					]
 				}
 			}
@@ -659,7 +659,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Borrow"
+						"POST Sapi v1 Loan Borrow"
 					]
 				}
 			}
@@ -685,7 +685,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Borrow"
+						"POST Sapi v1 Loan Borrow"
 					]
 				}
 			}
@@ -710,7 +710,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Borrow"
+						"POST Sapi v1 Loan Borrow"
 					]
 				}
 			}
@@ -736,7 +736,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Borrow"
+						"POST Sapi v1 Loan Borrow"
 					]
 				}
 			}
@@ -762,7 +762,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Borrow"
+						"POST Sapi v1 Loan Borrow"
 					]
 				}
 			}
@@ -787,7 +787,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Borrow"
+						"POST Sapi v1 Loan Borrow"
 					]
 				}
 			}
@@ -806,13 +806,13 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "orderId in POST /sapi/v1/loan/borrow",
 			"default": 10,
@@ -831,7 +831,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
@@ -856,7 +856,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
@@ -881,7 +881,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
@@ -906,7 +906,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
@@ -931,7 +931,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
@@ -956,7 +956,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
@@ -981,7 +981,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
@@ -1006,7 +1006,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
@@ -1032,7 +1032,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
@@ -1058,7 +1058,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
@@ -1083,7 +1083,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Borrow History"
+						"GET Sapi v1 Loan Borrow History"
 					]
 				}
 			}
@@ -1102,13 +1102,13 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ongoing Orders"
+						"GET Sapi v1 Loan Ongoing Orders"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "orderId in POST /sapi/v1/loan/borrow",
 			"default": 10,
@@ -1127,7 +1127,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ongoing Orders"
+						"GET Sapi v1 Loan Ongoing Orders"
 					]
 				}
 			}
@@ -1152,7 +1152,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ongoing Orders"
+						"GET Sapi v1 Loan Ongoing Orders"
 					]
 				}
 			}
@@ -1177,7 +1177,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ongoing Orders"
+						"GET Sapi v1 Loan Ongoing Orders"
 					]
 				}
 			}
@@ -1202,7 +1202,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ongoing Orders"
+						"GET Sapi v1 Loan Ongoing Orders"
 					]
 				}
 			}
@@ -1227,7 +1227,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ongoing Orders"
+						"GET Sapi v1 Loan Ongoing Orders"
 					]
 				}
 			}
@@ -1252,7 +1252,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ongoing Orders"
+						"GET Sapi v1 Loan Ongoing Orders"
 					]
 				}
 			}
@@ -1278,7 +1278,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ongoing Orders"
+						"GET Sapi v1 Loan Ongoing Orders"
 					]
 				}
 			}
@@ -1304,7 +1304,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ongoing Orders"
+						"GET Sapi v1 Loan Ongoing Orders"
 					]
 				}
 			}
@@ -1329,7 +1329,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ongoing Orders"
+						"GET Sapi v1 Loan Ongoing Orders"
 					]
 				}
 			}
@@ -1348,13 +1348,13 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Repay"
+						"POST Sapi v1 Loan Repay"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"required": true,
 			"description": "Order ID",
@@ -1374,7 +1374,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Repay"
+						"POST Sapi v1 Loan Repay"
 					]
 				}
 			}
@@ -1400,7 +1400,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Repay"
+						"POST Sapi v1 Loan Repay"
 					]
 				}
 			}
@@ -1425,7 +1425,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Repay"
+						"POST Sapi v1 Loan Repay"
 					]
 				}
 			}
@@ -1450,7 +1450,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Repay"
+						"POST Sapi v1 Loan Repay"
 					]
 				}
 			}
@@ -1475,7 +1475,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Repay"
+						"POST Sapi v1 Loan Repay"
 					]
 				}
 			}
@@ -1501,7 +1501,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Repay"
+						"POST Sapi v1 Loan Repay"
 					]
 				}
 			}
@@ -1527,7 +1527,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Repay"
+						"POST Sapi v1 Loan Repay"
 					]
 				}
 			}
@@ -1552,7 +1552,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Repay"
+						"POST Sapi v1 Loan Repay"
 					]
 				}
 			}
@@ -1571,13 +1571,13 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order ID",
 			"default": 10,
@@ -1596,7 +1596,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
@@ -1621,7 +1621,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
@@ -1646,7 +1646,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
@@ -1671,7 +1671,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
@@ -1696,7 +1696,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
@@ -1721,7 +1721,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
@@ -1746,7 +1746,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
@@ -1771,7 +1771,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
@@ -1797,7 +1797,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
@@ -1823,7 +1823,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
@@ -1848,7 +1848,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay History"
+						"GET Sapi v1 Loan Repay History"
 					]
 				}
 			}
@@ -1867,13 +1867,13 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Adjust Ltv"
+						"POST Sapi v1 Loan Adjust Ltv"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"required": true,
 			"description": "Order ID",
@@ -1893,7 +1893,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Adjust Ltv"
+						"POST Sapi v1 Loan Adjust Ltv"
 					]
 				}
 			}
@@ -1919,7 +1919,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Adjust Ltv"
+						"POST Sapi v1 Loan Adjust Ltv"
 					]
 				}
 			}
@@ -1955,7 +1955,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Adjust Ltv"
+						"POST Sapi v1 Loan Adjust Ltv"
 					]
 				}
 			}
@@ -1980,7 +1980,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Adjust Ltv"
+						"POST Sapi v1 Loan Adjust Ltv"
 					]
 				}
 			}
@@ -2006,7 +2006,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Adjust Ltv"
+						"POST Sapi v1 Loan Adjust Ltv"
 					]
 				}
 			}
@@ -2032,7 +2032,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Adjust Ltv"
+						"POST Sapi v1 Loan Adjust Ltv"
 					]
 				}
 			}
@@ -2057,7 +2057,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Adjust Ltv"
+						"POST Sapi v1 Loan Adjust Ltv"
 					]
 				}
 			}
@@ -2076,13 +2076,13 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order ID",
 			"default": 10,
@@ -2101,7 +2101,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
@@ -2126,7 +2126,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
@@ -2151,7 +2151,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
@@ -2176,7 +2176,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
@@ -2201,7 +2201,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
@@ -2226,7 +2226,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
@@ -2251,7 +2251,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
@@ -2276,7 +2276,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
@@ -2302,7 +2302,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
@@ -2328,7 +2328,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
@@ -2353,7 +2353,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Ltv Adjustment History"
+						"GET Sapi v1 Loan Ltv Adjustment History"
 					]
 				}
 			}
@@ -2372,7 +2372,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Loanable Data"
+						"GET Sapi v1 Loan Loanable Data"
 					]
 				}
 			}
@@ -2397,7 +2397,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Loanable Data"
+						"GET Sapi v1 Loan Loanable Data"
 					]
 				}
 			}
@@ -2422,7 +2422,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Loanable Data"
+						"GET Sapi v1 Loan Loanable Data"
 					]
 				}
 			}
@@ -2447,7 +2447,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Loanable Data"
+						"GET Sapi v1 Loan Loanable Data"
 					]
 				}
 			}
@@ -2473,7 +2473,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Loanable Data"
+						"GET Sapi v1 Loan Loanable Data"
 					]
 				}
 			}
@@ -2499,7 +2499,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Loanable Data"
+						"GET Sapi v1 Loan Loanable Data"
 					]
 				}
 			}
@@ -2524,7 +2524,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Loanable Data"
+						"GET Sapi v1 Loan Loanable Data"
 					]
 				}
 			}
@@ -2543,7 +2543,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Collateral Data"
+						"GET Sapi v1 Loan Collateral Data"
 					]
 				}
 			}
@@ -2568,7 +2568,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Collateral Data"
+						"GET Sapi v1 Loan Collateral Data"
 					]
 				}
 			}
@@ -2593,7 +2593,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Collateral Data"
+						"GET Sapi v1 Loan Collateral Data"
 					]
 				}
 			}
@@ -2618,7 +2618,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Collateral Data"
+						"GET Sapi v1 Loan Collateral Data"
 					]
 				}
 			}
@@ -2644,7 +2644,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Collateral Data"
+						"GET Sapi v1 Loan Collateral Data"
 					]
 				}
 			}
@@ -2670,7 +2670,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Collateral Data"
+						"GET Sapi v1 Loan Collateral Data"
 					]
 				}
 			}
@@ -2695,7 +2695,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Collateral Data"
+						"GET Sapi v1 Loan Collateral Data"
 					]
 				}
 			}
@@ -2714,7 +2714,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay Collateral Rate"
+						"GET Sapi v1 Loan Repay Collateral Rate"
 					]
 				}
 			}
@@ -2740,7 +2740,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay Collateral Rate"
+						"GET Sapi v1 Loan Repay Collateral Rate"
 					]
 				}
 			}
@@ -2766,7 +2766,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay Collateral Rate"
+						"GET Sapi v1 Loan Repay Collateral Rate"
 					]
 				}
 			}
@@ -2792,7 +2792,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay Collateral Rate"
+						"GET Sapi v1 Loan Repay Collateral Rate"
 					]
 				}
 			}
@@ -2817,7 +2817,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay Collateral Rate"
+						"GET Sapi v1 Loan Repay Collateral Rate"
 					]
 				}
 			}
@@ -2843,7 +2843,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay Collateral Rate"
+						"GET Sapi v1 Loan Repay Collateral Rate"
 					]
 				}
 			}
@@ -2869,7 +2869,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay Collateral Rate"
+						"GET Sapi v1 Loan Repay Collateral Rate"
 					]
 				}
 			}
@@ -2894,7 +2894,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 1 Loan Repay Collateral Rate"
+						"GET Sapi v1 Loan Repay Collateral Rate"
 					]
 				}
 			}
@@ -2913,13 +2913,13 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Customize Margin Call"
+						"POST Sapi v1 Loan Customize Margin Call"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Mandatory when collateralCoin is empty. Send either orderId or collateralCoin, if both parameters are sent, take orderId only.",
 			"default": 0,
@@ -2938,7 +2938,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Customize Margin Call"
+						"POST Sapi v1 Loan Customize Margin Call"
 					]
 				}
 			}
@@ -2963,7 +2963,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Customize Margin Call"
+						"POST Sapi v1 Loan Customize Margin Call"
 					]
 				}
 			}
@@ -2988,7 +2988,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Customize Margin Call"
+						"POST Sapi v1 Loan Customize Margin Call"
 					]
 				}
 			}
@@ -3013,7 +3013,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Customize Margin Call"
+						"POST Sapi v1 Loan Customize Margin Call"
 					]
 				}
 			}
@@ -3039,7 +3039,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Customize Margin Call"
+						"POST Sapi v1 Loan Customize Margin Call"
 					]
 				}
 			}
@@ -3065,7 +3065,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Customize Margin Call"
+						"POST Sapi v1 Loan Customize Margin Call"
 					]
 				}
 			}
@@ -3090,7 +3090,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 1 Loan Customize Margin Call"
+						"POST Sapi v1 Loan Customize Margin Call"
 					]
 				}
 			}
@@ -3109,7 +3109,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Borrow"
+						"POST Sapi v2 Loan Flexible Borrow"
 					]
 				}
 			}
@@ -3134,7 +3134,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Borrow"
+						"POST Sapi v2 Loan Flexible Borrow"
 					]
 				}
 			}
@@ -3159,7 +3159,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Borrow"
+						"POST Sapi v2 Loan Flexible Borrow"
 					]
 				}
 			}
@@ -3184,7 +3184,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Borrow"
+						"POST Sapi v2 Loan Flexible Borrow"
 					]
 				}
 			}
@@ -3208,7 +3208,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Borrow"
+						"POST Sapi v2 Loan Flexible Borrow"
 					]
 				}
 			}
@@ -3233,7 +3233,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Borrow"
+						"POST Sapi v2 Loan Flexible Borrow"
 					]
 				}
 			}
@@ -3259,7 +3259,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Borrow"
+						"POST Sapi v2 Loan Flexible Borrow"
 					]
 				}
 			}
@@ -3285,7 +3285,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Borrow"
+						"POST Sapi v2 Loan Flexible Borrow"
 					]
 				}
 			}
@@ -3310,7 +3310,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Borrow"
+						"POST Sapi v2 Loan Flexible Borrow"
 					]
 				}
 			}
@@ -3329,7 +3329,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ongoing Orders"
+						"GET Sapi v2 Loan Flexible Ongoing Orders"
 					]
 				}
 			}
@@ -3354,7 +3354,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ongoing Orders"
+						"GET Sapi v2 Loan Flexible Ongoing Orders"
 					]
 				}
 			}
@@ -3379,7 +3379,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ongoing Orders"
+						"GET Sapi v2 Loan Flexible Ongoing Orders"
 					]
 				}
 			}
@@ -3404,7 +3404,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ongoing Orders"
+						"GET Sapi v2 Loan Flexible Ongoing Orders"
 					]
 				}
 			}
@@ -3429,7 +3429,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ongoing Orders"
+						"GET Sapi v2 Loan Flexible Ongoing Orders"
 					]
 				}
 			}
@@ -3454,7 +3454,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ongoing Orders"
+						"GET Sapi v2 Loan Flexible Ongoing Orders"
 					]
 				}
 			}
@@ -3480,7 +3480,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ongoing Orders"
+						"GET Sapi v2 Loan Flexible Ongoing Orders"
 					]
 				}
 			}
@@ -3506,7 +3506,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ongoing Orders"
+						"GET Sapi v2 Loan Flexible Ongoing Orders"
 					]
 				}
 			}
@@ -3531,7 +3531,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ongoing Orders"
+						"GET Sapi v2 Loan Flexible Ongoing Orders"
 					]
 				}
 			}
@@ -3550,7 +3550,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Borrow History"
+						"GET Sapi v2 Loan Flexible Borrow History"
 					]
 				}
 			}
@@ -3575,7 +3575,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Borrow History"
+						"GET Sapi v2 Loan Flexible Borrow History"
 					]
 				}
 			}
@@ -3600,7 +3600,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Borrow History"
+						"GET Sapi v2 Loan Flexible Borrow History"
 					]
 				}
 			}
@@ -3625,7 +3625,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Borrow History"
+						"GET Sapi v2 Loan Flexible Borrow History"
 					]
 				}
 			}
@@ -3650,7 +3650,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Borrow History"
+						"GET Sapi v2 Loan Flexible Borrow History"
 					]
 				}
 			}
@@ -3675,7 +3675,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Borrow History"
+						"GET Sapi v2 Loan Flexible Borrow History"
 					]
 				}
 			}
@@ -3700,7 +3700,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Borrow History"
+						"GET Sapi v2 Loan Flexible Borrow History"
 					]
 				}
 			}
@@ -3725,7 +3725,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Borrow History"
+						"GET Sapi v2 Loan Flexible Borrow History"
 					]
 				}
 			}
@@ -3751,7 +3751,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Borrow History"
+						"GET Sapi v2 Loan Flexible Borrow History"
 					]
 				}
 			}
@@ -3777,7 +3777,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Borrow History"
+						"GET Sapi v2 Loan Flexible Borrow History"
 					]
 				}
 			}
@@ -3802,7 +3802,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Borrow History"
+						"GET Sapi v2 Loan Flexible Borrow History"
 					]
 				}
 			}
@@ -3821,7 +3821,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Repay"
+						"POST Sapi v2 Loan Flexible Repay"
 					]
 				}
 			}
@@ -3846,7 +3846,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Repay"
+						"POST Sapi v2 Loan Flexible Repay"
 					]
 				}
 			}
@@ -3871,7 +3871,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Repay"
+						"POST Sapi v2 Loan Flexible Repay"
 					]
 				}
 			}
@@ -3897,7 +3897,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Repay"
+						"POST Sapi v2 Loan Flexible Repay"
 					]
 				}
 			}
@@ -3922,7 +3922,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Repay"
+						"POST Sapi v2 Loan Flexible Repay"
 					]
 				}
 			}
@@ -3947,7 +3947,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Repay"
+						"POST Sapi v2 Loan Flexible Repay"
 					]
 				}
 			}
@@ -3972,7 +3972,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Repay"
+						"POST Sapi v2 Loan Flexible Repay"
 					]
 				}
 			}
@@ -3998,7 +3998,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Repay"
+						"POST Sapi v2 Loan Flexible Repay"
 					]
 				}
 			}
@@ -4024,7 +4024,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Repay"
+						"POST Sapi v2 Loan Flexible Repay"
 					]
 				}
 			}
@@ -4049,7 +4049,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Repay"
+						"POST Sapi v2 Loan Flexible Repay"
 					]
 				}
 			}
@@ -4068,7 +4068,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Repay History"
+						"GET Sapi v2 Loan Flexible Repay History"
 					]
 				}
 			}
@@ -4093,7 +4093,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Repay History"
+						"GET Sapi v2 Loan Flexible Repay History"
 					]
 				}
 			}
@@ -4118,7 +4118,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Repay History"
+						"GET Sapi v2 Loan Flexible Repay History"
 					]
 				}
 			}
@@ -4143,7 +4143,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Repay History"
+						"GET Sapi v2 Loan Flexible Repay History"
 					]
 				}
 			}
@@ -4168,7 +4168,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Repay History"
+						"GET Sapi v2 Loan Flexible Repay History"
 					]
 				}
 			}
@@ -4193,7 +4193,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Repay History"
+						"GET Sapi v2 Loan Flexible Repay History"
 					]
 				}
 			}
@@ -4218,7 +4218,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Repay History"
+						"GET Sapi v2 Loan Flexible Repay History"
 					]
 				}
 			}
@@ -4243,7 +4243,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Repay History"
+						"GET Sapi v2 Loan Flexible Repay History"
 					]
 				}
 			}
@@ -4269,7 +4269,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Repay History"
+						"GET Sapi v2 Loan Flexible Repay History"
 					]
 				}
 			}
@@ -4295,7 +4295,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Repay History"
+						"GET Sapi v2 Loan Flexible Repay History"
 					]
 				}
 			}
@@ -4320,7 +4320,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Repay History"
+						"GET Sapi v2 Loan Flexible Repay History"
 					]
 				}
 			}
@@ -4339,7 +4339,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Adjust Ltv"
+						"POST Sapi v2 Loan Flexible Adjust Ltv"
 					]
 				}
 			}
@@ -4364,7 +4364,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Adjust Ltv"
+						"POST Sapi v2 Loan Flexible Adjust Ltv"
 					]
 				}
 			}
@@ -4389,7 +4389,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Adjust Ltv"
+						"POST Sapi v2 Loan Flexible Adjust Ltv"
 					]
 				}
 			}
@@ -4414,7 +4414,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Adjust Ltv"
+						"POST Sapi v2 Loan Flexible Adjust Ltv"
 					]
 				}
 			}
@@ -4449,7 +4449,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Adjust Ltv"
+						"POST Sapi v2 Loan Flexible Adjust Ltv"
 					]
 				}
 			}
@@ -4474,7 +4474,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Adjust Ltv"
+						"POST Sapi v2 Loan Flexible Adjust Ltv"
 					]
 				}
 			}
@@ -4500,7 +4500,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Adjust Ltv"
+						"POST Sapi v2 Loan Flexible Adjust Ltv"
 					]
 				}
 			}
@@ -4526,7 +4526,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Adjust Ltv"
+						"POST Sapi v2 Loan Flexible Adjust Ltv"
 					]
 				}
 			}
@@ -4551,7 +4551,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"POST Sapi V 2 Loan Flexible Adjust Ltv"
+						"POST Sapi v2 Loan Flexible Adjust Ltv"
 					]
 				}
 			}
@@ -4570,7 +4570,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+						"GET Sapi v2 Loan Flexible Ltv Adjustment History"
 					]
 				}
 			}
@@ -4595,7 +4595,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+						"GET Sapi v2 Loan Flexible Ltv Adjustment History"
 					]
 				}
 			}
@@ -4620,7 +4620,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+						"GET Sapi v2 Loan Flexible Ltv Adjustment History"
 					]
 				}
 			}
@@ -4645,7 +4645,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+						"GET Sapi v2 Loan Flexible Ltv Adjustment History"
 					]
 				}
 			}
@@ -4670,7 +4670,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+						"GET Sapi v2 Loan Flexible Ltv Adjustment History"
 					]
 				}
 			}
@@ -4695,7 +4695,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+						"GET Sapi v2 Loan Flexible Ltv Adjustment History"
 					]
 				}
 			}
@@ -4720,7 +4720,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+						"GET Sapi v2 Loan Flexible Ltv Adjustment History"
 					]
 				}
 			}
@@ -4745,7 +4745,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+						"GET Sapi v2 Loan Flexible Ltv Adjustment History"
 					]
 				}
 			}
@@ -4771,7 +4771,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+						"GET Sapi v2 Loan Flexible Ltv Adjustment History"
 					]
 				}
 			}
@@ -4797,7 +4797,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+						"GET Sapi v2 Loan Flexible Ltv Adjustment History"
 					]
 				}
 			}
@@ -4822,7 +4822,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Ltv Adjustment History"
+						"GET Sapi v2 Loan Flexible Ltv Adjustment History"
 					]
 				}
 			}
@@ -4841,7 +4841,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Loanable Data"
+						"GET Sapi v2 Loan Flexible Loanable Data"
 					]
 				}
 			}
@@ -4866,7 +4866,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Loanable Data"
+						"GET Sapi v2 Loan Flexible Loanable Data"
 					]
 				}
 			}
@@ -4891,7 +4891,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Loanable Data"
+						"GET Sapi v2 Loan Flexible Loanable Data"
 					]
 				}
 			}
@@ -4917,7 +4917,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Loanable Data"
+						"GET Sapi v2 Loan Flexible Loanable Data"
 					]
 				}
 			}
@@ -4943,7 +4943,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Loanable Data"
+						"GET Sapi v2 Loan Flexible Loanable Data"
 					]
 				}
 			}
@@ -4968,7 +4968,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Loanable Data"
+						"GET Sapi v2 Loan Flexible Loanable Data"
 					]
 				}
 			}
@@ -4987,7 +4987,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Collateral Data"
+						"GET Sapi v2 Loan Flexible Collateral Data"
 					]
 				}
 			}
@@ -5012,7 +5012,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Collateral Data"
+						"GET Sapi v2 Loan Flexible Collateral Data"
 					]
 				}
 			}
@@ -5037,7 +5037,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Collateral Data"
+						"GET Sapi v2 Loan Flexible Collateral Data"
 					]
 				}
 			}
@@ -5063,7 +5063,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Collateral Data"
+						"GET Sapi v2 Loan Flexible Collateral Data"
 					]
 				}
 			}
@@ -5089,7 +5089,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Collateral Data"
+						"GET Sapi v2 Loan Flexible Collateral Data"
 					]
 				}
 			}
@@ -5114,7 +5114,7 @@ export const cryptoLoansDescription: INodeProperties[] = [
 						"Crypto Loans"
 					],
 					"operation": [
-						"GET Sapi V 2 Loan Flexible Collateral Data"
+						"GET Sapi v2 Loan Flexible Collateral Data"
 					]
 				}
 			}

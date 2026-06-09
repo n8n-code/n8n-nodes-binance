@@ -15,8 +15,8 @@ export const payDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Pay Transactions",
-					"value": "GET Sapi V 1 Pay Transactions",
+					"name": "GET Sapi v1 Pay Transactions",
+					"value": "GET Sapi v1 Pay Transactions",
 					"action": "Get Pay Trade History (USER_DATA)",
 					"description": "- If startTime and endTime are not sent, the recent 90 days' data will be returned.\n- The max interval between startTime and endTime is 90 days.\n- Support for querying orders within the last 18 months.\n\nWeight(UID): 3000",
 					"routing": {
@@ -43,7 +43,7 @@ export const payDescription: INodeProperties[] = [
 						"Pay"
 					],
 					"operation": [
-						"GET Sapi V 1 Pay Transactions"
+						"GET Sapi v1 Pay Transactions"
 					]
 				}
 			}
@@ -68,7 +68,7 @@ export const payDescription: INodeProperties[] = [
 						"Pay"
 					],
 					"operation": [
-						"GET Sapi V 1 Pay Transactions"
+						"GET Sapi v1 Pay Transactions"
 					]
 				}
 			}
@@ -93,7 +93,7 @@ export const payDescription: INodeProperties[] = [
 						"Pay"
 					],
 					"operation": [
-						"GET Sapi V 1 Pay Transactions"
+						"GET Sapi v1 Pay Transactions"
 					]
 				}
 			}
@@ -118,7 +118,7 @@ export const payDescription: INodeProperties[] = [
 						"Pay"
 					],
 					"operation": [
-						"GET Sapi V 1 Pay Transactions"
+						"GET Sapi v1 Pay Transactions"
 					]
 				}
 			}
@@ -143,7 +143,7 @@ export const payDescription: INodeProperties[] = [
 						"Pay"
 					],
 					"operation": [
-						"GET Sapi V 1 Pay Transactions"
+						"GET Sapi v1 Pay Transactions"
 					]
 				}
 			}
@@ -169,7 +169,7 @@ export const payDescription: INodeProperties[] = [
 						"Pay"
 					],
 					"operation": [
-						"GET Sapi V 1 Pay Transactions"
+						"GET Sapi v1 Pay Transactions"
 					]
 				}
 			}
@@ -195,7 +195,7 @@ export const payDescription: INodeProperties[] = [
 						"Pay"
 					],
 					"operation": [
-						"GET Sapi V 1 Pay Transactions"
+						"GET Sapi v1 Pay Transactions"
 					]
 				}
 			}
@@ -220,7 +220,7 @@ export const payDescription: INodeProperties[] = [
 						"Pay"
 					],
 					"operation": [
-						"GET Sapi V 1 Pay Transactions"
+						"GET Sapi v1 Pay Transactions"
 					]
 				}
 			}

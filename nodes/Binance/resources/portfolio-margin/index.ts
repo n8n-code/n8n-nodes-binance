@@ -15,8 +15,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Portfolio Account",
-					"value": "GET Sapi V 1 Portfolio Account",
+					"name": "GET Sapi v1 Portfolio Account",
+					"value": "GET Sapi v1 Portfolio Account",
 					"action": "Portfolio Margin Account (USER_DATA)",
 					"description": "Get the account info\n\n'Weight(IP): 1'",
 					"routing": {
@@ -27,8 +27,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Portfolio Collateral Rate",
-					"value": "GET Sapi V 1 Portfolio Collateral Rate",
+					"name": "GET Sapi v1 Portfolio Collateral Rate",
+					"value": "GET Sapi v1 Portfolio Collateral Rate",
 					"action": "Portfolio Margin Collateral Rate (MARKET_DATA)",
 					"description": "Portfolio Margin Collateral Rate.\n\nWeight(IP): 50",
 					"routing": {
@@ -39,8 +39,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 2 Portfolio Collateral Rate",
-					"value": "GET Sapi V 2 Portfolio Collateral Rate",
+					"name": "GET Sapi v2 Portfolio Collateral Rate",
+					"value": "GET Sapi v2 Portfolio Collateral Rate",
 					"action": "Portfolio Margin Pro Tiered Collateral Rate(USER_DATA)",
 					"description": "Portfolio Margin PRO Tiered Collateral Rate\n\nWeight(IP): 50",
 					"routing": {
@@ -51,8 +51,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Portfolio Pm Loan",
-					"value": "GET Sapi V 1 Portfolio Pm Loan",
+					"name": "GET Sapi v1 Portfolio Pm Loan",
+					"value": "GET Sapi v1 Portfolio Pm Loan",
 					"action": "Portfolio Margin Bankruptcy Loan Amount (USER_DATA)",
 					"description": "Query Portfolio Margin Bankruptcy Loan Amount.\n\nWeight(UID): 500",
 					"routing": {
@@ -63,8 +63,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Portfolio Repay",
-					"value": "POST Sapi V 1 Portfolio Repay",
+					"name": "POST Sapi v1 Portfolio Repay",
+					"value": "POST Sapi v1 Portfolio Repay",
 					"action": "Portfolio Margin Bankruptcy Loan Repay (USER_DATA)",
 					"description": "Repay Portfolio Margin Bankruptcy Loan.\n\nWeight(UID): 3000",
 					"routing": {
@@ -75,8 +75,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Portfolio Interest History",
-					"value": "GET Sapi V 1 Portfolio Interest History",
+					"name": "GET Sapi v1 Portfolio Interest History",
+					"value": "GET Sapi v1 Portfolio Interest History",
 					"action": "Query Classic Portfolio Margin Negative Balance Interest History (USER_DATA)",
 					"description": "Query interest history of negative balance for portfolio margin.\n\nWeight(IP): 50",
 					"routing": {
@@ -87,8 +87,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Portfolio Asset Index Price",
-					"value": "GET Sapi V 1 Portfolio Asset Index Price",
+					"name": "GET Sapi v1 Portfolio Asset Index Price",
+					"value": "GET Sapi v1 Portfolio Asset Index Price",
 					"action": "Query Portfolio Margin Asset Index Price (MARKET_DATA)",
 					"description": "Query Portfolio Margin Asset Index Price\n\nWeight(IP):\n- 1 if send asset\n- 50 if not send asset",
 					"routing": {
@@ -99,8 +99,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Portfolio Auto Collection",
-					"value": "POST Sapi V 1 Portfolio Auto Collection",
+					"name": "POST Sapi v1 Portfolio Auto Collection",
+					"value": "POST Sapi v1 Portfolio Auto Collection",
 					"action": "Fund Auto-collection (USER_DATA)",
 					"description": "Transfers all assets from Futures Account to Margin account\n\nWeight(IP): 1500",
 					"routing": {
@@ -111,8 +111,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Portfolio Bnb Transfer",
-					"value": "POST Sapi V 1 Portfolio Bnb Transfer",
+					"name": "POST Sapi v1 Portfolio Bnb Transfer",
+					"value": "POST Sapi v1 Portfolio Bnb Transfer",
 					"action": "BNB Transfer (USER_DATA)",
 					"description": "BNB transfer can be between Margin Account and USDM Account\n\nWeight(IP): 1500",
 					"routing": {
@@ -123,8 +123,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Portfolio Repay Futures Switch",
-					"value": "POST Sapi V 1 Portfolio Repay Futures Switch",
+					"name": "POST Sapi v1 Portfolio Repay Futures Switch",
+					"value": "POST Sapi v1 Portfolio Repay Futures Switch",
 					"action": "Change Auto-repay-futures Status (USER_DATA)",
 					"description": "Change Auto-repay-futures Status\n\nWeight(IP): 1500",
 					"routing": {
@@ -135,8 +135,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Portfolio Repay Futures Switch",
-					"value": "GET Sapi V 1 Portfolio Repay Futures Switch",
+					"name": "GET Sapi v1 Portfolio Repay Futures Switch",
+					"value": "GET Sapi v1 Portfolio Repay Futures Switch",
 					"action": "Get Auto-repay-futures Status (USER_DATA)",
 					"description": "Query Auto-repay-futures Status\n\nWeight(IP): 30",
 					"routing": {
@@ -147,8 +147,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Portfolio Repay Futures Negative Balance",
-					"value": "POST Sapi V 1 Portfolio Repay Futures Negative Balance",
+					"name": "POST Sapi v1 Portfolio Repay Futures Negative Balance",
+					"value": "POST Sapi v1 Portfolio Repay Futures Negative Balance",
 					"action": "Repay futures Negative Balance (USER_DATA)",
 					"description": "Repay futures Negative Balance\n\nWeight(IP): 1500",
 					"routing": {
@@ -159,8 +159,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Portfolio Margin Asset Leverage",
-					"value": "GET Sapi V 1 Portfolio Margin Asset Leverage",
+					"name": "GET Sapi v1 Portfolio Margin Asset Leverage",
+					"value": "GET Sapi v1 Portfolio Margin Asset Leverage",
 					"action": "Get Portfolio Margin Asset Leverage (USER_DATA)",
 					"description": "Weight(IP): 50",
 					"routing": {
@@ -171,8 +171,8 @@ export const portfolioMarginDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Portfolio Asset Collection",
-					"value": "POST Sapi V 1 Portfolio Asset Collection",
+					"name": "POST Sapi v1 Portfolio Asset Collection",
+					"value": "POST Sapi v1 Portfolio Asset Collection",
 					"action": "Fund Collection by Asset (USER_DATA)",
 					"description": "Transfers specific asset from Futures Account to Margin account\n\nWeight(IP): 60",
 					"routing": {
@@ -199,7 +199,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Account"
+						"GET Sapi v1 Portfolio Account"
 					]
 				}
 			}
@@ -224,7 +224,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Account"
+						"GET Sapi v1 Portfolio Account"
 					]
 				}
 			}
@@ -250,7 +250,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Account"
+						"GET Sapi v1 Portfolio Account"
 					]
 				}
 			}
@@ -276,7 +276,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Account"
+						"GET Sapi v1 Portfolio Account"
 					]
 				}
 			}
@@ -301,7 +301,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Account"
+						"GET Sapi v1 Portfolio Account"
 					]
 				}
 			}
@@ -320,7 +320,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Collateral Rate"
+						"GET Sapi v1 Portfolio Collateral Rate"
 					]
 				}
 			}
@@ -345,7 +345,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Collateral Rate"
+						"GET Sapi v1 Portfolio Collateral Rate"
 					]
 				}
 			}
@@ -364,7 +364,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 2 Portfolio Collateral Rate"
+						"GET Sapi v2 Portfolio Collateral Rate"
 					]
 				}
 			}
@@ -389,7 +389,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 2 Portfolio Collateral Rate"
+						"GET Sapi v2 Portfolio Collateral Rate"
 					]
 				}
 			}
@@ -415,7 +415,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 2 Portfolio Collateral Rate"
+						"GET Sapi v2 Portfolio Collateral Rate"
 					]
 				}
 			}
@@ -441,7 +441,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 2 Portfolio Collateral Rate"
+						"GET Sapi v2 Portfolio Collateral Rate"
 					]
 				}
 			}
@@ -466,7 +466,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 2 Portfolio Collateral Rate"
+						"GET Sapi v2 Portfolio Collateral Rate"
 					]
 				}
 			}
@@ -485,7 +485,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Pm Loan"
+						"GET Sapi v1 Portfolio Pm Loan"
 					]
 				}
 			}
@@ -510,7 +510,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Pm Loan"
+						"GET Sapi v1 Portfolio Pm Loan"
 					]
 				}
 			}
@@ -536,7 +536,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Pm Loan"
+						"GET Sapi v1 Portfolio Pm Loan"
 					]
 				}
 			}
@@ -562,7 +562,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Pm Loan"
+						"GET Sapi v1 Portfolio Pm Loan"
 					]
 				}
 			}
@@ -587,7 +587,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Pm Loan"
+						"GET Sapi v1 Portfolio Pm Loan"
 					]
 				}
 			}
@@ -606,7 +606,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay"
+						"POST Sapi v1 Portfolio Repay"
 					]
 				}
 			}
@@ -630,7 +630,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay"
+						"POST Sapi v1 Portfolio Repay"
 					]
 				}
 			}
@@ -655,7 +655,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay"
+						"POST Sapi v1 Portfolio Repay"
 					]
 				}
 			}
@@ -681,7 +681,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay"
+						"POST Sapi v1 Portfolio Repay"
 					]
 				}
 			}
@@ -707,7 +707,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay"
+						"POST Sapi v1 Portfolio Repay"
 					]
 				}
 			}
@@ -732,7 +732,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay"
+						"POST Sapi v1 Portfolio Repay"
 					]
 				}
 			}
@@ -751,7 +751,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Interest History"
+						"GET Sapi v1 Portfolio Interest History"
 					]
 				}
 			}
@@ -776,7 +776,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Interest History"
+						"GET Sapi v1 Portfolio Interest History"
 					]
 				}
 			}
@@ -801,7 +801,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Interest History"
+						"GET Sapi v1 Portfolio Interest History"
 					]
 				}
 			}
@@ -826,7 +826,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Interest History"
+						"GET Sapi v1 Portfolio Interest History"
 					]
 				}
 			}
@@ -851,7 +851,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Interest History"
+						"GET Sapi v1 Portfolio Interest History"
 					]
 				}
 			}
@@ -876,7 +876,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Interest History"
+						"GET Sapi v1 Portfolio Interest History"
 					]
 				}
 			}
@@ -902,7 +902,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Interest History"
+						"GET Sapi v1 Portfolio Interest History"
 					]
 				}
 			}
@@ -928,7 +928,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Interest History"
+						"GET Sapi v1 Portfolio Interest History"
 					]
 				}
 			}
@@ -953,7 +953,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Interest History"
+						"GET Sapi v1 Portfolio Interest History"
 					]
 				}
 			}
@@ -972,7 +972,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Asset Index Price"
+						"GET Sapi v1 Portfolio Asset Index Price"
 					]
 				}
 			}
@@ -996,7 +996,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Asset Index Price"
+						"GET Sapi v1 Portfolio Asset Index Price"
 					]
 				}
 			}
@@ -1021,7 +1021,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Asset Index Price"
+						"GET Sapi v1 Portfolio Asset Index Price"
 					]
 				}
 			}
@@ -1040,7 +1040,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Auto Collection"
+						"POST Sapi v1 Portfolio Auto Collection"
 					]
 				}
 			}
@@ -1065,7 +1065,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Auto Collection"
+						"POST Sapi v1 Portfolio Auto Collection"
 					]
 				}
 			}
@@ -1091,7 +1091,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Auto Collection"
+						"POST Sapi v1 Portfolio Auto Collection"
 					]
 				}
 			}
@@ -1117,7 +1117,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Auto Collection"
+						"POST Sapi v1 Portfolio Auto Collection"
 					]
 				}
 			}
@@ -1142,7 +1142,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Auto Collection"
+						"POST Sapi v1 Portfolio Auto Collection"
 					]
 				}
 			}
@@ -1161,7 +1161,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Bnb Transfer"
+						"POST Sapi v1 Portfolio Bnb Transfer"
 					]
 				}
 			}
@@ -1196,7 +1196,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Bnb Transfer"
+						"POST Sapi v1 Portfolio Bnb Transfer"
 					]
 				}
 			}
@@ -1221,7 +1221,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Bnb Transfer"
+						"POST Sapi v1 Portfolio Bnb Transfer"
 					]
 				}
 			}
@@ -1246,7 +1246,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Bnb Transfer"
+						"POST Sapi v1 Portfolio Bnb Transfer"
 					]
 				}
 			}
@@ -1272,7 +1272,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Bnb Transfer"
+						"POST Sapi v1 Portfolio Bnb Transfer"
 					]
 				}
 			}
@@ -1298,7 +1298,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Bnb Transfer"
+						"POST Sapi v1 Portfolio Bnb Transfer"
 					]
 				}
 			}
@@ -1323,7 +1323,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Bnb Transfer"
+						"POST Sapi v1 Portfolio Bnb Transfer"
 					]
 				}
 			}
@@ -1342,7 +1342,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay Futures Switch"
+						"POST Sapi v1 Portfolio Repay Futures Switch"
 					]
 				}
 			}
@@ -1367,7 +1367,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay Futures Switch"
+						"POST Sapi v1 Portfolio Repay Futures Switch"
 					]
 				}
 			}
@@ -1392,7 +1392,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay Futures Switch"
+						"POST Sapi v1 Portfolio Repay Futures Switch"
 					]
 				}
 			}
@@ -1418,7 +1418,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay Futures Switch"
+						"POST Sapi v1 Portfolio Repay Futures Switch"
 					]
 				}
 			}
@@ -1444,7 +1444,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay Futures Switch"
+						"POST Sapi v1 Portfolio Repay Futures Switch"
 					]
 				}
 			}
@@ -1469,7 +1469,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay Futures Switch"
+						"POST Sapi v1 Portfolio Repay Futures Switch"
 					]
 				}
 			}
@@ -1488,7 +1488,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Repay Futures Switch"
+						"GET Sapi v1 Portfolio Repay Futures Switch"
 					]
 				}
 			}
@@ -1513,7 +1513,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Repay Futures Switch"
+						"GET Sapi v1 Portfolio Repay Futures Switch"
 					]
 				}
 			}
@@ -1539,7 +1539,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Repay Futures Switch"
+						"GET Sapi v1 Portfolio Repay Futures Switch"
 					]
 				}
 			}
@@ -1565,7 +1565,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Repay Futures Switch"
+						"GET Sapi v1 Portfolio Repay Futures Switch"
 					]
 				}
 			}
@@ -1590,7 +1590,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Repay Futures Switch"
+						"GET Sapi v1 Portfolio Repay Futures Switch"
 					]
 				}
 			}
@@ -1609,7 +1609,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay Futures Negative Balance"
+						"POST Sapi v1 Portfolio Repay Futures Negative Balance"
 					]
 				}
 			}
@@ -1634,7 +1634,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay Futures Negative Balance"
+						"POST Sapi v1 Portfolio Repay Futures Negative Balance"
 					]
 				}
 			}
@@ -1660,7 +1660,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay Futures Negative Balance"
+						"POST Sapi v1 Portfolio Repay Futures Negative Balance"
 					]
 				}
 			}
@@ -1686,7 +1686,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay Futures Negative Balance"
+						"POST Sapi v1 Portfolio Repay Futures Negative Balance"
 					]
 				}
 			}
@@ -1711,7 +1711,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Repay Futures Negative Balance"
+						"POST Sapi v1 Portfolio Repay Futures Negative Balance"
 					]
 				}
 			}
@@ -1730,7 +1730,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"GET Sapi V 1 Portfolio Margin Asset Leverage"
+						"GET Sapi v1 Portfolio Margin Asset Leverage"
 					]
 				}
 			}
@@ -1749,7 +1749,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Asset Collection"
+						"POST Sapi v1 Portfolio Asset Collection"
 					]
 				}
 			}
@@ -1774,7 +1774,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Asset Collection"
+						"POST Sapi v1 Portfolio Asset Collection"
 					]
 				}
 			}
@@ -1799,7 +1799,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Asset Collection"
+						"POST Sapi v1 Portfolio Asset Collection"
 					]
 				}
 			}
@@ -1825,7 +1825,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Asset Collection"
+						"POST Sapi v1 Portfolio Asset Collection"
 					]
 				}
 			}
@@ -1851,7 +1851,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Asset Collection"
+						"POST Sapi v1 Portfolio Asset Collection"
 					]
 				}
 			}
@@ -1876,7 +1876,7 @@ export const portfolioMarginDescription: INodeProperties[] = [
 						"Portfolio Margin"
 					],
 					"operation": [
-						"POST Sapi V 1 Portfolio Asset Collection"
+						"POST Sapi v1 Portfolio Asset Collection"
 					]
 				}
 			}

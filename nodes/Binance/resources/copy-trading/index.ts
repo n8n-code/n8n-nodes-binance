@@ -15,8 +15,8 @@ export const copyTradingDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Copy Trading Futures User Status",
-					"value": "GET Sapi V 1 Copy Trading Futures User Status",
+					"name": "GET Sapi v1 Copy Trading Futures User Status",
+					"value": "GET Sapi v1 Copy Trading Futures User Status",
 					"action": "Get Futures Lead Trader Status(TRADE)",
 					"description": "Get Futures Lead Trader Status\n\nWeight(UID): 20",
 					"routing": {
@@ -27,8 +27,8 @@ export const copyTradingDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Copy Trading Futures Lead Symbol",
-					"value": "GET Sapi V 1 Copy Trading Futures Lead Symbol",
+					"name": "GET Sapi v1 Copy Trading Futures Lead Symbol",
+					"value": "GET Sapi v1 Copy Trading Futures Lead Symbol",
 					"action": "Get Futures Lead Trading Symbol Whitelist(USER_DATA)",
 					"description": "Get Futures Lead Trading Symbol Whitelist\n\nWeight(IP): 20",
 					"routing": {
@@ -55,7 +55,7 @@ export const copyTradingDescription: INodeProperties[] = [
 						"Copy Trading"
 					],
 					"operation": [
-						"GET Sapi V 1 Copy Trading Futures User Status"
+						"GET Sapi v1 Copy Trading Futures User Status"
 					]
 				}
 			}
@@ -80,7 +80,7 @@ export const copyTradingDescription: INodeProperties[] = [
 						"Copy Trading"
 					],
 					"operation": [
-						"GET Sapi V 1 Copy Trading Futures User Status"
+						"GET Sapi v1 Copy Trading Futures User Status"
 					]
 				}
 			}
@@ -106,7 +106,7 @@ export const copyTradingDescription: INodeProperties[] = [
 						"Copy Trading"
 					],
 					"operation": [
-						"GET Sapi V 1 Copy Trading Futures User Status"
+						"GET Sapi v1 Copy Trading Futures User Status"
 					]
 				}
 			}
@@ -132,7 +132,7 @@ export const copyTradingDescription: INodeProperties[] = [
 						"Copy Trading"
 					],
 					"operation": [
-						"GET Sapi V 1 Copy Trading Futures User Status"
+						"GET Sapi v1 Copy Trading Futures User Status"
 					]
 				}
 			}
@@ -157,7 +157,7 @@ export const copyTradingDescription: INodeProperties[] = [
 						"Copy Trading"
 					],
 					"operation": [
-						"GET Sapi V 1 Copy Trading Futures User Status"
+						"GET Sapi v1 Copy Trading Futures User Status"
 					]
 				}
 			}
@@ -176,7 +176,7 @@ export const copyTradingDescription: INodeProperties[] = [
 						"Copy Trading"
 					],
 					"operation": [
-						"GET Sapi V 1 Copy Trading Futures Lead Symbol"
+						"GET Sapi v1 Copy Trading Futures Lead Symbol"
 					]
 				}
 			}
@@ -201,7 +201,7 @@ export const copyTradingDescription: INodeProperties[] = [
 						"Copy Trading"
 					],
 					"operation": [
-						"GET Sapi V 1 Copy Trading Futures Lead Symbol"
+						"GET Sapi v1 Copy Trading Futures Lead Symbol"
 					]
 				}
 			}
@@ -227,7 +227,7 @@ export const copyTradingDescription: INodeProperties[] = [
 						"Copy Trading"
 					],
 					"operation": [
-						"GET Sapi V 1 Copy Trading Futures Lead Symbol"
+						"GET Sapi v1 Copy Trading Futures Lead Symbol"
 					]
 				}
 			}
@@ -253,7 +253,7 @@ export const copyTradingDescription: INodeProperties[] = [
 						"Copy Trading"
 					],
 					"operation": [
-						"GET Sapi V 1 Copy Trading Futures Lead Symbol"
+						"GET Sapi v1 Copy Trading Futures Lead Symbol"
 					]
 				}
 			}
@@ -278,7 +278,7 @@ export const copyTradingDescription: INodeProperties[] = [
 						"Copy Trading"
 					],
 					"operation": [
-						"GET Sapi V 1 Copy Trading Futures Lead Symbol"
+						"GET Sapi v1 Copy Trading Futures Lead Symbol"
 					]
 				}
 			}

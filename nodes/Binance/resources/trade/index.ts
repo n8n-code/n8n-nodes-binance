@@ -15,8 +15,8 @@ export const tradeDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST Api V 3 Order Test",
-					"value": "POST Api V 3 Order Test",
+					"name": "POST API v3 Order Test",
+					"value": "POST API v3 Order Test",
 					"action": "Test New Order (TRADE)",
 					"description": "Test new order creation and signature/recvWindow long.\nCreates and validates a new order but does not send it into the matching engine.\n\nWeight(IP):\n  - Without computeCommissionRates: `1`\n  - With computeCommissionRates: `20`",
 					"routing": {
@@ -27,8 +27,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Order",
-					"value": "GET Api V 3 Order",
+					"name": "GET API v3 Order",
+					"value": "GET API v3 Order",
 					"action": "Query Order (USER_DATA)",
 					"description": "Check an order's status.\n\n- Either `orderId` or `origClientOrderId` must be sent.\n- For some historical orders `cummulativeQuoteQty` will be < 0, meaning the data is not available at this time.\n\nWeight(IP): 4",
 					"routing": {
@@ -39,8 +39,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Api V 3 Order",
-					"value": "POST Api V 3 Order",
+					"name": "POST API v3 Order",
+					"value": "POST API v3 Order",
 					"action": "New Order (TRADE)",
 					"description": "Send in a new order.\n\n- `LIMIT_MAKER` are `LIMIT` orders that will be rejected if they would immediately match and trade as a taker.\n- `STOP_LOSS` and `TAKE_PROFIT` will execute a `MARKET` order when the `stopPrice` is reached.\n- Any `LIMIT` or `LIMIT_MAKER` type order can be made an iceberg order by sending an `icebergQty`.\n- Any order with an `icebergQty` MUST have `timeInForce` set to `GTC`.\n- `MARKET` orders using `quantity` specifies how much a user wants to buy or sell based on the market price.\n- `MARKET` orders using `quoteOrderQty` specifies the amount the user wants to spend (when buying) or receive (when selling) of the quote asset; the correct quantity will be determined based on the market liquidity and `quoteOrderQty`.\n- `MARKET` orders using `quoteOrderQty` will not break `LOT_SIZE` filter rules; the order will execute a quantity that will have the notional value as close as possible to `quoteOrderQty`.\n- same `newClientOrderId` can be accepted only when the previous one is filled, otherwise the order will be rejected.\n\nTrigger order price rules against market price for both `MARKET` and `LIMIT` versions:\n\n- Price above market price: `STOP_LOSS` `BUY`, `TAKE_PROFIT` `SELL`\n- Price below market price: `STOP_LOSS` `SELL`, `TAKE_PROFIT` `BUY`\n\n\nWeight(IP): 1",
 					"routing": {
@@ -51,8 +51,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Api V 3 Order",
-					"value": "DELETE Api V 3 Order",
+					"name": "DELETE API v3 Order",
+					"value": "DELETE API v3 Order",
 					"action": "Cancel Order (TRADE)",
 					"description": "Cancel an active order.\n\nEither `orderId` or `origClientOrderId` must be sent.\n\nWeight(IP): 1",
 					"routing": {
@@ -63,8 +63,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Api V 3 Order Cancel Replace",
-					"value": "POST Api V 3 Order Cancel Replace",
+					"name": "POST API v3 Order Cancel Replace",
+					"value": "POST API v3 Order Cancel Replace",
 					"action": "Cancel an Existing Order and Send a New Order (Trade)",
 					"description": "Cancels an existing order and places a new order on the same symbol.\n\nFilters and Order Count are evaluated before the processing of the cancellation and order placement occurs.\n\nA new order that was not attempted (i.e. when newOrderResult: NOT_ATTEMPTED), will still increase the order count by 1.\n\nWeight(IP): 1",
 					"routing": {
@@ -75,8 +75,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Open Orders",
-					"value": "GET Api V 3 Open Orders",
+					"name": "GET API v3 Open Orders",
+					"value": "GET API v3 Open Orders",
 					"action": "Current Open Orders (USER_DATA)",
 					"description": "Get all open orders on a symbol. Careful when accessing this with no symbol.\n\nWeight(IP):\n- `6` for a single symbol;\n- `80` when the symbol parameter is omitted;",
 					"routing": {
@@ -87,8 +87,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Api V 3 Open Orders",
-					"value": "DELETE Api V 3 Open Orders",
+					"name": "DELETE API v3 Open Orders",
+					"value": "DELETE API v3 Open Orders",
 					"action": "Cancel all Open Orders on a Symbol (TRADE)",
 					"description": "Cancels all active orders on a symbol.\nThis includes OCO orders.\n\nWeight(IP): 1",
 					"routing": {
@@ -99,8 +99,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 All Orders",
-					"value": "GET Api V 3 All Orders",
+					"name": "GET API v3 All Orders",
+					"value": "GET API v3 All Orders",
 					"action": "All Orders (USER_DATA)",
 					"description": "Get all account orders; active, canceled, or filled..\n\n- If `orderId` is set, it will get orders >= that `orderId`. Otherwise most recent orders are returned.\n- For some historical orders `cummulativeQuoteQty` will be < 0, meaning the data is not available at this time.\n- If `startTime` and/or `endTime` provided, `orderId` is not required\n\nWeight(IP): 20",
 					"routing": {
@@ -111,8 +111,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Api V 3 Order List Oco",
-					"value": "POST Api V 3 Order List Oco",
+					"name": "POST API v3 Order List Oco",
+					"value": "POST API v3 Order List Oco",
 					"action": "New Order list - OCO (TRADE)",
 					"description": "Send in an one-cancels-the-other (OCO) pair, where activation of one order immediately cancels the other.\n\n- An `OCO` has 2 orders called the above order and below order.\n- One of the orders must be a `LIMIT_MAKER` order and the other must be `STOP_LOSS` or`STOP_LOSS_LIMIT` order.\n- Price restrictions:\n    - If the `OCO` is on the `SELL` side: `LIMIT_MAKER` price > Last Traded Price > stopPrice\n    - If the `OCO` is on the `BUY` side: `LIMIT_MAKER` price < Last Traded Price < stopPrice\n- OCOs add 2 orders to the unfilled order count, `EXCHANGE_MAX_ORDERS` filter, and the `MAX_NUM_ORDERS` filter.\n\nWeight(IP): 1",
 					"routing": {
@@ -123,8 +123,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Api V 3 Order List Oto",
-					"value": "POST Api V 3 Order List Oto",
+					"name": "POST API v3 Order List Oto",
+					"value": "POST API v3 Order List Oto",
 					"action": "New Order List - OTO (TRADE)",
 					"description": "Places an `OTO`.\n- An `OTO` (One-Triggers-the-Other) is an order list comprised of 2 orders.\n- The first order is called the working order and must be `LIMIT` or `LIMIT_MAKER`. Initially, only the working order goes on the order book.\n- The second order is called the pending order. It can be any order type except for `MARKET` orders using parameter `quoteOrderQty`. The pending order is only placed on the order book when the working order gets fully filled.\n- If either the working order or the pending order is cancelled individually, the other order in the order list will also be canceled or expired.\n- When the order list is placed, if the working order gets immediately fully filled, the placement response will show the working order as `FILLED` but the pending order will still appear as `PENDING_NEW`. You need to query the status of the pending order again to see its updated status.\n- OTOs add 2 orders to the unfilled order count, `EXCHANGE_MAX_NUM_ORDERS` filter and `MAX_NUM_ORDERS` filter.\n\nWeight: 1",
 					"routing": {
@@ -135,8 +135,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Api V 3 Order List Otoco",
-					"value": "POST Api V 3 Order List Otoco",
+					"name": "POST API v3 Order List Otoco",
+					"value": "POST API v3 Order List Otoco",
 					"action": "New Order List - OTOCO (TRADE)",
 					"description": "Place an `OTOCO`.\n- An `OTOCO` (One-Triggers-One-Cancels-the-Other) is an order list comprised of 3 orders.\n- The first order is called the working order and must be `LIMIT` or `LIMIT_MAKER`. Initially, only the working order goes on the order book.\n  - The behavior of the working order is the same as the `OTO`.\n- `OTOCO` has 2 pending orders (pending above and pending below), forming an `OCO` pair. The pending orders are only placed on the order book when the working order gets fully filled.\n  - The rules of the pending above and pending below follow the same rules as the Order List `OCO`.\n- OTOCOs add 3 orders against the unfilled order count, `EXCHANGE_MAX_NUM_ORDERS` filter, and `MAX_NUM_ORDERS` filter.\n\nWeight: 1",
 					"routing": {
@@ -147,8 +147,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Order List",
-					"value": "GET Api V 3 Order List",
+					"name": "GET API v3 Order List",
+					"value": "GET API v3 Order List",
 					"action": "Query OCO (USER_DATA)",
 					"description": "Retrieves a specific OCO based on provided optional parameters\n\nWeight(IP): 4",
 					"routing": {
@@ -159,8 +159,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Api V 3 Order List",
-					"value": "DELETE Api V 3 Order List",
+					"name": "DELETE API v3 Order List",
+					"value": "DELETE API v3 Order List",
 					"action": "Cancel OCO (TRADE)",
 					"description": "Cancel an entire Order List\n\nCanceling an individual leg will cancel the entire OCO\n\nWeight(IP): 1",
 					"routing": {
@@ -171,8 +171,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 All Order List",
-					"value": "GET Api V 3 All Order List",
+					"name": "GET API v3 All Order List",
+					"value": "GET API v3 All Order List",
 					"action": "Query all OCO (USER_DATA)",
 					"description": "Retrieves all OCO based on provided optional parameters\n\nWeight(IP): 20",
 					"routing": {
@@ -183,8 +183,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Open Order List",
-					"value": "GET Api V 3 Open Order List",
+					"name": "GET API v3 Open Order List",
+					"value": "GET API v3 Open Order List",
 					"action": "Query Open OCO (USER_DATA)",
 					"description": "Weight(IP): 6",
 					"routing": {
@@ -195,8 +195,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Api V 3 Sor Order",
-					"value": "POST Api V 3 Sor Order",
+					"name": "POST API v3 Sor Order",
+					"value": "POST API v3 Sor Order",
 					"action": "New order using SOR (TRADE)",
 					"description": "Weight(IP): 6",
 					"routing": {
@@ -207,8 +207,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Api V 3 Sor Order Test",
-					"value": "POST Api V 3 Sor Order Test",
+					"name": "POST API v3 Sor Order Test",
+					"value": "POST API v3 Sor Order Test",
 					"action": "Test new order using SOR (TRADE)",
 					"description": "Test new order creation and signature/recvWindow using smart order routing (SOR).\nCreates and validates a new order but does not send it into the matching engine.\n\nWeight(IP):\n  - Without computeCommissionRates: `1`\n  - With computeCommissionRates: `20`",
 					"routing": {
@@ -219,8 +219,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Account",
-					"value": "GET Api V 3 Account",
+					"name": "GET API v3 Account",
+					"value": "GET API v3 Account",
 					"action": "Account Information (USER_DATA)",
 					"description": "Get current account information.\n\nWeight(IP): 20",
 					"routing": {
@@ -231,8 +231,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 My Trades",
-					"value": "GET Api V 3 My Trades",
+					"name": "GET API v3 My Trades",
+					"value": "GET API v3 My Trades",
 					"action": "Account Trade List (USER_DATA)",
 					"description": "Get trades for a specific account and symbol.\n\nIf `fromId` is set, it will get id >= that `fromId`. Otherwise most recent orders are returned.\n\nThe time between startTime and endTime can't be longer than 24 hours.\nThese are the supported combinations of all parameters:\n\n  symbol\n\n  symbol + orderId\n\n  symbol + startTime\n\n  symbol + endTime\n\n  symbol + fromId\n\n  symbol + startTime + endTime\n\n  symbol+ orderId + fromId\n\nWeight(IP): 20",
 					"routing": {
@@ -243,8 +243,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Rate Limit Order",
-					"value": "GET Api V 3 Rate Limit Order",
+					"name": "GET API v3 Rate Limit Order",
+					"value": "GET API v3 Rate Limit Order",
 					"action": "Query Current Order Count Usage (TRADE)",
 					"description": "Displays the user's current order count usage for all intervals.\n\nWeight(IP): 40",
 					"routing": {
@@ -255,8 +255,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 My Prevented Matches",
-					"value": "GET Api V 3 My Prevented Matches",
+					"name": "GET API v3 My Prevented Matches",
+					"value": "GET API v3 My Prevented Matches",
 					"action": "Query Prevented Matches",
 					"description": "Displays the list of orders that were expired because of STP.\n\nFor additional information on what a Prevented match is, as well as Self Trade Prevention (STP), please refer to our STP FAQ page.\n\nThese are the combinations supported:\n\n* symbol + preventedMatchId\n* symbol + orderId\n* symbol + orderId + fromPreventedMatchId (limit will default to 500)\n* symbol + orderId + fromPreventedMatchId + limit\n\nWeight(IP):\n\nCase \t                          Weight\nIf symbol is invalid: \t        2\nQuerying by preventedMatchId: \t2\nQuerying by orderId: \t          20",
 					"routing": {
@@ -267,8 +267,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 My Allocations",
-					"value": "GET Api V 3 My Allocations",
+					"name": "GET API v3 My Allocations",
+					"value": "GET API v3 My Allocations",
 					"action": "Query Allocations (USER_DATA)",
 					"description": "Retrieves allocations resulting from SOR order placement.\n\nWeight: 20\n\nSupported parameter combinations:\nParameters \t                          Response\nsymbol \t                              allocations from oldest to newest\nsymbol + startTime \t                  oldest allocations since startTime\nsymbol + endTime \t                    newest allocations until endTime\nsymbol + startTime + endTime \t        allocations within the time range\nsymbol + fromAllocationId \t          allocations by allocation ID\nsymbol + orderId \t                    allocations related to an order starting with oldest\nsymbol + orderId + fromAllocationId \tallocations related to an order by allocation ID\n\nNote: The time between startTime and endTime can't be longer than 24 hours.",
 					"routing": {
@@ -279,8 +279,8 @@ export const tradeDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Account Commission",
-					"value": "GET Api V 3 Account Commission",
+					"name": "GET API v3 Account Commission",
+					"value": "GET API v3 Account Commission",
 					"action": "Query Commission Rates (USER_DATA)",
 					"description": "Get current account commission rates.\n\nWeight: 20",
 					"routing": {
@@ -307,7 +307,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -333,7 +333,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -368,7 +368,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -424,7 +424,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -463,7 +463,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -488,7 +488,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -513,7 +513,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -538,13 +538,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "New Client Order Id",
+			"displayName": "New Client Order ID",
 			"name": "newClientOrderId",
 			"description": "Used to uniquely identify this cancel. Automatically generated by default",
 			"default": "",
@@ -563,13 +563,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Strategy Id",
+			"displayName": "Strategy ID",
 			"name": "strategyId",
 			"default": 0,
 			"type": "number",
@@ -587,7 +587,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -612,7 +612,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -637,7 +637,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -662,7 +662,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -687,7 +687,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -726,7 +726,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -751,7 +751,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -776,7 +776,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -802,7 +802,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -828,7 +828,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -853,7 +853,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Test"
+						"POST API v3 Order Test"
 					]
 				}
 			}
@@ -872,7 +872,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order"
+						"GET API v3 Order"
 					]
 				}
 			}
@@ -898,13 +898,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order"
+						"GET API v3 Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -923,13 +923,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order"
+						"GET API v3 Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Orig Client Order Id",
+			"displayName": "Orig Client Order ID",
 			"name": "origClientOrderId",
 			"description": "Order id from client",
 			"default": "",
@@ -948,7 +948,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order"
+						"GET API v3 Order"
 					]
 				}
 			}
@@ -973,7 +973,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order"
+						"GET API v3 Order"
 					]
 				}
 			}
@@ -999,7 +999,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order"
+						"GET API v3 Order"
 					]
 				}
 			}
@@ -1025,7 +1025,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order"
+						"GET API v3 Order"
 					]
 				}
 			}
@@ -1050,7 +1050,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order"
+						"GET API v3 Order"
 					]
 				}
 			}
@@ -1069,7 +1069,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1095,7 +1095,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1130,7 +1130,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1186,7 +1186,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1225,7 +1225,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1250,7 +1250,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1275,7 +1275,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1300,13 +1300,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "New Client Order Id",
+			"displayName": "New Client Order ID",
 			"name": "newClientOrderId",
 			"description": "Used to uniquely identify this cancel. Automatically generated by default",
 			"default": "",
@@ -1325,13 +1325,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Strategy Id",
+			"displayName": "Strategy ID",
 			"name": "strategyId",
 			"default": 0,
 			"type": "number",
@@ -1349,7 +1349,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1374,7 +1374,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1399,7 +1399,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1424,7 +1424,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1449,7 +1449,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1488,7 +1488,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1531,7 +1531,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1556,7 +1556,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1582,7 +1582,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1608,7 +1608,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1633,7 +1633,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order"
+						"POST API v3 Order"
 					]
 				}
 			}
@@ -1652,7 +1652,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order"
+						"DELETE API v3 Order"
 					]
 				}
 			}
@@ -1678,13 +1678,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order"
+						"DELETE API v3 Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -1703,13 +1703,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order"
+						"DELETE API v3 Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Orig Client Order Id",
+			"displayName": "Orig Client Order ID",
 			"name": "origClientOrderId",
 			"description": "Order id from client",
 			"default": "",
@@ -1728,13 +1728,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order"
+						"DELETE API v3 Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "New Client Order Id",
+			"displayName": "New Client Order ID",
 			"name": "newClientOrderId",
 			"description": "Used to uniquely identify this cancel. Automatically generated by default",
 			"default": "",
@@ -1753,7 +1753,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order"
+						"DELETE API v3 Order"
 					]
 				}
 			}
@@ -1787,7 +1787,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order"
+						"DELETE API v3 Order"
 					]
 				}
 			}
@@ -1812,7 +1812,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order"
+						"DELETE API v3 Order"
 					]
 				}
 			}
@@ -1838,7 +1838,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order"
+						"DELETE API v3 Order"
 					]
 				}
 			}
@@ -1864,7 +1864,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order"
+						"DELETE API v3 Order"
 					]
 				}
 			}
@@ -1889,7 +1889,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order"
+						"DELETE API v3 Order"
 					]
 				}
 			}
@@ -1908,7 +1908,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -1934,7 +1934,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -1969,7 +1969,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2025,7 +2025,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2051,7 +2051,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2085,7 +2085,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2124,7 +2124,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2149,7 +2149,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2174,7 +2174,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2199,13 +2199,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Cancel New Client Order Id",
+			"displayName": "Cancel New Client Order ID",
 			"name": "cancelNewClientOrderId",
 			"description": "Used to uniquely identify this cancel. Automatically generated by default",
 			"default": "",
@@ -2224,13 +2224,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Cancel Orig Client Order Id",
+			"displayName": "Cancel Orig Client Order ID",
 			"name": "cancelOrigClientOrderId",
 			"description": "Either the cancelOrigClientOrderId or cancelOrderId must be provided. If both are provided, cancelOrderId takes precedence.",
 			"default": "",
@@ -2249,13 +2249,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Cancel Order Id",
+			"displayName": "Cancel Order ID",
 			"name": "cancelOrderId",
 			"description": "Either the cancelOrigClientOrderId or cancelOrderId must be provided. If both are provided, cancelOrderId takes precedence.",
 			"default": 12,
@@ -2274,13 +2274,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "New Client Order Id",
+			"displayName": "New Client Order ID",
 			"name": "newClientOrderId",
 			"description": "Used to uniquely identify this cancel. Automatically generated by default",
 			"default": "",
@@ -2299,13 +2299,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Strategy Id",
+			"displayName": "Strategy ID",
 			"name": "strategyId",
 			"default": 0,
 			"type": "number",
@@ -2323,7 +2323,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2348,7 +2348,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2373,7 +2373,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2398,7 +2398,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2423,7 +2423,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2462,7 +2462,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2505,7 +2505,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2530,7 +2530,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2556,7 +2556,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2582,7 +2582,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2607,7 +2607,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order Cancel Replace"
+						"POST API v3 Order Cancel Replace"
 					]
 				}
 			}
@@ -2626,7 +2626,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Open Orders"
+						"GET API v3 Open Orders"
 					]
 				}
 			}
@@ -2651,7 +2651,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Open Orders"
+						"GET API v3 Open Orders"
 					]
 				}
 			}
@@ -2676,7 +2676,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Open Orders"
+						"GET API v3 Open Orders"
 					]
 				}
 			}
@@ -2702,7 +2702,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Open Orders"
+						"GET API v3 Open Orders"
 					]
 				}
 			}
@@ -2728,7 +2728,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Open Orders"
+						"GET API v3 Open Orders"
 					]
 				}
 			}
@@ -2753,7 +2753,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Open Orders"
+						"GET API v3 Open Orders"
 					]
 				}
 			}
@@ -2772,7 +2772,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Open Orders"
+						"DELETE API v3 Open Orders"
 					]
 				}
 			}
@@ -2798,7 +2798,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Open Orders"
+						"DELETE API v3 Open Orders"
 					]
 				}
 			}
@@ -2823,7 +2823,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Open Orders"
+						"DELETE API v3 Open Orders"
 					]
 				}
 			}
@@ -2849,7 +2849,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Open Orders"
+						"DELETE API v3 Open Orders"
 					]
 				}
 			}
@@ -2875,7 +2875,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Open Orders"
+						"DELETE API v3 Open Orders"
 					]
 				}
 			}
@@ -2900,7 +2900,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Open Orders"
+						"DELETE API v3 Open Orders"
 					]
 				}
 			}
@@ -2919,7 +2919,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Orders"
+						"GET API v3 All Orders"
 					]
 				}
 			}
@@ -2945,13 +2945,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Orders"
+						"GET API v3 All Orders"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -2970,7 +2970,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Orders"
+						"GET API v3 All Orders"
 					]
 				}
 			}
@@ -2995,7 +2995,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Orders"
+						"GET API v3 All Orders"
 					]
 				}
 			}
@@ -3020,7 +3020,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Orders"
+						"GET API v3 All Orders"
 					]
 				}
 			}
@@ -3045,7 +3045,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Orders"
+						"GET API v3 All Orders"
 					]
 				}
 			}
@@ -3070,7 +3070,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Orders"
+						"GET API v3 All Orders"
 					]
 				}
 			}
@@ -3096,7 +3096,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Orders"
+						"GET API v3 All Orders"
 					]
 				}
 			}
@@ -3122,7 +3122,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Orders"
+						"GET API v3 All Orders"
 					]
 				}
 			}
@@ -3147,7 +3147,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Orders"
+						"GET API v3 All Orders"
 					]
 				}
 			}
@@ -3166,7 +3166,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3192,13 +3192,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "List Client Order Id",
+			"displayName": "List Client Order ID",
 			"name": "listClientOrderId",
 			"description": "Arbitrary unique ID among open order lists. Automatically generated if not sent.\nA new order list with the same `listClientOrderId` is accepted only when the previous one is filled or completely expired.\n`listClientOrderId` is distinct from the `aboveClientOrderId` and the `belowCLientOrderId`.",
 			"default": "",
@@ -3217,7 +3217,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3252,7 +3252,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3277,7 +3277,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3303,13 +3303,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Above Client Order Id",
+			"displayName": "Above Client Order ID",
 			"name": "aboveClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the above order. Automatically generated if not sent",
 			"default": "",
@@ -3328,7 +3328,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3353,7 +3353,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3377,7 +3377,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3402,7 +3402,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3426,7 +3426,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3465,13 +3465,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Above Strategy Id",
+			"displayName": "Above Strategy ID",
 			"name": "aboveStrategyId",
 			"description": "Arbitrary numeric value identifying the above order within an order strategy.",
 			"default": 0,
@@ -3490,7 +3490,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3515,7 +3515,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3541,13 +3541,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Below Client Order Id",
+			"displayName": "Below Client Order ID",
 			"name": "belowClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the below order. Automatically generated if not sent",
 			"default": "",
@@ -3566,7 +3566,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3591,7 +3591,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3616,7 +3616,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3641,7 +3641,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3665,7 +3665,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3704,13 +3704,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Below Strategy Id",
+			"displayName": "Below Strategy ID",
 			"name": "belowStrategyId",
 			"description": "Arbitrary numeric value identifying the below order within an order strategy.",
 			"default": 0,
@@ -3729,7 +3729,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3754,7 +3754,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3793,7 +3793,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3836,7 +3836,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3861,7 +3861,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3887,7 +3887,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3913,7 +3913,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3938,7 +3938,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oco"
+						"POST API v3 Order List Oco"
 					]
 				}
 			}
@@ -3957,7 +3957,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -3983,13 +3983,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "List Client Order Id",
+			"displayName": "List Client Order ID",
 			"name": "listClientOrderId",
 			"description": "Arbitrary unique ID among open order lists. Automatically generated if not sent.\nA new order list with the same `listClientOrderId` is accepted only when the previous one is filled or completely expired.\n`listClientOrderId` is distinct from the `workingClientOrderId` and the `pendingClientOrderId`.",
 			"default": "",
@@ -4008,7 +4008,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4047,7 +4047,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4090,7 +4090,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4126,7 +4126,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4162,13 +4162,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Working Client Order Id",
+			"displayName": "Working Client Order ID",
 			"name": "workingClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the working order. Automatically generated if not sent.",
 			"default": "",
@@ -4187,7 +4187,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4212,7 +4212,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4238,7 +4238,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4264,7 +4264,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4303,13 +4303,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Working Strategy Id",
+			"displayName": "Working Strategy ID",
 			"name": "workingStrategyId",
 			"description": "Arbitrary numeric value identifying the working order within an order strategy.",
 			"default": 0,
@@ -4328,7 +4328,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4353,7 +4353,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4409,7 +4409,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4445,13 +4445,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Pending Client Order Id",
+			"displayName": "Pending Client Order ID",
 			"name": "pendingClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the pending order. Automatically generated if not sent.",
 			"default": "",
@@ -4470,7 +4470,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4494,7 +4494,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4518,7 +4518,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4542,7 +4542,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4568,7 +4568,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4593,7 +4593,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4632,13 +4632,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Pending Strategy Id",
+			"displayName": "Pending Strategy ID",
 			"name": "pendingStrategyId",
 			"description": "Arbitrary numeric value identifying the pending order within an order strategy.",
 			"default": 0,
@@ -4657,7 +4657,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4682,7 +4682,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4708,7 +4708,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4734,7 +4734,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4759,7 +4759,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Oto"
+						"POST API v3 Order List Oto"
 					]
 				}
 			}
@@ -4778,7 +4778,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -4804,13 +4804,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "List Client Order Id",
+			"displayName": "List Client Order ID",
 			"name": "listClientOrderId",
 			"description": "Arbitrary unique ID among open order lists. Automatically generated if not sent.\nA new order list with the same `listClientOrderId` is accepted only when the previous one is filled or completely expired.\n`listClientOrderId` is distinct from the `workingClientOrderId` and the `pendingClientOrderId`.",
 			"default": "",
@@ -4829,7 +4829,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -4868,7 +4868,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -4911,7 +4911,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -4947,7 +4947,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -4983,13 +4983,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Working Client Order Id",
+			"displayName": "Working Client Order ID",
 			"name": "workingClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the working order. Automatically generated if not sent.",
 			"default": "",
@@ -5008,7 +5008,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5033,7 +5033,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5059,7 +5059,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5085,7 +5085,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5124,13 +5124,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Working Strategy Id",
+			"displayName": "Working Strategy ID",
 			"name": "workingStrategyId",
 			"description": "Arbitrary numeric value identifying the working order within an order strategy.",
 			"default": 0,
@@ -5149,7 +5149,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5174,7 +5174,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5210,7 +5210,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5236,7 +5236,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5276,13 +5276,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Pending Above Client Order Id",
+			"displayName": "Pending Above Client Order ID",
 			"name": "pendingAboveClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the pending above order. Automatically generated if not sent.",
 			"default": "",
@@ -5301,7 +5301,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5325,7 +5325,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5349,7 +5349,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5373,7 +5373,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5398,7 +5398,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5436,13 +5436,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Pending Above Strategy Id",
+			"displayName": "Pending Above Strategy ID",
 			"name": "pendingAboveStrategyId",
 			"description": "Arbitrary numeric value identifying the pending above order within an order strategy.",
 			"default": 0,
@@ -5461,7 +5461,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5486,7 +5486,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5525,13 +5525,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Pending Below Client Order Id",
+			"displayName": "Pending Below Client Order ID",
 			"name": "pendingBelowClientOrderId",
 			"description": "Arbitrary unique ID among open orders for the pending below order. Automatically generated if not sent.",
 			"default": "",
@@ -5550,7 +5550,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5574,7 +5574,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5598,7 +5598,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5622,7 +5622,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5647,7 +5647,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5685,13 +5685,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Pending Below Strategy Id",
+			"displayName": "Pending Below Strategy ID",
 			"name": "pendingBelowStrategyId",
 			"description": "Arbitrary numeric value identifying the pending below order within an order strategy.",
 			"default": 0,
@@ -5710,7 +5710,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5735,7 +5735,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5760,7 +5760,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5786,7 +5786,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5812,7 +5812,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5837,7 +5837,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Order List Otoco"
+						"POST API v3 Order List Otoco"
 					]
 				}
 			}
@@ -5856,13 +5856,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order List"
+						"GET API v3 Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order List Id",
+			"displayName": "Order List ID",
 			"name": "orderListId",
 			"description": "Order list id",
 			"default": 0,
@@ -5881,13 +5881,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order List"
+						"GET API v3 Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Orig Client Order Id",
+			"displayName": "Orig Client Order ID",
 			"name": "origClientOrderId",
 			"description": "Order id from client",
 			"default": "",
@@ -5906,7 +5906,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order List"
+						"GET API v3 Order List"
 					]
 				}
 			}
@@ -5931,7 +5931,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order List"
+						"GET API v3 Order List"
 					]
 				}
 			}
@@ -5957,7 +5957,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order List"
+						"GET API v3 Order List"
 					]
 				}
 			}
@@ -5983,7 +5983,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order List"
+						"GET API v3 Order List"
 					]
 				}
 			}
@@ -6008,7 +6008,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Order List"
+						"GET API v3 Order List"
 					]
 				}
 			}
@@ -6027,7 +6027,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order List"
+						"DELETE API v3 Order List"
 					]
 				}
 			}
@@ -6053,13 +6053,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order List"
+						"DELETE API v3 Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order List Id",
+			"displayName": "Order List ID",
 			"name": "orderListId",
 			"description": "Order list id",
 			"default": 0,
@@ -6078,13 +6078,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order List"
+						"DELETE API v3 Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "List Client Order Id",
+			"displayName": "List Client Order ID",
 			"name": "listClientOrderId",
 			"description": "A unique Id for the entire orderList",
 			"default": "",
@@ -6103,13 +6103,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order List"
+						"DELETE API v3 Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "New Client Order Id",
+			"displayName": "New Client Order ID",
 			"name": "newClientOrderId",
 			"description": "Used to uniquely identify this cancel. Automatically generated by default",
 			"default": "",
@@ -6128,7 +6128,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order List"
+						"DELETE API v3 Order List"
 					]
 				}
 			}
@@ -6153,7 +6153,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order List"
+						"DELETE API v3 Order List"
 					]
 				}
 			}
@@ -6179,7 +6179,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order List"
+						"DELETE API v3 Order List"
 					]
 				}
 			}
@@ -6205,7 +6205,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order List"
+						"DELETE API v3 Order List"
 					]
 				}
 			}
@@ -6230,7 +6230,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"DELETE Api V 3 Order List"
+						"DELETE API v3 Order List"
 					]
 				}
 			}
@@ -6249,13 +6249,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Order List"
+						"GET API v3 All Order List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "From Id",
+			"displayName": "From ID",
 			"name": "fromId",
 			"description": "Trade id to fetch from. Default gets most recent trades.",
 			"default": 0,
@@ -6274,7 +6274,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Order List"
+						"GET API v3 All Order List"
 					]
 				}
 			}
@@ -6299,7 +6299,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Order List"
+						"GET API v3 All Order List"
 					]
 				}
 			}
@@ -6324,7 +6324,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Order List"
+						"GET API v3 All Order List"
 					]
 				}
 			}
@@ -6349,7 +6349,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Order List"
+						"GET API v3 All Order List"
 					]
 				}
 			}
@@ -6374,7 +6374,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Order List"
+						"GET API v3 All Order List"
 					]
 				}
 			}
@@ -6400,7 +6400,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Order List"
+						"GET API v3 All Order List"
 					]
 				}
 			}
@@ -6426,7 +6426,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Order List"
+						"GET API v3 All Order List"
 					]
 				}
 			}
@@ -6451,7 +6451,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 All Order List"
+						"GET API v3 All Order List"
 					]
 				}
 			}
@@ -6470,7 +6470,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Open Order List"
+						"GET API v3 Open Order List"
 					]
 				}
 			}
@@ -6495,7 +6495,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Open Order List"
+						"GET API v3 Open Order List"
 					]
 				}
 			}
@@ -6521,7 +6521,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Open Order List"
+						"GET API v3 Open Order List"
 					]
 				}
 			}
@@ -6547,7 +6547,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Open Order List"
+						"GET API v3 Open Order List"
 					]
 				}
 			}
@@ -6572,7 +6572,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Open Order List"
+						"GET API v3 Open Order List"
 					]
 				}
 			}
@@ -6591,7 +6591,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -6617,7 +6617,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -6652,7 +6652,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -6708,7 +6708,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -6747,7 +6747,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -6772,7 +6772,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -6796,13 +6796,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "New Client Order Id",
+			"displayName": "New Client Order ID",
 			"name": "newClientOrderId",
 			"description": "Used to uniquely identify this cancel. Automatically generated by default",
 			"default": "",
@@ -6821,13 +6821,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Strategy Id",
+			"displayName": "Strategy ID",
 			"name": "strategyId",
 			"default": 0,
 			"type": "number",
@@ -6845,7 +6845,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -6870,7 +6870,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -6895,7 +6895,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -6934,7 +6934,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -6977,7 +6977,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -7002,7 +7002,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -7028,7 +7028,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -7054,7 +7054,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -7079,7 +7079,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order"
+						"POST API v3 Sor Order"
 					]
 				}
 			}
@@ -7098,7 +7098,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7124,7 +7124,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7159,7 +7159,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7215,7 +7215,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7254,7 +7254,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7279,7 +7279,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7303,13 +7303,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "New Client Order Id",
+			"displayName": "New Client Order ID",
 			"name": "newClientOrderId",
 			"description": "Used to uniquely identify this cancel. Automatically generated by default",
 			"default": "",
@@ -7328,13 +7328,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Strategy Id",
+			"displayName": "Strategy ID",
 			"name": "strategyId",
 			"default": 0,
 			"type": "number",
@@ -7352,7 +7352,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7377,7 +7377,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7402,7 +7402,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7441,7 +7441,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7484,7 +7484,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7509,7 +7509,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7534,7 +7534,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7560,7 +7560,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7586,7 +7586,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7611,7 +7611,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"POST Api V 3 Sor Order Test"
+						"POST API v3 Sor Order Test"
 					]
 				}
 			}
@@ -7630,7 +7630,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Account"
+						"GET API v3 Account"
 					]
 				}
 			}
@@ -7655,7 +7655,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Account"
+						"GET API v3 Account"
 					]
 				}
 			}
@@ -7681,7 +7681,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Account"
+						"GET API v3 Account"
 					]
 				}
 			}
@@ -7707,7 +7707,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Account"
+						"GET API v3 Account"
 					]
 				}
 			}
@@ -7732,7 +7732,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Account"
+						"GET API v3 Account"
 					]
 				}
 			}
@@ -7751,7 +7751,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Trades"
+						"GET API v3 My Trades"
 					]
 				}
 			}
@@ -7777,13 +7777,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Trades"
+						"GET API v3 My Trades"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "This can only be used in combination with symbol.",
 			"default": 0,
@@ -7802,7 +7802,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Trades"
+						"GET API v3 My Trades"
 					]
 				}
 			}
@@ -7827,7 +7827,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Trades"
+						"GET API v3 My Trades"
 					]
 				}
 			}
@@ -7852,13 +7852,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Trades"
+						"GET API v3 My Trades"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "From Id",
+			"displayName": "From ID",
 			"name": "fromId",
 			"description": "Trade id to fetch from. Default gets most recent trades.",
 			"default": 0,
@@ -7877,7 +7877,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Trades"
+						"GET API v3 My Trades"
 					]
 				}
 			}
@@ -7902,7 +7902,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Trades"
+						"GET API v3 My Trades"
 					]
 				}
 			}
@@ -7927,7 +7927,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Trades"
+						"GET API v3 My Trades"
 					]
 				}
 			}
@@ -7953,7 +7953,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Trades"
+						"GET API v3 My Trades"
 					]
 				}
 			}
@@ -7979,7 +7979,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Trades"
+						"GET API v3 My Trades"
 					]
 				}
 			}
@@ -8004,7 +8004,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Trades"
+						"GET API v3 My Trades"
 					]
 				}
 			}
@@ -8023,7 +8023,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Rate Limit Order"
+						"GET API v3 Rate Limit Order"
 					]
 				}
 			}
@@ -8048,7 +8048,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Rate Limit Order"
+						"GET API v3 Rate Limit Order"
 					]
 				}
 			}
@@ -8074,7 +8074,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Rate Limit Order"
+						"GET API v3 Rate Limit Order"
 					]
 				}
 			}
@@ -8100,7 +8100,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Rate Limit Order"
+						"GET API v3 Rate Limit Order"
 					]
 				}
 			}
@@ -8125,7 +8125,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Rate Limit Order"
+						"GET API v3 Rate Limit Order"
 					]
 				}
 			}
@@ -8144,7 +8144,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Prevented Matches"
+						"GET API v3 My Prevented Matches"
 					]
 				}
 			}
@@ -8170,13 +8170,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Prevented Matches"
+						"GET API v3 My Prevented Matches"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Prevented Match Id",
+			"displayName": "Prevented Match ID",
 			"name": "preventedMatchId",
 			"default": 1,
 			"type": "number",
@@ -8194,13 +8194,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Prevented Matches"
+						"GET API v3 My Prevented Matches"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -8219,13 +8219,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Prevented Matches"
+						"GET API v3 My Prevented Matches"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "From Prevented Match Id",
+			"displayName": "From Prevented Match ID",
 			"name": "fromPreventedMatchId",
 			"default": 1,
 			"type": "number",
@@ -8243,7 +8243,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Prevented Matches"
+						"GET API v3 My Prevented Matches"
 					]
 				}
 			}
@@ -8268,7 +8268,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Prevented Matches"
+						"GET API v3 My Prevented Matches"
 					]
 				}
 			}
@@ -8293,7 +8293,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Prevented Matches"
+						"GET API v3 My Prevented Matches"
 					]
 				}
 			}
@@ -8319,7 +8319,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Prevented Matches"
+						"GET API v3 My Prevented Matches"
 					]
 				}
 			}
@@ -8345,7 +8345,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Prevented Matches"
+						"GET API v3 My Prevented Matches"
 					]
 				}
 			}
@@ -8370,7 +8370,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Prevented Matches"
+						"GET API v3 My Prevented Matches"
 					]
 				}
 			}
@@ -8389,7 +8389,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Allocations"
+						"GET API v3 My Allocations"
 					]
 				}
 			}
@@ -8415,7 +8415,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Allocations"
+						"GET API v3 My Allocations"
 					]
 				}
 			}
@@ -8440,7 +8440,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Allocations"
+						"GET API v3 My Allocations"
 					]
 				}
 			}
@@ -8465,13 +8465,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Allocations"
+						"GET API v3 My Allocations"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "From Allocation Id",
+			"displayName": "From Allocation ID",
 			"name": "fromAllocationId",
 			"default": 0,
 			"type": "number",
@@ -8489,7 +8489,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Allocations"
+						"GET API v3 My Allocations"
 					]
 				}
 			}
@@ -8514,13 +8514,13 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Allocations"
+						"GET API v3 My Allocations"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"description": "Order id",
 			"default": 0,
@@ -8539,7 +8539,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Allocations"
+						"GET API v3 My Allocations"
 					]
 				}
 			}
@@ -8564,7 +8564,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Allocations"
+						"GET API v3 My Allocations"
 					]
 				}
 			}
@@ -8590,7 +8590,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Allocations"
+						"GET API v3 My Allocations"
 					]
 				}
 			}
@@ -8616,7 +8616,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Allocations"
+						"GET API v3 My Allocations"
 					]
 				}
 			}
@@ -8641,7 +8641,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 My Allocations"
+						"GET API v3 My Allocations"
 					]
 				}
 			}
@@ -8660,7 +8660,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Account Commission"
+						"GET API v3 Account Commission"
 					]
 				}
 			}
@@ -8686,7 +8686,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Account Commission"
+						"GET API v3 Account Commission"
 					]
 				}
 			}
@@ -8712,7 +8712,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Account Commission"
+						"GET API v3 Account Commission"
 					]
 				}
 			}
@@ -8738,7 +8738,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Account Commission"
+						"GET API v3 Account Commission"
 					]
 				}
 			}
@@ -8763,7 +8763,7 @@ export const tradeDescription: INodeProperties[] = [
 						"Trade"
 					],
 					"operation": [
-						"GET Api V 3 Account Commission"
+						"GET API v3 Account Commission"
 					]
 				}
 			}

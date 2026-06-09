@@ -15,8 +15,8 @@ export const marketDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Api V 3 Ping",
-					"value": "GET Api V 3 Ping",
+					"name": "GET API v3 Ping",
+					"value": "GET API v3 Ping",
 					"action": "Test Connectivity",
 					"description": "Test connectivity to the Rest API.\n\nWeight(IP): 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Time",
-					"value": "GET Api V 3 Time",
+					"name": "GET API v3 Time",
+					"value": "GET API v3 Time",
 					"action": "Check Server Time",
 					"description": "Test connectivity to the Rest API and get the current server time.\n\nWeight(IP): 1",
 					"routing": {
@@ -39,8 +39,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Exchange Info",
-					"value": "GET Api V 3 Exchange Info",
+					"name": "GET API v3 Exchange Info",
+					"value": "GET API v3 Exchange Info",
 					"action": "Exchange Information",
 					"description": "Current exchange trading rules and symbol information\n\n- If any symbol provided in either symbol or symbols do not exist, the endpoint will throw an error.\n- All parameters are optional.\n- permissions can support single or multiple values (e.g. SPOT, [\"MARGIN\",\"LEVERAGED\"])\n- If permissions parameter not provided, the default values will be [\"SPOT\",\"MARGIN\",\"LEVERAGED\"].\n  - To display all permissions you need to specify them explicitly. (e.g. SPOT, MARGIN,...)\n\nExamples of Symbol Permissions Interpretation from the Response:\n- [[\"A\",\"B\"]] means you may place an order if your account has either permission \"A\" or permission \"B\".\n- [[\"A\"],[\"B\"]] means you can place an order if your account has permission \"A\" and permission \"B\".\n- [[\"A\"],[\"B\",\"C\"]] means you can place an order if your account has permission \"A\" and permission \"B\" or permission \"C\". (Inclusive or is applied here, not exclusive or, so your account may have both permission \"B\" and permission \"C\".)\n\nWeight(IP): 10",
 					"routing": {
@@ -51,8 +51,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Depth",
-					"value": "GET Api V 3 Depth",
+					"name": "GET API v3 Depth",
+					"value": "GET API v3 Depth",
 					"action": "Order Book",
 					"description": "| Limit               | Weight(IP)  |\n|---------------------|-------------|\n| 1-100               | 5           |\n| 101-500             | 25          |\n| 501-1000            | 50          |\n| 1001-5000           | 250         |",
 					"routing": {
@@ -63,8 +63,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Trades",
-					"value": "GET Api V 3 Trades",
+					"name": "GET API v3 Trades",
+					"value": "GET API v3 Trades",
 					"action": "Recent Trades List",
 					"description": "Get recent trades.\n\nWeight(IP): 10",
 					"routing": {
@@ -75,8 +75,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Historical Trades",
-					"value": "GET Api V 3 Historical Trades",
+					"name": "GET API v3 Historical Trades",
+					"value": "GET API v3 Historical Trades",
 					"action": "Old Trade Lookup",
 					"description": "Get older market trades.\n\nWeight(IP): 10",
 					"routing": {
@@ -87,8 +87,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Agg Trades",
-					"value": "GET Api V 3 Agg Trades",
+					"name": "GET API v3 Agg Trades",
+					"value": "GET API v3 Agg Trades",
 					"action": "Compressed/Aggregate Trades List",
 					"description": "Get compressed, aggregate trades. Trades that fill at the time, from the same order, with the same price will have the quantity aggregated.\n- If `fromId`, `startTime`, and `endTime` are not sent, the most recent aggregate trades will be returned.\n- Note that if a trade has the following values, this was a duplicate aggregate trade and marked as invalid:\n\n  p = '0' // price\n\n  q = '0' // qty\n\n  f = -1 // ﬁrst_trade_id\n\n  l = -1 // last_trade_id\n\nWeight(IP): 2",
 					"routing": {
@@ -99,8 +99,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Klines",
-					"value": "GET Api V 3 Klines",
+					"name": "GET API v3 Klines",
+					"value": "GET API v3 Klines",
 					"action": "Kline/Candlestick Data",
 					"description": "Kline/candlestick bars for a symbol.\nKlines are uniquely identified by their open time.\n\n- If `startTime` and `endTime` are not sent, the most recent klines are returned.\n\nWeight(IP): 2",
 					"routing": {
@@ -111,8 +111,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Ui Klines",
-					"value": "GET Api V 3 Ui Klines",
+					"name": "GET API v3 UI Klines",
+					"value": "GET API v3 UI Klines",
 					"action": "UIKlines",
 					"description": "The request is similar to klines having the same parameters and response.\n\nuiKlines return modified kline data, optimized for presentation of candlestick charts.\n\nWeight(IP): 2",
 					"routing": {
@@ -123,8 +123,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Avg Price",
-					"value": "GET Api V 3 Avg Price",
+					"name": "GET API v3 Avg Price",
+					"value": "GET API v3 Avg Price",
 					"action": "Current Average Price",
 					"description": "Current average price for a symbol.\n\nWeight(IP): 2",
 					"routing": {
@@ -135,8 +135,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Ticker 24 Hr",
-					"value": "GET Api V 3 Ticker 24 Hr",
+					"name": "GET API v3 Ticker 24 Hr",
+					"value": "GET API v3 Ticker 24 Hr",
 					"action": "24hr Ticker Price Change Statistics",
 					"description": "24 hour rolling window price change statistics. Careful when accessing this with no symbol.\n\n- If the symbol is not sent, tickers for all symbols will be returned in an array.\n\nWeight(IP):\n- `2` for a single symbol;\n- `80` when the symbol parameter is omitted;",
 					"routing": {
@@ -147,8 +147,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Ticker Trading Day",
-					"value": "GET Api V 3 Ticker Trading Day",
+					"name": "GET API v3 Ticker Trading Day",
+					"value": "GET API v3 Ticker Trading Day",
 					"action": "Trading Day Ticker",
 					"description": "Price change statistics for a trading day.\n\nNotes:\n- Supported values for timeZone:\n  - Hours and minutes (e.g. -1:00, 05:45)\n  - Only hours (e.g. 0, 8, 4)\n\nWeight:\n- `4` for each requested symbol.\n- The weight for this request will cap at `200` once the number of symbols in the request is more than `50`.",
 					"routing": {
@@ -159,8 +159,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Ticker Price",
-					"value": "GET Api V 3 Ticker Price",
+					"name": "GET API v3 Ticker Price",
+					"value": "GET API v3 Ticker Price",
 					"action": "Symbol Price Ticker",
 					"description": "Latest price for a symbol or symbols.\n\n- If the symbol is not sent, prices for all symbols will be returned in an array.\n\nWeight(IP):\n- `2` for a single symbol;\n- `4` when the symbol parameter is omitted;",
 					"routing": {
@@ -171,8 +171,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Ticker Book Ticker",
-					"value": "GET Api V 3 Ticker Book Ticker",
+					"name": "GET API v3 Ticker Book Ticker",
+					"value": "GET API v3 Ticker Book Ticker",
 					"action": "Symbol Order Book Ticker",
 					"description": "Best price/qty on the order book for a symbol or symbols.\n\n- If the symbol is not sent, bookTickers for all symbols will be returned in an array.\n\nWeight(IP):\n- `2` for a single symbol;\n- `4` when the symbol parameter is omitted;",
 					"routing": {
@@ -183,8 +183,8 @@ export const marketDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Api V 3 Ticker",
-					"value": "GET Api V 3 Ticker",
+					"name": "GET API v3 Ticker",
+					"value": "GET API v3 Ticker",
 					"action": "Rolling window price change statistics",
 					"description": "The window used to compute statistics is typically slightly wider than requested windowSize.\n\nopenTime for /api/v3/ticker always starts on a minute, while the closeTime is the current time of the request. As such, the effective window might be up to 1 minute wider than requested.\n\nE.g. If the closeTime is 1641287867099 (January 04, 2022 09:17:47:099 UTC) , and the windowSize is 1d. the openTime will be: 1641201420000 (January 3, 2022, 09:17:00 UTC)\n\nWeight(IP): 4 for each requested symbol regardless of windowSize.\n\nThe weight for this request will cap at 200 once the number of symbols in the request is more than 50.",
 					"routing": {
@@ -211,7 +211,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ping"
+						"GET API v3 Ping"
 					]
 				}
 			}
@@ -230,7 +230,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Time"
+						"GET API v3 Time"
 					]
 				}
 			}
@@ -249,7 +249,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Exchange Info"
+						"GET API v3 Exchange Info"
 					]
 				}
 			}
@@ -274,7 +274,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Exchange Info"
+						"GET API v3 Exchange Info"
 					]
 				}
 			}
@@ -298,7 +298,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Exchange Info"
+						"GET API v3 Exchange Info"
 					]
 				}
 			}
@@ -322,7 +322,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Exchange Info"
+						"GET API v3 Exchange Info"
 					]
 				}
 			}
@@ -341,7 +341,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Depth"
+						"GET API v3 Depth"
 					]
 				}
 			}
@@ -367,7 +367,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Depth"
+						"GET API v3 Depth"
 					]
 				}
 			}
@@ -392,7 +392,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Depth"
+						"GET API v3 Depth"
 					]
 				}
 			}
@@ -411,7 +411,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Trades"
+						"GET API v3 Trades"
 					]
 				}
 			}
@@ -437,7 +437,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Trades"
+						"GET API v3 Trades"
 					]
 				}
 			}
@@ -462,7 +462,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Trades"
+						"GET API v3 Trades"
 					]
 				}
 			}
@@ -481,7 +481,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Historical Trades"
+						"GET API v3 Historical Trades"
 					]
 				}
 			}
@@ -507,7 +507,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Historical Trades"
+						"GET API v3 Historical Trades"
 					]
 				}
 			}
@@ -532,13 +532,13 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Historical Trades"
+						"GET API v3 Historical Trades"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "From Id",
+			"displayName": "From ID",
 			"name": "fromId",
 			"description": "Trade id to fetch from. Default gets most recent trades.",
 			"default": 0,
@@ -557,7 +557,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Historical Trades"
+						"GET API v3 Historical Trades"
 					]
 				}
 			}
@@ -576,7 +576,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Agg Trades"
+						"GET API v3 Agg Trades"
 					]
 				}
 			}
@@ -602,13 +602,13 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Agg Trades"
+						"GET API v3 Agg Trades"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "From Id",
+			"displayName": "From ID",
 			"name": "fromId",
 			"description": "Trade id to fetch from. Default gets most recent trades.",
 			"default": 0,
@@ -627,7 +627,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Agg Trades"
+						"GET API v3 Agg Trades"
 					]
 				}
 			}
@@ -652,7 +652,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Agg Trades"
+						"GET API v3 Agg Trades"
 					]
 				}
 			}
@@ -677,7 +677,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Agg Trades"
+						"GET API v3 Agg Trades"
 					]
 				}
 			}
@@ -702,7 +702,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Agg Trades"
+						"GET API v3 Agg Trades"
 					]
 				}
 			}
@@ -721,7 +721,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Klines"
+						"GET API v3 Klines"
 					]
 				}
 			}
@@ -747,7 +747,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Klines"
+						"GET API v3 Klines"
 					]
 				}
 			}
@@ -839,7 +839,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Klines"
+						"GET API v3 Klines"
 					]
 				}
 			}
@@ -864,7 +864,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Klines"
+						"GET API v3 Klines"
 					]
 				}
 			}
@@ -889,7 +889,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Klines"
+						"GET API v3 Klines"
 					]
 				}
 			}
@@ -914,7 +914,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Klines"
+						"GET API v3 Klines"
 					]
 				}
 			}
@@ -939,7 +939,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Klines"
+						"GET API v3 Klines"
 					]
 				}
 			}
@@ -958,7 +958,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ui Klines"
+						"GET API v3 UI Klines"
 					]
 				}
 			}
@@ -984,7 +984,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ui Klines"
+						"GET API v3 UI Klines"
 					]
 				}
 			}
@@ -1076,7 +1076,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ui Klines"
+						"GET API v3 UI Klines"
 					]
 				}
 			}
@@ -1101,7 +1101,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ui Klines"
+						"GET API v3 UI Klines"
 					]
 				}
 			}
@@ -1126,7 +1126,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ui Klines"
+						"GET API v3 UI Klines"
 					]
 				}
 			}
@@ -1151,7 +1151,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ui Klines"
+						"GET API v3 UI Klines"
 					]
 				}
 			}
@@ -1176,7 +1176,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ui Klines"
+						"GET API v3 UI Klines"
 					]
 				}
 			}
@@ -1195,7 +1195,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Avg Price"
+						"GET API v3 Avg Price"
 					]
 				}
 			}
@@ -1221,7 +1221,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Avg Price"
+						"GET API v3 Avg Price"
 					]
 				}
 			}
@@ -1240,7 +1240,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker 24 Hr"
+						"GET API v3 Ticker 24 Hr"
 					]
 				}
 			}
@@ -1265,7 +1265,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker 24 Hr"
+						"GET API v3 Ticker 24 Hr"
 					]
 				}
 			}
@@ -1289,7 +1289,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker 24 Hr"
+						"GET API v3 Ticker 24 Hr"
 					]
 				}
 			}
@@ -1324,7 +1324,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker 24 Hr"
+						"GET API v3 Ticker 24 Hr"
 					]
 				}
 			}
@@ -1343,7 +1343,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker Trading Day"
+						"GET API v3 Ticker Trading Day"
 					]
 				}
 			}
@@ -1368,7 +1368,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker Trading Day"
+						"GET API v3 Ticker Trading Day"
 					]
 				}
 			}
@@ -1392,7 +1392,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker Trading Day"
+						"GET API v3 Ticker Trading Day"
 					]
 				}
 			}
@@ -1417,7 +1417,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker Trading Day"
+						"GET API v3 Ticker Trading Day"
 					]
 				}
 			}
@@ -1452,7 +1452,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker Trading Day"
+						"GET API v3 Ticker Trading Day"
 					]
 				}
 			}
@@ -1471,7 +1471,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker Price"
+						"GET API v3 Ticker Price"
 					]
 				}
 			}
@@ -1496,7 +1496,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker Price"
+						"GET API v3 Ticker Price"
 					]
 				}
 			}
@@ -1520,7 +1520,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker Price"
+						"GET API v3 Ticker Price"
 					]
 				}
 			}
@@ -1539,7 +1539,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker Book Ticker"
+						"GET API v3 Ticker Book Ticker"
 					]
 				}
 			}
@@ -1564,7 +1564,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker Book Ticker"
+						"GET API v3 Ticker Book Ticker"
 					]
 				}
 			}
@@ -1588,7 +1588,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker Book Ticker"
+						"GET API v3 Ticker Book Ticker"
 					]
 				}
 			}
@@ -1607,7 +1607,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker"
+						"GET API v3 Ticker"
 					]
 				}
 			}
@@ -1632,7 +1632,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker"
+						"GET API v3 Ticker"
 					]
 				}
 			}
@@ -1656,7 +1656,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker"
+						"GET API v3 Ticker"
 					]
 				}
 			}
@@ -1681,7 +1681,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker"
+						"GET API v3 Ticker"
 					]
 				}
 			}
@@ -1706,7 +1706,7 @@ export const marketDescription: INodeProperties[] = [
 						"Market"
 					],
 					"operation": [
-						"GET Api V 3 Ticker"
+						"GET API v3 Ticker"
 					]
 				}
 			}

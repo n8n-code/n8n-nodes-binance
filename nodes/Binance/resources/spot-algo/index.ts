@@ -15,8 +15,8 @@ export const spotAlgoDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST Sapi V 1 Algo Spot New Order Twap",
-					"value": "POST Sapi V 1 Algo Spot New Order Twap",
+					"name": "POST Sapi v1 Algo Spot New Order Twap",
+					"value": "POST Sapi v1 Algo Spot New Order Twap",
 					"action": "Time-Weighted Average Price (Twap) New Order",
 					"description": "Place a new spot TWAP order with Algo service.\n\nWeight(UID): 3000",
 					"routing": {
@@ -27,8 +27,8 @@ export const spotAlgoDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Sapi V 1 Algo Spot Order",
-					"value": "DELETE Sapi V 1 Algo Spot Order",
+					"name": "DELETE Sapi v1 Algo Spot Order",
+					"value": "DELETE Sapi v1 Algo Spot Order",
 					"action": "Cancel Algo Order",
 					"description": "Cancel an open TWAP order\n\nWeight(IP): 1",
 					"routing": {
@@ -39,8 +39,8 @@ export const spotAlgoDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Algo Spot Open Orders",
-					"value": "GET Sapi V 1 Algo Spot Open Orders",
+					"name": "GET Sapi v1 Algo Spot Open Orders",
+					"value": "GET Sapi v1 Algo Spot Open Orders",
 					"action": "Query Current Algo Open Orders",
 					"description": "Get all open SPOT TWAP orders\n\nWeight(IP): 1",
 					"routing": {
@@ -51,8 +51,8 @@ export const spotAlgoDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Algo Spot Historical Orders",
-					"value": "GET Sapi V 1 Algo Spot Historical Orders",
+					"name": "GET Sapi v1 Algo Spot Historical Orders",
+					"value": "GET Sapi v1 Algo Spot Historical Orders",
 					"action": "Query Historical Algo Orders",
 					"description": "Get all historical SPOT TWAP orders\n\nWeight(IP): 1",
 					"routing": {
@@ -63,8 +63,8 @@ export const spotAlgoDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Algo Spot Sub Orders",
-					"value": "GET Sapi V 1 Algo Spot Sub Orders",
+					"name": "GET Sapi v1 Algo Spot Sub Orders",
+					"value": "GET Sapi v1 Algo Spot Sub Orders",
 					"action": "Query Sub Orders",
 					"description": "Get respective sub orders for a specified algoId\n\nWeight(IP): 1",
 					"routing": {
@@ -91,7 +91,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Spot New Order Twap"
+						"POST Sapi v1 Algo Spot New Order Twap"
 					]
 				}
 			}
@@ -117,7 +117,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Spot New Order Twap"
+						"POST Sapi v1 Algo Spot New Order Twap"
 					]
 				}
 			}
@@ -152,7 +152,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Spot New Order Twap"
+						"POST Sapi v1 Algo Spot New Order Twap"
 					]
 				}
 			}
@@ -177,7 +177,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Spot New Order Twap"
+						"POST Sapi v1 Algo Spot New Order Twap"
 					]
 				}
 			}
@@ -202,13 +202,13 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Spot New Order Twap"
+						"POST Sapi v1 Algo Spot New Order Twap"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Client Algo Id",
+			"displayName": "Client Algo ID",
 			"name": "clientAlgoId",
 			"default": "",
 			"type": "string",
@@ -226,7 +226,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Spot New Order Twap"
+						"POST Sapi v1 Algo Spot New Order Twap"
 					]
 				}
 			}
@@ -250,7 +250,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Spot New Order Twap"
+						"POST Sapi v1 Algo Spot New Order Twap"
 					]
 				}
 			}
@@ -275,7 +275,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Spot New Order Twap"
+						"POST Sapi v1 Algo Spot New Order Twap"
 					]
 				}
 			}
@@ -301,7 +301,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Spot New Order Twap"
+						"POST Sapi v1 Algo Spot New Order Twap"
 					]
 				}
 			}
@@ -327,7 +327,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Spot New Order Twap"
+						"POST Sapi v1 Algo Spot New Order Twap"
 					]
 				}
 			}
@@ -352,7 +352,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Spot New Order Twap"
+						"POST Sapi v1 Algo Spot New Order Twap"
 					]
 				}
 			}
@@ -371,13 +371,13 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Spot Order"
+						"DELETE Sapi v1 Algo Spot Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Algo Id",
+			"displayName": "Algo ID",
 			"name": "algoId",
 			"required": true,
 			"default": 1,
@@ -396,7 +396,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Spot Order"
+						"DELETE Sapi v1 Algo Spot Order"
 					]
 				}
 			}
@@ -421,7 +421,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Spot Order"
+						"DELETE Sapi v1 Algo Spot Order"
 					]
 				}
 			}
@@ -447,7 +447,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Spot Order"
+						"DELETE Sapi v1 Algo Spot Order"
 					]
 				}
 			}
@@ -473,7 +473,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Spot Order"
+						"DELETE Sapi v1 Algo Spot Order"
 					]
 				}
 			}
@@ -498,7 +498,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Spot Order"
+						"DELETE Sapi v1 Algo Spot Order"
 					]
 				}
 			}
@@ -517,7 +517,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Open Orders"
+						"GET Sapi v1 Algo Spot Open Orders"
 					]
 				}
 			}
@@ -542,7 +542,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Open Orders"
+						"GET Sapi v1 Algo Spot Open Orders"
 					]
 				}
 			}
@@ -568,7 +568,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Open Orders"
+						"GET Sapi v1 Algo Spot Open Orders"
 					]
 				}
 			}
@@ -594,7 +594,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Open Orders"
+						"GET Sapi v1 Algo Spot Open Orders"
 					]
 				}
 			}
@@ -619,7 +619,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Open Orders"
+						"GET Sapi v1 Algo Spot Open Orders"
 					]
 				}
 			}
@@ -638,7 +638,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Historical Orders"
+						"GET Sapi v1 Algo Spot Historical Orders"
 					]
 				}
 			}
@@ -664,7 +664,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Historical Orders"
+						"GET Sapi v1 Algo Spot Historical Orders"
 					]
 				}
 			}
@@ -699,7 +699,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Historical Orders"
+						"GET Sapi v1 Algo Spot Historical Orders"
 					]
 				}
 			}
@@ -724,7 +724,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Historical Orders"
+						"GET Sapi v1 Algo Spot Historical Orders"
 					]
 				}
 			}
@@ -749,7 +749,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Historical Orders"
+						"GET Sapi v1 Algo Spot Historical Orders"
 					]
 				}
 			}
@@ -774,7 +774,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Historical Orders"
+						"GET Sapi v1 Algo Spot Historical Orders"
 					]
 				}
 			}
@@ -799,7 +799,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Historical Orders"
+						"GET Sapi v1 Algo Spot Historical Orders"
 					]
 				}
 			}
@@ -824,7 +824,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Historical Orders"
+						"GET Sapi v1 Algo Spot Historical Orders"
 					]
 				}
 			}
@@ -850,7 +850,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Historical Orders"
+						"GET Sapi v1 Algo Spot Historical Orders"
 					]
 				}
 			}
@@ -876,7 +876,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Historical Orders"
+						"GET Sapi v1 Algo Spot Historical Orders"
 					]
 				}
 			}
@@ -901,7 +901,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Historical Orders"
+						"GET Sapi v1 Algo Spot Historical Orders"
 					]
 				}
 			}
@@ -920,13 +920,13 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Sub Orders"
+						"GET Sapi v1 Algo Spot Sub Orders"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Algo Id",
+			"displayName": "Algo ID",
 			"name": "algoId",
 			"required": true,
 			"default": 0,
@@ -945,7 +945,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Sub Orders"
+						"GET Sapi v1 Algo Spot Sub Orders"
 					]
 				}
 			}
@@ -970,7 +970,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Sub Orders"
+						"GET Sapi v1 Algo Spot Sub Orders"
 					]
 				}
 			}
@@ -995,7 +995,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Sub Orders"
+						"GET Sapi v1 Algo Spot Sub Orders"
 					]
 				}
 			}
@@ -1020,7 +1020,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Sub Orders"
+						"GET Sapi v1 Algo Spot Sub Orders"
 					]
 				}
 			}
@@ -1046,7 +1046,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Sub Orders"
+						"GET Sapi v1 Algo Spot Sub Orders"
 					]
 				}
 			}
@@ -1072,7 +1072,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Sub Orders"
+						"GET Sapi v1 Algo Spot Sub Orders"
 					]
 				}
 			}
@@ -1097,7 +1097,7 @@ export const spotAlgoDescription: INodeProperties[] = [
 						"Spot Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Spot Sub Orders"
+						"GET Sapi v1 Algo Spot Sub Orders"
 					]
 				}
 			}

@@ -15,8 +15,8 @@ export const autoInvestDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest Target Asset List",
-					"value": "GET Sapi V 1 Lending Auto Invest Target Asset List",
+					"name": "GET Sapi v1 Lending Auto Invest Target Asset List",
+					"value": "GET Sapi v1 Lending Auto Invest Target Asset List",
 					"action": "Get target asset list (USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest Target Asset Roi List",
-					"value": "GET Sapi V 1 Lending Auto Invest Target Asset Roi List",
+					"name": "GET Sapi v1 Lending Auto Invest Target Asset Roi List",
+					"value": "GET Sapi v1 Lending Auto Invest Target Asset Roi List",
 					"action": "Get target asset ROI data (USER_DATA)",
 					"description": "ROI return list for target asset\n\nWeight(IP): 1",
 					"routing": {
@@ -39,8 +39,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest All Asset",
-					"value": "GET Sapi V 1 Lending Auto Invest All Asset",
+					"name": "GET Sapi v1 Lending Auto Invest All Asset",
+					"value": "GET Sapi v1 Lending Auto Invest All Asset",
 					"action": "Query all source asset and target asset (USER_DATA)",
 					"description": "Query all source assets and target assets\n\nWeight(IP): 1",
 					"routing": {
@@ -51,8 +51,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest Source Asset List",
-					"value": "GET Sapi V 1 Lending Auto Invest Source Asset List",
+					"name": "GET Sapi v1 Lending Auto Invest Source Asset List",
+					"value": "GET Sapi v1 Lending Auto Invest Source Asset List",
 					"action": "Query source asset list (USER_DATA)",
 					"description": "Query Source Asset to be used for investment\n\nWeight(IP): 1",
 					"routing": {
@@ -63,8 +63,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Lending Auto Invest Plan Add",
-					"value": "POST Sapi V 1 Lending Auto Invest Plan Add",
+					"name": "POST Sapi v1 Lending Auto Invest Plan Add",
+					"value": "POST Sapi v1 Lending Auto Invest Plan Add",
 					"action": "Investment plan creation (USER_DATA)",
 					"description": "Post an investment plan creation\n\nWeight(IP): 1",
 					"routing": {
@@ -75,8 +75,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Lending Auto Invest Plan Edit",
-					"value": "POST Sapi V 1 Lending Auto Invest Plan Edit",
+					"name": "POST Sapi v1 Lending Auto Invest Plan Edit",
+					"value": "POST Sapi v1 Lending Auto Invest Plan Edit",
 					"action": "Investment plan adjustment",
 					"description": "Query Source Asset to be used for investment\n\nWeight(IP): 1",
 					"routing": {
@@ -87,8 +87,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Lending Auto Invest Plan Edit Status",
-					"value": "POST Sapi V 1 Lending Auto Invest Plan Edit Status",
+					"name": "POST Sapi v1 Lending Auto Invest Plan Edit Status",
+					"value": "POST Sapi v1 Lending Auto Invest Plan Edit Status",
 					"action": "Change Plan Status",
 					"description": "Change Plan Status\n\nWeight(IP): 1",
 					"routing": {
@@ -99,8 +99,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest Plan List",
-					"value": "GET Sapi V 1 Lending Auto Invest Plan List",
+					"name": "GET Sapi v1 Lending Auto Invest Plan List",
+					"value": "GET Sapi v1 Lending Auto Invest Plan List",
 					"action": "Get list of plans",
 					"description": "Query plan lists\n\nWeight(IP): 1",
 					"routing": {
@@ -111,8 +111,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest Plan Id",
-					"value": "GET Sapi V 1 Lending Auto Invest Plan Id",
+					"name": "GET Sapi v1 Lending Auto Invest Plan ID",
+					"value": "GET Sapi v1 Lending Auto Invest Plan ID",
 					"action": "Query holding details of the plan",
 					"description": "Query holding details of the plan\n\nWeight(IP): 1",
 					"routing": {
@@ -123,8 +123,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest History List",
-					"value": "GET Sapi V 1 Lending Auto Invest History List",
+					"name": "GET Sapi v1 Lending Auto Invest History List",
+					"value": "GET Sapi v1 Lending Auto Invest History List",
 					"action": "Query subscription transaction history",
 					"description": "Query subscription transaction history of a plan\n\nWeight(IP): 1",
 					"routing": {
@@ -135,8 +135,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest Index Info",
-					"value": "GET Sapi V 1 Lending Auto Invest Index Info",
+					"name": "GET Sapi v1 Lending Auto Invest Index Info",
+					"value": "GET Sapi v1 Lending Auto Invest Index Info",
 					"action": "Query Index Details(USER_DATA)",
 					"description": "Query index details\n\nWeight(IP): 1",
 					"routing": {
@@ -147,8 +147,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest Index User Summary",
-					"value": "GET Sapi V 1 Lending Auto Invest Index User Summary",
+					"name": "GET Sapi v1 Lending Auto Invest Index User Summary",
+					"value": "GET Sapi v1 Lending Auto Invest Index User Summary",
 					"action": "Query Index Linked Plan Position Details(USER_DATA)",
 					"description": "Details on users Index-Linked plan position details\n\nWeight(IP): 1",
 					"routing": {
@@ -159,8 +159,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Lending Auto Invest One Off",
-					"value": "POST Sapi V 1 Lending Auto Invest One Off",
+					"name": "POST Sapi v1 Lending Auto Invest One Off",
+					"value": "POST Sapi v1 Lending Auto Invest One Off",
 					"action": "One Time Transaction(TRADE)",
 					"description": "One time transaction\n\nWeight(IP): 1",
 					"routing": {
@@ -171,8 +171,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest One Off Status",
-					"value": "GET Sapi V 1 Lending Auto Invest One Off Status",
+					"name": "GET Sapi v1 Lending Auto Invest One Off Status",
+					"value": "GET Sapi v1 Lending Auto Invest One Off Status",
 					"action": "Query One-Time Transaction Status (USER_DATA)",
 					"description": "Transaction status for one-time transaction\n\nWeight(IP): 1",
 					"routing": {
@@ -183,8 +183,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Lending Auto Invest Redeem",
-					"value": "POST Sapi V 1 Lending Auto Invest Redeem",
+					"name": "POST Sapi v1 Lending Auto Invest Redeem",
+					"value": "POST Sapi v1 Lending Auto Invest Redeem",
 					"action": "Index Linked Plan Redemption (TRADE)",
 					"description": "To redeem index-Linked plan holdings\n\nWeight(IP): 1",
 					"routing": {
@@ -195,8 +195,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest Redeem History",
-					"value": "GET Sapi V 1 Lending Auto Invest Redeem History",
+					"name": "GET Sapi v1 Lending Auto Invest Redeem History",
+					"value": "GET Sapi v1 Lending Auto Invest Redeem History",
 					"action": "Index Linked Plan Redemption History (USER_DATA)",
 					"description": "Get the history of Index Linked Plan Redemption transactions\n\nMax 30 day difference between startTime and endTime\nIf no startTime and endTime, default to show past 30 day records\n\nWeight(IP): 1",
 					"routing": {
@@ -207,8 +207,8 @@ export const autoInvestDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Auto Invest Rebalance History",
-					"value": "GET Sapi V 1 Lending Auto Invest Rebalance History",
+					"name": "GET Sapi v1 Lending Auto Invest Rebalance History",
+					"value": "GET Sapi v1 Lending Auto Invest Rebalance History",
 					"action": "Index Linked Plan Rebalance Details (USER_DATA)",
 					"description": "Get the history of Index Linked Plan Redemption transactions\n\nMax 30 day difference between startTime and endTime\nIf no startTime and endTime, default to show past 30 day records\n\nWeight(IP): 1",
 					"routing": {
@@ -235,7 +235,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset List"
+						"GET Sapi v1 Lending Auto Invest Target Asset List"
 					]
 				}
 			}
@@ -259,7 +259,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset List"
+						"GET Sapi v1 Lending Auto Invest Target Asset List"
 					]
 				}
 			}
@@ -284,7 +284,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset List"
+						"GET Sapi v1 Lending Auto Invest Target Asset List"
 					]
 				}
 			}
@@ -309,7 +309,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset List"
+						"GET Sapi v1 Lending Auto Invest Target Asset List"
 					]
 				}
 			}
@@ -334,7 +334,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset List"
+						"GET Sapi v1 Lending Auto Invest Target Asset List"
 					]
 				}
 			}
@@ -360,7 +360,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset List"
+						"GET Sapi v1 Lending Auto Invest Target Asset List"
 					]
 				}
 			}
@@ -386,7 +386,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset List"
+						"GET Sapi v1 Lending Auto Invest Target Asset List"
 					]
 				}
 			}
@@ -411,7 +411,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset List"
+						"GET Sapi v1 Lending Auto Invest Target Asset List"
 					]
 				}
 			}
@@ -430,7 +430,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset Roi List"
+						"GET Sapi v1 Lending Auto Invest Target Asset Roi List"
 					]
 				}
 			}
@@ -455,7 +455,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset Roi List"
+						"GET Sapi v1 Lending Auto Invest Target Asset Roi List"
 					]
 				}
 			}
@@ -480,7 +480,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset Roi List"
+						"GET Sapi v1 Lending Auto Invest Target Asset Roi List"
 					]
 				}
 			}
@@ -505,7 +505,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset Roi List"
+						"GET Sapi v1 Lending Auto Invest Target Asset Roi List"
 					]
 				}
 			}
@@ -531,7 +531,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset Roi List"
+						"GET Sapi v1 Lending Auto Invest Target Asset Roi List"
 					]
 				}
 			}
@@ -557,7 +557,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset Roi List"
+						"GET Sapi v1 Lending Auto Invest Target Asset Roi List"
 					]
 				}
 			}
@@ -582,7 +582,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Target Asset Roi List"
+						"GET Sapi v1 Lending Auto Invest Target Asset Roi List"
 					]
 				}
 			}
@@ -601,7 +601,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest All Asset"
+						"GET Sapi v1 Lending Auto Invest All Asset"
 					]
 				}
 			}
@@ -626,7 +626,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest All Asset"
+						"GET Sapi v1 Lending Auto Invest All Asset"
 					]
 				}
 			}
@@ -652,7 +652,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest All Asset"
+						"GET Sapi v1 Lending Auto Invest All Asset"
 					]
 				}
 			}
@@ -678,7 +678,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest All Asset"
+						"GET Sapi v1 Lending Auto Invest All Asset"
 					]
 				}
 			}
@@ -703,7 +703,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest All Asset"
+						"GET Sapi v1 Lending Auto Invest All Asset"
 					]
 				}
 			}
@@ -722,7 +722,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Source Asset List"
+						"GET Sapi v1 Lending Auto Invest Source Asset List"
 					]
 				}
 			}
@@ -746,13 +746,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Source Asset List"
+						"GET Sapi v1 Lending Auto Invest Source Asset List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Index Id",
+			"displayName": "Index ID",
 			"name": "indexId",
 			"default": 1,
 			"type": "number",
@@ -770,7 +770,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Source Asset List"
+						"GET Sapi v1 Lending Auto Invest Source Asset List"
 					]
 				}
 			}
@@ -795,7 +795,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Source Asset List"
+						"GET Sapi v1 Lending Auto Invest Source Asset List"
 					]
 				}
 			}
@@ -819,7 +819,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Source Asset List"
+						"GET Sapi v1 Lending Auto Invest Source Asset List"
 					]
 				}
 			}
@@ -844,7 +844,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Source Asset List"
+						"GET Sapi v1 Lending Auto Invest Source Asset List"
 					]
 				}
 			}
@@ -870,7 +870,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Source Asset List"
+						"GET Sapi v1 Lending Auto Invest Source Asset List"
 					]
 				}
 			}
@@ -896,7 +896,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Source Asset List"
+						"GET Sapi v1 Lending Auto Invest Source Asset List"
 					]
 				}
 			}
@@ -921,7 +921,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Source Asset List"
+						"GET Sapi v1 Lending Auto Invest Source Asset List"
 					]
 				}
 			}
@@ -940,7 +940,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -975,13 +975,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"default": "",
 			"type": "string",
@@ -999,7 +999,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1038,13 +1038,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Index Id",
+			"displayName": "Index ID",
 			"name": "IndexId",
 			"default": 0,
 			"type": "number",
@@ -1062,7 +1062,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1087,7 +1087,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1146,7 +1146,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1170,7 +1170,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1224,7 +1224,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1249,7 +1249,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1274,7 +1274,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1298,7 +1298,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1323,7 +1323,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1348,7 +1348,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1374,7 +1374,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1400,7 +1400,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1425,7 +1425,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Add"
+						"POST Sapi v1 Lending Auto Invest Plan Add"
 					]
 				}
 			}
@@ -1444,13 +1444,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Plan Id",
+			"displayName": "Plan ID",
 			"name": "planId",
 			"required": true,
 			"default": 0,
@@ -1469,7 +1469,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1494,7 +1494,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1553,7 +1553,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1577,7 +1577,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1631,7 +1631,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1656,7 +1656,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1681,7 +1681,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1705,7 +1705,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1729,7 +1729,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1754,7 +1754,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1780,7 +1780,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1806,7 +1806,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1831,7 +1831,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit"
+						"POST Sapi v1 Lending Auto Invest Plan Edit"
 					]
 				}
 			}
@@ -1850,13 +1850,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit Status"
+						"POST Sapi v1 Lending Auto Invest Plan Edit Status"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Plan Id",
+			"displayName": "Plan ID",
 			"name": "planId",
 			"required": true,
 			"default": 0,
@@ -1875,7 +1875,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit Status"
+						"POST Sapi v1 Lending Auto Invest Plan Edit Status"
 					]
 				}
 			}
@@ -1914,7 +1914,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit Status"
+						"POST Sapi v1 Lending Auto Invest Plan Edit Status"
 					]
 				}
 			}
@@ -1939,7 +1939,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit Status"
+						"POST Sapi v1 Lending Auto Invest Plan Edit Status"
 					]
 				}
 			}
@@ -1965,7 +1965,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit Status"
+						"POST Sapi v1 Lending Auto Invest Plan Edit Status"
 					]
 				}
 			}
@@ -1991,7 +1991,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit Status"
+						"POST Sapi v1 Lending Auto Invest Plan Edit Status"
 					]
 				}
 			}
@@ -2016,7 +2016,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Plan Edit Status"
+						"POST Sapi v1 Lending Auto Invest Plan Edit Status"
 					]
 				}
 			}
@@ -2035,7 +2035,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan List"
+						"GET Sapi v1 Lending Auto Invest Plan List"
 					]
 				}
 			}
@@ -2060,7 +2060,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan List"
+						"GET Sapi v1 Lending Auto Invest Plan List"
 					]
 				}
 			}
@@ -2085,7 +2085,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan List"
+						"GET Sapi v1 Lending Auto Invest Plan List"
 					]
 				}
 			}
@@ -2111,7 +2111,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan List"
+						"GET Sapi v1 Lending Auto Invest Plan List"
 					]
 				}
 			}
@@ -2137,7 +2137,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan List"
+						"GET Sapi v1 Lending Auto Invest Plan List"
 					]
 				}
 			}
@@ -2162,7 +2162,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan List"
+						"GET Sapi v1 Lending Auto Invest Plan List"
 					]
 				}
 			}
@@ -2181,13 +2181,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan Id"
+						"GET Sapi v1 Lending Auto Invest Plan ID"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Plan Id",
+			"displayName": "Plan ID",
 			"name": "planId",
 			"default": 0,
 			"type": "number",
@@ -2205,13 +2205,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan Id"
+						"GET Sapi v1 Lending Auto Invest Plan ID"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"default": "",
 			"type": "string",
@@ -2229,7 +2229,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan Id"
+						"GET Sapi v1 Lending Auto Invest Plan ID"
 					]
 				}
 			}
@@ -2254,7 +2254,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan Id"
+						"GET Sapi v1 Lending Auto Invest Plan ID"
 					]
 				}
 			}
@@ -2280,7 +2280,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan Id"
+						"GET Sapi v1 Lending Auto Invest Plan ID"
 					]
 				}
 			}
@@ -2306,7 +2306,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan Id"
+						"GET Sapi v1 Lending Auto Invest Plan ID"
 					]
 				}
 			}
@@ -2331,7 +2331,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Plan Id"
+						"GET Sapi v1 Lending Auto Invest Plan ID"
 					]
 				}
 			}
@@ -2350,13 +2350,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Plan Id",
+			"displayName": "Plan ID",
 			"name": "planId",
 			"default": 0,
 			"type": "number",
@@ -2374,7 +2374,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
@@ -2399,7 +2399,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
@@ -2424,7 +2424,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
@@ -2448,7 +2448,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
@@ -2490,7 +2490,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
@@ -2515,7 +2515,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
@@ -2540,7 +2540,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
@@ -2565,7 +2565,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
@@ -2591,7 +2591,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
@@ -2617,7 +2617,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
@@ -2642,7 +2642,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest History List"
+						"GET Sapi v1 Lending Auto Invest History List"
 					]
 				}
 			}
@@ -2661,13 +2661,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index Info"
+						"GET Sapi v1 Lending Auto Invest Index Info"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Index Id",
+			"displayName": "Index ID",
 			"name": "indexId",
 			"required": true,
 			"default": 0,
@@ -2686,7 +2686,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index Info"
+						"GET Sapi v1 Lending Auto Invest Index Info"
 					]
 				}
 			}
@@ -2711,7 +2711,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index Info"
+						"GET Sapi v1 Lending Auto Invest Index Info"
 					]
 				}
 			}
@@ -2737,7 +2737,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index Info"
+						"GET Sapi v1 Lending Auto Invest Index Info"
 					]
 				}
 			}
@@ -2763,7 +2763,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index Info"
+						"GET Sapi v1 Lending Auto Invest Index Info"
 					]
 				}
 			}
@@ -2788,7 +2788,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index Info"
+						"GET Sapi v1 Lending Auto Invest Index Info"
 					]
 				}
 			}
@@ -2807,13 +2807,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index User Summary"
+						"GET Sapi v1 Lending Auto Invest Index User Summary"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Index Id",
+			"displayName": "Index ID",
 			"name": "indexId",
 			"required": true,
 			"default": 0,
@@ -2832,7 +2832,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index User Summary"
+						"GET Sapi v1 Lending Auto Invest Index User Summary"
 					]
 				}
 			}
@@ -2857,7 +2857,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index User Summary"
+						"GET Sapi v1 Lending Auto Invest Index User Summary"
 					]
 				}
 			}
@@ -2883,7 +2883,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index User Summary"
+						"GET Sapi v1 Lending Auto Invest Index User Summary"
 					]
 				}
 			}
@@ -2909,7 +2909,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index User Summary"
+						"GET Sapi v1 Lending Auto Invest Index User Summary"
 					]
 				}
 			}
@@ -2934,7 +2934,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Index User Summary"
+						"GET Sapi v1 Lending Auto Invest Index User Summary"
 					]
 				}
 			}
@@ -2953,7 +2953,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
@@ -2978,13 +2978,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"default": "TR12354859",
 			"type": "string",
@@ -3002,7 +3002,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
@@ -3027,7 +3027,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
@@ -3052,7 +3052,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
@@ -3076,13 +3076,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Plan Id",
+			"displayName": "Plan ID",
 			"name": "planId",
 			"default": 12345,
 			"type": "number",
@@ -3100,13 +3100,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Index Id",
+			"displayName": "Index ID",
 			"name": "indexId",
 			"default": 1,
 			"type": "number",
@@ -3124,7 +3124,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
@@ -3148,7 +3148,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
@@ -3173,7 +3173,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
@@ -3199,7 +3199,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
@@ -3225,7 +3225,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
@@ -3250,7 +3250,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest One Off"
+						"POST Sapi v1 Lending Auto Invest One Off"
 					]
 				}
 			}
@@ -3269,13 +3269,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest One Off Status"
+						"GET Sapi v1 Lending Auto Invest One Off Status"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Transaction Id",
+			"displayName": "Transaction ID",
 			"name": "transactionId",
 			"required": true,
 			"default": 12345,
@@ -3294,13 +3294,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest One Off Status"
+						"GET Sapi v1 Lending Auto Invest One Off Status"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"default": "TR12354859",
 			"type": "string",
@@ -3318,7 +3318,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest One Off Status"
+						"GET Sapi v1 Lending Auto Invest One Off Status"
 					]
 				}
 			}
@@ -3343,7 +3343,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest One Off Status"
+						"GET Sapi v1 Lending Auto Invest One Off Status"
 					]
 				}
 			}
@@ -3369,7 +3369,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest One Off Status"
+						"GET Sapi v1 Lending Auto Invest One Off Status"
 					]
 				}
 			}
@@ -3395,7 +3395,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest One Off Status"
+						"GET Sapi v1 Lending Auto Invest One Off Status"
 					]
 				}
 			}
@@ -3420,7 +3420,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest One Off Status"
+						"GET Sapi v1 Lending Auto Invest One Off Status"
 					]
 				}
 			}
@@ -3439,13 +3439,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Redeem"
+						"POST Sapi v1 Lending Auto Invest Redeem"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Index Id",
+			"displayName": "Index ID",
 			"name": "indexId",
 			"required": true,
 			"description": "PORTFOLIO plan's Id",
@@ -3465,13 +3465,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Redeem"
+						"POST Sapi v1 Lending Auto Invest Redeem"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"description": "sourceType + unique, transactionId and requestId cannot be empty at the same time",
 			"default": "TR12354859",
@@ -3490,7 +3490,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Redeem"
+						"POST Sapi v1 Lending Auto Invest Redeem"
 					]
 				}
 			}
@@ -3516,7 +3516,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Redeem"
+						"POST Sapi v1 Lending Auto Invest Redeem"
 					]
 				}
 			}
@@ -3541,7 +3541,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Redeem"
+						"POST Sapi v1 Lending Auto Invest Redeem"
 					]
 				}
 			}
@@ -3567,7 +3567,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Redeem"
+						"POST Sapi v1 Lending Auto Invest Redeem"
 					]
 				}
 			}
@@ -3593,7 +3593,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Redeem"
+						"POST Sapi v1 Lending Auto Invest Redeem"
 					]
 				}
 			}
@@ -3618,7 +3618,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Auto Invest Redeem"
+						"POST Sapi v1 Lending Auto Invest Redeem"
 					]
 				}
 			}
@@ -3637,13 +3637,13 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Redeem History"
+						"GET Sapi v1 Lending Auto Invest Redeem History"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"required": true,
 			"default": 12345,
@@ -3662,7 +3662,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Redeem History"
+						"GET Sapi v1 Lending Auto Invest Redeem History"
 					]
 				}
 			}
@@ -3687,7 +3687,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Redeem History"
+						"GET Sapi v1 Lending Auto Invest Redeem History"
 					]
 				}
 			}
@@ -3712,7 +3712,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Redeem History"
+						"GET Sapi v1 Lending Auto Invest Redeem History"
 					]
 				}
 			}
@@ -3737,7 +3737,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Redeem History"
+						"GET Sapi v1 Lending Auto Invest Redeem History"
 					]
 				}
 			}
@@ -3761,7 +3761,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Redeem History"
+						"GET Sapi v1 Lending Auto Invest Redeem History"
 					]
 				}
 			}
@@ -3786,7 +3786,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Redeem History"
+						"GET Sapi v1 Lending Auto Invest Redeem History"
 					]
 				}
 			}
@@ -3811,7 +3811,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Redeem History"
+						"GET Sapi v1 Lending Auto Invest Redeem History"
 					]
 				}
 			}
@@ -3837,7 +3837,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Redeem History"
+						"GET Sapi v1 Lending Auto Invest Redeem History"
 					]
 				}
 			}
@@ -3863,7 +3863,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Redeem History"
+						"GET Sapi v1 Lending Auto Invest Redeem History"
 					]
 				}
 			}
@@ -3888,7 +3888,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Redeem History"
+						"GET Sapi v1 Lending Auto Invest Redeem History"
 					]
 				}
 			}
@@ -3907,7 +3907,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Rebalance History"
+						"GET Sapi v1 Lending Auto Invest Rebalance History"
 					]
 				}
 			}
@@ -3932,7 +3932,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Rebalance History"
+						"GET Sapi v1 Lending Auto Invest Rebalance History"
 					]
 				}
 			}
@@ -3957,7 +3957,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Rebalance History"
+						"GET Sapi v1 Lending Auto Invest Rebalance History"
 					]
 				}
 			}
@@ -3982,7 +3982,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Rebalance History"
+						"GET Sapi v1 Lending Auto Invest Rebalance History"
 					]
 				}
 			}
@@ -4007,7 +4007,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Rebalance History"
+						"GET Sapi v1 Lending Auto Invest Rebalance History"
 					]
 				}
 			}
@@ -4032,7 +4032,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Rebalance History"
+						"GET Sapi v1 Lending Auto Invest Rebalance History"
 					]
 				}
 			}
@@ -4058,7 +4058,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Rebalance History"
+						"GET Sapi v1 Lending Auto Invest Rebalance History"
 					]
 				}
 			}
@@ -4084,7 +4084,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Rebalance History"
+						"GET Sapi v1 Lending Auto Invest Rebalance History"
 					]
 				}
 			}
@@ -4109,7 +4109,7 @@ export const autoInvestDescription: INodeProperties[] = [
 						"Auto Invest"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Auto Invest Rebalance History"
+						"GET Sapi v1 Lending Auto Invest Rebalance History"
 					]
 				}
 			}

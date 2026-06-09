@@ -31,14 +31,14 @@ import { dualInvestmentDescription } from './resources/dual-investment';
 
 export class Binance implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'binance',
+		displayName: 'Binance',
 		name: 'N8nDevBinance',
 		icon: { light: 'file:./binance.svg', dark: 'file:./binance.dark.svg' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
 		description: 'Binance global cryptocurrency exchange supporting spot futures and margin trading with deep liquidity and advanced order types',
-		defaults: { name: 'binance' },
+		defaults: { name: 'Binance' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],

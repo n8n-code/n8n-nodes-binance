@@ -8,7 +8,7 @@ import type {
 export class BinanceApi implements ICredentialType {
 	name = 'N8nDevBinanceApi';
 
-	displayName = 'binance API';
+	displayName = 'Binance API';
 
 	icon: Icon = { light: 'file:../nodes/Binance/binance.svg', dark: 'file:../nodes/Binance/binance.dark.svg' };
 
@@ -22,7 +22,7 @@ export class BinanceApi implements ICredentialType {
 			default: 'https://api.binance.com',
 			required: true,
 			placeholder: 'https://api.binance.com',
-			description: 'The base URL of your binance API server',
+			description: 'The base URL of your Binance API server',
 		},
 		{
 			displayName: 'API Key',

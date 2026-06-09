@@ -15,8 +15,8 @@ export const savingsDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET Sapi V 1 Lending Project List",
-					"value": "GET Sapi V 1 Lending Project List",
+					"name": "GET Sapi v1 Lending Project List",
+					"value": "GET Sapi v1 Lending Project List",
 					"action": "Get Fixed/Activity Project List(USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -27,8 +27,8 @@ export const savingsDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Lending Customized Fixed Purchase",
-					"value": "POST Sapi V 1 Lending Customized Fixed Purchase",
+					"name": "POST Sapi v1 Lending Customized Fixed Purchase",
+					"value": "POST Sapi v1 Lending Customized Fixed Purchase",
 					"action": "Purchase Fixed/Activity Project (USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -39,8 +39,8 @@ export const savingsDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Lending Project Position List",
-					"value": "GET Sapi V 1 Lending Project Position List",
+					"name": "GET Sapi v1 Lending Project Position List",
+					"value": "GET Sapi v1 Lending Project Position List",
 					"action": "Get Fixed/Activity Project Position (USER_DATA)",
 					"description": "Weight(IP): 1",
 					"routing": {
@@ -51,8 +51,8 @@ export const savingsDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Lending Position Changed",
-					"value": "POST Sapi V 1 Lending Position Changed",
+					"name": "POST Sapi v1 Lending Position Changed",
+					"value": "POST Sapi v1 Lending Position Changed",
 					"action": "Change Fixed/Activity Position to Daily Position (USER_DATA)",
 					"description": "- PositionId is mandatory parameter for fixed position.\n\nWeight(IP): 1",
 					"routing": {
@@ -79,7 +79,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -103,7 +103,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -138,7 +138,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -177,7 +177,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -202,7 +202,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -245,7 +245,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -270,7 +270,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -295,7 +295,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -320,7 +320,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -346,7 +346,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -372,7 +372,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -397,7 +397,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project List"
+						"GET Sapi v1 Lending Project List"
 					]
 				}
 			}
@@ -416,13 +416,13 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Customized Fixed Purchase"
+						"POST Sapi v1 Lending Customized Fixed Purchase"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Project Id",
+			"displayName": "Project ID",
 			"name": "projectId",
 			"required": true,
 			"default": "",
@@ -441,7 +441,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Customized Fixed Purchase"
+						"POST Sapi v1 Lending Customized Fixed Purchase"
 					]
 				}
 			}
@@ -466,7 +466,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Customized Fixed Purchase"
+						"POST Sapi v1 Lending Customized Fixed Purchase"
 					]
 				}
 			}
@@ -491,7 +491,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Customized Fixed Purchase"
+						"POST Sapi v1 Lending Customized Fixed Purchase"
 					]
 				}
 			}
@@ -517,7 +517,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Customized Fixed Purchase"
+						"POST Sapi v1 Lending Customized Fixed Purchase"
 					]
 				}
 			}
@@ -543,7 +543,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Customized Fixed Purchase"
+						"POST Sapi v1 Lending Customized Fixed Purchase"
 					]
 				}
 			}
@@ -568,7 +568,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Customized Fixed Purchase"
+						"POST Sapi v1 Lending Customized Fixed Purchase"
 					]
 				}
 			}
@@ -587,7 +587,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project Position List"
+						"GET Sapi v1 Lending Project Position List"
 					]
 				}
 			}
@@ -612,13 +612,13 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project Position List"
+						"GET Sapi v1 Lending Project Position List"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Project Id",
+			"displayName": "Project ID",
 			"name": "projectId",
 			"default": "",
 			"type": "string",
@@ -636,7 +636,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project Position List"
+						"GET Sapi v1 Lending Project Position List"
 					]
 				}
 			}
@@ -675,7 +675,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project Position List"
+						"GET Sapi v1 Lending Project Position List"
 					]
 				}
 			}
@@ -700,7 +700,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project Position List"
+						"GET Sapi v1 Lending Project Position List"
 					]
 				}
 			}
@@ -726,7 +726,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project Position List"
+						"GET Sapi v1 Lending Project Position List"
 					]
 				}
 			}
@@ -752,7 +752,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project Position List"
+						"GET Sapi v1 Lending Project Position List"
 					]
 				}
 			}
@@ -777,7 +777,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"GET Sapi V 1 Lending Project Position List"
+						"GET Sapi v1 Lending Project Position List"
 					]
 				}
 			}
@@ -796,13 +796,13 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Position Changed"
+						"POST Sapi v1 Lending Position Changed"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Project Id",
+			"displayName": "Project ID",
 			"name": "projectId",
 			"required": true,
 			"default": "",
@@ -821,7 +821,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Position Changed"
+						"POST Sapi v1 Lending Position Changed"
 					]
 				}
 			}
@@ -846,13 +846,13 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Position Changed"
+						"POST Sapi v1 Lending Position Changed"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Position Id",
+			"displayName": "Position ID",
 			"name": "positionId",
 			"default": "",
 			"type": "string",
@@ -870,7 +870,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Position Changed"
+						"POST Sapi v1 Lending Position Changed"
 					]
 				}
 			}
@@ -895,7 +895,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Position Changed"
+						"POST Sapi v1 Lending Position Changed"
 					]
 				}
 			}
@@ -921,7 +921,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Position Changed"
+						"POST Sapi v1 Lending Position Changed"
 					]
 				}
 			}
@@ -947,7 +947,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Position Changed"
+						"POST Sapi v1 Lending Position Changed"
 					]
 				}
 			}
@@ -972,7 +972,7 @@ export const savingsDescription: INodeProperties[] = [
 						"Savings"
 					],
 					"operation": [
-						"POST Sapi V 1 Lending Position Changed"
+						"POST Sapi v1 Lending Position Changed"
 					]
 				}
 			}

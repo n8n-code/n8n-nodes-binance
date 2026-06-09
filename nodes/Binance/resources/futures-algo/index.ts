@@ -15,8 +15,8 @@ export const futuresAlgoDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST Sapi V 1 Algo Futures New Order Vp",
-					"value": "POST Sapi V 1 Algo Futures New Order Vp",
+					"name": "POST Sapi v1 Algo Futures New Order Vp",
+					"value": "POST Sapi v1 Algo Futures New Order Vp",
 					"action": "Volume Participation(VP) New Order (TRADE)",
 					"description": "Send in a VP new order. Only support on USDⓈ-M Contracts.\n\n- You need to enable `Futures Trading Permission` for the api key which requests this endpoint.\n- Base URL: https://api.binance.com\n\n- Total Algo open orders max allowed: 10 orders.\n- Leverage of symbols and position mode will be the same as your futures account settings. You can set up through the trading page or fapi.\n- Receiving \"success\": true does not mean that your order will be executed. Please use the query order endpoints(GET sapi/v1/algo/futures/openOrders or GET sapi/v1/algo/futures/historicalOrders) to check the order status. For example: Your futures balance is insufficient, or open position with reduce only or position side is inconsistent with your own setting. In these cases you will receive \"success\": true, but the order status will be expired after we check it.\n\nWeight(UID): 3000",
 					"routing": {
@@ -27,8 +27,8 @@ export const futuresAlgoDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST Sapi V 1 Algo Futures New Order Twap",
-					"value": "POST Sapi V 1 Algo Futures New Order Twap",
+					"name": "POST Sapi v1 Algo Futures New Order Twap",
+					"value": "POST Sapi v1 Algo Futures New Order Twap",
 					"action": "Time-Weighted Average Price(Twap) New Order (TRADE)",
 					"description": "Send in a Twap new order. Only support on USDⓈ-M Contracts.\n\nYou need to enable Futures Trading Permission for the api key which requests this endpoint.\nBase URL: https://api.binance.com\n\n- Total Algo open orders max allowed: 10 orders.\n- Leverage of symbols and position mode will be the same as your futures account settings. You can set up through the trading page or fapi.\n- Receiving \"success\": true does not mean that your order will be executed. Please use the query order endpoints(GET sapi/v1/algo/futures/openOrders or GET sapi/v1/algo/futures/historicalOrders) to check the order status. For example: Your futures balance is insufficient, or open position with reduce only or position side is inconsistent with your own setting. In these cases you will receive \"success\": true, but the order status will be expired after we check it.\n- quantity * 60 / duration should be larger than minQty\n- duration cannot be less than 5 mins or more than 24 hours.\n- For delivery contracts, TWAP end time should be one hour earlier than the delivery time of the symbol.\n\nWeight(UID): 3000",
 					"routing": {
@@ -39,8 +39,8 @@ export const futuresAlgoDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "DELETE Sapi V 1 Algo Futures Order",
-					"value": "DELETE Sapi V 1 Algo Futures Order",
+					"name": "DELETE Sapi v1 Algo Futures Order",
+					"value": "DELETE Sapi v1 Algo Futures Order",
 					"action": "Cancel Algo Order(TRADE)",
 					"description": "Cancel an active order.\n- You need to enable Futures Trading Permission for the api key which requests this endpoint.\n- Base URL: https://api.binance.com\n\nWeight(IP): 1",
 					"routing": {
@@ -51,8 +51,8 @@ export const futuresAlgoDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Algo Futures Open Orders",
-					"value": "GET Sapi V 1 Algo Futures Open Orders",
+					"name": "GET Sapi v1 Algo Futures Open Orders",
+					"value": "GET Sapi v1 Algo Futures Open Orders",
 					"action": "Query Current Algo Open Orders (USER_DATA)",
 					"description": "- You need to enable Futures Trading Permission for the api key which requests this endpoint.\n- Base URL: https://api.binance.com\n\nWeight(IP): 1",
 					"routing": {
@@ -63,8 +63,8 @@ export const futuresAlgoDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Algo Futures Historical Orders",
-					"value": "GET Sapi V 1 Algo Futures Historical Orders",
+					"name": "GET Sapi v1 Algo Futures Historical Orders",
+					"value": "GET Sapi v1 Algo Futures Historical Orders",
 					"action": "Query Historical Algo Orders (USER_DATA)",
 					"description": "- You need to enable Futures Trading Permission for the api key which requests this endpoint.\n- Base URL: https://api.binance.com\n\nWeight(IP): 1",
 					"routing": {
@@ -75,8 +75,8 @@ export const futuresAlgoDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET Sapi V 1 Algo Futures Sub Orders",
-					"value": "GET Sapi V 1 Algo Futures Sub Orders",
+					"name": "GET Sapi v1 Algo Futures Sub Orders",
+					"value": "GET Sapi v1 Algo Futures Sub Orders",
 					"action": "Query Sub Orders (USER_DATA)",
 					"description": "- You need to enable Futures Trading Permission for the api key which requests this endpoint.\n- Base URL: https://api.binance.com\n\nWeight(IP): 1",
 					"routing": {
@@ -103,7 +103,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -129,7 +129,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -164,7 +164,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -203,7 +203,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -229,7 +229,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -269,13 +269,13 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Client Algo Id",
+			"displayName": "Client Algo ID",
 			"name": "clientAlgoId",
 			"description": "A unique id among Algo orders (length should be 32 characters)， If it is not sent, we will give default value",
 			"default": "00358ce6a268403398bd34eaa36dffe7",
@@ -294,7 +294,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -319,7 +319,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -344,7 +344,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -369,7 +369,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -395,7 +395,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -421,7 +421,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -446,7 +446,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Vp"
+						"POST Sapi v1 Algo Futures New Order Vp"
 					]
 				}
 			}
@@ -465,7 +465,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -491,7 +491,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -526,7 +526,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -565,7 +565,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -591,7 +591,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -617,13 +617,13 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Client Algo Id",
+			"displayName": "Client Algo ID",
 			"name": "clientAlgoId",
 			"description": "A unique id among Algo orders (length should be 32 characters)， If it is not sent, we will give default value",
 			"default": "00358ce6a268403398bd34eaa36dffe7",
@@ -642,7 +642,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -667,7 +667,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -692,7 +692,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -717,7 +717,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -743,7 +743,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -769,7 +769,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -794,7 +794,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"POST Sapi V 1 Algo Futures New Order Twap"
+						"POST Sapi v1 Algo Futures New Order Twap"
 					]
 				}
 			}
@@ -813,13 +813,13 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Futures Order"
+						"DELETE Sapi v1 Algo Futures Order"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Algo Id",
+			"displayName": "Algo ID",
 			"name": "algoId",
 			"required": true,
 			"description": "Eg. 14511",
@@ -839,7 +839,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Futures Order"
+						"DELETE Sapi v1 Algo Futures Order"
 					]
 				}
 			}
@@ -864,7 +864,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Futures Order"
+						"DELETE Sapi v1 Algo Futures Order"
 					]
 				}
 			}
@@ -890,7 +890,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Futures Order"
+						"DELETE Sapi v1 Algo Futures Order"
 					]
 				}
 			}
@@ -916,7 +916,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Futures Order"
+						"DELETE Sapi v1 Algo Futures Order"
 					]
 				}
 			}
@@ -941,7 +941,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"DELETE Sapi V 1 Algo Futures Order"
+						"DELETE Sapi v1 Algo Futures Order"
 					]
 				}
 			}
@@ -960,7 +960,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Open Orders"
+						"GET Sapi v1 Algo Futures Open Orders"
 					]
 				}
 			}
@@ -985,7 +985,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Open Orders"
+						"GET Sapi v1 Algo Futures Open Orders"
 					]
 				}
 			}
@@ -1011,7 +1011,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Open Orders"
+						"GET Sapi v1 Algo Futures Open Orders"
 					]
 				}
 			}
@@ -1037,7 +1037,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Open Orders"
+						"GET Sapi v1 Algo Futures Open Orders"
 					]
 				}
 			}
@@ -1062,7 +1062,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Open Orders"
+						"GET Sapi v1 Algo Futures Open Orders"
 					]
 				}
 			}
@@ -1081,7 +1081,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Historical Orders"
+						"GET Sapi v1 Algo Futures Historical Orders"
 					]
 				}
 			}
@@ -1106,7 +1106,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Historical Orders"
+						"GET Sapi v1 Algo Futures Historical Orders"
 					]
 				}
 			}
@@ -1140,7 +1140,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Historical Orders"
+						"GET Sapi v1 Algo Futures Historical Orders"
 					]
 				}
 			}
@@ -1165,7 +1165,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Historical Orders"
+						"GET Sapi v1 Algo Futures Historical Orders"
 					]
 				}
 			}
@@ -1190,7 +1190,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Historical Orders"
+						"GET Sapi v1 Algo Futures Historical Orders"
 					]
 				}
 			}
@@ -1215,7 +1215,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Historical Orders"
+						"GET Sapi v1 Algo Futures Historical Orders"
 					]
 				}
 			}
@@ -1240,7 +1240,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Historical Orders"
+						"GET Sapi v1 Algo Futures Historical Orders"
 					]
 				}
 			}
@@ -1265,7 +1265,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Historical Orders"
+						"GET Sapi v1 Algo Futures Historical Orders"
 					]
 				}
 			}
@@ -1291,7 +1291,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Historical Orders"
+						"GET Sapi v1 Algo Futures Historical Orders"
 					]
 				}
 			}
@@ -1317,7 +1317,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Historical Orders"
+						"GET Sapi v1 Algo Futures Historical Orders"
 					]
 				}
 			}
@@ -1342,7 +1342,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Historical Orders"
+						"GET Sapi v1 Algo Futures Historical Orders"
 					]
 				}
 			}
@@ -1361,13 +1361,13 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Sub Orders"
+						"GET Sapi v1 Algo Futures Sub Orders"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Algo Id",
+			"displayName": "Algo ID",
 			"name": "algoId",
 			"required": true,
 			"default": 0,
@@ -1386,7 +1386,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Sub Orders"
+						"GET Sapi v1 Algo Futures Sub Orders"
 					]
 				}
 			}
@@ -1411,7 +1411,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Sub Orders"
+						"GET Sapi v1 Algo Futures Sub Orders"
 					]
 				}
 			}
@@ -1436,7 +1436,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Sub Orders"
+						"GET Sapi v1 Algo Futures Sub Orders"
 					]
 				}
 			}
@@ -1461,7 +1461,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Sub Orders"
+						"GET Sapi v1 Algo Futures Sub Orders"
 					]
 				}
 			}
@@ -1487,7 +1487,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Sub Orders"
+						"GET Sapi v1 Algo Futures Sub Orders"
 					]
 				}
 			}
@@ -1513,7 +1513,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Sub Orders"
+						"GET Sapi v1 Algo Futures Sub Orders"
 					]
 				}
 			}
@@ -1538,7 +1538,7 @@ export const futuresAlgoDescription: INodeProperties[] = [
 						"Futures Algo"
 					],
 					"operation": [
-						"GET Sapi V 1 Algo Futures Sub Orders"
+						"GET Sapi v1 Algo Futures Sub Orders"
 					]
 				}
 			}
