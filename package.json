@@ -1,6 +1,6 @@
 {
   "name": "@n8n-dev/n8n-nodes-binance",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Binance global exchange: spot, futures, margin trading; deep liquidity, advanced orders.",
   "license": "MIT",
   "homepage": "https://n8n-code.github.io/n8n-dev/#/n8n-nodes-binance",

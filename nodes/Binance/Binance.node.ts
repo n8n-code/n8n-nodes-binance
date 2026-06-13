@@ -30,32 +30,32 @@ import { simpleEarnDescription } from './resources/simple-earn';
 import { dualInvestmentDescription } from './resources/dual-investment';
 
 export class Binance implements INodeType {
-	description: INodeTypeDescription = {
-		displayName: 'Binance',
-		name: 'N8nDevBinance',
-		icon: { light: 'file:./binance.svg', dark: 'file:./binance.dark.svg' },
-		group: ['input'],
-		version: 1,
-		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'Binance global exchange: spot, futures, margin trading; deep liquidity, advanced orders.',
-		defaults: { name: 'Binance' },
-		usableAsTool: true,
-		inputs: [NodeConnectionTypes.Main],
-		outputs: [NodeConnectionTypes.Main],
-		credentials: [
-			{
-				name: 'N8nDevBinanceApi',
-				required: true,
-			},
-		],
-		requestDefaults: {
-			baseURL: '={{\$credentials.url}}',
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json',
-			},
-		},
-		properties: [
+        description: INodeTypeDescription = {
+                displayName: 'Binance',
+                name: 'N8nDevBinance',
+                icon: { light: 'file:./binance.svg', dark: 'file:./binance.dark.svg' },
+                group: ['input'],
+                version: 1,
+                subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
+                description: 'Binance global exchange: spot, futures, margin trading; deep liquidity, advanced orders.',
+                defaults: { name: 'Binance' },
+                usableAsTool: true,
+                inputs: [NodeConnectionTypes.Main],
+                outputs: [NodeConnectionTypes.Main],
+                credentials: [
+                        {
+                                name: 'N8nDevBinanceApi',
+                                required: true,
+                        },
+                ],
+                requestDefaults: {
+                        baseURL: '={{\$credentials.url}}',
+                        headers: {
+                                Accept: 'application/json',
+                                'Content-Type': 'application/json',
+                        },
+                },
+                properties: [
 		{
 			"displayName": "Resource",
 			"name": "resource",
@@ -239,6 +239,6 @@ export class Binance implements INodeType {
 		...copyTradingDescription,
 		...simpleEarnDescription,
 		...dualInvestmentDescription
-		],
-	};
+                ],
+        };
 }
